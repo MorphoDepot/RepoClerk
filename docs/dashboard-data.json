@@ -1,35 +1,122 @@
 {
-  "generatedAt": "2026-06-13T02:52:27Z",
-  "totalRepos": 62,
+  "generatedAt": "2026-06-13T08:51:32Z",
+  "totalRepos": 63,
   "totalOpenIssues": 109,
   "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 62
+      "Unknown": 63
     },
     "phylum": {
-      "Unknown": 62
+      "Unknown": 63
     },
     "class": {
-      "Unknown": 62
+      "Unknown": 63
     },
     "order": {
-      "Unknown": 62
+      "Unknown": 63
     },
     "family": {
-      "Unknown": 62
+      "Unknown": 63
     },
     "genus": {
-      "Unknown": 62
+      "Unknown": 63
     }
   },
   "activity": {
-    "last_day": 0,
-    "last_week": 1,
-    "last_month": 1,
-    "last_year": 59
+    "last_day": 1,
+    "last_week": 2,
+    "last_month": 2,
+    "last_year": 60
   },
   "repos": [
+    {
+      "nameWithOwner": "muratmaga/tre2",
+      "pushedAt": "2026-06-13T06:31:36Z",
+      "journalUpdatedAt": "2026-06-13T08:51:21Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "",
+        "screenshot-2.png": ""
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Other"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Accessioned specimen"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          "Yes"
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          "https://idigbio.gbif.us/occurrence/search?entity=o_255678434&q=homo+sapiens"
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Homo sapiens"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Pectoral girdle",
+            "Trunk (e.g. body cavity, torso, spine, ribs)",
+            "Pelvic girdle"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "tre2"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+        ],
+        "scanDimensions": "(256, 256, 130)",
+        "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+        "fileFormatVersion": 2
+      }
+    },
     {
       "nameWithOwner": "dinonoto/Juvenile_Bearded_Dragon",
       "pushedAt": "2026-06-09T18:59:41Z",
