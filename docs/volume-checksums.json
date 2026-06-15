@@ -1,0 +1,145 @@
+{
+  "generatedAt": "2026-06-15T20:53:23Z",
+  "schemaVersion": 2,
+  "checksums": {
+    "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
+      "Amith-104/Human_Brain_CT",
+      "Jwyneken/SICB_sample",
+      "MichaelBennington/Bennington_SICB2026_MRIHead",
+      "Peter-T-Ruehr/MRI_test_head",
+      "annikadawley/SICB_Practice_Repository",
+      "brendanlatham/Demo_HumanHead",
+      "cgmena/Cesar_SICB_2026",
+      "kforsgren-1112013/KLF_SICB_2026",
+      "khurds137-beep/MRI_demo_for_workshop",
+      "nahrweiler/natasha_sicb_2026",
+      "ramenegaz/MRhead_sample",
+      "sunnyjsh/Sunny_sicb2"
+    ],
+    "2e0f0c30af36957bc5a1672d02ca18e3cfc86da7f82d611740723fe3bdfc38ef": [
+      "CDonatelli/Gasterosteus_aculeatus"
+    ],
+    "b83ebc512c6107d98f18ce45e8b64f6ceb107f1a325c8605b08be44aee153e42": [
+      "CDonatelli/Gasterosteus_aculeatus_16um"
+    ],
+    "7c1e944aba3cc73445af662530163a83ae2511a12511958f3c197a8a8e60e714": [
+      "FishguyFHL/Agonopsis_vulsa_no_data"
+    ],
+    "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285": [
+      "JeanCopper/Daphnia_magna",
+      "SkyeB-1927/Daphnia_AAA391",
+      "khaichung2807/waterflea391"
+    ],
+    "9563be78c1a6c1f9e13c6fc0d6ca08e59f8019b09e091e17c6ff755bd8a15504": [
+      "M33NFishesLab/Betta_pugnax_UMMZ-209908_head"
+    ],
+    "d5bfa63ae82df8ec49bbba626fb796df9313f92d48710fd25a656f9f34505ede": [
+      "MorphoDepotTesting/delete-22"
+    ],
+    "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7": [
+      "MorphoDepotTesting/delete-e15",
+      "muratmaga/E15-Atlas",
+      "zhong-jessica/mouse"
+    ],
+    "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514": [
+      "MorphoDepotTesting/test-picodon-testus-361",
+      "MorphoDepotTesting/test-picosaurus-testus-693",
+      "MorphoDepotTesting/test-pseudosaurus-communis-611",
+      "MorphoDepotTesting/test-pseudosaurus-exempli-720",
+      "MorphoDepotTesting/test-sliceropithecus-maximus-363",
+      "MorphoDepotTesting/test-sliceroraptor-communis-681",
+      "MorphoDepotTesting/test-slicerotherium-exempli-42",
+      "muratmaga/tre2"
+    ],
+    "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758": [
+      "MorphoDepot/member",
+      "MorphoDepot/multipart",
+      "amm554/non-member"
+    ],
+    "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6": [
+      "PaulGignac/GignacLab_DiceCT_CowEye_2025"
+    ],
+    "86070a5edd0a165a703acb8daa74ec8a105f6b426ec1ee06e67cfc41f395dfc5": [
+      "PaulGignac/Pigeon-4_Head_DiceCT"
+    ],
+    "977ca4c34207fc13394419dfaa74dca01562ddcf617ec2089fe66a405bf7c410": [
+      "Pfu7978/Knight_Anole_Skull"
+    ],
+    "0713be5cf0f54cdd5c650e790f839b1fd407e085592156e9f543e4af4c2aaa5d": [
+      "aubricot/cacao_flower_depot"
+    ],
+    "2c29a9db8891c119eddc5d1b82d5cc2b4f66677c21c555c931b8334613a554c9": [
+      "dinonoto/AM112911-05_Juv_Alligator"
+    ],
+    "ee307046d4dbaf049c15a839c71228a17bf264f65e68776247ef58fc96c3efcf": [
+      "dinonoto/Juvenile_Bearded_Dragon"
+    ],
+    "e1252b330313dce933a9b01b63ec989633a0718ff4afe0d9e7176a9b2d1ce4db": [
+      "dinonoto/NotoLab_ChickenFoot_2025"
+    ],
+    "24d7f2abbb284a2384c4a2bf7da0e394c5aa0616ae6d7524d02d1d72b0789ec7": [
+      "dinonoto/NotoLab_ChickenWing_2025"
+    ],
+    "e348daafc31323ce3d4b3eb1f9d670732fa271c1201fc833096a68d91ef1a260": [
+      "dinonoto/Plethodon_Hindlimb2"
+    ],
+    "ee7248864e201093a1a311f913d029c446d66cbebeccc4894c2ac70a77b31719": [
+      "dinonoto/Xenopus-diceCT"
+    ],
+    "19a1a9eb8afe96911fd86b7e8a6b11525d8a135c801ce2e0c7e316fc2ca8811a": [
+      "elisechmitchell/Para_dog-face_bat"
+    ],
+    "599322f532ad6c98cd314e47e08144a9a5e976267c422357f5ba9975025313cb": [
+      "isafinamor/sapo"
+    ],
+    "4452ed6aa134f2ef38c357ff8ae9191bafea2227b41162572e28b0c87a336027": [
+      "jaimigray/rattlesnake"
+    ],
+    "3051172c2dcd1507d69d8f1ae044e107506858f71fdb3ec2cada1bba41153476": [
+      "jaimigray/snakeseg"
+    ],
+    "6e1157c86c268912e843163f225d8e0f767425310b7e6d7b4b016771e73f5e90": [
+      "jonasand-santos/tooth_rat"
+    ],
+    "4381f0a9d6fd16e886b80c3e7419e149db6e8fe2ac54500623578d1cb6f4d830": [
+      "kumimatsui/Dasyuridae_Workshop"
+    ],
+    "fd41fcbe186473887244ee70ce29ab7e55f9350a9acd2396ede2a3dee8dc7359": [
+      "kurker/Geostiba"
+    ],
+    "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719": [
+      "leighamarielynch-hash/test",
+      "raranda22/Juvenile_Alligator_Volume"
+    ],
+    "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d": [
+      "muratmaga/Big_Brown_Bat"
+    ],
+    "abd521a4f4e9c16121d8126386e8ef1b082b541c57dab006b3e480b95ef19407": [
+      "muratmaga/Bumblebee_Stained"
+    ],
+    "8ddf5f9734347591449a04fcec370319c465d60531b3381269cf08ead62fb49c": [
+      "muratmaga/Herpetotherium_fugax"
+    ],
+    "dad3b943b467fc4b26681671ed13670985d38389d72b9c80abecde75e899459f": [
+      "muratmaga/Mouse_Skull"
+    ],
+    "cce86f19f9594d77cfa5878e00006722d7684490f2d11f5e1a2296b30c3e9855": [
+      "oatake-ux/SwissWebster_Incisor"
+    ],
+    "0b8dafa77632f9726b86950b6757ff18c087f903bcbf739bcb8bd982c3503d77": [
+      "otocolobusmanul3816/Copperhead_test_respository"
+    ],
+    "399a25b51b62b1814e10843dab038fff91cc82ed6e05b5c8c9fc3c201e507b0e": [
+      "otocolobusmanul3816/Nerodia_Segmentation_Laboratory"
+    ],
+    "35eea3813780c590618ba14257f4477dd49d7e297fba91cdec284d514c309d0c": [
+      "palaeophidia/tortuga"
+    ],
+    "ab23be4d69fa61a8c3ebec15145fe97ea8ddd98b3166cfbd65a9dcaef4cfe6df": [
+      "pieper/test-repo-6527"
+    ],
+    "2659620bb2a0eb7c515638ff4f68d38b41a646439df3a27b55c5fccf0cefa795": [
+      "skrobanm/Canis_lupus_Europe_Museum_samples"
+    ]
+  }
+}

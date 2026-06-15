@@ -1,39 +1,287 @@
 {
-  "generatedAt": "2026-06-15T17:07:29Z",
-  "totalRepos": 65,
-  "totalOpenIssues": 109,
-  "totalOpenPRs": 65,
+  "generatedAt": "2026-06-15T20:53:23Z",
+  "totalRepos": 68,
+  "totalOpenIssues": 118,
+  "totalOpenPRs": 68,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 65
+      "Unknown": 68
     },
     "phylum": {
-      "Unknown": 65
+      "Unknown": 68
     },
     "class": {
-      "Unknown": 65
+      "Unknown": 68
     },
     "order": {
-      "Unknown": 65
+      "Unknown": 68
     },
     "family": {
-      "Unknown": 65
+      "Unknown": 68
     },
     "genus": {
-      "Unknown": 65
+      "Unknown": 68
     }
   },
   "activity": {
-    "last_day": 2,
-    "last_week": 4,
-    "last_month": 4,
-    "last_year": 62
+    "last_day": 5,
+    "last_week": 7,
+    "last_month": 7,
+    "last_year": 65
   },
   "repos": [
     {
+      "nameWithOwner": "MorphoDepot/multipart",
+      "pushedAt": "2026-06-15T19:49:33Z",
+      "journalUpdatedAt": "2026-06-15T20:50:53Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": [],
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Homo sapiens"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "MRI"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "multipart"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+        ],
+        "scanDimensions": "(675, 1024, 1024)",
+        "scanSpacing": "(0.25, 0.25, 0.25)",
+        "fileFormatVersion": 2
+      },
+      "isTest": false,
+      "isEphemeral": true
+    },
+    {
+      "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
+      "pushedAt": "2026-06-15T17:54:42Z",
+      "journalUpdatedAt": "2026-06-15T20:51:49Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": [],
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          ""
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Picosaurus testus"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "test-picosaurus-testus-693"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          ""
+        ],
+        "scanDimensions": "(256, 256, 130)",
+        "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+        "fileFormatVersion": 2
+      },
+      "isTest": true,
+      "isEphemeral": false
+    },
+    {
+      "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
+      "pushedAt": "2026-06-15T17:46:48Z",
+      "journalUpdatedAt": "2026-06-15T20:52:36Z",
+      "openIssues": 2,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": [],
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          ""
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Sliceroraptor communis"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "test-sliceroraptor-communis-681"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          ""
+        ],
+        "scanDimensions": "(256, 256, 130)",
+        "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+        "fileFormatVersion": 2
+      },
+      "isTest": true,
+      "isEphemeral": false
+    },
+    {
       "nameWithOwner": "MorphoDepot/member",
       "pushedAt": "2026-06-15T07:14:26Z",
-      "journalUpdatedAt": "2026-06-15T11:53:50Z",
+      "journalUpdatedAt": "2026-06-15T20:52:17Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -112,12 +360,14 @@
         "scanDimensions": "(675, 1024, 1024)",
         "scanSpacing": "(0.25, 0.25, 0.25)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "amm554/non-member",
       "pushedAt": "2026-06-15T06:22:11Z",
-      "journalUpdatedAt": "2026-06-15T11:53:51Z",
+      "journalUpdatedAt": "2026-06-15T20:53:11Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -196,12 +446,14 @@
         "scanDimensions": "(675, 1024, 1024)",
         "scanSpacing": "(0.25, 0.25, 0.25)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "muratmaga/tre2",
       "pushedAt": "2026-06-13T06:31:36Z",
-      "journalUpdatedAt": "2026-06-13T08:51:21Z",
+      "journalUpdatedAt": "2026-06-15T20:51:19Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -283,14 +535,16 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "dinonoto/Juvenile_Bearded_Dragon",
       "pushedAt": "2026-06-09T18:59:41Z",
-      "journalUpdatedAt": "2026-06-09T20:01:47Z",
-      "openIssues": 0,
-      "openPRs": 0,
+      "journalUpdatedAt": "2026-06-15T20:52:40Z",
+      "openIssues": 2,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "Screenshot of specimen scan"
@@ -365,12 +619,14 @@
         "scanDimensions": "(363, 678, 137)",
         "scanSpacing": "(0.11999999730000001, 0.11999999697428199, 0.11999999730000001)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "MorphoDepotTesting/delete-e15",
       "pushedAt": "2026-05-07T19:21:49Z",
-      "journalUpdatedAt": "2026-05-08T02:38:46Z",
+      "journalUpdatedAt": "2026-06-15T20:51:09Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -445,12 +701,14 @@
         "scanDimensions": "(594, 1046, 738)",
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "MorphoDepotTest/MRHead",
       "pushedAt": "2026-05-07T17:37:39Z",
-      "journalUpdatedAt": "2026-05-08T02:38:47Z",
+      "journalUpdatedAt": "2026-06-15T20:52:03Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -517,12 +775,14 @@
         ],
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)"
-      }
+      },
+      "isTest": true,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "pieper/test-repo-6527",
       "pushedAt": "2026-04-29T21:07:39Z",
-      "journalUpdatedAt": "2026-04-30T02:31:21Z",
+      "journalUpdatedAt": "2026-06-15T20:50:50Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -597,12 +857,14 @@
         "scanDimensions": "(904, 441, 3698)",
         "scanSpacing": "(0.015900000000000004, 0.015900000000000004, 0.015900000000000004)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
       "pushedAt": "2026-04-26T19:20:34Z",
-      "journalUpdatedAt": "2026-04-28T00:34:24Z",
+      "journalUpdatedAt": "2026-06-15T20:51:35Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -677,12 +939,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
       "pushedAt": "2026-04-26T18:58:41Z",
-      "journalUpdatedAt": "2026-04-28T00:34:49Z",
+      "journalUpdatedAt": "2026-06-15T20:52:23Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -757,12 +1021,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
       "pushedAt": "2026-04-26T18:40:11Z",
-      "journalUpdatedAt": "2026-04-28T00:33:42Z",
+      "journalUpdatedAt": "2026-06-15T20:51:51Z",
       "openIssues": 3,
       "openPRs": 2,
       "screenshotCount": 0,
@@ -837,12 +1103,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
       "pushedAt": "2026-04-26T18:35:35Z",
-      "journalUpdatedAt": "2026-04-28T00:35:00Z",
+      "journalUpdatedAt": "2026-06-15T20:52:19Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -917,12 +1185,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
       "pushedAt": "2026-04-26T18:27:21Z",
-      "journalUpdatedAt": "2026-04-28T00:34:06Z",
+      "journalUpdatedAt": "2026-06-15T20:52:33Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -997,12 +1267,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "otocolobusmanul3816/Nerodia_Segmentation_Laboratory",
       "pushedAt": "2026-04-16T15:46:39Z",
-      "journalUpdatedAt": "2026-04-28T00:33:51Z",
+      "journalUpdatedAt": "2026-06-15T20:51:27Z",
       "openIssues": 15,
       "openPRs": 11,
       "screenshotCount": 0,
@@ -1082,12 +1354,14 @@
         "scanDimensions": "(762, 1305, 2097)",
         "scanSpacing": "(0.02469999999999999, 0.024699999999999972, 0.024699999999999982)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "MorphoDepotTesting/delete-22",
       "pushedAt": "2026-03-10T21:47:50Z",
-      "journalUpdatedAt": "2026-04-28T00:35:16Z",
+      "journalUpdatedAt": "2026-06-15T20:52:42Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1162,12 +1436,14 @@
         "scanDimensions": "(802, 549, 1768)",
         "scanSpacing": "(0.6000000000000001, 0.6000000000000001, 0.6000000000000001)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": true,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "jaimigray/rattlesnake",
       "pushedAt": "2026-03-10T20:21:40Z",
-      "journalUpdatedAt": "2026-04-28T00:33:38Z",
+      "journalUpdatedAt": "2026-06-15T20:51:05Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -1244,12 +1520,14 @@
         "scanDimensions": "(985, 613, 421)",
         "scanSpacing": "(0.019033600000000005, 0.019033600000000005, 0.019033600000000008)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "aubricot/cacao_flower_depot",
       "pushedAt": "2026-03-05T23:50:02Z",
-      "journalUpdatedAt": "2026-04-28T00:34:58Z",
+      "journalUpdatedAt": "2026-06-15T20:51:25Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -1327,12 +1605,14 @@
         "scanDimensions": "(627, 687, 957)",
         "scanSpacing": "(0.0205306, 0.0205306, 0.0205306)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "otocolobusmanul3816/Copperhead_test_respository",
       "pushedAt": "2026-03-05T23:34:58Z",
-      "journalUpdatedAt": "2026-04-28T00:34:47Z",
+      "journalUpdatedAt": "2026-06-15T20:51:01Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1412,12 +1692,14 @@
         "scanDimensions": "(879, 1332, 1357)",
         "scanSpacing": "(0.011099999999999999, 0.011099999999999999, 0.022199999999999998)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "kumimatsui/Dasyuridae_Workshop",
       "pushedAt": "2026-03-05T17:29:19Z",
-      "journalUpdatedAt": "2026-04-28T00:34:17Z",
+      "journalUpdatedAt": "2026-06-15T20:51:17Z",
       "openIssues": 2,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -1494,12 +1776,14 @@
         "scanDimensions": "(389, 659, 310)",
         "scanSpacing": "(0.07000000000000002, 0.07000000000000002, 0.07000000000000002)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "Pfu7978/Knight_Anole_Skull",
       "pushedAt": "2026-03-04T22:59:07Z",
-      "journalUpdatedAt": "2026-04-28T00:35:24Z",
+      "journalUpdatedAt": "2026-06-15T20:52:39Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1578,12 +1862,14 @@
         "scanDimensions": "(164, 132, 301)",
         "scanSpacing": "(0.2, 0.2, 0.2)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "SkyeB-1927/Daphnia_AAA391",
       "pushedAt": "2026-03-04T22:46:22Z",
-      "journalUpdatedAt": "2026-04-28T00:34:23Z",
+      "journalUpdatedAt": "2026-06-15T20:52:13Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1660,12 +1946,14 @@
         "scanDimensions": "(378, 750, 175)",
         "scanSpacing": "(1.0, 1.0, 1.0)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "oatake-ux/SwissWebster_Incisor",
       "pushedAt": "2026-03-04T22:19:00Z",
-      "journalUpdatedAt": "2026-04-28T00:35:34Z",
+      "journalUpdatedAt": "2026-06-15T20:53:03Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1745,12 +2033,14 @@
         "scanDimensions": "(280, 168, 234)",
         "scanSpacing": "(0.00592, 0.00592, 0.00592)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "JeanCopper/Daphnia_magna",
       "pushedAt": "2026-03-04T22:18:35Z",
-      "journalUpdatedAt": "2026-04-28T00:35:26Z",
+      "journalUpdatedAt": "2026-06-15T20:53:10Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1829,12 +2119,14 @@
         "scanDimensions": "(378, 750, 175)",
         "scanSpacing": "(1.0, 1.0, 1.0)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "khaichung2807/waterflea391",
       "pushedAt": "2026-03-04T22:11:38Z",
-      "journalUpdatedAt": "2026-04-28T00:34:33Z",
+      "journalUpdatedAt": "2026-06-15T20:51:39Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1912,12 +2204,14 @@
         "scanDimensions": "(378, 750, 175)",
         "scanSpacing": "(1.0, 1.0, 1.0)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "elisechmitchell/Para_dog-face_bat",
       "pushedAt": "2026-03-04T21:53:22Z",
-      "journalUpdatedAt": "2026-04-28T00:34:44Z",
+      "journalUpdatedAt": "2026-06-15T20:50:59Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1997,12 +2291,14 @@
         "scanDimensions": "(1262, 1733, 390)",
         "scanSpacing": "(0.02, 0.02, 0.02)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "muratmaga/Big_Brown_Bat",
       "pushedAt": "2026-03-04T21:26:07Z",
-      "journalUpdatedAt": "2026-04-28T00:33:53Z",
+      "journalUpdatedAt": "2026-06-15T20:51:29Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2082,12 +2378,14 @@
         "scanDimensions": "(800, 1181, 583)",
         "scanSpacing": "(0.02, 0.02, 0.02)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "dinonoto/Plethodon_Hindlimb2",
       "pushedAt": "2026-02-21T03:40:42Z",
-      "journalUpdatedAt": "2026-04-28T00:35:04Z",
+      "journalUpdatedAt": "2026-06-15T20:52:05Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2153,12 +2451,14 @@
         ],
         "scanDimensions": "(988, 1660, 1721)",
         "scanSpacing": "(0.007144, 0.007144, 0.007144)"
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "muratmaga/Herpetotherium_fugax",
       "pushedAt": "2026-02-02T18:00:12Z",
-      "journalUpdatedAt": "2026-04-28T00:33:46Z",
+      "journalUpdatedAt": "2026-06-15T20:51:54Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2239,12 +2539,14 @@
         "scanDimensions": "(1166, 1990, 865)",
         "scanSpacing": "(0.0185547, 0.0185547, 0.0185547)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "muratmaga/Bumblebee_Stained",
       "pushedAt": "2026-01-12T05:56:53Z",
-      "journalUpdatedAt": "2026-04-28T00:34:00Z",
+      "journalUpdatedAt": "2026-06-15T20:52:01Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2321,12 +2623,14 @@
         "scanDimensions": "(1159, 1663, 1482)",
         "scanSpacing": "(0.010498966637142003, 0.010498966637142003, 0.010498966637142003)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "brendanlatham/Demo_HumanHead",
       "pushedAt": "2026-01-03T23:16:47Z",
-      "journalUpdatedAt": "2026-04-28T00:34:13Z",
+      "journalUpdatedAt": "2026-06-15T20:51:13Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2405,12 +2709,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "khurds137-beep/MRI_demo_for_workshop",
       "pushedAt": "2026-01-03T23:16:39Z",
-      "journalUpdatedAt": "2026-04-28T00:34:56Z",
+      "journalUpdatedAt": "2026-06-15T20:51:21Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2489,12 +2795,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "cgmena/Cesar_SICB_2026",
       "pushedAt": "2026-01-03T23:15:00Z",
-      "journalUpdatedAt": "2026-04-28T00:34:02Z",
+      "journalUpdatedAt": "2026-06-15T20:51:44Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2573,12 +2881,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "sunnyjsh/Sunny_sicb2",
       "pushedAt": "2026-01-03T22:58:28Z",
-      "journalUpdatedAt": "2026-04-28T00:34:53Z",
+      "journalUpdatedAt": "2026-06-15T20:51:23Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2657,12 +2967,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "nahrweiler/natasha_sicb_2026",
       "pushedAt": "2026-01-03T22:55:24Z",
-      "journalUpdatedAt": "2026-04-28T00:33:54Z",
+      "journalUpdatedAt": "2026-06-15T20:51:31Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2739,12 +3051,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "Peter-T-Ruehr/MRI_test_head",
       "pushedAt": "2026-01-03T22:51:10Z",
-      "journalUpdatedAt": "2026-04-28T00:35:23Z",
+      "journalUpdatedAt": "2026-06-15T20:52:59Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2823,14 +3137,16 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
       "pushedAt": "2026-01-03T22:48:52Z",
-      "journalUpdatedAt": "2026-04-28T00:33:37Z",
+      "journalUpdatedAt": "2026-06-15T20:51:03Z",
       "openIssues": 1,
-      "openPRs": 1,
+      "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": ""
@@ -2907,12 +3223,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "Jwyneken/SICB_sample",
       "pushedAt": "2026-01-03T22:30:01Z",
-      "journalUpdatedAt": "2026-04-28T00:35:11Z",
+      "journalUpdatedAt": "2026-06-15T20:52:49Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2991,12 +3309,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "Amith-104/Human_Brain_CT",
       "pushedAt": "2026-01-03T22:28:46Z",
-      "journalUpdatedAt": "2026-04-28T00:35:13Z",
+      "journalUpdatedAt": "2026-06-15T20:52:35Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3073,12 +3393,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "annikadawley/SICB_Practice_Repository",
       "pushedAt": "2026-01-03T22:24:26Z",
-      "journalUpdatedAt": "2026-04-28T00:35:20Z",
+      "journalUpdatedAt": "2026-06-15T20:52:52Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3155,12 +3477,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "MichaelBennington/Bennington_SICB2026_MRIHead",
       "pushedAt": "2026-01-03T22:22:26Z",
-      "journalUpdatedAt": "2026-04-28T00:35:02Z",
+      "journalUpdatedAt": "2026-06-15T20:52:21Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -3237,12 +3561,14 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "ramenegaz/MRhead_sample",
       "pushedAt": "2026-01-03T22:22:16Z",
-      "journalUpdatedAt": "2026-04-28T00:34:51Z",
+      "journalUpdatedAt": "2026-06-15T20:52:25Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3321,14 +3647,16 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "dinonoto/NotoLab_ChickenWing_2025",
       "pushedAt": "2025-12-21T19:45:13Z",
-      "journalUpdatedAt": "2026-04-28T00:35:06Z",
-      "openIssues": 0,
-      "openPRs": 0,
+      "journalUpdatedAt": "2026-06-15T20:52:09Z",
+      "openIssues": 2,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "Chicken forelimb specimen with included segmentation of skeletatal elements."
@@ -3405,14 +3733,16 @@
         "scanDimensions": "(556, 423, 416)",
         "scanSpacing": "(0.1098, 0.1098, 0.2196)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "dinonoto/NotoLab_ChickenFoot_2025",
       "pushedAt": "2025-12-21T19:44:19Z",
-      "journalUpdatedAt": "2026-04-28T00:35:10Z",
-      "openIssues": 0,
-      "openPRs": 0,
+      "journalUpdatedAt": "2026-06-15T20:52:49Z",
+      "openIssues": 1,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "Chicken foot specimen scan with segmentation of skeletal system."
@@ -3489,12 +3819,14 @@
         "scanDimensions": "(588, 651, 768)",
         "scanSpacing": "(0.084, 0.084, 0.168)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "PaulGignac/GignacLab_DiceCT_CowEye_2025",
       "pushedAt": "2025-12-17T22:09:01Z",
-      "journalUpdatedAt": "2026-04-28T00:33:31Z",
+      "journalUpdatedAt": "2026-06-15T20:50:48Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3573,12 +3905,14 @@
         "scanDimensions": "(1215, 954, 1550)",
         "scanSpacing": "(0.0406434, 0.0406434, 0.0406434)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "M33NFishesLab/Betta_pugnax_UMMZ-209908_head",
       "pushedAt": "2025-12-15T19:13:07Z",
-      "journalUpdatedAt": "2026-04-28T00:34:15Z",
+      "journalUpdatedAt": "2026-06-15T20:51:11Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3658,12 +3992,14 @@
         "scanDimensions": "(681, 392, 2000)",
         "scanSpacing": "(0.037686, 0.037686, 0.037686)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "muratmaga/Mouse_Skull",
       "pushedAt": "2025-12-09T20:27:23Z",
-      "journalUpdatedAt": "2026-04-28T00:34:45Z",
+      "journalUpdatedAt": "2026-06-15T20:50:57Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3742,12 +4078,14 @@
         "scanDimensions": "(520, 824, 456)",
         "scanSpacing": "(0.03527835011482239, 0.03527835011482239, 0.03527835011482239)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "muratmaga/E15-Atlas",
       "pushedAt": "2025-12-09T19:18:45Z",
-      "journalUpdatedAt": "2026-04-28T00:34:37Z",
+      "journalUpdatedAt": "2026-06-15T20:51:37Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3824,12 +4162,14 @@
         "scanDimensions": "(594, 1046, 738)",
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "kurker/Geostiba",
       "pushedAt": "2025-11-06T19:38:41Z",
-      "journalUpdatedAt": "2026-04-28T00:34:42Z",
+      "journalUpdatedAt": "2026-06-15T20:52:31Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3906,12 +4246,14 @@
         "scanDimensions": "(489, 1046, 534)",
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "palaeophidia/tortuga",
       "pushedAt": "2025-11-06T19:38:30Z",
-      "journalUpdatedAt": "2026-04-28T00:35:08Z",
+      "journalUpdatedAt": "2026-06-15T20:52:07Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3988,12 +4330,14 @@
         "scanDimensions": "(512, 435, 469)",
         "scanSpacing": "(0.3509999999999999, 0.3509999999999999, 0.29999999999999993)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "raranda22/Juvenile_Alligator_Volume",
       "pushedAt": "2025-11-06T19:18:34Z",
-      "journalUpdatedAt": "2026-04-28T00:35:28Z",
+      "journalUpdatedAt": "2026-06-15T20:53:01Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4068,12 +4412,14 @@
         "scanDimensions": "(4634, 1120, 705)",
         "scanSpacing": "(0.065495199, 0.065495199, 0.065495199)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "isafinamor/sapo",
       "pushedAt": "2025-11-06T19:14:25Z",
-      "journalUpdatedAt": "2026-04-28T00:33:35Z",
+      "journalUpdatedAt": "2026-06-15T20:51:07Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4148,12 +4494,14 @@
         "scanDimensions": "(1711, 1376, 705)",
         "scanSpacing": "(0.0380836, 0.0761672, 0.0380836)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "leighamarielynch-hash/test",
       "pushedAt": "2025-11-06T19:12:45Z",
-      "journalUpdatedAt": "2026-04-28T00:34:39Z",
+      "journalUpdatedAt": "2026-06-15T20:52:27Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4228,12 +4576,14 @@
         "scanDimensions": "(4634, 1120, 705)",
         "scanSpacing": "(0.065495199, 0.065495199, 0.065495199)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "skrobanm/Canis_lupus_Europe_Museum_samples",
       "pushedAt": "2025-11-06T19:06:23Z",
-      "journalUpdatedAt": "2026-04-28T00:34:35Z",
+      "journalUpdatedAt": "2026-06-15T20:51:41Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4310,12 +4660,14 @@
         "scanDimensions": "(1140, 1294, 1995)",
         "scanSpacing": "(0.12, 0.12, 0.12)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "jonasand-santos/tooth_rat",
       "pushedAt": "2025-11-06T19:01:35Z",
-      "journalUpdatedAt": "2026-04-28T00:35:35Z",
+      "journalUpdatedAt": "2026-06-15T20:52:58Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4393,12 +4745,14 @@
         "scanDimensions": "(159, 159, 149)",
         "scanSpacing": "(0.14111340045928955, 0.14111340045928955, 0.1408766359090805)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "zhong-jessica/mouse",
       "pushedAt": "2025-11-06T18:58:25Z",
-      "journalUpdatedAt": "2026-04-28T00:33:56Z",
+      "journalUpdatedAt": "2026-06-15T20:51:42Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4473,12 +4827,14 @@
         "scanDimensions": "(594, 1046, 738)",
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "dinonoto/Xenopus-diceCT",
       "pushedAt": "2025-10-31T19:53:11Z",
-      "journalUpdatedAt": "2026-04-28T00:34:19Z",
+      "journalUpdatedAt": "2026-06-15T20:52:15Z",
       "openIssues": 3,
       "openPRs": 3,
       "screenshotCount": 0,
@@ -4553,12 +4909,14 @@
         "scanDimensions": "(1711, 1376, 705)",
         "scanSpacing": "(0.0380836, 0.0761672, 0.0380836)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "PaulGignac/Pigeon-4_Head_DiceCT",
       "pushedAt": "2025-10-21T21:33:35Z",
-      "journalUpdatedAt": "2026-04-28T00:33:47Z",
+      "journalUpdatedAt": "2026-06-15T20:51:57Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4635,12 +4993,14 @@
         "scanDimensions": "(951, 958, 941)",
         "scanSpacing": "(0.02011828, 0.02011828, 0.02011828)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": true
     },
     {
       "nameWithOwner": "CDonatelli/Gasterosteus_aculeatus_16um",
       "pushedAt": "2025-10-18T22:00:34Z",
-      "journalUpdatedAt": "2026-04-28T00:35:30Z",
+      "journalUpdatedAt": "2026-06-15T20:52:56Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -4715,14 +5075,16 @@
         "scanDimensions": "(904, 441, 3698)",
         "scanSpacing": "(0.015900000000000004, 0.015900000000000004, 0.015900000000000004)",
         "fileFormatVersion": 2
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
       "pushedAt": "2025-10-10T18:57:00Z",
-      "journalUpdatedAt": "2026-04-28T00:34:30Z",
-      "openIssues": 4,
-      "openPRs": 4,
+      "journalUpdatedAt": "2026-06-15T20:52:00Z",
+      "openIssues": 6,
+      "openPRs": 6,
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {
@@ -4782,12 +5144,14 @@
         ],
         "scanDimensions": "(4634, 1120, 705)",
         "scanSpacing": "(0.065495199, 0.065495199, 0.065495199)"
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "CDonatelli/Lepomis_macrochirus_28um",
       "pushedAt": "2025-10-09T22:37:22Z",
-      "journalUpdatedAt": "2026-04-28T00:34:21Z",
+      "journalUpdatedAt": "2026-06-15T20:52:11Z",
       "openIssues": 42,
       "openPRs": 37,
       "screenshotCount": 0,
@@ -4849,12 +5213,14 @@
         ],
         "scanDimensions": "(1425, 528, 3814)",
         "scanSpacing": "(0.027999999999999997, 0.027999999999999987, 0.027999999999999987)"
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "CDonatelli/Gasterosteus_aculeatus",
       "pushedAt": "2025-10-09T18:56:13Z",
-      "journalUpdatedAt": "2026-04-28T00:33:58Z",
+      "journalUpdatedAt": "2026-06-15T20:51:33Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -4917,12 +5283,14 @@
         "scanDimensions": "(904, 441, 3698)",
         "scanSpacing": "(0.015900000000000004, 0.015900000000000004, 0.015900000000000004)",
         "fileFormatVersion": 1
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "FishguyFHL/Agonopsis_vulsa_no_data",
       "pushedAt": "2025-10-07T16:48:11Z",
-      "journalUpdatedAt": "2026-04-28T00:34:54Z",
+      "journalUpdatedAt": "2026-06-15T20:52:29Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4985,14 +5353,16 @@
         "scanDimensions": "(279, 456, 2017)",
         "scanSpacing": "(0.03457999999999999, 0.03457999999999999, 0.03457999999999999)",
         "fileFormatVersion": 1
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "jaimigray/snakeseg",
       "pushedAt": "2025-10-07T16:46:14Z",
-      "journalUpdatedAt": "2026-04-28T00:35:18Z",
+      "journalUpdatedAt": "2026-06-15T20:52:54Z",
       "openIssues": 2,
-      "openPRs": 1,
+      "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {
@@ -5055,12 +5425,14 @@
         "scanDimensions": "(606, 507, 959)",
         "scanSpacing": "(0.019033600000000005, 0.019033600000000005, 0.019033600000000005)",
         "fileFormatVersion": 1
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "CDonatelli/DamagedPoacherTail",
       "pushedAt": "2025-05-20T23:35:12Z",
-      "journalUpdatedAt": "2026-04-28T00:34:32Z",
+      "journalUpdatedAt": "2026-06-15T20:50:55Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5124,22 +5496,26 @@
         ],
         "scanDimensions": "(560, 560, 1358)",
         "scanSpacing": "(0.0352, 0.0352, 0.0352)"
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "CDonatelli/CDHumanTest",
       "pushedAt": "2025-05-19T21:14:51Z",
-      "journalUpdatedAt": "2026-04-28T00:33:49Z",
+      "journalUpdatedAt": "2026-06-15T20:51:55Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
-      "accession": {}
+      "accession": {},
+      "isTest": false,
+      "isEphemeral": false
     },
     {
       "nameWithOwner": "jknaub/Mako_Vert_MD_Test",
       "pushedAt": "2025-05-06T16:33:38Z",
-      "journalUpdatedAt": "2026-04-28T00:34:11Z",
+      "journalUpdatedAt": "2026-06-15T20:51:15Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5203,7 +5579,264 @@
         ],
         "scanDimensions": "(352, 341, 147)",
         "scanSpacing": "(0.07303892000000001, 0.07303892000000001, 0.07303892000000001)"
-      }
+      },
+      "isTest": false,
+      "isEphemeral": false
+    }
+  ],
+  "duplicateVolumes": [
+    {
+      "checksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758",
+      "category": "promotion",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepot/member",
+          "isOrg": true,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "MorphoDepot/multipart",
+          "isOrg": true,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "amm554/non-member",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        }
+      ]
+    },
+    {
+      "checksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719",
+      "category": "cross-owner",
+      "repos": [
+        {
+          "nameWithOwner": "leighamarielynch-hash/test",
+          "isOrg": false,
+          "species": "Alligator darwini",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "raranda22/Juvenile_Alligator_Volume",
+          "isOrg": false,
+          "species": "Alligator mississippiensis",
+          "isTest": false,
+          "isEphemeral": false
+        }
+      ]
+    },
+    {
+      "checksum": "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285",
+      "category": "cross-owner",
+      "repos": [
+        {
+          "nameWithOwner": "JeanCopper/Daphnia_magna",
+          "isOrg": false,
+          "species": "Daphnia magna",
+          "isTest": false,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "SkyeB-1927/Daphnia_AAA391",
+          "isOrg": false,
+          "species": "Daphnia magna",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "khaichung2807/waterflea391",
+          "isOrg": false,
+          "species": "Daphnia magna",
+          "isTest": false,
+          "isEphemeral": false
+        }
+      ]
+    },
+    {
+      "checksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+      "category": "cross-owner",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
+          "isOrg": false,
+          "species": "Picodon testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
+          "isOrg": false,
+          "species": "Picosaurus testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
+          "isOrg": false,
+          "species": "Pseudosaurus communis",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
+          "isOrg": false,
+          "species": "Pseudosaurus exempli",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
+          "isOrg": false,
+          "species": "Sliceropithecus maximus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
+          "isOrg": false,
+          "species": "Sliceroraptor communis",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
+          "isOrg": false,
+          "species": "Slicerotherium exempli",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "muratmaga/tre2",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        }
+      ]
+    },
+    {
+      "checksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+      "category": "cross-owner",
+      "repos": [
+        {
+          "nameWithOwner": "Amith-104/Human_Brain_CT",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "Jwyneken/SICB_sample",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "MichaelBennington/Bennington_SICB2026_MRIHead",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "Peter-T-Ruehr/MRI_test_head",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "annikadawley/SICB_Practice_Repository",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "brendanlatham/Demo_HumanHead",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "cgmena/Cesar_SICB_2026",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "khurds137-beep/MRI_demo_for_workshop",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "nahrweiler/natasha_sicb_2026",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "ramenegaz/MRhead_sample",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "sunnyjsh/Sunny_sicb2",
+          "isOrg": false,
+          "species": "Pteronitella humanensis",
+          "isTest": false,
+          "isEphemeral": true
+        }
+      ]
+    },
+    {
+      "checksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7",
+      "category": "cross-owner",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepotTesting/delete-e15",
+          "isOrg": false,
+          "species": "Unknown",
+          "isTest": true,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "muratmaga/E15-Atlas",
+          "isOrg": false,
+          "species": "Mus musculus",
+          "isTest": false,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "zhong-jessica/mouse",
+          "isOrg": false,
+          "species": "Mus cervicolor",
+          "isTest": false,
+          "isEphemeral": true
+        }
+      ]
     }
   ]
 }
