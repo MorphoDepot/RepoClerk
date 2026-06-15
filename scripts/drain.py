@@ -23,6 +23,10 @@ GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
 MAX_IDLE_CYCLES = 3
 POLL_INTERVAL = 5  # seconds
 
+# Journal schema version. Bump when the journal shape changes so sync-all re-queues
+# existing journals for a one-time backfill. v2 added sourceVolumeChecksum.
+SCHEMA_VERSION = 2
+
 GRAPHQL_QUERY = """
 query($owner: String!, $repo: String!) {
   repository(owner: $owner, name: $repo) {
@@ -101,6 +105,17 @@ def process_repo(owner, repo):
                 # so we want the last occurrence, which is from the final destination.
                 volume_size = int(line.split(":", 1)[1].strip())
 
+    # source_volume_checksum is a committed file whose content is "SHA256:<64-hex>".
+    # Journal the bare lowercase hex so duplicate-volume detection can group on it
+    # (two repos with the same digest hold byte-identical volumes).
+    source_checksum = None
+    checksum_raw = fetch_url(f"{base_url}/source_volume_checksum")
+    if checksum_raw:
+        val = checksum_raw.strip()
+        if ":" in val:
+            val = val.split(":", 1)[1].strip()
+        source_checksum = val.lower() or None
+
     try:
         sc = run(["gh", "api", f"repos/{owner}/{repo}/contents/screenshots",
                   "--jq", '[.[] | select(.name | test("\\.(png|jpg|jpeg|gif|webp)$"; "i"))] | length'])
@@ -141,7 +156,7 @@ def process_repo(owner, repo):
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     journal = {
-        "schemaVersion": 1,
+        "schemaVersion": SCHEMA_VERSION,
         "nameWithOwner": f"{owner}/{repo}",
         "journalUpdatedAt": now,
         "pushedAt": data["pushedAt"],
@@ -151,6 +166,7 @@ def process_repo(owner, repo):
         "screenshotCount": screenshot_count,
         "screenshotCaptions": captions,
         "volumeSize": volume_size,
+        "sourceVolumeChecksum": source_checksum,
     }
 
     out_path = Path(f"journals/{owner}^{repo}.json")

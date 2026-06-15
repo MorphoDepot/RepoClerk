@@ -22,6 +22,9 @@
   // --- Carousel ---
   buildCarousel(data.repos);
 
+  // --- Duplicate-volumes panel ---
+  renderDuplicates(data.duplicateVolumes || []);
+
   // --- Activity chart ---
   const activityChart = echarts.init(document.getElementById('activity-chart'));
   activityChart.setOption({
@@ -127,6 +130,48 @@
     activityChart.resize();
     taxonomyChart.resize();
   });
+
+
+  // --- Duplicate-volumes panel ---
+
+  function renderDuplicates(groups) {
+    const section = document.getElementById('dup-section');
+    if (!groups.length) { section.style.display = 'none'; return; }
+    section.style.display = '';
+    document.getElementById('dup-count').textContent = groups.length;
+
+    // Category -> {label, colour}; ordered by curation priority in the data already.
+    const CATS = {
+      'org-org':     { label: 'Org ↔ Org',      color: '#b31d28' },
+      'promotion':   { label: 'Personal → Org', color: '#b35900' },
+      'cross-owner': { label: 'Cross-owner',          color: '#9a6700' },
+      'same-owner':  { label: 'Same owner',           color: '#6a737d' },
+    };
+    const tbody = document.getElementById('dup-tbody');
+
+    groups.forEach(g => {
+      const cat = CATS[g.category] || { label: g.category, color: '#6a737d' };
+      const repos = (g.repos || []).map(r =>
+        `<a href="https://github.com/${escapeHTML(r.nameWithOwner)}" target="_blank">` +
+        `${escapeHTML(r.nameWithOwner)}</a>` +
+        (r.isOrg ? ' <span class="org-tag">org</span>' : '')
+      ).join('<br>');
+      const species = [...new Set((g.repos || [])
+        .map(r => r.species).filter(s => s && s !== 'Unknown'))].join(', ') || '—';
+      const sha = String(g.checksum || '');
+
+      const tr = document.createElement('tr');
+      tr.className = 'repo-row';
+      tr.style.cursor = 'default';
+      tr.innerHTML = `
+        <td><span class="dup-badge" style="background:${cat.color}">${cat.label}</span></td>
+        <td>${repos}</td>
+        <td>${escapeHTML(species)}</td>
+        <td><code class="dup-sha" title="${escapeHTML(sha)}">${escapeHTML(sha.slice(0, 12))}…</code></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
 
 
   // --- Carousel ---

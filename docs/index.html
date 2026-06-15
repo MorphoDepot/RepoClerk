@@ -254,6 +254,47 @@
     }
     .carousel-dot.active { background: #fff; }
 
+    /* Duplicate-volumes panel */
+    #dup-section {
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    #dup-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #e1e4e8;
+      background: #fff6f0;
+    }
+    #dup-section h2 .sub {
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #586069;
+    }
+    .dup-badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .org-tag {
+      font-size: 0.62rem;
+      background: #1a3a52;
+      color: #fff;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+    code.dup-sha { font-size: 0.75rem; color: #586069; }
+
     @media (max-width: 700px) {
       #charts { grid-template-columns: 1fr; }
       #summary { flex-direction: column; }
@@ -306,6 +347,23 @@
       </select>
       <div id="taxonomy-chart" style="height:240px"></div>
     </div>
+  </section>
+
+  <section id="dup-section" style="display:none">
+    <h2>Duplicate Volumes — <span id="dup-count">0</span>
+      <span class="sub">repos sharing a byte-identical source volume (same SHA-256)</span>
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Repositories sharing one volume</th>
+          <th>Species</th>
+          <th>Checksum</th>
+        </tr>
+      </thead>
+      <tbody id="dup-tbody"></tbody>
+    </table>
   </section>
 
   <section id="repo-section">
