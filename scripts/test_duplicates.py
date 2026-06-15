@@ -13,10 +13,10 @@ gd = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(gd)
 
 
-def repo(nwo, species="Unknown"):
+def repo(nwo, species="Unknown", isTest=False, isEphemeral=False):
     owner = nwo.split("/", 1)[0]
     return {"nameWithOwner": nwo, "owner": owner, "isOrg": owner == gd.ORG_LOGIN,
-            "species": species}
+            "species": species, "isTest": isTest, "isEphemeral": isEphemeral}
 
 
 def check(name, cond):
@@ -84,8 +84,34 @@ def test_build_report():
     check("species carried", by_sha["sha-dup-personal"]["repos"][0]["species"] == "Mus musculus")
 
 
+def test_flags():
+    check("test-repo-1234 is a test repo", gd.is_test_repo("muratmaga/test-repo-1234"))
+    check("test-<genus>-<species>-N is a test repo",
+          gd.is_test_repo("MorphoDepotTesting/test-sliceropithecus-maximus-363"))
+    check("MorphoDepotTesting/* is a test repo (delete-22)",
+          gd.is_test_repo("MorphoDepotTesting/delete-22"))
+    check("MorphoDepotTest/MRHead is a test repo", gd.is_test_repo("MorphoDepotTest/MRHead"))
+    check("test- prefix anywhere is a test repo", gd.is_test_repo("someuser/test-foo-bar-5"))
+    check("real species repo is not", not gd.is_test_repo("muratmaga/Gorilla_skull"))
+    check("'Testudo' (no hyphen) is not a test repo", not gd.is_test_repo("x/Testudo_graveyard"))
+    check("MorphoDepot/member (org, real) is not a test repo",
+          not gd.is_test_repo("MorphoDepot/member"))
+    check("ephemeral from Short-term repoType",
+          gd.is_ephemeral_repo({"repoType": ["q", "Short-term (e.g. classroom...)"]}))
+    check("not ephemeral from Archival",
+          not gd.is_ephemeral_repo({"repoType": ["q", "Archival (long-term)"]}))
+    check("not ephemeral when repoType absent", not gd.is_ephemeral_repo({}))
+    # flags propagate into duplicate-group repos
+    data = {"sha": [repo("x/test-repo-1234", isTest=True), repo("MorphoDepot/a", isEphemeral=True)]}
+    groups, _ = gd.build_duplicate_report(data)
+    reps = {r["nameWithOwner"]: r for r in groups[0]["repos"]}
+    check("isTest flag carried", reps["x/test-repo-1234"]["isTest"] is True)
+    check("isEphemeral flag carried", reps["MorphoDepot/a"]["isEphemeral"] is True)
+
+
 if __name__ == "__main__":
     print("test_parse_checksum_file"); test_parse_checksum_file()
     print("test_categories"); test_categories()
     print("test_build_report"); test_build_report()
+    print("test_flags"); test_flags()
     print("\nAll duplicate-report tests passed.")

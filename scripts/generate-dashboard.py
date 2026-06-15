@@ -13,6 +13,10 @@ TAXONOMY_LEVELS = ["kingdom", "phylum", "class", "order", "family", "genus"]
 # governed) as opposed to a personal repo (GitHub release asset).
 ORG_LOGIN = "MorphoDepot"
 
+# Orgs that exist purely for the module's self-test / Reload-and-Test runs — everything under
+# them is a test artifact (the self-test publishes to MorphoDepotTesting).
+TEST_ORGS = frozenset({"MorphoDepotTesting", "MorphoDepotTest"})
+
 # Duplicate-group categories, ordered by curation priority (lower = more urgent).
 DUP_CATEGORY_PRIORITY = {"org-org": 0, "promotion": 1, "cross-owner": 2, "same-owner": 3}
 
@@ -23,6 +27,22 @@ def accession_answer(accession, key):
     if isinstance(v, list) and len(v) >= 2:
         return v[1]
     return v
+
+
+def is_test_repo(name_with_owner):
+    """True for repos produced by the module's self-test / Reload-and-Test runs: anything under
+    a known testing org (MorphoDepotTesting / MorphoDepotTest), or whose name starts with
+    'test-'.  The self-test names repos two ways — `test-repo-<n>` and `test-<genus>-<species>-<n>`
+    — and publishes them to MorphoDepotTesting (see MorphoDepot.py)."""
+    owner, _, name = name_with_owner.partition("/")
+    return owner in TEST_ORGS or name.startswith("test-")
+
+
+def is_ephemeral_repo(accession):
+    """True for 'ephemeral' repos — the accession's repoType lifespan is Short-term
+    (classroom/disposable), not Archival."""
+    rt = accession_answer(accession, "repoType") or ""
+    return isinstance(rt, str) and rt.startswith("Short-term")
 
 
 def categorize_duplicate(repos):
@@ -67,7 +87,8 @@ def build_duplicate_report(checksum_to_repos):
                 "checksum": checksum,
                 "category": category,
                 "repos": [{"nameWithOwner": r["nameWithOwner"], "isOrg": r["isOrg"],
-                           "species": r["species"]} for r in unique],
+                           "species": r["species"], "isTest": r["isTest"],
+                           "isEphemeral": r["isEphemeral"]} for r in unique],
             })
     duplicate_groups.sort(key=lambda g: (DUP_CATEGORY_PRIORITY.get(g["category"], 9),
                                          g["checksum"]))
@@ -126,6 +147,9 @@ def main():
             val = accession.get(level) or "Unknown"
             taxonomy[level][val] = taxonomy[level].get(val, 0) + 1
 
+        is_test = is_test_repo(nwo)
+        is_ephemeral = is_ephemeral_repo(accession)
+
         repos_list.append({
             "nameWithOwner": nwo,
             "pushedAt": pushed_at_str,
@@ -135,6 +159,8 @@ def main():
             "screenshotCount": j.get("screenshotCount", 0),
             "screenshotCaptions": j.get("screenshotCaptions", []),
             "accession": accession,
+            "isTest": is_test,
+            "isEphemeral": is_ephemeral,
         })
 
         # Collect source-volume checksums for duplicate detection (schema v2+).
@@ -146,6 +172,8 @@ def main():
                 "owner": owner,
                 "isOrg": owner == ORG_LOGIN,
                 "species": accession_answer(accession, "species") or "Unknown",
+                "isTest": is_test,
+                "isEphemeral": is_ephemeral,
             })
 
     # Sort by most recently pushed

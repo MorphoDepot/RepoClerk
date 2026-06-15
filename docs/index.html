@@ -295,6 +295,29 @@
     }
     code.dup-sha { font-size: 0.75rem; color: #586069; }
 
+    /* Filter bar */
+    #filters {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+    }
+    #filters .filters-label {
+      color: #586069;
+      font-weight: 600;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    #filters label { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+    #filters .hint { margin-left: auto; color: #586069; font-size: 0.78rem; }
+
     @media (max-width: 700px) {
       #charts { grid-template-columns: 1fr; }
       #summary { flex-direction: column; }
@@ -314,6 +337,13 @@
     <button class="carousel-nav" id="carousel-prev">&#8249;</button>
     <button class="carousel-nav" id="carousel-next">&#8250;</button>
     <div class="carousel-dots" id="carousel-dots"></div>
+  </section>
+
+  <section id="filters">
+    <span class="filters-label">Filters</span>
+    <label><input type="checkbox" id="hide-test" checked> Hide test repositories</label>
+    <label><input type="checkbox" id="include-ephemeral" checked> Include ephemeral repositories</label>
+    <span class="hint" id="filter-count"></span>
   </section>
 
   <section id="summary">
