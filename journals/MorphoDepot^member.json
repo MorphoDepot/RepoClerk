@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "nameWithOwner": "amm554/non-member",
-  "journalUpdatedAt": "2026-06-15T11:53:51Z",
-  "pushedAt": "2026-06-15T06:22:11Z",
+  "nameWithOwner": "MorphoDepot/member",
+  "journalUpdatedAt": "2026-06-15T11:53:50Z",
+  "pushedAt": "2026-06-15T07:14:26Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -32,7 +32,7 @@
     ],
     "biologicalSex": [
       "What is your specimen's sex?",
-      "Male"
+      "Unknown"
     ],
     "developmentalStage": [
       "What is your specimen's developmental stage?",
@@ -68,7 +68,7 @@
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "non-member"
+      "member"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
