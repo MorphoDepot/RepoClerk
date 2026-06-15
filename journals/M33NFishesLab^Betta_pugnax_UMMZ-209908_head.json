@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "M33NFishesLab/Betta_pugnax_UMMZ-209908_head",
-  "journalUpdatedAt": "2026-04-28T00:34:15Z",
+  "journalUpdatedAt": "2026-06-15T20:51:11Z",
   "pushedAt": "2025-12-15T19:13:07Z",
   "openIssues": [],
   "openPRs": [],
@@ -83,5 +83,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 928972077
+  "volumeSize": 928972077,
+  "sourceVolumeChecksum": "9563be78c1a6c1f9e13c6fc0d6ca08e59f8019b09e091e17c6ff755bd8a15504"
 }

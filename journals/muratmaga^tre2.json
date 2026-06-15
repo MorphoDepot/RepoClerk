@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "muratmaga/tre2",
-  "journalUpdatedAt": "2026-06-13T08:51:21Z",
+  "journalUpdatedAt": "2026-06-15T20:51:19Z",
   "pushedAt": "2026-06-13T06:31:36Z",
   "openIssues": [],
   "openPRs": [],
@@ -85,5 +85,6 @@
     "screenshot-1.png": "",
     "screenshot-2.png": ""
   },
-  "volumeSize": 6945984
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
 }

@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "isafinamor/sapo",
-  "journalUpdatedAt": "2026-04-28T00:33:35Z",
+  "journalUpdatedAt": "2026-06-15T20:51:07Z",
   "pushedAt": "2025-11-06T19:14:25Z",
   "openIssues": [
     {
@@ -86,5 +86,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 410240276
+  "volumeSize": 410240276,
+  "sourceVolumeChecksum": "599322f532ad6c98cd314e47e08144a9a5e976267c422357f5ba9975025313cb"
 }

@@ -1,33 +1,10 @@
 {
   "schemaVersion": 2,
-  "nameWithOwner": "jaimigray/rattlesnake",
-  "journalUpdatedAt": "2026-06-15T20:51:05Z",
-  "pushedAt": "2026-03-10T20:21:40Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "dentary segmentation",
-      "url": "https://github.com/jaimigray/rattlesnake/issues/1",
-      "author": "jaimigray",
-      "assignees": [
-        "jaimigray"
-      ]
-    }
-  ],
-  "openPRs": [
-    {
-      "number": 2,
-      "title": "issue-1",
-      "isDraft": true,
-      "url": "https://github.com/jaimigray/rattlesnake/pull/2",
-      "author": "jaimigray",
-      "closingIssue": {
-        "number": 1,
-        "title": "dentary segmentation",
-        "repoOwner": "jaimigray"
-      }
-    }
-  ],
+  "nameWithOwner": "MorphoDepot/multipart",
+  "journalUpdatedAt": "2026-06-15T20:50:53Z",
+  "pushedAt": "2026-06-15T19:49:33Z",
+  "openIssues": [],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -39,19 +16,19 @@
     ],
     "specimenSource": [
       "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-      "Accessioned specimen"
+      "Non-accessioned"
     ],
     "iDigBioAccessioned": [
       "Is your specimen's species in the iDigBio database?",
-      "Yes"
+      ""
     ],
     "iDigBioURL": [
       "Enter URL from iDigBio:",
-      "https://portal.idigbio.org/portal/records/8df9a862-a6b1-4f91-964b-ae79db8b96f3"
+      ""
     ],
     "species": [
       "What is your specimen's species?",
-      "Crotalus intermedius"
+      "Homo sapiens"
     ],
     "biologicalSex": [
       "What is your specimen's sex?",
@@ -63,7 +40,7 @@
     ],
     "modality": [
       "What is the modality of the acquisition?",
-      "Micro CT (or synchrotron)"
+      "MRI"
     ],
     "contrastEnhancement": [
       "Is there contrast enhancement treatment applied to the specimen?",
@@ -87,22 +64,22 @@
     ],
     "license": [
       "Choose a license:",
-      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+      "CC BY 4.0 (requires attribution, allows commercial usage)"
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "rattlesnake"
+      "multipart"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
-      "Archival (intended for long-term maintenance)"
+      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
     ],
-    "scanDimensions": "(985, 613, 421)",
-    "scanSpacing": "(0.019033600000000005, 0.019033600000000005, 0.019033600000000008)",
+    "scanDimensions": "(675, 1024, 1024)",
+    "scanSpacing": "(0.25, 0.25, 0.25)",
     "fileFormatVersion": 2
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 256705954,
-  "sourceVolumeChecksum": "4452ed6aa134f2ef38c357ff8ae9191bafea2227b41162572e28b0c87a336027"
+  "volumeSize": 351643698,
+  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758"
 }

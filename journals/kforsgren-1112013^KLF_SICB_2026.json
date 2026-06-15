@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
-  "journalUpdatedAt": "2026-04-28T00:33:37Z",
+  "journalUpdatedAt": "2026-06-15T20:51:03Z",
   "pushedAt": "2026-01-03T22:48:52Z",
   "openIssues": [
     {
@@ -14,20 +14,7 @@
       ]
     }
   ],
-  "openPRs": [
-    {
-      "number": 2,
-      "title": "issue-1",
-      "isDraft": true,
-      "url": "https://github.com/kforsgren-1112013/KLF_SICB_2026/pull/2",
-      "author": "muratmaga",
-      "closingIssue": {
-        "number": 1,
-        "title": "Wanna segment the brain",
-        "repoOwner": "kforsgren-1112013"
-      }
-    }
-  ],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -105,5 +92,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 6945984
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
 }

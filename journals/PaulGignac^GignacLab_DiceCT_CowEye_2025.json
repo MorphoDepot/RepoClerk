@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "PaulGignac/GignacLab_DiceCT_CowEye_2025",
-  "journalUpdatedAt": "2026-04-28T00:33:31Z",
+  "journalUpdatedAt": "2026-06-15T20:50:48Z",
   "pushedAt": "2025-12-17T22:09:01Z",
   "openIssues": [
     {
@@ -92,5 +92,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": "Base Segmentation of lens and partial globe of the eye"
   },
-  "volumeSize": 1178069812
+  "volumeSize": 1178069812,
+  "sourceVolumeChecksum": "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6"
 }

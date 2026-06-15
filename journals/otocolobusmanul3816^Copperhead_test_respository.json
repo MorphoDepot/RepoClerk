@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "otocolobusmanul3816/Copperhead_test_respository",
-  "journalUpdatedAt": "2026-04-28T00:34:47Z",
+  "journalUpdatedAt": "2026-06-15T20:51:01Z",
   "pushedAt": "2026-03-05T23:34:58Z",
   "openIssues": [
     {
@@ -93,5 +93,6 @@
     "screenshot-1.png": "Slice example",
     "screenshot-2.png": "volume example"
   },
-  "volumeSize": 909511338
+  "volumeSize": 909511338,
+  "sourceVolumeChecksum": "0b8dafa77632f9726b86950b6757ff18c087f903bcbf739bcb8bd982c3503d77"
 }

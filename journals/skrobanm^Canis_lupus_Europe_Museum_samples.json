@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "skrobanm/Canis_lupus_Europe_Museum_samples",
-  "journalUpdatedAt": "2026-04-28T00:34:35Z",
+  "journalUpdatedAt": "2026-06-15T20:51:41Z",
   "pushedAt": "2025-11-06T19:06:23Z",
   "openIssues": [
     {
@@ -95,5 +95,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": null
+  "volumeSize": null,
+  "sourceVolumeChecksum": "2659620bb2a0eb7c515638ff4f68d38b41a646439df3a27b55c5fccf0cefa795"
 }

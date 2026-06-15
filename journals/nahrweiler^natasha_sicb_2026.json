@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "nahrweiler/natasha_sicb_2026",
-  "journalUpdatedAt": "2026-04-28T00:33:54Z",
+  "journalUpdatedAt": "2026-06-15T20:51:31Z",
   "pushedAt": "2026-01-03T22:55:24Z",
   "openIssues": [],
   "openPRs": [],
@@ -80,5 +80,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 6945984
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
 }

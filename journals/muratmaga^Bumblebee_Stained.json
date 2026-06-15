@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "muratmaga/Bumblebee_Stained",
-  "journalUpdatedAt": "2026-04-28T00:34:00Z",
+  "journalUpdatedAt": "2026-06-15T20:51:46Z",
   "pushedAt": "2026-01-12T05:56:53Z",
   "openIssues": [],
   "openPRs": [],
@@ -80,5 +80,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 1862345206
+  "volumeSize": 1862345206,
+  "sourceVolumeChecksum": "abd521a4f4e9c16121d8126386e8ef1b082b541c57dab006b3e480b95ef19407"
 }

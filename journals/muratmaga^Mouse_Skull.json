@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "muratmaga/Mouse_Skull",
-  "journalUpdatedAt": "2026-04-28T00:34:45Z",
+  "journalUpdatedAt": "2026-06-15T20:50:57Z",
   "pushedAt": "2025-12-09T20:27:23Z",
   "openIssues": [
     {
@@ -92,5 +92,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 10465763
+  "volumeSize": 10465763,
+  "sourceVolumeChecksum": "dad3b943b467fc4b26681671ed13670985d38389d72b9c80abecde75e899459f"
 }
