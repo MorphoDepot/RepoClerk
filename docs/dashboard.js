@@ -12,121 +12,193 @@
     return;
   }
 
-  // --- Summary bar ---
-  document.getElementById('total-repos').textContent  = data.totalRepos;
-  document.getElementById('total-issues').textContent = data.totalOpenIssues;
-  document.getElementById('total-prs').textContent    = data.totalOpenPRs;
   document.getElementById('generated-at').textContent =
     new Date(data.generatedAt).toLocaleString();
 
-  // --- Carousel ---
+  // --- Carousel (all repos; screenshot-bearing only) ---
   buildCarousel(data.repos);
 
-  // --- Activity chart ---
+  // --- Charts (initialised once; fed the filtered repo set by renderAll) ---
   const activityChart = echarts.init(document.getElementById('activity-chart'));
-  activityChart.setOption({
-    title: { text: 'Repository Activity', left: 'center', textStyle: { fontSize: 13 } },
-    tooltip: { trigger: 'axis' },
-    xAxis: {
-      type: 'category',
-      data: ['Last Day', 'Last Week', 'Last Month', 'Last Year'],
-    },
-    yAxis: { type: 'value', name: 'Repos', minInterval: 1 },
-    series: [{
-      type: 'bar',
-      data: [
-        data.activity.last_day,
-        data.activity.last_week,
-        data.activity.last_month,
-        data.activity.last_year,
-      ],
-      itemStyle: { color: '#1a3a52' },
-    }],
-    grid: { left: 50, right: 20, bottom: 40, top: 50 },
-  });
-
-  // --- Taxonomy pie chart ---
   const taxonomyChart = echarts.init(document.getElementById('taxonomy-chart'));
   const taxSelect = document.getElementById('tax-level');
 
-  function updateTaxonomy() {
+  // --- Filters: "Hide test repositories" / "Include ephemeral repositories" ---
+  const hideTestCb = document.getElementById('hide-test');
+  const includeEphemeralCb = document.getElementById('include-ephemeral');
+  const filterCountEl = document.getElementById('filter-count');
+  const DUP_CATEGORY_PRIORITY = { 'org-org': 0, 'promotion': 1, 'cross-owner': 2, 'same-owner': 3 };
+
+  hideTestCb.addEventListener('change', renderAll);
+  includeEphemeralCb.addEventListener('change', renderAll);
+  taxSelect.addEventListener('change', () => renderTaxonomy(data.repos.filter(repoVisible)));
+  renderAll();
+
+  function repoVisible(r) {
+    if (hideTestCb.checked && r.isTest) return false;          // hide reload-and-test repos
+    if (!includeEphemeralCb.checked && r.isEphemeral) return false;  // optionally hide ephemeral
+    return true;
+  }
+
+  function renderAll() {
+    const repos = data.repos.filter(repoVisible);
+    document.getElementById('total-repos').textContent  = repos.length;
+    document.getElementById('total-issues').textContent = repos.reduce((s, r) => s + (r.openIssues || 0), 0);
+    document.getElementById('total-prs').textContent    = repos.reduce((s, r) => s + (r.openPRs || 0), 0);
+    filterCountEl.textContent = repos.length === data.repos.length
+      ? `${data.repos.length} repositories`
+      : `showing ${repos.length} of ${data.repos.length} repositories`;
+    renderActivity(repos);
+    renderTaxonomy(repos);
+    renderDuplicates(filteredDuplicateGroups());
+    renderRepoTable(repos);
+  }
+
+  function renderActivity(repos) {
+    const now = Date.now();
+    const w = { day: 0, week: 0, month: 0, year: 0 };
+    for (const r of repos) {
+      if (!r.pushedAt) continue;
+      const days = (now - new Date(r.pushedAt).getTime()) / 86400000;
+      if (days <= 1) w.day++;
+      if (days <= 7) w.week++;
+      if (days <= 30) w.month++;
+      if (days <= 365) w.year++;
+    }
+    activityChart.setOption({
+      title: { text: 'Repository Activity', left: 'center', textStyle: { fontSize: 13 } },
+      tooltip: { trigger: 'axis' },
+      xAxis: { type: 'category', data: ['Last Day', 'Last Week', 'Last Month', 'Last Year'] },
+      yAxis: { type: 'value', name: 'Repos', minInterval: 1 },
+      series: [{ type: 'bar', data: [w.day, w.week, w.month, w.year], itemStyle: { color: '#1a3a52' } }],
+      grid: { left: 50, right: 20, bottom: 40, top: 50 },
+    });
+  }
+
+  function renderTaxonomy(repos) {
     const level = taxSelect.value;
-    const counts = data.taxonomy[level] || {};
+    const counts = {};
+    for (const r of repos) {
+      const raw = r.accession ? r.accession[level] : undefined;
+      const val = (Array.isArray(raw) ? raw[1] : raw) || 'Unknown';
+      counts[val] = (counts[val] || 0) + 1;
+    }
     const chartData = Object.entries(counts)
       .sort((a, b) => b[1] - a[1])
       .map(([name, value]) => ({ name, value }));
-
     taxonomyChart.setOption({
-      title: {
-        text: `By ${level.charAt(0).toUpperCase() + level.slice(1)}`,
-        left: 'center',
-        textStyle: { fontSize: 13 },
-      },
-      tooltip: {
-        trigger: 'item',
-        formatter: '{b}: {c} ({d}%)',
-      },
-      series: [{
-        type: 'pie',
-        radius: ['30%', '65%'],
-        data: chartData,
-        label: { fontSize: 11 },
-      }],
+      title: { text: `By ${level.charAt(0).toUpperCase() + level.slice(1)}`, left: 'center', textStyle: { fontSize: 13 } },
+      tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+      series: [{ type: 'pie', radius: ['30%', '65%'], data: chartData, label: { fontSize: 11 } }],
     }, true);
   }
 
-  taxSelect.addEventListener('change', updateTaxonomy);
-  updateTaxonomy();
-
-  // --- Repo table ---
-  const tbody = document.getElementById('repo-tbody');
-
-  data.repos.forEach(repo => {
-    const pushedDate = repo.pushedAt
-      ? new Date(repo.pushedAt).toLocaleDateString()
-      : '—';
-
-    // Main row
-    const tr = document.createElement('tr');
-    tr.className = 'repo-row';
-    tr.innerHTML = `
-      <td>
-        <span class="expand-indicator">▶</span>
-        <a href="https://github.com/${repo.nameWithOwner}" target="_blank"
-           onclick="event.stopPropagation()">${repo.nameWithOwner}</a>
-      </td>
-      <td>${pushedDate}</td>
-      <td>${repo.openIssues}</td>
-      <td>${repo.openPRs}</td>
-      <td>${repo.screenshotCount}</td>
-    `;
-
-    // Detail row (hidden by default)
-    const detailTr = document.createElement('tr');
-    detailTr.className = 'detail-row';
-    detailTr.style.display = 'none';
-
-    const detailTd = document.createElement('td');
-    detailTd.colSpan = 5;
-    detailTd.innerHTML = buildDetailHTML(repo);
-    detailTr.appendChild(detailTd);
-
-    // Toggle on row click
-    const indicator = tr.querySelector('.expand-indicator');
-    tr.addEventListener('click', () => {
-      const open = detailTr.style.display !== 'none';
-      detailTr.style.display = open ? 'none' : 'table-row';
-      indicator.textContent = open ? '▶' : '▼';
+  function renderRepoTable(repos) {
+    const tbody = document.getElementById('repo-tbody');
+    tbody.innerHTML = '';
+    repos.forEach(repo => {
+      const pushedDate = repo.pushedAt ? new Date(repo.pushedAt).toLocaleDateString() : '—';
+      const tr = document.createElement('tr');
+      tr.className = 'repo-row';
+      tr.innerHTML = `
+        <td>
+          <span class="expand-indicator">▶</span>
+          <a href="https://github.com/${repo.nameWithOwner}" target="_blank"
+             onclick="event.stopPropagation()">${repo.nameWithOwner}</a>
+        </td>
+        <td>${pushedDate}</td>
+        <td>${repo.openIssues}</td>
+        <td>${repo.openPRs}</td>
+        <td>${repo.screenshotCount}</td>
+      `;
+      const detailTr = document.createElement('tr');
+      detailTr.className = 'detail-row';
+      detailTr.style.display = 'none';
+      const detailTd = document.createElement('td');
+      detailTd.colSpan = 5;
+      detailTd.innerHTML = buildDetailHTML(repo);
+      detailTr.appendChild(detailTd);
+      const indicator = tr.querySelector('.expand-indicator');
+      tr.addEventListener('click', () => {
+        const open = detailTr.style.display !== 'none';
+        detailTr.style.display = open ? 'none' : 'table-row';
+        indicator.textContent = open ? '▶' : '▼';
+      });
+      tbody.appendChild(tr);
+      tbody.appendChild(detailTr);
     });
+  }
 
-    tbody.appendChild(tr);
-    tbody.appendChild(detailTr);
-  });
+  function categorizeDuplicate(repos) {
+    const org = repos.filter(r => r.isOrg);
+    const personal = repos.filter(r => !r.isOrg);
+    if (org.length && personal.length) return 'promotion';
+    if (org.length > 1) return 'org-org';
+    if (new Set(repos.map(r => r.nameWithOwner.split('/')[0])).size === 1) return 'same-owner';
+    return 'cross-owner';
+  }
+
+  // Re-derive duplicate groups for the active filter: drop hidden repos, drop groups that
+  // fall below 2 visible repos, then re-categorize and re-sort from what remains.
+  function filteredDuplicateGroups() {
+    const out = [];
+    for (const g of (data.duplicateVolumes || [])) {
+      const reps = (g.repos || []).filter(repoVisible);
+      if (reps.length < 2) continue;
+      out.push({ checksum: g.checksum, category: categorizeDuplicate(reps), repos: reps });
+    }
+    out.sort((a, b) => (DUP_CATEGORY_PRIORITY[a.category] ?? 9) - (DUP_CATEGORY_PRIORITY[b.category] ?? 9)
+                       || a.checksum.localeCompare(b.checksum));
+    return out;
+  }
 
   window.addEventListener('resize', () => {
     activityChart.resize();
     taxonomyChart.resize();
   });
+
+
+  // --- Duplicate-volumes panel ---
+
+  function renderDuplicates(groups) {
+    const section = document.getElementById('dup-section');
+    const tbody = document.getElementById('dup-tbody');
+    tbody.innerHTML = '';  // re-render-safe (filters re-invoke this)
+    if (!groups.length) { section.style.display = 'none'; return; }
+    section.style.display = '';
+    document.getElementById('dup-count').textContent = groups.length;
+
+    // Category -> {label, colour}.
+    const CATS = {
+      'org-org':     { label: 'Org ↔ Org',      color: '#b31d28' },
+      'promotion':   { label: 'Personal → Org', color: '#b35900' },
+      'cross-owner': { label: 'Cross-owner',          color: '#9a6700' },
+      'same-owner':  { label: 'Same owner',           color: '#6a737d' },
+    };
+
+    groups.forEach(g => {
+      const cat = CATS[g.category] || { label: g.category, color: '#6a737d' };
+      const repos = (g.repos || []).map(r =>
+        `<a href="https://github.com/${escapeHTML(r.nameWithOwner)}" target="_blank">` +
+        `${escapeHTML(r.nameWithOwner)}</a>` +
+        (r.isOrg ? ' <span class="org-tag">org</span>' : '')
+      ).join('<br>');
+      const species = [...new Set((g.repos || [])
+        .map(r => r.species).filter(s => s && s !== 'Unknown'))].join(', ') || '—';
+      const sha = String(g.checksum || '');
+
+      const tr = document.createElement('tr');
+      tr.className = 'repo-row';
+      tr.style.cursor = 'default';
+      tr.innerHTML = `
+        <td><span class="dup-badge" style="background:${cat.color}">${cat.label}</span></td>
+        <td>${repos}</td>
+        <td>${escapeHTML(species)}</td>
+        <td><code class="dup-sha" title="${escapeHTML(sha)}">${escapeHTML(sha.slice(0, 12))}…</code></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
 
 
   // --- Carousel ---

@@ -254,6 +254,70 @@
     }
     .carousel-dot.active { background: #fff; }
 
+    /* Duplicate-volumes panel */
+    #dup-section {
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    #dup-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #e1e4e8;
+      background: #fff6f0;
+    }
+    #dup-section h2 .sub {
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #586069;
+    }
+    .dup-badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .org-tag {
+      font-size: 0.62rem;
+      background: #1a3a52;
+      color: #fff;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+    code.dup-sha { font-size: 0.75rem; color: #586069; }
+
+    /* Filter bar */
+    #filters {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+    }
+    #filters .filters-label {
+      color: #586069;
+      font-weight: 600;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    #filters label { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+    #filters .hint { margin-left: auto; color: #586069; font-size: 0.78rem; }
+
     @media (max-width: 700px) {
       #charts { grid-template-columns: 1fr; }
       #summary { flex-direction: column; }
@@ -273,6 +337,13 @@
     <button class="carousel-nav" id="carousel-prev">&#8249;</button>
     <button class="carousel-nav" id="carousel-next">&#8250;</button>
     <div class="carousel-dots" id="carousel-dots"></div>
+  </section>
+
+  <section id="filters">
+    <span class="filters-label">Filters</span>
+    <label><input type="checkbox" id="hide-test" checked> Hide test repositories</label>
+    <label><input type="checkbox" id="include-ephemeral" checked> Include ephemeral repositories</label>
+    <span class="hint" id="filter-count"></span>
   </section>
 
   <section id="summary">
@@ -306,6 +377,23 @@
       </select>
       <div id="taxonomy-chart" style="height:240px"></div>
     </div>
+  </section>
+
+  <section id="dup-section" style="display:none">
+    <h2>Duplicate Volumes — <span id="dup-count">0</span>
+      <span class="sub">repos sharing a byte-identical source volume (same SHA-256)</span>
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Repositories sharing one volume</th>
+          <th>Species</th>
+          <th>Checksum</th>
+        </tr>
+      </thead>
+      <tbody id="dup-tbody"></tbody>
+    </table>
   </section>
 
   <section id="repo-section">

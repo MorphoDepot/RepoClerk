@@ -16,6 +16,10 @@ from pathlib import Path
 
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
 
+# Keep in sync with drain.SCHEMA_VERSION. A journal whose schemaVersion is below this
+# is treated as stale, so a schema bump backfills every journal on the next sync.
+SCHEMA_VERSION = 2
+
 
 def run(cmd, check=True):
     return subprocess.run(cmd, check=check, text=True, capture_output=True)
@@ -65,9 +69,10 @@ def main():
         try:
             with open(path) as f:
                 data = json.load(f)
-            journaled_repos[nwo] = {"path": path, "pushedAt": data.get("pushedAt", "")}
+            journaled_repos[nwo] = {"path": path, "pushedAt": data.get("pushedAt", ""),
+                                    "schemaVersion": data.get("schemaVersion", 1)}
         except Exception:
-            journaled_repos[nwo] = {"path": path, "pushedAt": ""}
+            journaled_repos[nwo] = {"path": path, "pushedAt": "", "schemaVersion": 0}
 
     print(f"Found {len(journaled_repos)} existing journal file(s)")
 
@@ -79,6 +84,8 @@ def main():
             reason = "missing"
         elif journal["pushedAt"] != remote_pushed_at:
             reason = "stale"
+        elif journal.get("schemaVersion", 1) < SCHEMA_VERSION:
+            reason = "schema-upgrade"
         else:
             reason = None
 
