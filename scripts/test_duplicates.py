@@ -109,9 +109,29 @@ def test_flags():
     check("isEphemeral flag carried", reps["MorphoDepot/a"]["isEphemeral"] is True)
 
 
+def test_index_excludes_test_repos():
+    data = {
+        # a real repo sharing a SHA with a test repo: the index must keep only the real one
+        "sha-mixed": [repo("alice/real"), repo("MorphoDepotTesting/test-x-y-1", isTest=True)],
+        # a SHA held only by test repos: omitted from the index entirely
+        "sha-alltest": [repo("MorphoDepotTesting/test-a-b-1", isTest=True),
+                        repo("MorphoDepotTesting/test-c-d-2", isTest=True)],
+    }
+    groups, index = gd.build_duplicate_report(data)
+    check("index keeps only the non-test repo from a mixed checksum",
+          index.get("sha-mixed") == ["alice/real"])
+    check("checksum with only test repos is absent from the index",
+          "sha-alltest" not in index)
+    # ...but the dashboard report still SEES the all-test duplicate group (filtered client-side)
+    by = {g["checksum"]: g for g in groups}
+    check("dashboard report still includes the all-test duplicate group",
+          "sha-alltest" in by and len(by["sha-alltest"]["repos"]) == 2)
+
+
 if __name__ == "__main__":
     print("test_parse_checksum_file"); test_parse_checksum_file()
     print("test_categories"); test_categories()
     print("test_build_report"); test_build_report()
     print("test_flags"); test_flags()
+    print("test_index_excludes_test_repos"); test_index_excludes_test_repos()
     print("\nAll duplicate-report tests passed.")

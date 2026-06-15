@@ -67,9 +67,12 @@ def categorize_duplicate(repos):
 def build_duplicate_report(checksum_to_repos):
     """Group repos by checksum; return (duplicate_groups, checksum_index).
 
-    duplicate_groups: only checksums shared by >1 repo, categorized and priority-sorted.
+    duplicate_groups: only checksums shared by >1 repo, categorized and priority-sorted;
+                      INCLUDES test repos (the dashboard filters them client-side).
     checksum_index:   every checksum -> [nameWithOwner, ...] (the published lookup index
-                      consumed by the stage/publish-time duplicate warning).
+                      consumed by the stage/publish-time duplicate warning), with test repos
+                      EXCLUDED so a lingering test volume (all on MRHead) never trips a false
+                      warning for a real repo.  A checksum with only test repos is omitted.
     """
     duplicate_groups = []
     checksum_index = {}
@@ -80,7 +83,9 @@ def build_duplicate_report(checksum_to_repos):
             if r["nameWithOwner"] not in seen:
                 seen.add(r["nameWithOwner"])
                 unique.append(r)
-        checksum_index[checksum] = [r["nameWithOwner"] for r in unique]
+        index_repos = [r["nameWithOwner"] for r in unique if not r.get("isTest")]
+        if index_repos:
+            checksum_index[checksum] = index_repos
         if len(unique) > 1:
             category = categorize_duplicate(unique)
             duplicate_groups.append({
