@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "amm554/non-member",
-  "journalUpdatedAt": "2026-06-15T11:53:51Z",
+  "journalUpdatedAt": "2026-06-15T20:53:07Z",
   "pushedAt": "2026-06-15T06:22:11Z",
   "openIssues": [],
   "openPRs": [],
@@ -82,5 +82,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 351643698
+  "volumeSize": 351643698,
+  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758"
 }

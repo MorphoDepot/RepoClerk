@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "oatake-ux/SwissWebster_Incisor",
-  "journalUpdatedAt": "2026-04-28T00:35:34Z",
+  "journalUpdatedAt": "2026-06-15T20:53:03Z",
   "pushedAt": "2026-03-04T22:19:00Z",
   "openIssues": [],
   "openPRs": [],
@@ -83,5 +83,6 @@
     "screenshot-1.png": "",
     "screenshot-2.png": "Mouse_P0_Incisor"
   },
-  "volumeSize": 730137
+  "volumeSize": 730137,
+  "sourceVolumeChecksum": "cce86f19f9594d77cfa5878e00006722d7684490f2d11f5e1a2296b30c3e9855"
 }

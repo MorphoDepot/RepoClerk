@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "jonasand-santos/tooth_rat",
-  "journalUpdatedAt": "2026-04-28T00:35:35Z",
+  "journalUpdatedAt": "2026-06-15T20:52:58Z",
   "pushedAt": "2025-11-06T19:01:35Z",
   "openIssues": [],
   "openPRs": [],
@@ -81,5 +81,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 882003
+  "volumeSize": 882003,
+  "sourceVolumeChecksum": "6e1157c86c268912e843163f225d8e0f767425310b7e6d7b4b016771e73f5e90"
 }
