@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "FishguyFHL/Agonopsis_vulsa_no_data",
-  "journalUpdatedAt": "2026-04-28T00:34:54Z",
+  "journalUpdatedAt": "2026-06-15T20:52:29Z",
   "pushedAt": "2025-10-07T16:48:11Z",
   "openIssues": [],
   "openPRs": [],
@@ -66,5 +66,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 256611210
+  "volumeSize": 256611210,
+  "sourceVolumeChecksum": "7c1e944aba3cc73445af662530163a83ae2511a12511958f3c197a8a8e60e714"
 }

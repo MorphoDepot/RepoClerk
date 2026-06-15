@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "SkyeB-1927/Daphnia_AAA391",
-  "journalUpdatedAt": "2026-04-28T00:34:23Z",
+  "journalUpdatedAt": "2026-06-15T20:52:13Z",
   "pushedAt": "2026-03-04T22:46:22Z",
   "openIssues": [],
   "openPRs": [],
@@ -80,5 +80,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 15830429
+  "volumeSize": 15830429,
+  "sourceVolumeChecksum": "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285"
 }

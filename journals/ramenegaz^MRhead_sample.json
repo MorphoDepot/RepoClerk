@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "ramenegaz/MRhead_sample",
-  "journalUpdatedAt": "2026-04-28T00:34:51Z",
+  "journalUpdatedAt": "2026-06-15T20:52:25Z",
   "pushedAt": "2026-01-03T22:22:16Z",
   "openIssues": [],
   "openPRs": [],
@@ -82,5 +82,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": ""
   },
-  "volumeSize": 6945984
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
 }

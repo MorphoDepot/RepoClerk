@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "dinonoto/Xenopus-diceCT",
-  "journalUpdatedAt": "2026-04-28T00:34:19Z",
+  "journalUpdatedAt": "2026-06-15T20:52:15Z",
   "pushedAt": "2025-10-31T19:53:11Z",
   "openIssues": [
     {
@@ -143,5 +143,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 410240276
+  "volumeSize": 410240276,
+  "sourceVolumeChecksum": "ee7248864e201093a1a311f913d029c446d66cbebeccc4894c2ac70a77b31719"
 }

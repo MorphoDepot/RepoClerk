@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "dinonoto/Plethodon_Hindlimb2",
-  "journalUpdatedAt": "2026-04-28T00:35:04Z",
+  "journalUpdatedAt": "2026-06-15T20:52:05Z",
   "pushedAt": "2026-02-21T03:40:42Z",
   "openIssues": [
     {
@@ -86,5 +86,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 1369692957
+  "volumeSize": 1369692957,
+  "sourceVolumeChecksum": "e348daafc31323ce3d4b3eb1f9d670732fa271c1201fc833096a68d91ef1a260"
 }

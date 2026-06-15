@@ -1,10 +1,33 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "dinonoto/NotoLab_ChickenFoot_2025",
-  "journalUpdatedAt": "2026-04-28T00:35:10Z",
+  "journalUpdatedAt": "2026-06-15T20:52:46Z",
   "pushedAt": "2025-12-21T19:44:19Z",
-  "openIssues": [],
-  "openPRs": [],
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Bony",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenFoot_2025/issues/1",
+      "author": "JDynamiteX",
+      "assignees": [
+        "JDynamiteX"
+      ]
+    }
+  ],
+  "openPRs": [
+    {
+      "number": 2,
+      "title": "issue-1",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/NotoLab_ChickenFoot_2025/pull/2",
+      "author": "JDynamiteX",
+      "closingIssue": {
+        "number": 1,
+        "title": "Bony",
+        "repoOwner": "dinonoto"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -82,5 +105,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": "Chicken foot specimen scan with segmentation of skeletal system."
   },
-  "volumeSize": 104233459
+  "volumeSize": 104233459,
+  "sourceVolumeChecksum": "e1252b330313dce933a9b01b63ec989633a0718ff4afe0d9e7176a9b2d1ce4db"
 }

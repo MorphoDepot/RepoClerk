@@ -1,19 +1,9 @@
 {
   "schemaVersion": 2,
-  "nameWithOwner": "PaulGignac/Pigeon-4_Head_DiceCT",
-  "journalUpdatedAt": "2026-06-15T20:51:57Z",
-  "pushedAt": "2025-10-21T21:33:35Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "TABI Lab #2 \u2014 Pigeon Digital Brain Atlas",
-      "url": "https://github.com/PaulGignac/Pigeon-4_Head_DiceCT/issues/1",
-      "author": "ua-tabi-lab-2",
-      "assignees": [
-        "ua-tabi-lab-2"
-      ]
-    }
-  ],
+  "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
+  "journalUpdatedAt": "2026-06-15T20:51:49Z",
+  "pushedAt": "2026-06-15T17:54:42Z",
+  "openIssues": [],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
@@ -22,7 +12,7 @@
     ],
     "subjectType": [
       "What is the subject type?",
-      "Biological specimen"
+      ""
     ],
     "specimenSource": [
       "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -38,7 +28,7 @@
     ],
     "species": [
       "What is your specimen's species?",
-      "Columba livia"
+      "Picosaurus testus"
     ],
     "biologicalSex": [
       "What is your specimen's sex?",
@@ -54,17 +44,15 @@
     ],
     "contrastEnhancement": [
       "Is there contrast enhancement treatment applied to the specimen?",
-      "Yes"
+      "No"
     ],
     "imageContents": [
       "What is in the image?",
-      "Partial specimen"
+      "Whole specimen"
     ],
     "anatomicalAreas": [
       "What anatomical area(s) is/are present in the scan?",
-      [
-        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
-      ]
+      []
     ],
     "redistributionAcknowledgement": [
       "Acknowledgement:",
@@ -74,22 +62,22 @@
     ],
     "license": [
       "Choose a license:",
-      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+      "CC BY 4.0 (requires attribution, allows commercial usage)"
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "Pigeon-4_Head_DiceCT"
+      "test-picosaurus-testus-693"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
-      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+      ""
     ],
-    "scanDimensions": "(951, 958, 941)",
-    "scanSpacing": "(0.02011828, 0.02011828, 0.02011828)",
+    "scanDimensions": "(256, 256, 130)",
+    "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
     "fileFormatVersion": 2
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 1565945297,
-  "sourceVolumeChecksum": "86070a5edd0a165a703acb8daa74ec8a105f6b426ec1ee06e67cfc41f395dfc5"
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
 }

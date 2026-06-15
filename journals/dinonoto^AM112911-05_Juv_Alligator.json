@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
-  "journalUpdatedAt": "2026-04-28T00:34:30Z",
+  "journalUpdatedAt": "2026-06-15T20:52:00Z",
   "pushedAt": "2025-10-10T18:57:00Z",
   "openIssues": [
     {
@@ -35,6 +35,24 @@
       "number": 7,
       "title": "vertebral column",
       "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/7",
+      "author": "alorenz-raptor",
+      "assignees": [
+        "alorenz-raptor"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "simplified forelimbs",
+      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/9",
+      "author": "alorenz-raptor",
+      "assignees": [
+        "alorenz-raptor"
+      ]
+    },
+    {
+      "number": 10,
+      "title": "simplified hindlimbs",
+      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/10",
       "author": "alorenz-raptor",
       "assignees": [
         "alorenz-raptor"
@@ -87,6 +105,30 @@
       "closingIssue": {
         "number": 7,
         "title": "vertebral column",
+        "repoOwner": "dinonoto"
+      }
+    },
+    {
+      "number": 11,
+      "title": "issue-9",
+      "isDraft": false,
+      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/pull/11",
+      "author": "alorenz-raptor",
+      "closingIssue": {
+        "number": 9,
+        "title": "simplified forelimbs",
+        "repoOwner": "dinonoto"
+      }
+    },
+    {
+      "number": 12,
+      "title": "issue-10",
+      "isDraft": false,
+      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/pull/12",
+      "author": "alorenz-raptor",
+      "closingIssue": {
+        "number": 10,
+        "title": "simplified hindlimbs",
         "repoOwner": "dinonoto"
       }
     }
@@ -151,5 +193,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 1613908154
+  "volumeSize": 1613908154,
+  "sourceVolumeChecksum": "2c29a9db8891c119eddc5d1b82d5cc2b4f66677c21c555c931b8334613a554c9"
 }

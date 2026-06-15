@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "kurker/Geostiba",
-  "journalUpdatedAt": "2026-04-28T00:34:42Z",
+  "journalUpdatedAt": "2026-06-15T20:52:31Z",
   "pushedAt": "2025-11-06T19:38:41Z",
   "openIssues": [
     {
@@ -95,5 +95,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 49650073
+  "volumeSize": 49650073,
+  "sourceVolumeChecksum": "fd41fcbe186473887244ee70ce29ab7e55f9350a9acd2396ede2a3dee8dc7359"
 }

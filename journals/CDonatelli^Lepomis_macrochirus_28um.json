@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "CDonatelli/Lepomis_macrochirus_28um",
-  "journalUpdatedAt": "2026-04-28T00:34:21Z",
+  "journalUpdatedAt": "2026-06-15T20:52:11Z",
   "pushedAt": "2025-10-09T22:37:22Z",
   "openIssues": [
     {
@@ -887,5 +887,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 1068985775
+  "volumeSize": 1068985775,
+  "sourceVolumeChecksum": null
 }

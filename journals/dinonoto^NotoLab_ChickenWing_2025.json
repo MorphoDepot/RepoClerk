@@ -1,10 +1,42 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "dinonoto/NotoLab_ChickenWing_2025",
-  "journalUpdatedAt": "2026-04-28T00:35:06Z",
+  "journalUpdatedAt": "2026-06-15T20:52:09Z",
   "pushedAt": "2025-12-21T19:45:13Z",
-  "openIssues": [],
-  "openPRs": [],
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Skeleton",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/issues/1",
+      "author": "dinonoto",
+      "assignees": [
+        "dinonoto"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Bones",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/issues/2",
+      "author": "Jonathan-Jung-sys",
+      "assignees": [
+        "Jonathan-Jung-sys"
+      ]
+    }
+  ],
+  "openPRs": [
+    {
+      "number": 3,
+      "title": "issue-2",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/pull/3",
+      "author": "Jonathan-Jung-sys",
+      "closingIssue": {
+        "number": 2,
+        "title": "Bones",
+        "repoOwner": "dinonoto"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -82,5 +114,6 @@
   "screenshotCaptions": {
     "screenshot-1.png": "Chicken forelimb specimen with included segmentation of skeletatal elements."
   },
-  "volumeSize": 50991914
+  "volumeSize": 50991914,
+  "sourceVolumeChecksum": "24d7f2abbb284a2384c4a2bf7da0e394c5aa0616ae6d7524d02d1d72b0789ec7"
 }

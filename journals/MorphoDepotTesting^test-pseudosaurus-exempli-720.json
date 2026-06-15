@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
-  "journalUpdatedAt": "2026-04-28T00:34:06Z",
+  "journalUpdatedAt": "2026-06-15T20:52:33Z",
   "pushedAt": "2026-04-26T18:27:21Z",
   "openIssues": [
     {
@@ -104,5 +104,6 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": 6945984
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
 }
