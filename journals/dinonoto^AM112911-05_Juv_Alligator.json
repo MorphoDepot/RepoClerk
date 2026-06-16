@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
-  "journalUpdatedAt": "2026-06-16T16:40:52Z",
-  "pushedAt": "2026-06-16T16:39:44Z",
+  "journalUpdatedAt": "2026-06-16T20:43:51Z",
+  "pushedAt": "2026-06-16T17:38:51Z",
   "openIssues": [
     {
       "number": 3,
@@ -30,15 +30,6 @@
       "assignees": [
         "alorenz-raptor"
       ]
-    },
-    {
-      "number": 10,
-      "title": "simplified hindlimbs",
-      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/10",
-      "author": "alorenz-raptor",
-      "assignees": [
-        "alorenz-raptor"
-      ]
     }
   ],
   "openPRs": [
@@ -57,7 +48,7 @@
     {
       "number": 6,
       "title": "issue-4",
-      "isDraft": false,
+      "isDraft": true,
       "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/pull/6",
       "author": "alorenz-raptor",
       "closingIssue": {
@@ -75,18 +66,6 @@
       "closingIssue": {
         "number": 7,
         "title": "vertebral column",
-        "repoOwner": "dinonoto"
-      }
-    },
-    {
-      "number": 12,
-      "title": "issue-10",
-      "isDraft": false,
-      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/pull/12",
-      "author": "alorenz-raptor",
-      "closingIssue": {
-        "number": 10,
-        "title": "simplified hindlimbs",
         "repoOwner": "dinonoto"
       }
     }
