@@ -1,18 +1,9 @@
 {
   "schemaVersion": 2,
   "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
-  "journalUpdatedAt": "2026-06-15T20:52:00Z",
-  "pushedAt": "2025-10-10T18:57:00Z",
+  "journalUpdatedAt": "2026-06-16T16:40:49Z",
+  "pushedAt": "2026-06-16T16:39:44Z",
   "openIssues": [
-    {
-      "number": 1,
-      "title": "skeleton forelimb and pec girdle",
-      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/1",
-      "author": "alorenz-raptor",
-      "assignees": [
-        "alorenz-raptor"
-      ]
-    },
     {
       "number": 3,
       "title": "cranium",
@@ -41,15 +32,6 @@
       ]
     },
     {
-      "number": 9,
-      "title": "simplified forelimbs",
-      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/9",
-      "author": "alorenz-raptor",
-      "assignees": [
-        "alorenz-raptor"
-      ]
-    },
-    {
       "number": 10,
       "title": "simplified hindlimbs",
       "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/issues/10",
@@ -60,18 +42,6 @@
     }
   ],
   "openPRs": [
-    {
-      "number": 2,
-      "title": "issue-1",
-      "isDraft": false,
-      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/pull/2",
-      "author": "alorenz-raptor",
-      "closingIssue": {
-        "number": 1,
-        "title": "skeleton forelimb and pec girdle",
-        "repoOwner": "dinonoto"
-      }
-    },
     {
       "number": 5,
       "title": "issue-3",
@@ -105,18 +75,6 @@
       "closingIssue": {
         "number": 7,
         "title": "vertebral column",
-        "repoOwner": "dinonoto"
-      }
-    },
-    {
-      "number": 11,
-      "title": "issue-9",
-      "isDraft": false,
-      "url": "https://github.com/dinonoto/AM112911-05_Juv_Alligator/pull/11",
-      "author": "alorenz-raptor",
-      "closingIssue": {
-        "number": 9,
-        "title": "simplified forelimbs",
         "repoOwner": "dinonoto"
       }
     },
