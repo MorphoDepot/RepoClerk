@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-16T16:41:04Z",
+  "generatedAt": "2026-06-16T20:44:04Z",
   "totalRepos": 68,
-  "totalOpenIssues": 116,
-  "totalOpenPRs": 66,
+  "totalOpenIssues": 115,
+  "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
       "Unknown": 68
@@ -24,18 +24,18 @@
     }
   },
   "activity": {
-    "last_day": 4,
-    "last_week": 8,
+    "last_day": 1,
+    "last_week": 7,
     "last_month": 8,
     "last_year": 65
   },
   "repos": [
     {
       "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
-      "pushedAt": "2026-06-16T16:39:44Z",
-      "journalUpdatedAt": "2026-06-16T16:40:52Z",
-      "openIssues": 4,
-      "openPRs": 4,
+      "pushedAt": "2026-06-16T17:38:51Z",
+      "journalUpdatedAt": "2026-06-16T20:43:51Z",
+      "openIssues": 3,
+      "openPRs": 3,
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {
