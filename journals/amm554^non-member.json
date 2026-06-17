@@ -1,9 +1,19 @@
 {
   "schemaVersion": 2,
   "nameWithOwner": "amm554/non-member",
-  "journalUpdatedAt": "2026-06-15T20:53:11Z",
-  "pushedAt": "2026-06-15T06:22:11Z",
-  "openIssues": [],
+  "journalUpdatedAt": "2026-06-17T10:45:39Z",
+  "pushedAt": "2026-06-17T06:04:55Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "test auto issue assignment",
+      "url": "https://github.com/amm554/non-member/issues/1",
+      "author": "muratmaga",
+      "assignees": [
+        "muratmaga"
+      ]
+    }
+  ],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
