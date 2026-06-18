@@ -2,7 +2,7 @@ name: Sync All MorphoDepot Journals
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours
+    - cron: '23 * * * *'    # hourly (offset off the congested top-of-hour; backstop to notifyRepoClerk)
   workflow_dispatch:
 
 concurrency:
