@@ -25,7 +25,7 @@ POLL_INTERVAL = 5  # seconds
 
 # Journal schema version. Bump when the journal shape changes so sync-all re-queues
 # existing journals for a one-time backfill. v2 added sourceVolumeChecksum.
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 GRAPHQL_QUERY = """
 query($owner: String!, $repo: String!) {
@@ -116,6 +116,15 @@ def process_repo(owner, repo):
             val = val.split(":", 1)[1].strip()
         source_checksum = val.lower() or None
 
+    # CURATOR is a committed plain-text file holding the curating member's GitHub login
+    # (one login on the first line). Journal it so the extension can list "repos I curate"
+    # from the cache alone — essential for in-org member repos, whose owner is the org
+    # (MorphoDepot), not the member, so an owner==me filter would miss them.
+    curator = None
+    curator_raw = fetch_url(f"{base_url}/CURATOR")
+    if curator_raw:
+        curator = curator_raw.strip().split("\n")[0].strip() or None
+
     try:
         sc = run(["gh", "api", f"repos/{owner}/{repo}/contents/screenshots",
                   "--jq", '[.[] | select(.name | test("\\.(png|jpg|jpeg|gif|webp)$"; "i"))] | length'])
@@ -167,6 +176,7 @@ def process_repo(owner, repo):
         "screenshotCaptions": captions,
         "volumeSize": volume_size,
         "sourceVolumeChecksum": source_checksum,
+        "curator": curator,
     }
 
     out_path = Path(f"journals/{owner}^{repo}.json")
