@@ -1,28 +1,9 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "nameWithOwner": "amm554/delete-auto-assign",
-  "journalUpdatedAt": "2026-06-17T20:06:35Z",
-  "pushedAt": "2026-06-17T16:57:35Z",
-  "openIssues": [
-    {
-      "number": 3,
-      "title": "New issue for the new release",
-      "url": "https://github.com/amm554/delete-auto-assign/issues/3",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
-    },
-    {
-      "number": 4,
-      "title": "Upcoming release v3 - finish by 2026-07-01",
-      "url": "https://github.com/amm554/delete-auto-assign/issues/4",
-      "author": "amm554",
-      "assignees": [
-        "amm554"
-      ]
-    }
-  ],
+  "journalUpdatedAt": "2026-06-18T02:22:56Z",
+  "pushedAt": "2026-06-18T00:50:56Z",
+  "openIssues": [],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
@@ -100,5 +81,6 @@
     "screenshot-1.png": ""
   },
   "volumeSize": 2928365,
-  "sourceVolumeChecksum": "f4633df2ff834d8196e68387cfb2aabab254b26868e1bc141a42bea686bbcbf5"
+  "sourceVolumeChecksum": "f4633df2ff834d8196e68387cfb2aabab254b26868e1bc141a42bea686bbcbf5",
+  "curator": "amm554"
 }
