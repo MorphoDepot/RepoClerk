@@ -25,6 +25,8 @@ RepoClerk solves this by acting as a pre-computed journal of the state of all Mo
 ```
 RepoClerk/
   README.md
+  design/
+    near-realtime-ingestion.md  # webhook-based near-real-time ingestion (design note)
   journals/
     {owner}^{repo}.json       # one file per MorphoDepot repository
   docs/
@@ -37,7 +39,7 @@ RepoClerk/
     generate-dashboard.py     # reads journals/, writes docs/dashboard-data.json
   .github/
     workflows/
-      update-repo.yml         # drain loop: processes update-request issues, then regenerates dashboard
+      update-repo.yml         # drain loop: triggered by repository_dispatch (webhook receiver / client) or update-request issues; regenerates dashboard
       sync-all.yml            # cron: queues stale/missing repos, deletes removed ones, regenerates dashboard
 ```
 
@@ -158,6 +160,42 @@ gh api repos/{RepoClerkOrg}/RepoClerk/dispatches \
 
 If the RepoClerk clone is not present or `git pull` fails, MorphoDepot falls back to the existing direct GitHub API calls so the extension remains functional without RepoClerk.
 
+## How Journals Get Updated (Ingestion)
+
+A journal is (re)written by `drain.py` (via the `update-repo.yml` workflow). That workflow is
+triggered three ways, in order of importance:
+
+1. **GitHub webhook — near-real-time, primary.** An org-level webhook on the `MorphoDepot` org POSTs
+   every repo/issue/PR/release/push event to a receiver in the
+   [intake app](https://github.com/MorphoDepot/morphodepot-intake) (`POST /github/webhook`, served at
+   `join.morphodepot.org`). The receiver HMAC-verifies the delivery, keeps only repos carrying the
+   `morphodepot` topic (so infra repos are never journaled), coalesces bursts per repo over a short
+   window, and fires a `repository_dispatch` (`update-repo`) at RepoClerk. Measured latency: an action
+   on a repo → fresh journal in **~20 s**. This is what makes live workshops viable (an instructor
+   creates a repo and attendees immediately work on it). Full design + rationale:
+   [`design/near-realtime-ingestion.md`](design/near-realtime-ingestion.md).
+2. **Client `repository_dispatch` — best-effort.** The Slicer extension fires the same dispatch after
+   state-changing operations (see *Triggering a Journal Update After State Changes* above). It predates
+   the webhook and overlaps harmlessly (coalesced); it may be retired once webhooks are proven.
+3. **`sync-all` cron — hourly backstop.** Discovers missing/stale (`pushedAt` mismatch) and
+   schema-upgrade journals, queues them, and deletes journals for repos no longer live. Catches any
+   missed webhook delivery and handles initial population.
+
+All three funnel into the same `drain.py`, and all writers share the `repoclerk-writer` concurrency
+group so journal/dashboard updates serialize safely.
+
+### Webhook receiver setup (one-time)
+
+The receiver lives in the intake app; the only RepoClerk-side requirement is that `update-repo.yml`
+accepts `repository_dispatch` (it does). To (re)provision the webhook:
+
+- **Secret:** `GITHUB_WEBHOOK_SECRET` in the intake app's service env (`/etc/morphodepot-intake/env`);
+  the receiver returns 503 if it is unset and 401 on a bad/missing signature.
+- **Org webhook** (Org → Settings → Webhooks): Payload URL `https://join.morphodepot.org/github/webhook`,
+  content type `application/json`, the shared secret, and the events **Issues, Pull requests, Releases,
+  Pushes, Repositories** (or "Send me everything"). Creating it via the API needs the `admin:org_hook`
+  scope; the org UI does not.
+
 ## Key Design Decisions
 
 - **Per-repo files** (not a single combined file) to avoid write conflicts when multiple repos are updated concurrently
@@ -165,5 +203,5 @@ If the RepoClerk clone is not present or `git pull` fails, MorphoDepot falls bac
 - **Accession data embedded** in the journal so the Search tab requires only a `git pull`, not a separate HTTP fetch per repo
 - **Client-side filtering** by assignee/author — the journal stores all open issues/PRs; the client filters using its own identity
 - **`pushedAt` preserved** from GitHub so the cron job can detect staleness without fetching full issue/PR data for every repo on every run
-- **Cron as safety net** — the primary update path is on-demand dispatch; cron catches gaps and handles initial population
+- **Webhook-driven, cron as safety net** — the primary update path is the org webhook → on-demand `repository_dispatch` (push, not poll; ~20 s to a fresh journal); the hourly cron catches any missed delivery and handles initial population. See [`design/near-realtime-ingestion.md`](design/near-realtime-ingestion.md) and *How Journals Get Updated* above
 - **`viewerPermission` is NOT in the journal** — this is viewer-specific and cannot be pre-computed; `administratedRepoList()` in MorphoDepot still needs a direct `gh` API call
