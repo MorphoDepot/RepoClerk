@@ -1,35 +1,47 @@
 {
-  "generatedAt": "2026-06-19T18:55:55Z",
-  "totalRepos": 73,
+  "generatedAt": "2026-06-19T19:48:37Z",
+  "totalRepos": 74,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 73
+      "Unknown": 74
     },
     "phylum": {
-      "Unknown": 73
+      "Unknown": 74
     },
     "class": {
-      "Unknown": 73
+      "Unknown": 74
     },
     "order": {
-      "Unknown": 73
+      "Unknown": 74
     },
     "family": {
-      "Unknown": 73
+      "Unknown": 74
     },
     "genus": {
-      "Unknown": 73
+      "Unknown": 74
     }
   },
   "activity": {
-    "last_day": 5,
-    "last_week": 12,
-    "last_month": 13,
-    "last_year": 70
+    "last_day": 6,
+    "last_week": 13,
+    "last_month": 14,
+    "last_year": 71
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/mdtest-gate",
+      "pushedAt": "2026-06-19T19:46:29Z",
+      "journalUpdatedAt": "2026-06-19T19:48:23Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": [],
+      "accession": {},
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "MorphoDepot/mdtest-review",
       "pushedAt": "2026-06-19T07:52:26Z",
