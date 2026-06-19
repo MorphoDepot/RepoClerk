@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/test-bat-repo",
-  "journalUpdatedAt": "2026-06-19T06:22:45Z",
-  "pushedAt": "2026-06-19T06:11:50Z",
+  "journalUpdatedAt": "2026-06-19T06:42:43Z",
+  "pushedAt": "2026-06-19T06:42:29Z",
   "openIssues": [
     {
       "number": 1,
@@ -11,15 +11,6 @@
       "author": "muratmaga",
       "assignees": [
         "muratmaga"
-      ]
-    },
-    {
-      "number": 3,
-      "title": "some other issue",
-      "url": "https://github.com/MorphoDepot/test-bat-repo/issues/3",
-      "author": "SlicerMorph",
-      "assignees": [
-        "SlicerMorph"
       ]
     }
   ],
@@ -33,18 +24,6 @@
       "closingIssue": {
         "number": 1,
         "title": "test",
-        "repoOwner": "MorphoDepot"
-      }
-    },
-    {
-      "number": 5,
-      "title": "issue-3",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/test-bat-repo/pull/5",
-      "author": "SlicerMorph",
-      "closingIssue": {
-        "number": 3,
-        "title": "some other issue",
         "repoOwner": "MorphoDepot"
       }
     }
