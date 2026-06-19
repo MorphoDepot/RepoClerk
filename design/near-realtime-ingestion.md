@@ -1,6 +1,6 @@
 # Near-real-time RepoClerk ingestion (for live workshops)
 
-**Status:** receiver **implemented + deployed** (`morphodepot-intake#18`). One manual step remains — creating the org webhook (needs the `admin:org_hook` scope). Design still open for @pieper's review; see *Implementation status* below.
+**Status:** **implemented, deployed, and verified end-to-end** (`morphodepot-intake#18`). The org webhook is live; an issue created on a data repo appeared in its RepoClerk journal in **~20 s**. Open for @pieper's review; see *Implementation status* below.
 **Latency target:** ≤ 2–3 minutes end-to-end (an instructor's action → visible in attendees' extension). Sub-second is *not* required.
 
 ## The concern: live workshops are the one real-time case
@@ -89,8 +89,11 @@ Built per this spec in **`morphodepot-intake#18`** (`POST /github/webhook`):
   in the service env; the endpoint is live (returns 401 to unsigned posts, 503 if unconfigured).
   11 unit tests (`tests/test_github_webhook.py`) cover HMAC, filtering, coalescing, and the dispatch
   path.
-- **Remaining (one-time, org owner):** create the org webhook → `https://join.morphodepot.org/github/webhook`,
-  content-type JSON, the five events, with the shared secret. Requires the `admin:org_hook` scope.
+- **Org webhook: live** (created via the org UI). Verified end-to-end 2026-06-19 (UTC): `gh issue create`
+  on `MorphoDepot/multipart` → a dispatch-driven `update-repo` run → journal commit with the new issue,
+  **~20 s** from issue to fresh journal. Real GitHub payloads carry `repository.topics`, so the topic
+  filter works on live deliveries. (Worth confirming the hook subscribes to all five events / "send me
+  everything" — the `issues` path is proven; the receiver treats all five identically.)
 - **No RepoClerk code change** was needed — `update-repo.yml` already accepts the dispatch.
 
 ## Tradeoffs
