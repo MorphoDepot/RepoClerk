@@ -1,35 +1,47 @@
 {
-  "generatedAt": "2026-06-19T07:34:07Z",
-  "totalRepos": 71,
+  "generatedAt": "2026-06-19T07:49:49Z",
+  "totalRepos": 72,
   "totalOpenIssues": 116,
   "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 71
+      "Unknown": 72
     },
     "phylum": {
-      "Unknown": 71
+      "Unknown": 72
     },
     "class": {
-      "Unknown": 71
+      "Unknown": 72
     },
     "order": {
-      "Unknown": 71
+      "Unknown": 72
     },
     "family": {
-      "Unknown": 71
+      "Unknown": 72
     },
     "genus": {
-      "Unknown": 71
+      "Unknown": 72
     }
   },
   "activity": {
-    "last_day": 3,
-    "last_week": 10,
-    "last_month": 11,
-    "last_year": 68
+    "last_day": 4,
+    "last_week": 11,
+    "last_month": 12,
+    "last_year": 69
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/mdtest-release",
+      "pushedAt": "2026-06-19T07:49:16Z",
+      "journalUpdatedAt": "2026-06-19T07:49:36Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": [],
+      "accession": {},
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "MorphoDepot/test-bat-repo",
       "pushedAt": "2026-06-19T07:04:49Z",
