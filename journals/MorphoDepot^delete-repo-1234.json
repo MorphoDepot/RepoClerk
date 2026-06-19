@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-19T22:16:23Z",
+  "journalUpdatedAt": "2026-06-19T22:18:22Z",
   "pushedAt": "2026-06-19T22:03:30Z",
   "openIssues": [
     {
@@ -42,6 +42,18 @@
       "closingIssue": {
         "number": 2,
         "title": "amm554 issue",
+        "repoOwner": "MorphoDepot"
+      }
+    },
+    {
+      "number": 5,
+      "title": "issue-1",
+      "isDraft": true,
+      "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/5",
+      "author": "SlicerMorph",
+      "closingIssue": {
+        "number": 1,
+        "title": "slicermorp issue",
         "repoOwner": "MorphoDepot"
       }
     }
