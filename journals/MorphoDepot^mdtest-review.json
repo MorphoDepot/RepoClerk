@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/mdtest-review",
-  "journalUpdatedAt": "2026-06-19T07:53:13Z",
+  "journalUpdatedAt": "2026-06-19T07:53:42Z",
   "pushedAt": "2026-06-19T07:52:26Z",
   "openIssues": [
     {
@@ -32,7 +32,20 @@
       ]
     }
   ],
-  "openPRs": [],
+  "openPRs": [
+    {
+      "number": 4,
+      "title": "issue-3",
+      "isDraft": false,
+      "url": "https://github.com/MorphoDepot/mdtest-review/pull/4",
+      "author": "amm554",
+      "closingIssue": {
+        "number": 3,
+        "title": "Segment the zygomatic arch (ready for review)",
+        "repoOwner": "MorphoDepot"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
