@@ -1,17 +1,9 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/multipart",
-  "journalUpdatedAt": "2026-06-19T04:54:28Z",
+  "journalUpdatedAt": "2026-06-19T05:00:03Z",
   "pushedAt": "2026-06-15T19:49:33Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "webhook e2e test",
-      "url": "https://github.com/MorphoDepot/multipart/issues/1",
-      "author": "muratmaga",
-      "assignees": []
-    }
-  ],
+  "openIssues": [],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
