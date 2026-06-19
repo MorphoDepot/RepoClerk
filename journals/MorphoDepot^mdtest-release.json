@@ -1,33 +1,10 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/mdtest-release",
-  "journalUpdatedAt": "2026-06-19T07:51:29Z",
-  "pushedAt": "2026-06-19T07:50:54Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "Segment the left tympanic bulla",
-      "url": "https://github.com/MorphoDepot/mdtest-release/issues/1",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
-    }
-  ],
-  "openPRs": [
-    {
-      "number": 4,
-      "title": "issue-1",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/mdtest-release/pull/4",
-      "author": "amm554",
-      "closingIssue": {
-        "number": 1,
-        "title": "Segment the left tympanic bulla",
-        "repoOwner": "MorphoDepot"
-      }
-    }
-  ],
+  "journalUpdatedAt": "2026-06-19T07:51:54Z",
+  "pushedAt": "2026-06-19T07:51:42Z",
+  "openIssues": [],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
