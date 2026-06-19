@@ -1,9 +1,19 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/mdtest-release",
-  "journalUpdatedAt": "2026-06-19T07:50:16Z",
-  "pushedAt": "2026-06-19T07:49:59Z",
-  "openIssues": [],
+  "journalUpdatedAt": "2026-06-19T07:51:07Z",
+  "pushedAt": "2026-06-19T07:50:54Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Segment the left tympanic bulla",
+      "url": "https://github.com/MorphoDepot/mdtest-release/issues/1",
+      "author": "muratmaga",
+      "assignees": [
+        "muratmaga"
+      ]
+    }
+  ],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
@@ -76,7 +86,7 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": [],
-  "volumeSize": null,
+  "volumeSize": 148596272,
   "sourceVolumeChecksum": "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d",
   "curator": "muratmaga"
 }
