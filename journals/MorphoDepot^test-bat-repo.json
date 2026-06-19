@@ -1,33 +1,10 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/test-bat-repo",
-  "journalUpdatedAt": "2026-06-19T06:42:45Z",
-  "pushedAt": "2026-06-19T06:42:29Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "test",
-      "url": "https://github.com/MorphoDepot/test-bat-repo/issues/1",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
-    }
-  ],
-  "openPRs": [
-    {
-      "number": 4,
-      "title": "issue-1",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/test-bat-repo/pull/4",
-      "author": "muratmaga",
-      "closingIssue": {
-        "number": 1,
-        "title": "test",
-        "repoOwner": "MorphoDepot"
-      }
-    }
-  ],
+  "journalUpdatedAt": "2026-06-19T07:05:04Z",
+  "pushedAt": "2026-06-19T07:04:49Z",
+  "openIssues": [],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
