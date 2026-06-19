@@ -1,33 +1,10 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-19T23:21:58Z",
-  "pushedAt": "2026-06-19T23:21:41Z",
-  "openIssues": [
-    {
-      "number": 2,
-      "title": "amm554 issue",
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/2",
-      "author": "amm554",
-      "assignees": [
-        "amm554"
-      ]
-    }
-  ],
-  "openPRs": [
-    {
-      "number": 4,
-      "title": "issue-2",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/4",
-      "author": "amm554",
-      "closingIssue": {
-        "number": 2,
-        "title": "amm554 issue",
-        "repoOwner": "MorphoDepot"
-      }
-    }
-  ],
+  "journalUpdatedAt": "2026-06-19T23:22:42Z",
+  "pushedAt": "2026-06-19T23:22:25Z",
+  "openIssues": [],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
