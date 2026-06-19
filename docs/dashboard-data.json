@@ -1,35 +1,119 @@
 {
-  "generatedAt": "2026-06-19T20:08:54Z",
-  "totalRepos": 72,
+  "generatedAt": "2026-06-19T21:23:47Z",
+  "totalRepos": 73,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 72
+      "Unknown": 73
     },
     "phylum": {
-      "Unknown": 72
+      "Unknown": 73
     },
     "class": {
-      "Unknown": 72
+      "Unknown": 73
     },
     "order": {
-      "Unknown": 72
+      "Unknown": 73
     },
     "family": {
-      "Unknown": 72
+      "Unknown": 73
     },
     "genus": {
-      "Unknown": 72
+      "Unknown": 73
     }
   },
   "activity": {
     "last_day": 5,
-    "last_week": 11,
-    "last_month": 12,
-    "last_year": 69
+    "last_week": 12,
+    "last_month": 13,
+    "last_year": 70
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/delete-repo-1234",
+      "pushedAt": "2026-06-19T21:23:16Z",
+      "journalUpdatedAt": "2026-06-19T21:23:34Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": ""
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          "some dataset"
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Other"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          ""
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          ""
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          ""
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          ""
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "MRI"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          ""
+        ],
+        "imageContents": [
+          "What is in the image?",
+          ""
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "delete-repo-1234"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(256, 256, 130)",
+        "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+        "fileFormatVersion": 2
+      },
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "MorphoDepot/mdtest-review",
       "pushedAt": "2026-06-19T07:52:26Z",
@@ -5910,6 +5994,75 @@
   ],
   "duplicateVolumes": [
     {
+      "checksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+      "category": "promotion",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
+          "isOrg": false,
+          "species": "Picodon testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
+          "isOrg": false,
+          "species": "Picosaurus testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
+          "isOrg": false,
+          "species": "Pseudosaurus communis",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
+          "isOrg": false,
+          "species": "Pseudosaurus exempli",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
+          "isOrg": false,
+          "species": "Sliceropithecus maximus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
+          "isOrg": false,
+          "species": "Sliceroraptor communis",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
+          "isOrg": false,
+          "species": "Slicerotherium exempli",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepot/delete-repo-1234",
+          "isOrg": true,
+          "species": "Unknown",
+          "isTest": false,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "muratmaga/tre2",
+          "isOrg": false,
+          "species": "Homo sapiens",
+          "isTest": false,
+          "isEphemeral": true
+        }
+      ]
+    },
+    {
       "checksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758",
       "category": "promotion",
       "repos": [
@@ -6014,68 +6167,6 @@
           "species": "Daphnia magna",
           "isTest": false,
           "isEphemeral": false
-        }
-      ]
-    },
-    {
-      "checksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
-      "category": "cross-owner",
-      "repos": [
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
-          "isOrg": false,
-          "species": "Picodon testus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
-          "isOrg": false,
-          "species": "Picosaurus testus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
-          "isOrg": false,
-          "species": "Pseudosaurus communis",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
-          "isOrg": false,
-          "species": "Pseudosaurus exempli",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
-          "isOrg": false,
-          "species": "Sliceropithecus maximus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
-          "isOrg": false,
-          "species": "Sliceroraptor communis",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
-          "isOrg": false,
-          "species": "Slicerotherium exempli",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "muratmaga/tre2",
-          "isOrg": false,
-          "species": "Homo sapiens",
-          "isTest": false,
-          "isEphemeral": true
         }
       ]
     },
