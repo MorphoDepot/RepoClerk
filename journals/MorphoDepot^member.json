@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/member",
-  "journalUpdatedAt": "2026-06-15T20:52:17Z",
-  "pushedAt": "2026-06-15T07:14:26Z",
+  "journalUpdatedAt": "2026-06-19T02:10:26Z",
+  "pushedAt": "2026-06-18T23:33:49Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -83,5 +83,6 @@
     "screenshot-1.png": ""
   },
   "volumeSize": 351643698,
-  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758"
+  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758",
+  "curator": "amm554"
 }
