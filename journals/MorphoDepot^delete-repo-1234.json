@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-19T23:21:11Z",
-  "pushedAt": "2026-06-19T23:20:51Z",
+  "journalUpdatedAt": "2026-06-19T23:21:58Z",
+  "pushedAt": "2026-06-19T23:21:41Z",
   "openIssues": [
     {
       "number": 2,
@@ -11,15 +11,6 @@
       "author": "amm554",
       "assignees": [
         "amm554"
-      ]
-    },
-    {
-      "number": 3,
-      "title": "muratmaaga issue",
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/3",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
       ]
     }
   ],
@@ -33,18 +24,6 @@
       "closingIssue": {
         "number": 2,
         "title": "amm554 issue",
-        "repoOwner": "MorphoDepot"
-      }
-    },
-    {
-      "number": 6,
-      "title": "issue-3",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/6",
-      "author": "muratmaga",
-      "closingIssue": {
-        "number": 3,
-        "title": "muratmaaga issue",
         "repoOwner": "MorphoDepot"
       }
     }
