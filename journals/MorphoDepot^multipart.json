@@ -1,9 +1,17 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/multipart",
-  "journalUpdatedAt": "2026-06-15T20:50:53Z",
+  "journalUpdatedAt": "2026-06-19T04:54:28Z",
   "pushedAt": "2026-06-15T19:49:33Z",
-  "openIssues": [],
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "webhook e2e test",
+      "url": "https://github.com/MorphoDepot/multipart/issues/1",
+      "author": "muratmaga",
+      "assignees": []
+    }
+  ],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
@@ -81,5 +89,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 351643698,
-  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758"
+  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758",
+  "curator": "muratmaga"
 }
