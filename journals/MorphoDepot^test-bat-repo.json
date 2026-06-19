@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/test-bat-repo",
-  "journalUpdatedAt": "2026-06-19T06:18:45Z",
+  "journalUpdatedAt": "2026-06-19T06:20:28Z",
   "pushedAt": "2026-06-19T06:11:50Z",
   "openIssues": [
     {
@@ -27,7 +27,7 @@
     {
       "number": 4,
       "title": "issue-1",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/MorphoDepot/test-bat-repo/pull/4",
       "author": "muratmaga",
       "closingIssue": {
