@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-19T23:22:10Z",
+  "generatedAt": "2026-06-19T23:22:55Z",
   "totalRepos": 74,
-  "totalOpenIssues": 123,
-  "totalOpenPRs": 66,
+  "totalOpenIssues": 122,
+  "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
       "Unknown": 74
@@ -32,10 +32,10 @@
   "repos": [
     {
       "nameWithOwner": "MorphoDepot/delete-repo-1234",
-      "pushedAt": "2026-06-19T23:21:41Z",
-      "journalUpdatedAt": "2026-06-19T23:21:58Z",
-      "openIssues": 1,
-      "openPRs": 1,
+      "pushedAt": "2026-06-19T23:22:25Z",
+      "journalUpdatedAt": "2026-06-19T23:22:42Z",
+      "openIssues": 0,
+      "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": ""
