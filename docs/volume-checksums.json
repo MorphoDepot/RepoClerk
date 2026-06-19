@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T19:48:37Z",
+  "generatedAt": "2026-06-19T20:08:54Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -70,9 +70,6 @@
     ],
     "977ca4c34207fc13394419dfaa74dca01562ddcf617ec2089fe66a405bf7c410": [
       "Pfu7978/Knight_Anole_Skull"
-    ],
-    "f4633df2ff834d8196e68387cfb2aabab254b26868e1bc141a42bea686bbcbf5": [
-      "amm554/delete-auto-assign"
     ],
     "0713be5cf0f54cdd5c650e790f839b1fd407e085592156e9f543e4af4c2aaa5d": [
       "aubricot/cacao_flower_depot"
