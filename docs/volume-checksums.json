@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T07:49:49Z",
+  "generatedAt": "2026-06-19T07:50:28Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -51,14 +51,15 @@
       "MorphoDepotTesting/test-slicerotherium-exempli-42",
       "muratmaga/tre2"
     ],
+    "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d": [
+      "MorphoDepot/mdtest-release",
+      "MorphoDepot/test-bat-repo",
+      "muratmaga/Big_Brown_Bat"
+    ],
     "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758": [
       "MorphoDepot/member",
       "MorphoDepot/multipart",
       "amm554/non-member"
-    ],
-    "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d": [
-      "MorphoDepot/test-bat-repo",
-      "muratmaga/Big_Brown_Bat"
     ],
     "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6": [
       "PaulGignac/GignacLab_DiceCT_CowEye_2025"
