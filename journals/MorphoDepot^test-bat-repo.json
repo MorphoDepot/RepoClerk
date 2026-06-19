@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/test-bat-repo",
-  "journalUpdatedAt": "2026-06-19T06:12:29Z",
+  "journalUpdatedAt": "2026-06-19T06:12:55Z",
   "pushedAt": "2026-06-19T06:11:50Z",
   "openIssues": [
     {
@@ -10,15 +10,6 @@
       "url": "https://github.com/MorphoDepot/test-bat-repo/issues/1",
       "author": "muratmaga",
       "assignees": []
-    },
-    {
-      "number": 2,
-      "title": "auto-assign smoke test",
-      "url": "https://github.com/MorphoDepot/test-bat-repo/issues/2",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
     }
   ],
   "openPRs": [],
