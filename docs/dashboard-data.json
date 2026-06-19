@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-19T07:51:44Z",
+  "generatedAt": "2026-06-19T07:52:08Z",
   "totalRepos": 72,
-  "totalOpenIssues": 117,
-  "totalOpenPRs": 66,
+  "totalOpenIssues": 116,
+  "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
       "Unknown": 72
@@ -32,10 +32,10 @@
   "repos": [
     {
       "nameWithOwner": "MorphoDepot/mdtest-release",
-      "pushedAt": "2026-06-19T07:50:54Z",
-      "journalUpdatedAt": "2026-06-19T07:51:29Z",
-      "openIssues": 1,
-      "openPRs": 1,
+      "pushedAt": "2026-06-19T07:51:42Z",
+      "journalUpdatedAt": "2026-06-19T07:51:54Z",
+      "openIssues": 0,
+      "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {
