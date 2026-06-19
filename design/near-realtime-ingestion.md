@@ -1,6 +1,6 @@
 # Near-real-time RepoClerk ingestion (for live workshops)
 
-**Status:** design proposal for review (@pieper). Not yet implemented.
+**Status:** receiver **implemented + deployed** (`morphodepot-intake#18`). One manual step remains — creating the org webhook (needs the `admin:org_hook` scope). Design still open for @pieper's review; see *Implementation status* below.
 **Latency target:** ≤ 2–3 minutes end-to-end (an instructor's action → visible in attendees' extension). Sub-second is *not* required.
 
 ## The concern: live workshops are the one real-time case
@@ -76,6 +76,22 @@ RepoClerk within seconds, reliably, for **all** repos and event types — with *
 | **RepoClerk** | none required — `update-repo.yml` already accepts `repository_dispatch`. Optionally retire the `notifyRepoClerk` issue-queue once webhooks are proven (keep the cron backstop) |
 | **org (one-time, owner)** | add the org webhook: URL = the intake app, the shared secret, the 5 event types |
 | **extension** | **none** |
+
+## Implementation status
+
+Built per this spec in **`morphodepot-intake#18`** (`POST /github/webhook`):
+
+- **Done & deployed** to `join.morphodepot.org`: HMAC verification (`X-Hub-Signature-256`); the
+  `morphodepot`-topic filter (infra repos like RepoClerk / onboarding-records are never journaled,
+  which also prevents a dashboard-push → webhook → dispatch loop); `ping` → pong; skip on
+  `repository` deleted/archived/privatized; per-repo asyncio debounce (`webhook_coalesce_seconds`,
+  default 8 s); App-token `repository_dispatch` to RepoClerk. `GITHUB_WEBHOOK_SECRET` is provisioned
+  in the service env; the endpoint is live (returns 401 to unsigned posts, 503 if unconfigured).
+  11 unit tests (`tests/test_github_webhook.py`) cover HMAC, filtering, coalescing, and the dispatch
+  path.
+- **Remaining (one-time, org owner):** create the org webhook → `https://join.morphodepot.org/github/webhook`,
+  content-type JSON, the five events, with the shared secret. Requires the `admin:org_hook` scope.
+- **No RepoClerk code change** was needed — `update-repo.yml` already accepts the dispatch.
 
 ## Tradeoffs
 
