@@ -1,27 +1,9 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-170",
-  "journalUpdatedAt": "2026-06-19T23:06:42Z",
-  "pushedAt": "2026-06-19T23:06:16Z",
+  "journalUpdatedAt": "2026-06-19T23:32:45Z",
+  "pushedAt": "2026-06-19T23:07:42Z",
   "openIssues": [
-    {
-      "number": 1,
-      "title": "Segment the cranium",
-      "url": "https://github.com/MorphoDepotTesting/test-picosaurus-testus-170/issues/1",
-      "author": "muratmaga",
-      "assignees": [
-        "amm554"
-      ]
-    },
-    {
-      "number": 2,
-      "title": "Segment the mandible",
-      "url": "https://github.com/MorphoDepotTesting/test-picosaurus-testus-170/issues/2",
-      "author": "muratmaga",
-      "assignees": [
-        "amm554"
-      ]
-    },
     {
       "number": 3,
       "title": "Segment the postcranium",
