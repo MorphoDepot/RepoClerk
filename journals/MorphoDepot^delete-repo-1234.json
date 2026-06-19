@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-19T23:06:17Z",
+  "journalUpdatedAt": "2026-06-19T23:20:19Z",
   "pushedAt": "2026-06-19T22:36:00Z",
   "openIssues": [
     {
@@ -36,7 +36,7 @@
     {
       "number": 4,
       "title": "issue-2",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/4",
       "author": "amm554",
       "closingIssue": {
