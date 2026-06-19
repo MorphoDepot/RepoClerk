@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-170",
-  "journalUpdatedAt": "2026-06-19T23:06:39Z",
+  "journalUpdatedAt": "2026-06-19T23:06:42Z",
   "pushedAt": "2026-06-19T23:06:16Z",
   "openIssues": [
     {
@@ -21,6 +21,13 @@
       "assignees": [
         "amm554"
       ]
+    },
+    {
+      "number": 3,
+      "title": "Segment the postcranium",
+      "url": "https://github.com/MorphoDepotTesting/test-picosaurus-testus-170/issues/3",
+      "author": "muratmaga",
+      "assignees": []
     }
   ],
   "openPRs": [],
