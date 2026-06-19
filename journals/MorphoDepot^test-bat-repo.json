@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/test-bat-repo",
-  "journalUpdatedAt": "2026-06-19T06:12:55Z",
+  "journalUpdatedAt": "2026-06-19T06:15:17Z",
   "pushedAt": "2026-06-19T06:11:50Z",
   "openIssues": [
     {
@@ -9,7 +9,9 @@
       "title": "test",
       "url": "https://github.com/MorphoDepot/test-bat-repo/issues/1",
       "author": "muratmaga",
-      "assignees": []
+      "assignees": [
+        "muratmaga"
+      ]
     }
   ],
   "openPRs": [],
