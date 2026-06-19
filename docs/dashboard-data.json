@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-19T06:17:31Z",
+  "generatedAt": "2026-06-19T06:18:58Z",
   "totalRepos": 71,
   "totalOpenIssues": 118,
-  "totalOpenPRs": 66,
+  "totalOpenPRs": 67,
   "taxonomy": {
     "kingdom": {
       "Unknown": 71
@@ -33,9 +33,9 @@
     {
       "nameWithOwner": "MorphoDepot/test-bat-repo",
       "pushedAt": "2026-06-19T06:11:50Z",
-      "journalUpdatedAt": "2026-06-19T06:17:18Z",
+      "journalUpdatedAt": "2026-06-19T06:18:45Z",
       "openIssues": 2,
-      "openPRs": 1,
+      "openPRs": 2,
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {
