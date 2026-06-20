@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T01:25:01Z",
+  "journalUpdatedAt": "2026-06-20T01:26:19Z",
   "pushedAt": "2026-06-20T00:55:43Z",
   "openIssues": [
     {
@@ -20,6 +20,15 @@
       "author": "muratmaga",
       "assignees": [
         "muratmaga"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "slicermorph issue",
+      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/12",
+      "author": "SlicerMorph",
+      "assignees": [
+        "SlicerMorph"
       ]
     }
   ],
