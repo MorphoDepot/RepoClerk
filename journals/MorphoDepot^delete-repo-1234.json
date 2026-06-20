@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T01:30:54Z",
-  "pushedAt": "2026-06-20T01:30:31Z",
+  "journalUpdatedAt": "2026-06-20T01:31:15Z",
+  "pushedAt": "2026-06-20T01:30:54Z",
   "openIssues": [
     {
       "number": 10,
@@ -12,30 +12,9 @@
       "assignees": [
         "amm554"
       ]
-    },
-    {
-      "number": 11,
-      "title": "murat issue for V4",
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/11",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
     }
   ],
   "openPRs": [
-    {
-      "number": 14,
-      "title": "issue-11",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/14",
-      "author": "muratmaga",
-      "closingIssue": {
-        "number": 11,
-        "title": "murat issue for V4",
-        "repoOwner": "MorphoDepot"
-      }
-    },
     {
       "number": 15,
       "title": "issue-10",
