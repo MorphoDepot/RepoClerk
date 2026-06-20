@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T01:39:50Z",
-  "pushedAt": "2026-06-20T01:37:39Z",
+  "journalUpdatedAt": "2026-06-20T01:43:00Z",
+  "pushedAt": "2026-06-20T01:42:50Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -78,7 +78,8 @@
   },
   "screenshotCount": 0,
   "screenshotCaptions": {
-    "screenshot-1.png": ""
+    "screenshot-1.png": "",
+    "screenshot-2.png": ""
   },
   "volumeSize": 6945984,
   "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
