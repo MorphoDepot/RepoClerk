@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T01:28:44Z",
+  "journalUpdatedAt": "2026-06-20T01:28:46Z",
   "pushedAt": "2026-06-20T00:55:43Z",
   "openIssues": [
     {
@@ -48,7 +48,7 @@
     {
       "number": 14,
       "title": "issue-11",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/14",
       "author": "muratmaga",
       "closingIssue": {
