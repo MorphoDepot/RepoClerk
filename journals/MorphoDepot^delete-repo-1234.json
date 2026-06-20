@@ -1,28 +1,9 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T00:38:06Z",
-  "pushedAt": "2026-06-20T00:37:50Z",
-  "openIssues": [
-    {
-      "number": 7,
-      "title": "some new issue",
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/7",
-      "author": "SlicerMorph",
-      "assignees": [
-        "SlicerMorph"
-      ]
-    },
-    {
-      "number": 9,
-      "title": "Changes requested before release",
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/9",
-      "author": "morphodepot-intake",
-      "assignees": [
-        "amm554"
-      ]
-    }
-  ],
+  "journalUpdatedAt": "2026-06-20T00:55:00Z",
+  "pushedAt": "2026-06-20T00:54:37Z",
+  "openIssues": [],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
