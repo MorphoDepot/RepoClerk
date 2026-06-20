@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T01:27:25Z",
+  "journalUpdatedAt": "2026-06-20T01:28:44Z",
   "pushedAt": "2026-06-20T00:55:43Z",
   "openIssues": [
     {
@@ -42,6 +42,18 @@
       "closingIssue": {
         "number": 12,
         "title": "slicermorph issue",
+        "repoOwner": "MorphoDepot"
+      }
+    },
+    {
+      "number": 14,
+      "title": "issue-11",
+      "isDraft": true,
+      "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/14",
+      "author": "muratmaga",
+      "closingIssue": {
+        "number": 11,
+        "title": "murat issue for V4",
         "repoOwner": "MorphoDepot"
       }
     }
