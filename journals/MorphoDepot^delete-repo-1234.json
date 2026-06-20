@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-19T23:38:18Z",
-  "pushedAt": "2026-06-19T23:38:01Z",
+  "journalUpdatedAt": "2026-06-20T00:29:10Z",
+  "pushedAt": "2026-06-20T00:28:51Z",
   "openIssues": [
     {
       "number": 7,
@@ -11,15 +11,6 @@
       "author": "SlicerMorph",
       "assignees": [
         "SlicerMorph"
-      ]
-    },
-    {
-      "number": 8,
-      "title": "Upcoming release v3 - finish by 2026-07-30",
-      "url": "https://github.com/MorphoDepot/delete-repo-1234/issues/8",
-      "author": "amm554",
-      "assignees": [
-        "amm554"
       ]
     }
   ],
