@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/delete-repo-1234",
-  "journalUpdatedAt": "2026-06-20T01:26:19Z",
+  "journalUpdatedAt": "2026-06-20T01:27:25Z",
   "pushedAt": "2026-06-20T00:55:43Z",
   "openIssues": [
     {
@@ -32,7 +32,20 @@
       ]
     }
   ],
-  "openPRs": [],
+  "openPRs": [
+    {
+      "number": 13,
+      "title": "issue-12",
+      "isDraft": false,
+      "url": "https://github.com/MorphoDepot/delete-repo-1234/pull/13",
+      "author": "SlicerMorph",
+      "closingIssue": {
+        "number": 12,
+        "title": "slicermorph issue",
+        "repoOwner": "MorphoDepot"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
