@@ -1,35 +1,117 @@
 {
-  "generatedAt": "2026-06-20T06:04:31Z",
-  "totalRepos": 75,
+  "generatedAt": "2026-06-20T06:26:57Z",
+  "totalRepos": 76,
   "totalOpenIssues": 120,
   "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 75
+      "Unknown": 76
     },
     "phylum": {
-      "Unknown": 75
+      "Unknown": 76
     },
     "class": {
-      "Unknown": 75
+      "Unknown": 76
     },
     "order": {
-      "Unknown": 75
+      "Unknown": 76
     },
     "family": {
-      "Unknown": 75
+      "Unknown": 76
     },
     "genus": {
-      "Unknown": 75
+      "Unknown": 76
     }
   },
   "activity": {
-    "last_day": 6,
-    "last_week": 14,
-    "last_month": 15,
-    "last_year": 72
+    "last_day": 7,
+    "last_week": 15,
+    "last_month": 16,
+    "last_year": 73
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/mdtest-e2e-rel-21505",
+      "pushedAt": "2026-06-20T06:26:32Z",
+      "journalUpdatedAt": "2026-06-20T06:26:44Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": [],
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Testudo exempli"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "mdtest-e2e-rel-21505"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(20, 20, 20)",
+        "scanSpacing": "(1.0, 1.0, 1.0)",
+        "fileFormatVersion": 2
+      },
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "MorphoDepot/mdtest-e2e-org-4500",
       "pushedAt": "2026-06-20T06:02:38Z",
@@ -6158,6 +6240,26 @@
     }
   ],
   "duplicateVolumes": [
+    {
+      "checksum": "5fec41400be0fb3a40d221c8968657bf38a4c8e90a378a73f2722d00fd828e85",
+      "category": "org-org",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepot/mdtest-e2e-org-4500",
+          "isOrg": true,
+          "species": "Testudo exempli",
+          "isTest": false,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepot/mdtest-e2e-rel-21505",
+          "isOrg": true,
+          "species": "Testudo exempli",
+          "isTest": false,
+          "isEphemeral": false
+        }
+      ]
+    },
     {
       "checksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
       "category": "promotion",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T06:04:31Z",
+  "generatedAt": "2026-06-20T06:26:57Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -54,7 +54,8 @@
       "muratmaga/tre2"
     ],
     "5fec41400be0fb3a40d221c8968657bf38a4c8e90a378a73f2722d00fd828e85": [
-      "MorphoDepot/mdtest-e2e-org-4500"
+      "MorphoDepot/mdtest-e2e-org-4500",
+      "MorphoDepot/mdtest-e2e-rel-21505"
     ],
     "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d": [
       "MorphoDepot/mdtest-release",
