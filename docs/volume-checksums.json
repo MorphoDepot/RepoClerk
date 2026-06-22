@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T18:30:13Z",
+  "generatedAt": "2026-06-22T21:37:21Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -82,6 +82,9 @@
     ],
     "e348daafc31323ce3d4b3eb1f9d670732fa271c1201fc833096a68d91ef1a260": [
       "dinonoto/Plethodon_Hindlimb2"
+    ],
+    "15a02224a99fb06ce7656a5a59f4b973b8306d317ec47a5e924a0fc00942e58d": [
+      "dinonoto/Red-Eyed_Tree_Frog"
     ],
     "ee7248864e201093a1a311f913d029c446d66cbebeccc4894c2ac70a77b31719": [
       "dinonoto/Xenopus-diceCT"
