@@ -95,6 +95,58 @@ def build_duplicate_report(checksum_to_repos):
     return duplicate_groups, checksum_index
 
 
+def build_collections(collection_journals, known):
+    """Resolve each collection's member references against the known dataset repos and emit
+    the dashboard `collections[]` entries.
+
+    `known` maps nameWithOwner -> repo dict (from repos_list). A member reference that doesn't
+    resolve becomes a warning rather than a member; short-term members and a missing title are
+    also surfaced as warnings so a curator/admin sees a plain report.
+    """
+    collections = []
+    for j in collection_journals:
+        nwo = j.get("nameWithOwner", "")
+        _, _, name = nwo.partition("/")
+        block = j.get("collection") or {}
+        title = block.get("title") or ""
+        members, warnings, seen = [], [], set()
+
+        if not title:
+            warnings.append("Missing collection title (first line of the README).")
+        elif "github.com" in title or title.lower().startswith(("http://", "https://")):
+            warnings.append(
+                "The first README line looks like a URL, not a title — put a collection title first.")
+
+        for ref in block.get("memberRefs") or []:
+            if ref in seen:
+                continue
+            seen.add(ref)
+            repo = known.get(ref)
+            if repo is None:
+                warnings.append(f"Unresolved member (not a known MorphoDepot repo): {ref}")
+                continue
+            members.append(ref)
+            if repo.get("isEphemeral"):
+                warnings.append(f"Member is a short-term repo and may not persist: {ref}")
+
+        if len(members) < 2:
+            warnings.append(
+                f"{len(members)} resolved member(s); collections are expected to list at least 2.")
+
+        collections.append({
+            "slug": name,
+            "nameWithOwner": nwo,
+            "title": title or name,
+            "description": block.get("description", ""),
+            "curator": j.get("curator"),
+            "members": members,
+            "warnings": warnings,
+        })
+
+    collections.sort(key=lambda c: c["title"].lower())
+    return collections
+
+
 def main():
     journals_dir = Path("journals")
     docs_dir = Path("docs")
@@ -107,6 +159,7 @@ def main():
     taxonomy = {level: {} for level in TAXONOMY_LEVELS}
     activity = {"last_day": 0, "last_week": 0, "last_month": 0, "last_year": 0}
     repos_list = []
+    collection_journals = []
     checksum_to_repos = {}  # source-volume sha256 -> [repo meta, ...]
 
     for journal_path in sorted(journals_dir.glob("*.json")):
@@ -118,6 +171,13 @@ def main():
             continue
 
         nwo = j.get("nameWithOwner", "")
+
+        # Collection repos ("repo of repos") are aggregated separately (build_collections) and
+        # excluded from the dataset stats / taxonomy / duplicate-volume analysis below.
+        if isinstance(j.get("collection"), dict):
+            collection_journals.append(j)
+            continue
+
         open_issues_count = len(j.get("openIssues", []))
         open_prs_count = len(j.get("openPRs", []))
         pushed_at_str = j.get("pushedAt", "")
@@ -180,6 +240,8 @@ def main():
     repos_list.sort(key=lambda r: r.get("pushedAt", ""), reverse=True)
 
     duplicate_groups, checksum_index = build_duplicate_report(checksum_to_repos)
+    known_repos = {r["nameWithOwner"]: r for r in repos_list}
+    collections = build_collections(collection_journals, known_repos)
     generated_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     data = {
@@ -191,6 +253,7 @@ def main():
         "activity": activity,
         "repos": repos_list,
         "duplicateVolumes": duplicate_groups,
+        "collections": collections,
     }
 
     out_path = docs_dir / "dashboard-data.json"
@@ -199,7 +262,7 @@ def main():
         f.write("\n")
 
     print(f"Wrote {out_path} ({len(repos_list)} repo(s), "
-          f"{len(duplicate_groups)} duplicate group(s))")
+          f"{len(duplicate_groups)} duplicate group(s), {len(collections)} collection(s))")
 
     # Published checksum -> [repo] index, consumed by the extension's stage/publish-time
     # duplicate-volume warning. Every known checksum (not just duplicates) is listed so any

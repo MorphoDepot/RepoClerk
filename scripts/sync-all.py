@@ -25,35 +25,44 @@ def run(cmd, check=True):
     return subprocess.run(cmd, check=check, text=True, capture_output=True)
 
 
-def main():
-    # 1. Discover all live morphodepot repos (forks included via fork:true)
+def search_topic(topic):
+    """Return {nameWithOwner: pushedAt} for live repos carrying `topic` (forks included)."""
     result = run([
         "gh", "api", "graphql",
         "--paginate",
         "--jq", ".data.search.nodes[] | {nameWithOwner, pushedAt}",
-        "-f", """query=
-          query($cursor: String) {
+        "-f", f"""query=
+          query($cursor: String) {{
             search(
-              query: "topic:morphodepot fork:true"
+              query: "topic:{topic} fork:true"
               type: REPOSITORY
               first: 100
               after: $cursor
-            ) {
-              pageInfo { hasNextPage endCursor }
-              nodes {
-                ... on Repository { nameWithOwner pushedAt }
-              }
-            }
-          }
+            ) {{
+              pageInfo {{ hasNextPage endCursor }}
+              nodes {{
+                ... on Repository {{ nameWithOwner pushedAt }}
+              }}
+            }}
+          }}
         """,
     ])
-
-    live_repos = {}
+    repos = {}
     for line in result.stdout.strip().splitlines():
         line = line.strip()
         if line:
             entry = json.loads(line)
-            live_repos[entry["nameWithOwner"]] = entry.get("pushedAt", "")
+            repos[entry["nameWithOwner"]] = entry.get("pushedAt", "")
+    return repos
+
+
+def main():
+    # 1. Discover all live repos. `morphodepot` covers datasets (and collections, which also
+    #    carry it); `md-collection` is searched too so a collection is discovered even if its
+    #    morphodepot topic was ever dropped.
+    live_repos = {}
+    for topic in ("morphodepot", "md-collection"):
+        live_repos.update(search_topic(topic))
 
     print(f"Found {len(live_repos)} live morphodepot repos")
 

@@ -18,6 +18,12 @@
   // --- Carousel (all repos; screenshot-bearing only) ---
   buildCarousel(data.repos);
 
+  // --- Collections (curated "repo of repos"; rendered once, independent of the repo filters) ---
+  let cmSlides = [];
+  let cmIdx = 0;
+  wireCollectionModal();
+  renderCollections(data.collections || [], data.repos);
+
   // --- Charts (initialised once; fed the filtered repo set by renderAll) ---
   const activityChart = echarts.init(document.getElementById('activity-chart'));
   const taxonomyChart = echarts.init(document.getElementById('taxonomy-chart'));
@@ -278,6 +284,104 @@
     gallery.addEventListener('mouseleave', resetTimer);
 
     resetTimer();
+  }
+
+  // --- Collections ---
+
+  // Flatten a collection's member repos into [{url, caption, nameWithOwner}] slides, pulling
+  // each member's screenshots from the per-repo entry already in the payload.
+  function collectionSlides(c, byNwo) {
+    const slides = [];
+    for (const nwo of (c.members || [])) {
+      const r = byNwo[nwo];
+      if (!r) continue;
+      for (const { filename, caption } of normaliseCaptions(r.screenshotCaptions)) {
+        slides.push({
+          url: `https://raw.githubusercontent.com/${nwo}/main/screenshots/${encodeURIComponent(filename)}`,
+          caption,
+          nameWithOwner: nwo,
+        });
+      }
+    }
+    return slides;
+  }
+
+  function renderCollections(collections, repos) {
+    const section = document.getElementById('collections-section');
+    const grid = document.getElementById('collections-grid');
+    if (!section || !grid) return;
+    if (!collections.length) { section.style.display = 'none'; return; }
+
+    const byNwo = {};
+    for (const r of repos) byNwo[r.nameWithOwner] = r;
+
+    grid.innerHTML = '';
+    collections.forEach(c => {
+      const slides = collectionSlides(c, byNwo);
+      const cover = slides.length ? slides[0].url : '';
+      const n = (c.members || []).length;
+      const warns = c.warnings || [];
+      const tile = document.createElement('div');
+      tile.className = 'collection-tile';
+      tile.innerHTML =
+        `<div class="collection-cover" ${cover ? `style="background-image:url('${escapeHTML(cover)}')"` : ''}>` +
+          (cover ? '' : '<span class="collection-nocover">No images yet</span>') +
+        '</div>' +
+        '<div class="collection-meta">' +
+          `<strong>${escapeHTML(c.title || c.slug)}</strong>` +
+          `<span class="collection-sub">${n} specimen${n === 1 ? '' : 's'}` +
+            `${c.curator ? ' · curated by @' + escapeHTML(c.curator) : ''}</span>` +
+          (c.description ? `<span class="collection-desc">${escapeHTML(c.description)}</span>` : '') +
+          (warns.length
+            ? `<span class="collection-warn" title="${escapeHTML(warns.join('\n'))}">⚠ ${warns.length} issue${warns.length === 1 ? '' : 's'}</span>`
+            : '') +
+        '</div>';
+      if (slides.length) {
+        tile.style.cursor = 'pointer';
+        tile.addEventListener('click', () => openCollectionModal(c, slides));
+      }
+      grid.appendChild(tile);
+    });
+    section.style.display = '';
+  }
+
+  function openCollectionModal(c, slides) {
+    cmSlides = slides;
+    document.getElementById('cm-title').textContent = c.title || c.slug;
+    cmShow(0);
+    document.getElementById('collection-modal').style.display = 'flex';
+  }
+
+  function cmShow(i) {
+    if (!cmSlides.length) return;
+    cmIdx = (i + cmSlides.length) % cmSlides.length;
+    const s = cmSlides[cmIdx];
+    document.getElementById('cm-img').src = s.url;
+    document.getElementById('cm-caption').innerHTML =
+      (s.caption ? escapeHTML(s.caption) + '<br>' : '') +
+      `<a href="https://github.com/${escapeHTML(s.nameWithOwner)}" target="_blank">${escapeHTML(s.nameWithOwner)}</a>`;
+    document.getElementById('cm-counter').textContent = `${cmIdx + 1} / ${cmSlides.length}`;
+  }
+
+  function closeCollectionModal() {
+    document.getElementById('collection-modal').style.display = 'none';
+    document.getElementById('cm-img').src = '';
+    cmSlides = [];
+  }
+
+  function wireCollectionModal() {
+    const modal = document.getElementById('collection-modal');
+    if (!modal) return;
+    document.getElementById('cm-close').addEventListener('click', closeCollectionModal);
+    document.getElementById('cm-prev').addEventListener('click', () => cmShow(cmIdx - 1));
+    document.getElementById('cm-next').addEventListener('click', () => cmShow(cmIdx + 1));
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeCollectionModal(); });
+    document.addEventListener('keydown', (e) => {
+      if (modal.style.display !== 'flex') return;
+      if (e.key === 'Escape') closeCollectionModal();
+      else if (e.key === 'ArrowLeft') cmShow(cmIdx - 1);
+      else if (e.key === 'ArrowRight') cmShow(cmIdx + 1);
+    });
   }
 
   // --- Helpers ---

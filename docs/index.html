@@ -318,6 +318,72 @@
     #filters label { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; }
     #filters .hint { margin-left: auto; color: #586069; font-size: 0.78rem; }
 
+    /* Collections (curated "repo of repos") */
+    #collections-section { margin-bottom: 1.5rem; }
+    #collections-section h2 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+    #collections-section h2 .sub { font-weight: 400; font-size: 0.8rem; color: #586069; }
+    .collection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .collection-tile {
+      background: #fff; border: 1px solid #e1e4e8; border-radius: 6px;
+      overflow: hidden; display: flex; flex-direction: column;
+      transition: box-shadow 0.15s, transform 0.15s;
+    }
+    .collection-tile:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .collection-cover {
+      height: 130px; background: #1a3a52 center/cover no-repeat;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .collection-nocover { color: #cdd9e5; font-size: 0.8rem; }
+    .collection-meta { padding: 0.7rem 0.85rem; display: flex; flex-direction: column; gap: 0.2rem; }
+    .collection-meta strong { font-size: 0.95rem; line-height: 1.25; }
+    .collection-sub { font-size: 0.75rem; color: #586069; }
+    .collection-desc {
+      font-size: 0.78rem; color: #444d56; margin-top: 0.15rem;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .collection-warn { font-size: 0.72rem; color: #b35900; margin-top: 0.2rem; cursor: help; }
+
+    /* Collection slide-deck modal */
+    .cm-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.82);
+      display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 2rem;
+    }
+    .cm-box {
+      background: #161b22; border-radius: 8px; width: min(960px, 100%);
+      max-height: 92vh; display: flex; flex-direction: column; position: relative; color: #fff;
+    }
+    .cm-close {
+      position: absolute; top: 0.35rem; right: 0.6rem; background: none; border: none;
+      color: #fff; font-size: 1.6rem; cursor: pointer; line-height: 1; z-index: 2;
+    }
+    .cm-title {
+      padding: 0.85rem 2.5rem 0.85rem 1rem; font-weight: 600; font-size: 1rem;
+      border-bottom: 1px solid #30363d;
+    }
+    .cm-stage {
+      position: relative; flex: 1; display: flex; align-items: center; justify-content: center;
+      background: #0d1117; min-height: 320px; overflow: hidden;
+    }
+    .cm-stage img { max-width: 100%; max-height: 60vh; object-fit: contain; }
+    .cm-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(0,0,0,0.5); color: #fff; border: none; font-size: 1.6rem;
+      padding: 0.4rem 0.75rem; cursor: pointer; border-radius: 4px;
+    }
+    .cm-nav:hover { background: rgba(0,0,0,0.8); }
+    #cm-prev { left: 0.6rem; }
+    #cm-next { right: 0.6rem; }
+    .cm-footer {
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+      padding: 0.7rem 1rem; border-top: 1px solid #30363d; font-size: 0.85rem;
+    }
+    .cm-caption a { color: #58a6ff; }
+    .cm-counter { color: #8b949e; font-size: 0.8rem; white-space: nowrap; }
+
     @media (max-width: 700px) {
       #charts { grid-template-columns: 1fr; }
       #summary { flex-direction: column; }
@@ -379,6 +445,11 @@
     </div>
   </section>
 
+  <section id="collections-section" style="display:none">
+    <h2>Collections <span class="sub">— curated groupings of repositories</span></h2>
+    <div class="collection-grid" id="collections-grid"></div>
+  </section>
+
   <section id="dup-section" style="display:none">
     <h2>Duplicate Volumes — <span id="dup-count">0</span>
       <span class="sub">repos sharing a byte-identical source volume (same SHA-256)</span>
@@ -411,6 +482,22 @@
       <tbody id="repo-tbody"></tbody>
     </table>
   </section>
+
+  <div id="collection-modal" class="cm-overlay" style="display:none">
+    <div class="cm-box">
+      <button id="cm-close" class="cm-close" aria-label="Close">&times;</button>
+      <div id="cm-title" class="cm-title"></div>
+      <div class="cm-stage">
+        <button id="cm-prev" class="cm-nav" aria-label="Previous">&#8249;</button>
+        <img id="cm-img" alt="">
+        <button id="cm-next" class="cm-nav" aria-label="Next">&#8250;</button>
+      </div>
+      <div class="cm-footer">
+        <div id="cm-caption" class="cm-caption"></div>
+        <div id="cm-counter" class="cm-counter"></div>
+      </div>
+    </div>
+  </div>
 
 </main>
 

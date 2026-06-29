@@ -13,6 +13,7 @@ has been empty for MAX_IDLE_CYCLES * POLL_INTERVAL seconds.
 """
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -31,6 +32,7 @@ GRAPHQL_QUERY = """
 query($owner: String!, $repo: String!) {
   repository(owner: $owner, name: $repo) {
     pushedAt
+    repositoryTopics(first: 30) { nodes { topic { name } } }
     issues(states: OPEN, first: 100) {
       nodes {
         number title url
@@ -64,6 +66,70 @@ def fetch_url(url):
     return r.stdout if r.returncode == 0 else None
 
 
+# A "collection" repo (md-collection topic) is a curated "repo of repos": its README's first
+# line is the collection title and its body lists the member repos (typically as GitHub URLs).
+# We harvest references liberally here; resolution against the known repo set (and the resulting
+# warnings) is deferred to generate-dashboard, which has every journal loaded.
+_GITHUB_URL_RE = re.compile(
+    r"github\.com/([A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?)/([A-Za-z0-9_.-]+)", re.I)
+# A line that is essentially just `owner/repo` (optionally a markdown list bullet). Kept strict
+# so prose like "and/or" is not mistaken for a member reference.
+_BARE_LINE_RE = re.compile(
+    r"^\s*(?:[-*+]\s+)?([A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?/[A-Za-z0-9_.-]+)\s*$")
+
+
+def parse_collection_readme(text, self_nwo):
+    """Parse a collection repo's README into {title, description, memberRefs}.
+
+    title       = first non-empty line (a leading '#' is stripped).
+    description = the first non-empty, non-reference paragraph after the title.
+    memberRefs  = de-duped owner/repo strings harvested from GitHub URLs anywhere in the text
+                  plus lines that are just `owner/repo`. The collection's own repo is excluded.
+    """
+    lines = text.splitlines()
+    title, title_idx = "", -1
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s:
+            title = s.lstrip("#").strip()
+            title_idx = i
+            break
+
+    refs, seen = [], set()
+    self_key = self_nwo.lower()
+
+    def add(nwo):
+        nwo = nwo.strip().rstrip(".,);:")
+        if nwo.endswith(".git"):
+            nwo = nwo[:-4]
+        key = nwo.lower()
+        if key and key != self_key and key not in seen:
+            seen.add(key)
+            refs.append(nwo)
+
+    for m in _GITHUB_URL_RE.finditer(text):
+        add(f"{m.group(1)}/{m.group(2)}")
+    for line in lines:
+        if "github.com" in line:
+            continue
+        bm = _BARE_LINE_RE.match(line)
+        if bm:
+            add(bm.group(1))
+
+    description = ""
+    for line in lines[title_idx + 1:]:
+        s = line.strip()
+        if not s:
+            if description:
+                break
+            continue
+        if "github.com" in s or _BARE_LINE_RE.match(line) or s.startswith(("#", "-", "*", "+", "<!--")):
+            break
+        description += (" " if description else "") + s
+
+    return {"title": title, "description": description, "memberRefs": refs}
+
+
 def resolve_volume_url(volume_ref, name_with_owner):
     """Convert a source_volume reference to a full download URL.
     Mirrors MorphoDepot.resolveVolumeURL: if it starts with 'http' use as-is,
@@ -83,6 +149,9 @@ def process_repo(owner, repo):
                   "-f", f"owner={owner}",
                   "-f", f"repo={repo}"])
     data = json.loads(result.stdout)["data"]["repository"]
+
+    topics = [n["topic"]["name"]
+              for n in (data.get("repositoryTopics") or {}).get("nodes", [])]
 
     base_url = f"https://raw.githubusercontent.com/{owner}/{repo}/main"
     accession_raw = fetch_url(f"{base_url}/MorphoDepotAccession.json")
@@ -124,6 +193,14 @@ def process_repo(owner, repo):
     curator_raw = fetch_url(f"{base_url}/CURATOR")
     if curator_raw:
         curator = curator_raw.strip().split("\n")[0].strip() or None
+
+    # A collection repo (md-collection topic) carries no dataset payload; instead its README
+    # lists member repos. Parse it now; generate-dashboard resolves the members and renders.
+    collection = None
+    if "md-collection" in topics:
+        readme_raw = fetch_url(f"{base_url}/README.md")
+        if readme_raw:
+            collection = parse_collection_readme(readme_raw, f"{owner}/{repo}")
 
     try:
         sc = run(["gh", "api", f"repos/{owner}/{repo}/contents/screenshots",
@@ -178,6 +255,9 @@ def process_repo(owner, repo):
         "sourceVolumeChecksum": source_checksum,
         "curator": curator,
     }
+    # Only collection repos carry this key, so existing dataset journals are untouched.
+    if collection is not None:
+        journal["collection"] = collection
 
     out_path = Path(f"journals/{owner}^{repo}.json")
     out_path.parent.mkdir(exist_ok=True)
