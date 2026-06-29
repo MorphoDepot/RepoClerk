@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/random-collection",
+  "journalUpdatedAt": "2026-06-29T16:58:21Z",
+  "pushedAt": "2026-06-29T16:58:07Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {},
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": null,
+  "sourceVolumeChecksum": null,
+  "curator": "muratmaga",
+  "collection": {
+    "title": "Random Collection",
+    "description": "Collection of random repos",
+    "memberRefs": [
+      "otocolobusmanul3816/Nerodia_Segmentation_Laboratory",
+      "muratmaga/Mouse_Skull",
+      "muratmaga/Herpetotherium_fugax"
+    ]
+  }
+}
