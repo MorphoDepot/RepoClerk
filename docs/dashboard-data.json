@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T14:31:13Z",
+  "generatedAt": "2026-06-29T16:58:37Z",
   "totalRepos": 70,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
@@ -5981,6 +5981,21 @@
           "isEphemeral": true
         }
       ]
+    }
+  ],
+  "collections": [
+    {
+      "slug": "random-collection",
+      "nameWithOwner": "MorphoDepot/random-collection",
+      "title": "Random Collection",
+      "description": "Collection of random repos",
+      "curator": "muratmaga",
+      "members": [
+        "otocolobusmanul3816/Nerodia_Segmentation_Laboratory",
+        "muratmaga/Mouse_Skull",
+        "muratmaga/Herpetotherium_fugax"
+      ],
+      "warnings": []
     }
   ]
 }
