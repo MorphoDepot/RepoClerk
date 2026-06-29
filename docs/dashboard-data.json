@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T17:56:27Z",
+  "generatedAt": "2026-06-29T18:12:41Z",
   "totalRepos": 70,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
@@ -5984,6 +5984,20 @@
     }
   ],
   "collections": [
+    {
+      "slug": "random-collection-2",
+      "nameWithOwner": "MorphoDepot/random-collection-2",
+      "title": "Random Collection",
+      "description": "Some repos",
+      "curator": "muratmaga",
+      "members": [
+        "muratmaga/Big_Brown_Bat"
+      ],
+      "warnings": [
+        "Unresolved member (not a known MorphoDepot repo): Muratmaga/SlicerMorph",
+        "1 resolved member(s); collections are expected to list at least 2."
+      ]
+    },
     {
       "slug": "random-collection",
       "nameWithOwner": "MorphoDepot/random-collection",
