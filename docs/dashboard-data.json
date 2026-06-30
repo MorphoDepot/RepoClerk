@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:13:59Z",
+  "generatedAt": "2026-06-30T19:44:58Z",
   "totalRepos": 69,
   "totalOpenIssues": 117,
   "totalOpenPRs": 65,
@@ -5899,5 +5899,18 @@
       ]
     }
   ],
-  "collections": []
+  "collections": [
+    {
+      "slug": "collection-ca12ba06",
+      "nameWithOwner": "MorphoDepot/collection-ca12ba06",
+      "title": "My New Collection",
+      "description": "assortment of repos",
+      "curator": "muratmaga",
+      "members": [
+        "muratmaga/Mouse_Skull",
+        "muratmaga/Herpetotherium_fugax"
+      ],
+      "warnings": []
+    }
+  ]
 }
