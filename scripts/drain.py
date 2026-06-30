@@ -32,6 +32,7 @@ GRAPHQL_QUERY = """
 query($owner: String!, $repo: String!) {
   repository(owner: $owner, name: $repo) {
     pushedAt
+    description
     repositoryTopics(first: 30) { nodes { topic { name } } }
     issues(states: OPEN, first: 100) {
       nodes {
@@ -194,13 +195,17 @@ def process_repo(owner, repo):
     if curator_raw:
         curator = curator_raw.strip().split("\n")[0].strip() or None
 
-    # A collection repo (md-collection topic) carries no dataset payload; instead its README
-    # lists member repos. Parse it now; generate-dashboard resolves the members and renders.
+    # A collection repo (md-collection topic) carries no dataset payload; its README lists member
+    # repos. The TITLE is the repo *description* (PR-proof metadata — a member's README PR can't
+    # change it), not the README first line; the README is parsed only for the member list.
     collection = None
     if "md-collection" in topics:
         readme_raw = fetch_url(f"{base_url}/README.md")
-        if readme_raw:
-            collection = parse_collection_readme(readme_raw, f"{owner}/{repo}")
+        collection = (parse_collection_readme(readme_raw, f"{owner}/{repo}")
+                      if readme_raw else {"title": "", "description": "", "memberRefs": []})
+        desc = (data.get("description") or "").strip()
+        if desc:
+            collection["title"] = desc
 
     try:
         sc = run(["gh", "api", f"repos/{owner}/{repo}/contents/screenshots",
