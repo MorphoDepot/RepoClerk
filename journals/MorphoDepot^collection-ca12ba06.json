@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-ca12ba06",
-  "journalUpdatedAt": "2026-06-30T19:44:45Z",
+  "journalUpdatedAt": "2026-07-01T05:17:14Z",
   "pushedAt": "2026-06-30T19:44:20Z",
   "openIssues": [],
   "openPRs": [],
@@ -12,7 +12,7 @@
   "sourceVolumeChecksum": null,
   "curator": "muratmaga",
   "collection": {
-    "title": "My New Collection",
+    "title": "I change the collection name",
     "description": "assortment of repos",
     "memberRefs": [
       "muratmaga/Mouse_Skull",
