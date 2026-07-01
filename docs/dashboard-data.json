@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T13:43:04Z",
+  "generatedAt": "2026-07-01T16:42:19Z",
   "totalRepos": 69,
   "totalOpenIssues": 117,
   "totalOpenPRs": 65,
@@ -5899,30 +5899,5 @@
       ]
     }
   ],
-  "collections": [
-    {
-      "slug": "collection-ca12ba06",
-      "nameWithOwner": "MorphoDepot/collection-ca12ba06",
-      "title": "My New Collection",
-      "description": "assortment of repos",
-      "curator": "muratmaga",
-      "members": [
-        "muratmaga/Mouse_Skull",
-        "muratmaga/Herpetotherium_fugax"
-      ],
-      "warnings": []
-    },
-    {
-      "slug": "collection-92329d25",
-      "nameWithOwner": "MorphoDepot/collection-92329d25",
-      "title": "Test",
-      "description": "test2",
-      "curator": "muratmaga",
-      "members": [
-        "PaulGignac/GignacLab_DiceCT_CowEye_2025",
-        "dinonoto/Plethodon_Hindlimb2"
-      ],
-      "warnings": []
-    }
-  ]
+  "collections": []
 }
