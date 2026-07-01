@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/collection-92329d25",
+  "journalUpdatedAt": "2026-07-01T12:00:43Z",
+  "pushedAt": "2026-07-01T12:00:27Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {},
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": null,
+  "sourceVolumeChecksum": null,
+  "curator": "muratmaga",
+  "collection": {
+    "title": "Test",
+    "description": "test2",
+    "memberRefs": [
+      "PaulGignac/GignacLab_DiceCT_CowEye_2025",
+      "dinonoto/Plethodon_Hindlimb2"
+    ]
+  }
+}
