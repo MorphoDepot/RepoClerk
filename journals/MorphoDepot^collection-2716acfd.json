@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/collection-2716acfd",
+  "journalUpdatedAt": "2026-07-02T18:40:50Z",
+  "pushedAt": "2026-07-02T18:40:35Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {},
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": null,
+  "sourceVolumeChecksum": null,
+  "curator": "muratmaga",
+  "collection": {
+    "title": "Mouse Anatomy Collection",
+    "description": "",
+    "memberRefs": [
+      "MorphoDepot/mus-musculus-E15",
+      "MorphoDepot/mus-musculus-skull"
+    ]
+  }
+}
