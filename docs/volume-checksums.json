@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:41:04Z",
+  "generatedAt": "2026-07-02T19:27:36Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -38,7 +38,6 @@
     ],
     "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7": [
       "MorphoDepotTesting/delete-e15",
-      "MorphoDepot/E15-Atlas",
       "zhong-jessica/mouse"
     ],
     "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514": [
@@ -50,9 +49,6 @@
       "MorphoDepotTesting/test-sliceropithecus-maximus-363",
       "MorphoDepotTesting/test-sliceroraptor-communis-681",
       "MorphoDepotTesting/test-slicerotherium-exempli-42"
-    ],
-    "dad3b943b467fc4b26681671ed13670985d38389d72b9c80abecde75e899459f": [
-      "MorphoDepot/Mouse_Skull"
     ],
     "38203879ac277085ae3cec9c5fb7c005e76d7352fdf224218eacedb55bfc701a": [
       "MorphoDepot/mus-musculus-E15"
