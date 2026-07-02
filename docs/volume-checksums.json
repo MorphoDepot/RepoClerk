@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T12:11:53Z",
+  "generatedAt": "2026-07-02T12:13:26Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -51,6 +51,10 @@
       "MorphoDepotTesting/test-sliceropithecus-maximus-363",
       "MorphoDepotTesting/test-sliceroraptor-communis-681",
       "MorphoDepotTesting/test-slicerotherium-exempli-42"
+    ],
+    "dad3b943b467fc4b26681671ed13670985d38389d72b9c80abecde75e899459f": [
+      "MorphoDepot/Mouse_Skull",
+      "muratmaga/Mouse_Skull"
     ],
     "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6": [
       "PaulGignac/GignacLab_DiceCT_CowEye_2025"
@@ -126,9 +130,6 @@
     ],
     "8ddf5f9734347591449a04fcec370319c465d60531b3381269cf08ead62fb49c": [
       "muratmaga/Herpetotherium_fugax"
-    ],
-    "dad3b943b467fc4b26681671ed13670985d38389d72b9c80abecde75e899459f": [
-      "muratmaga/Mouse_Skull"
     ],
     "cce86f19f9594d77cfa5878e00006722d7684490f2d11f5e1a2296b30c3e9855": [
       "oatake-ux/SwissWebster_Incisor"
