@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T06:13:11Z",
+  "generatedAt": "2026-07-02T09:39:52Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -59,6 +59,11 @@
     ],
     "977ca4c34207fc13394419dfaa74dca01562ddcf617ec2089fe66a405bf7c410": [
       "Pfu7978/Knight_Anole_Skull"
+    ],
+    "9538f1fbe90d8f070834f56fc4a34c06288cccb46d0b001998c027470f6c7a6c": [
+      "SlicerMorph/test-repo-3772",
+      "SlicerMorph/test-repo-8036",
+      "SlicerMorph/test-repo-9052"
     ],
     "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758": [
       "amm554/non-member"
