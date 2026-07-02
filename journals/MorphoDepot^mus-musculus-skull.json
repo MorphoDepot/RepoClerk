@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/mus-musculus-skull",
+  "journalUpdatedAt": "2026-07-02T18:35:57Z",
+  "pushedAt": "2026-07-02T18:35:39Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Automated checks failed before publishing",
+      "url": "https://github.com/MorphoDepot/mus-musculus-skull/issues/1",
+      "author": "morphodepot-intake",
+      "assignees": [
+        "muratmaga"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Automated checks failed before publishing",
+      "url": "https://github.com/MorphoDepot/mus-musculus-skull/issues/2",
+      "author": "morphodepot-intake",
+      "assignees": [
+        "muratmaga"
+      ]
+    }
+  ],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Non-accessioned"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      ""
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Mus musculus"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "mus-musculus-skull"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(520, 824, 456)",
+    "scanSpacing": "(0.03527835011482239, 0.03527835011482239, 0.03527835011482239)",
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": ""
+  },
+  "volumeSize": 10465763,
+  "sourceVolumeChecksum": "438e6be89b99981ee91df81a92bdaf9c0fcc6ec63433da03548b157dc3be274b",
+  "curator": "muratmaga"
+}
