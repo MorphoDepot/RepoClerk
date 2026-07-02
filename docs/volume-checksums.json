@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:07:52Z",
+  "generatedAt": "2026-07-02T18:36:12Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -56,6 +56,9 @@
     ],
     "38203879ac277085ae3cec9c5fb7c005e76d7352fdf224218eacedb55bfc701a": [
       "MorphoDepot/mus-musculus-E15"
+    ],
+    "438e6be89b99981ee91df81a92bdaf9c0fcc6ec63433da03548b157dc3be274b": [
+      "MorphoDepot/mus-musculus-skull"
     ],
     "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6": [
       "PaulGignac/GignacLab_DiceCT_CowEye_2025"
