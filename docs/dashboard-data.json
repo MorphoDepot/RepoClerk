@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:36:12Z",
+  "generatedAt": "2026-07-02T18:41:04Z",
   "totalRepos": 69,
   "totalOpenIssues": 121,
   "totalOpenPRs": 65,
@@ -5889,5 +5889,18 @@
       ]
     }
   ],
-  "collections": []
+  "collections": [
+    {
+      "slug": "collection-2716acfd",
+      "nameWithOwner": "MorphoDepot/collection-2716acfd",
+      "title": "Mouse Anatomy Collection",
+      "description": "",
+      "curator": "muratmaga",
+      "members": [
+        "MorphoDepot/mus-musculus-E15",
+        "MorphoDepot/mus-musculus-skull"
+      ],
+      "warnings": []
+    }
+  ]
 }
