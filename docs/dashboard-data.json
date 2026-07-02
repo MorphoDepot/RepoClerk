@@ -1,35 +1,119 @@
 {
-  "generatedAt": "2026-07-02T09:39:52Z",
-  "totalRepos": 70,
-  "totalOpenIssues": 117,
+  "generatedAt": "2026-07-02T12:11:53Z",
+  "totalRepos": 71,
+  "totalOpenIssues": 118,
   "totalOpenPRs": 65,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 70
+      "Unknown": 71
     },
     "phylum": {
-      "Unknown": 70
+      "Unknown": 71
     },
     "class": {
-      "Unknown": 70
+      "Unknown": 71
     },
     "order": {
-      "Unknown": 70
+      "Unknown": 71
     },
     "family": {
-      "Unknown": 70
+      "Unknown": 71
     },
     "genus": {
-      "Unknown": 70
+      "Unknown": 71
     }
   },
   "activity": {
-    "last_day": 4,
-    "last_week": 4,
-    "last_month": 11,
-    "last_year": 67
+    "last_day": 5,
+    "last_week": 5,
+    "last_month": 12,
+    "last_year": 68
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/E15-Atlas",
+      "pushedAt": "2026-07-02T12:09:45Z",
+      "journalUpdatedAt": "2026-07-02T12:11:39Z",
+      "openIssues": 1,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": ""
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Mus musculus"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Prenatal (fetus, embryo)"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "Yes"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY 4.0 (requires attribution, allows commercial usage)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "E15-Atlas"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(594, 1046, 738)",
+        "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
+        "fileFormatVersion": 2
+      },
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "SlicerMorph/test-repo-9052",
       "pushedAt": "2026-07-02T08:43:57Z",
@@ -5733,6 +5817,40 @@
   ],
   "duplicateVolumes": [
     {
+      "checksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7",
+      "category": "promotion",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepotTesting/delete-e15",
+          "isOrg": false,
+          "species": "Unknown",
+          "isTest": true,
+          "isEphemeral": true
+        },
+        {
+          "nameWithOwner": "MorphoDepot/E15-Atlas",
+          "isOrg": true,
+          "species": "Mus musculus",
+          "isTest": false,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "muratmaga/E15-Atlas",
+          "isOrg": false,
+          "species": "Mus musculus",
+          "isTest": false,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "zhong-jessica/mouse",
+          "isOrg": false,
+          "species": "Mus cervicolor",
+          "isTest": false,
+          "isEphemeral": true
+        }
+      ]
+    },
+    {
       "checksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719",
       "category": "cross-owner",
       "repos": [
@@ -5864,33 +5982,6 @@
           "nameWithOwner": "sunnyjsh/Sunny_sicb2",
           "isOrg": false,
           "species": "Pteronitella humanensis",
-          "isTest": false,
-          "isEphemeral": true
-        }
-      ]
-    },
-    {
-      "checksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7",
-      "category": "cross-owner",
-      "repos": [
-        {
-          "nameWithOwner": "MorphoDepotTesting/delete-e15",
-          "isOrg": false,
-          "species": "Unknown",
-          "isTest": true,
-          "isEphemeral": true
-        },
-        {
-          "nameWithOwner": "muratmaga/E15-Atlas",
-          "isOrg": false,
-          "species": "Mus musculus",
-          "isTest": false,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "zhong-jessica/mouse",
-          "isOrg": false,
-          "species": "Mus cervicolor",
           "isTest": false,
           "isEphemeral": true
         }
