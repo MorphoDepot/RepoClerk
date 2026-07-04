@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T11:49:03Z",
+  "generatedAt": "2026-07-04T14:04:56Z",
   "totalRepos": 67,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
@@ -113,6 +113,7 @@
         "scanSpacing": "(0.03527835011482239, 0.03527835011482239, 0.03527835011482239)",
         "fileFormatVersion": 2
       },
+      "isArchival": true,
       "isTest": false,
       "isEphemeral": false
     },
@@ -197,6 +198,7 @@
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
       },
+      "isArchival": true,
       "isTest": false,
       "isEphemeral": false
     },
@@ -284,6 +286,7 @@
         "scanSpacing": "(0.02, 0.02, 0.02)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -368,6 +371,7 @@
         "scanSpacing": "(0.1439999938, 0.143999992409867, 0.1439999938)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -450,6 +454,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -536,6 +541,7 @@
         "scanSpacing": "(0.25, 0.25, 0.25)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -605,6 +611,7 @@
         "scanDimensions": "(4634, 1120, 705)",
         "scanSpacing": "(0.065495199, 0.065495199, 0.065495199)"
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -687,6 +694,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -769,6 +777,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -853,6 +862,7 @@
         "scanSpacing": "(0.11999999730000001, 0.11999999697428199, 0.11999999730000001)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -935,6 +945,7 @@
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": true
     },
@@ -1009,6 +1020,7 @@
         "scanDimensions": "(256, 256, 130)",
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)"
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -1091,6 +1103,7 @@
         "scanSpacing": "(0.015900000000000004, 0.015900000000000004, 0.015900000000000004)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": true
     },
@@ -1173,6 +1186,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -1255,6 +1269,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -1337,6 +1352,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -1419,6 +1435,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -1501,6 +1518,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": false
     },
@@ -1588,6 +1606,7 @@
         "scanSpacing": "(0.02469999999999999, 0.024699999999999972, 0.024699999999999982)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -1670,6 +1689,7 @@
         "scanSpacing": "(0.6000000000000001, 0.6000000000000001, 0.6000000000000001)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": true,
       "isEphemeral": true
     },
@@ -1754,6 +1774,7 @@
         "scanSpacing": "(0.019033600000000005, 0.019033600000000005, 0.019033600000000008)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -1839,6 +1860,7 @@
         "scanSpacing": "(0.0205306, 0.0205306, 0.0205306)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -1926,6 +1948,7 @@
         "scanSpacing": "(0.011099999999999999, 0.011099999999999999, 0.022199999999999998)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2010,6 +2033,7 @@
         "scanSpacing": "(0.07000000000000002, 0.07000000000000002, 0.07000000000000002)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2096,6 +2120,7 @@
         "scanSpacing": "(0.2, 0.2, 0.2)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2180,6 +2205,7 @@
         "scanSpacing": "(1.0, 1.0, 1.0)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2267,6 +2293,7 @@
         "scanSpacing": "(0.00592, 0.00592, 0.00592)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2353,6 +2380,7 @@
         "scanSpacing": "(1.0, 1.0, 1.0)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -2438,6 +2466,7 @@
         "scanSpacing": "(1.0, 1.0, 1.0)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -2525,6 +2554,7 @@
         "scanSpacing": "(0.02, 0.02, 0.02)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2598,6 +2628,7 @@
         "scanDimensions": "(988, 1660, 1721)",
         "scanSpacing": "(0.007144, 0.007144, 0.007144)"
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -2686,6 +2717,7 @@
         "scanSpacing": "(0.0185547, 0.0185547, 0.0185547)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -2770,6 +2802,7 @@
         "scanSpacing": "(0.010498966637142003, 0.010498966637142003, 0.010498966637142003)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -2856,6 +2889,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -2942,6 +2976,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3028,6 +3063,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3114,6 +3150,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3198,6 +3235,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3284,6 +3322,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3370,6 +3409,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3456,6 +3496,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3540,6 +3581,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3624,6 +3666,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3708,6 +3751,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3794,6 +3838,7 @@
         "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -3880,6 +3925,7 @@
         "scanSpacing": "(0.1098, 0.1098, 0.2196)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -3966,6 +4012,7 @@
         "scanSpacing": "(0.084, 0.084, 0.168)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -4052,6 +4099,7 @@
         "scanSpacing": "(0.0406434, 0.0406434, 0.0406434)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -4139,6 +4187,7 @@
         "scanSpacing": "(0.037686, 0.037686, 0.037686)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -4223,6 +4272,7 @@
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -4307,6 +4357,7 @@
         "scanSpacing": "(0.3509999999999999, 0.3509999999999999, 0.29999999999999993)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -4389,6 +4440,7 @@
         "scanSpacing": "(0.065495199, 0.065495199, 0.065495199)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -4471,6 +4523,7 @@
         "scanSpacing": "(0.0380836, 0.0761672, 0.0380836)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -4553,6 +4606,7 @@
         "scanSpacing": "(0.065495199, 0.065495199, 0.065495199)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -4637,6 +4691,7 @@
         "scanSpacing": "(0.12, 0.12, 0.12)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -4722,6 +4777,7 @@
         "scanSpacing": "(0.14111340045928955, 0.14111340045928955, 0.1408766359090805)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -4804,6 +4860,7 @@
         "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -4886,6 +4943,7 @@
         "scanSpacing": "(0.0380836, 0.0761672, 0.0380836)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -4970,6 +5028,7 @@
         "scanSpacing": "(0.02011828, 0.02011828, 0.02011828)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": true
     },
@@ -5052,6 +5111,7 @@
         "scanSpacing": "(0.015900000000000004, 0.015900000000000004, 0.015900000000000004)",
         "fileFormatVersion": 2
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5121,6 +5181,7 @@
         "scanDimensions": "(1425, 528, 3814)",
         "scanSpacing": "(0.027999999999999997, 0.027999999999999987, 0.027999999999999987)"
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5191,6 +5252,7 @@
         "scanSpacing": "(0.015900000000000004, 0.015900000000000004, 0.015900000000000004)",
         "fileFormatVersion": 1
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5261,6 +5323,7 @@
         "scanSpacing": "(0.03457999999999999, 0.03457999999999999, 0.03457999999999999)",
         "fileFormatVersion": 1
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5333,6 +5396,7 @@
         "scanSpacing": "(0.019033600000000005, 0.019033600000000005, 0.019033600000000005)",
         "fileFormatVersion": 1
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5404,6 +5468,7 @@
         "scanDimensions": "(560, 560, 1358)",
         "scanSpacing": "(0.0352, 0.0352, 0.0352)"
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5416,6 +5481,7 @@
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {},
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -5487,6 +5553,7 @@
         "scanDimensions": "(352, 341, 147)",
         "scanSpacing": "(0.07303892000000001, 0.07303892000000001, 0.07303892000000001)"
       },
+      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     }
