@@ -29,20 +29,29 @@
   const taxonomyChart = echarts.init(document.getElementById('taxonomy-chart'));
   const taxSelect = document.getElementById('tax-level');
 
-  // --- Filters: "Hide test repositories" / "Include ephemeral repositories" ---
+  // --- Filters: "Hide test repositories" / "Include personal repositories" ---
   const hideTestCb = document.getElementById('hide-test');
-  const includeEphemeralCb = document.getElementById('include-ephemeral');
+  const includePersonalCb = document.getElementById('include-personal');
   const filterCountEl = document.getElementById('filter-count');
   const DUP_CATEGORY_PRIORITY = { 'org-org': 0, 'promotion': 1, 'cross-owner': 2, 'same-owner': 3 };
 
   hideTestCb.addEventListener('change', renderAll);
-  includeEphemeralCb.addEventListener('change', renderAll);
+  includePersonalCb.addEventListener('change', renderAll);
   taxSelect.addEventListener('change', () => renderTaxonomy(data.repos.filter(repoVisible)));
   renderAll();
 
+  // Repository tier is OWNER-based: "Archival" iff owned by the MorphoDepot org (the gated, reviewed
+  // home), else "Personal".  Falls back to computing from nameWithOwner when isArchival is absent
+  // (e.g. dashboard-data.json regenerated before the field was added), so there's no empty-list gap.
+  function repoIsArchival(r) {
+    return (r.isArchival !== undefined)
+      ? r.isArchival
+      : (r.nameWithOwner || '').split('/')[0] === 'MorphoDepot';
+  }
+
   function repoVisible(r) {
-    if (hideTestCb.checked && r.isTest) return false;          // hide reload-and-test repos
-    if (!includeEphemeralCb.checked && r.isEphemeral) return false;  // optionally hide ephemeral
+    if (hideTestCb.checked && r.isTest) return false;                     // hide reload-and-test repos
+    if (!includePersonalCb.checked && !repoIsArchival(r)) return false;   // default: Archival (org) only
     return true;
   }
 

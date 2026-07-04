@@ -209,6 +209,11 @@ def main():
 
         is_test = is_test_repo(nwo)
         is_ephemeral = is_ephemeral_repo(accession)
+        # Repository tier is OWNER-based, not the self-declared accession repoType: "Archival" iff the
+        # repo is owned by the MorphoDepot org (the gated, reviewed home), else "Personal".  This is
+        # authoritative -- a personal-account repo that self-declared "Archival" (isEphemeral stays
+        # False) is still correctly Personal here.
+        is_archival = nwo.split("/", 1)[0] == ORG_LOGIN
 
         repos_list.append({
             "nameWithOwner": nwo,
@@ -219,6 +224,7 @@ def main():
             "screenshotCount": j.get("screenshotCount", 0),
             "screenshotCaptions": j.get("screenshotCaptions", []),
             "accession": accession,
+            "isArchival": is_archival,
             "isTest": is_test,
             "isEphemeral": is_ephemeral,
         })
