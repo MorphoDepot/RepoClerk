@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
-  "journalUpdatedAt": "2026-07-07T11:40:49Z",
+  "journalUpdatedAt": "2026-07-07T11:41:14Z",
   "pushedAt": "2026-01-03T22:48:52Z",
   "openIssues": [
     {
@@ -18,7 +18,7 @@
     {
       "number": 3,
       "title": "issue-1",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/kforsgren-1112013/KLF_SICB_2026/pull/3",
       "author": "muratmaga",
       "closingIssue": {
