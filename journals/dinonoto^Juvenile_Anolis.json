@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "dinonoto/Juvenile_Anolis",
+  "journalUpdatedAt": "2026-07-15T17:42:18Z",
+  "pushedAt": "2026-07-15T16:07:35Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "cranium full",
+      "url": "https://github.com/dinonoto/Juvenile_Anolis/issues/1",
+      "author": "alorenz-raptor",
+      "assignees": []
+    }
+  ],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Non-accessioned"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      ""
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Anolis carolinensis"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Juvenile (neonatal to subadult)"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
+        "Pectoral girdle"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "Juvenile_Anolis"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(416, 546, 356)",
+    "scanSpacing": "(0.01799999925, 0.01799999925, 0.01799999925)",
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": "Screenshot of specimen scan"
+  },
+  "volumeSize": 122708965,
+  "sourceVolumeChecksum": "f6a26edb95e08e04785528893e711e29f3b48ef6fbab68a35765f1d1b6de29db",
+  "curator": null
+}
