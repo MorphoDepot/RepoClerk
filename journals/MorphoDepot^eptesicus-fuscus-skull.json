@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/eptesicus-fuscus-skull",
+  "journalUpdatedAt": "2026-07-16T22:08:50Z",
+  "pushedAt": "2026-07-16T22:08:33Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      "Yes"
+    ],
+    "iDigBioURL": [
+      "Paste the record URL:",
+      "https://www.gbif.org/occurrence/1702720653"
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Eptesicus fuscus"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Female"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "eptesicus-fuscus-skull"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(724, 1076, 452)",
+    "scanSpacing": "(0.0199999, 0.0199999, 0.0199999)",
+    "specimenIdentifier": "UWBM:Mamm:82522",
+    "accessionSource": "GBIF",
+    "accessionResolved": true,
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": "Big brown bat skull"
+  },
+  "volumeSize": 57584218,
+  "sourceVolumeChecksum": "ab20ec294b2c09a7bcf7297e234f61c56bae989fc27a56745caa6a5a92687fba",
+  "curator": "muratmaga"
+}
