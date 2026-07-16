@@ -1,35 +1,125 @@
 {
-  "generatedAt": "2026-07-16T22:09:03Z",
-  "totalRepos": 69,
+  "generatedAt": "2026-07-16T22:17:12Z",
+  "totalRepos": 70,
   "totalOpenIssues": 120,
   "totalOpenPRs": 66,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 69
+      "Unknown": 70
     },
     "phylum": {
-      "Unknown": 69
+      "Unknown": 70
     },
     "class": {
-      "Unknown": 69
+      "Unknown": 70
     },
     "order": {
-      "Unknown": 69
+      "Unknown": 70
     },
     "family": {
-      "Unknown": 69
+      "Unknown": 70
     },
     "genus": {
-      "Unknown": 69
+      "Unknown": 70
     }
   },
   "activity": {
-    "last_day": 1,
-    "last_week": 2,
-    "last_month": 8,
-    "last_year": 66
+    "last_day": 2,
+    "last_week": 3,
+    "last_month": 9,
+    "last_year": 67
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/neotoma-cinerea-skull",
+      "pushedAt": "2026-07-16T22:16:39Z",
+      "journalUpdatedAt": "2026-07-16T22:16:59Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Bushy-tailed Packrat"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Accessioned specimen"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+          "Yes"
+        ],
+        "iDigBioURL": [
+          "Paste the record URL:",
+          "https://gbif.org/occurrence/1702719993"
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Neotoma cinerea"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Female"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "neotoma-cinerea-skull"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(1356, 2663, 1050)",
+        "scanSpacing": "(0.02000664, 0.02000664, 0.02000664)",
+        "specimenIdentifier": "UWBM:Mamm:81827",
+        "accessionSource": "GBIF",
+        "accessionResolved": true,
+        "fileFormatVersion": 2
+      },
+      "isArchival": true,
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "MorphoDepot/eptesicus-fuscus-skull",
       "pushedAt": "2026-07-16T22:08:33Z",
