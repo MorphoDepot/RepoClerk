@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T22:17:12Z",
+  "generatedAt": "2026-07-16T22:29:31Z",
   "totalRepos": 70,
   "totalOpenIssues": 120,
   "totalOpenPRs": 66,
@@ -6057,6 +6057,18 @@
       "members": [
         "MorphoDepot/mus-musculus-E15",
         "MorphoDepot/mus-musculus-skull"
+      ],
+      "warnings": []
+    },
+    {
+      "slug": "collection-a52d5a9a",
+      "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
+      "title": "Skulls of PNW Mammals",
+      "description": "MicroCT scans of iconic Pacific Northwest mammals",
+      "curator": "muratmaga",
+      "members": [
+        "MorphoDepot/eptesicus-fuscus-skull",
+        "MorphoDepot/neotoma-cinerea-skull"
       ],
       "warnings": []
     }
