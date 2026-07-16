@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
+  "journalUpdatedAt": "2026-07-16T22:29:16Z",
+  "pushedAt": "2026-07-16T22:28:58Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {},
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": null,
+  "sourceVolumeChecksum": null,
+  "curator": "muratmaga",
+  "collection": {
+    "title": "Skulls of PNW Mammals",
+    "description": "MicroCT scans of iconic Pacific Northwest mammals",
+    "memberRefs": [
+      "MorphoDepot/eptesicus-fuscus-skull",
+      "MorphoDepot/neotoma-cinerea-skull"
+    ]
+  }
+}
