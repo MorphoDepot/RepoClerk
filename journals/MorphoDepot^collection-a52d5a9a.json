@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
+  "journalUpdatedAt": "2026-07-17T03:24:32Z",
+  "pushedAt": "2026-07-17T03:24:16Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {},
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": null,
+  "sourceVolumeChecksum": null,
+  "curator": "muratmaga",
+  "collection": {
+    "title": "Skulls of PNW Mammals",
+    "description": "MicroCT scans of iconic Pacific Northwest mammals",
+    "memberRefs": [
+      "MorphoDepot/eptesicus-fuscus-skull",
+      "MorphoDepot/neotoma-cinerea-skull",
+      "MorphoDepot/scapanus-townsendii-head",
+      "MorphoDepot/glaucomys-sabrinus-skull"
+    ]
+  }
+}

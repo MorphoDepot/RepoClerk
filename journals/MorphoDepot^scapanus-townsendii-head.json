@@ -1,33 +1,10 @@
 {
   "schemaVersion": 3,
-  "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
-  "journalUpdatedAt": "2026-07-07T11:41:16Z",
-  "pushedAt": "2026-01-03T22:48:52Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "Wanna segment the brain",
-      "url": "https://github.com/kforsgren-1112013/KLF_SICB_2026/issues/1",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
-    }
-  ],
-  "openPRs": [
-    {
-      "number": 3,
-      "title": "issue-1",
-      "isDraft": false,
-      "url": "https://github.com/kforsgren-1112013/KLF_SICB_2026/pull/3",
-      "author": "muratmaga",
-      "closingIssue": {
-        "number": 1,
-        "title": "Wanna segment the brain",
-        "repoOwner": "kforsgren-1112013"
-      }
-    }
-  ],
+  "nameWithOwner": "MorphoDepot/scapanus-townsendii-head",
+  "journalUpdatedAt": "2026-07-17T02:29:32Z",
+  "pushedAt": "2026-07-17T02:29:14Z",
+  "openIssues": [],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -39,23 +16,23 @@
     ],
     "specimenSource": [
       "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-      "Non-accessioned"
+      "Accessioned specimen"
     ],
     "iDigBioAccessioned": [
-      "Is your specimen's species in the iDigBio database?",
-      ""
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      "Yes"
     ],
     "iDigBioURL": [
-      "Enter URL from iDigBio:",
-      ""
+      "Paste the record URL:",
+      "https://www.gbif.org/occurrence/1702711089"
     ],
     "species": [
       "What is your specimen's species?",
-      "Homo sapiens"
+      "Scapanus townsendii"
     ],
     "biologicalSex": [
       "What is your specimen's sex?",
-      "Unknown"
+      "Male"
     ],
     "developmentalStage": [
       "What is your specimen's developmental stage?",
@@ -63,7 +40,7 @@
     ],
     "modality": [
       "What is the modality of the acquisition?",
-      "MRI"
+      "Micro CT (or synchrotron)"
     ],
     "contrastEnhancement": [
       "Is there contrast enhancement treatment applied to the specimen?",
@@ -87,25 +64,28 @@
     ],
     "license": [
       "Choose a license:",
-      "CC BY 4.0 (requires attribution, allows commercial usage)"
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "KLF_SICB_2026"
+      "scapanus-townsendii-head"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
-      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+      "Archival (intended for long-term maintenance)"
     ],
-    "scanDimensions": "(256, 256, 130)",
-    "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+    "scanDimensions": "(796, 1673, 741)",
+    "scanSpacing": "(0.026500569999999998, 0.026500569999999998, 0.026500569999999998)",
+    "specimenIdentifier": "UWBM:Mamm:72980",
+    "accessionSource": "GBIF",
+    "accessionResolved": true,
     "fileFormatVersion": 2
   },
   "screenshotCount": 0,
   "screenshotCaptions": {
-    "screenshot-1.png": ""
+    "screenshot-1.png": "Townsend's mole"
   },
-  "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
-  "curator": null
+  "volumeSize": 112076667,
+  "sourceVolumeChecksum": "8ee82c39036871134a2c60102c518eecc1ab44aa4d54ca5cda933944c558d105",
+  "curator": "muratmaga"
 }

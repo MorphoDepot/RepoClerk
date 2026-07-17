@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T04:02:03Z",
+  "generatedAt": "2026-07-17T04:16:02Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -50,11 +50,23 @@
       "MorphoDepotTesting/test-sliceroraptor-communis-681",
       "MorphoDepotTesting/test-slicerotherium-exempli-42"
     ],
+    "ab20ec294b2c09a7bcf7297e234f61c56bae989fc27a56745caa6a5a92687fba": [
+      "MorphoDepot/eptesicus-fuscus-skull"
+    ],
+    "8fdeb1b7bfeb13961f2aba00c393795b187d67e4abd714f9bcf6cd0c5738e005": [
+      "MorphoDepot/glaucomys-sabrinus-skull"
+    ],
     "38203879ac277085ae3cec9c5fb7c005e76d7352fdf224218eacedb55bfc701a": [
       "MorphoDepot/mus-musculus-E15"
     ],
     "438e6be89b99981ee91df81a92bdaf9c0fcc6ec63433da03548b157dc3be274b": [
       "MorphoDepot/mus-musculus-skull"
+    ],
+    "b355d5f636bd1faa01e342a86894e1952412d32996008bd66abc6bd2cec008e5": [
+      "MorphoDepot/neotoma-cinerea-skull"
+    ],
+    "8ee82c39036871134a2c60102c518eecc1ab44aa4d54ca5cda933944c558d105": [
+      "MorphoDepot/scapanus-townsendii-head"
     ],
     "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6": [
       "PaulGignac/GignacLab_DiceCT_CowEye_2025"
@@ -73,6 +85,9 @@
     ],
     "2c29a9db8891c119eddc5d1b82d5cc2b4f66677c21c555c931b8334613a554c9": [
       "dinonoto/AM112911-05_Juv_Alligator"
+    ],
+    "f6a26edb95e08e04785528893e711e29f3b48ef6fbab68a35765f1d1b6de29db": [
+      "dinonoto/Juvenile_Anolis"
     ],
     "ee307046d4dbaf049c15a839c71228a17bf264f65e68776247ef58fc96c3efcf": [
       "dinonoto/Juvenile_Bearded_Dragon"
@@ -116,9 +131,6 @@
     "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719": [
       "leighamarielynch-hash/test",
       "raranda22/Juvenile_Alligator_Volume"
-    ],
-    "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d": [
-      "muratmaga/Big_Brown_Bat"
     ],
     "abd521a4f4e9c16121d8126386e8ef1b082b541c57dab006b3e480b95ef19407": [
       "muratmaga/Bumblebee_Stained"

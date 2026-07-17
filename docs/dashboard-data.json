@@ -1,35 +1,483 @@
 {
-  "generatedAt": "2026-07-17T04:02:03Z",
-  "totalRepos": 67,
+  "generatedAt": "2026-07-17T04:16:02Z",
+  "totalRepos": 71,
   "totalOpenIssues": 119,
-  "totalOpenPRs": 65,
+  "totalOpenPRs": 66,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 67
+      "Unknown": 71
     },
     "phylum": {
-      "Unknown": 67
+      "Unknown": 71
     },
     "class": {
-      "Unknown": 67
+      "Unknown": 71
     },
     "order": {
-      "Unknown": 67
+      "Unknown": 71
     },
     "family": {
-      "Unknown": 67
+      "Unknown": 71
     },
     "genus": {
-      "Unknown": 67
+      "Unknown": 71
     }
   },
   "activity": {
-    "last_day": 0,
-    "last_week": 0,
-    "last_month": 6,
-    "last_year": 64
+    "last_day": 4,
+    "last_week": 5,
+    "last_month": 10,
+    "last_year": 68
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/glaucomys-sabrinus-skull",
+      "pushedAt": "2026-07-17T03:23:14Z",
+      "journalUpdatedAt": "2026-07-17T03:23:30Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Northern flying squirrel"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Accessioned specimen"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+          "Yes"
+        ],
+        "iDigBioURL": [
+          "Paste the record URL:",
+          "https://gbif.org/occurrence/1702669889"
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Glaucomys sabrinus"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Female"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "glaucomys-sabrinus-skull"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(975, 1589, 750)",
+        "scanSpacing": "(0.026199930000000003, 0.026199930000000003, 0.02619993)",
+        "specimenIdentifier": "UWBM:Mamm:30808",
+        "accessionSource": "GBIF",
+        "accessionResolved": true,
+        "fileFormatVersion": 2
+      },
+      "isArchival": true,
+      "isTest": false,
+      "isEphemeral": false
+    },
+    {
+      "nameWithOwner": "MorphoDepot/scapanus-townsendii-head",
+      "pushedAt": "2026-07-17T02:29:14Z",
+      "journalUpdatedAt": "2026-07-17T02:29:32Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Townsend's mole"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Accessioned specimen"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+          "Yes"
+        ],
+        "iDigBioURL": [
+          "Paste the record URL:",
+          "https://www.gbif.org/occurrence/1702711089"
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Scapanus townsendii"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Male"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "scapanus-townsendii-head"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(796, 1673, 741)",
+        "scanSpacing": "(0.026500569999999998, 0.026500569999999998, 0.026500569999999998)",
+        "specimenIdentifier": "UWBM:Mamm:72980",
+        "accessionSource": "GBIF",
+        "accessionResolved": true,
+        "fileFormatVersion": 2
+      },
+      "isArchival": true,
+      "isTest": false,
+      "isEphemeral": false
+    },
+    {
+      "nameWithOwner": "MorphoDepot/neotoma-cinerea-skull",
+      "pushedAt": "2026-07-16T22:16:39Z",
+      "journalUpdatedAt": "2026-07-16T22:16:59Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Bushy-tailed Packrat"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Accessioned specimen"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+          "Yes"
+        ],
+        "iDigBioURL": [
+          "Paste the record URL:",
+          "https://gbif.org/occurrence/1702719993"
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Neotoma cinerea"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Female"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "neotoma-cinerea-skull"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(1356, 2663, 1050)",
+        "scanSpacing": "(0.02000664, 0.02000664, 0.02000664)",
+        "specimenIdentifier": "UWBM:Mamm:81827",
+        "accessionSource": "GBIF",
+        "accessionResolved": true,
+        "fileFormatVersion": 2
+      },
+      "isArchival": true,
+      "isTest": false,
+      "isEphemeral": false
+    },
+    {
+      "nameWithOwner": "MorphoDepot/eptesicus-fuscus-skull",
+      "pushedAt": "2026-07-16T22:08:33Z",
+      "journalUpdatedAt": "2026-07-16T22:08:50Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Big brown bat skull"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Accessioned specimen"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+          "Yes"
+        ],
+        "iDigBioURL": [
+          "Paste the record URL:",
+          "https://www.gbif.org/occurrence/1702720653"
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Eptesicus fuscus"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Female"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "eptesicus-fuscus-skull"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(724, 1076, 452)",
+        "scanSpacing": "(0.0199999, 0.0199999, 0.0199999)",
+        "specimenIdentifier": "UWBM:Mamm:82522",
+        "accessionSource": "GBIF",
+        "accessionResolved": true,
+        "fileFormatVersion": 2
+      },
+      "isArchival": true,
+      "isTest": false,
+      "isEphemeral": false
+    },
+    {
+      "nameWithOwner": "dinonoto/Juvenile_Anolis",
+      "pushedAt": "2026-07-15T16:07:35Z",
+      "journalUpdatedAt": "2026-07-15T17:42:21Z",
+      "openIssues": 1,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Screenshot of specimen scan"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Anolis carolinensis"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Juvenile (neonatal to subadult)"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
+            "Pectoral girdle"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "Juvenile_Anolis"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(416, 546, 356)",
+        "scanSpacing": "(0.01799999925, 0.01799999925, 0.01799999925)",
+        "fileFormatVersion": 2
+      },
+      "isArchival": false,
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "MorphoDepot/mus-musculus-skull",
       "pushedAt": "2026-07-02T18:35:39Z",
@@ -199,94 +647,6 @@
         "fileFormatVersion": 2
       },
       "isArchival": true,
-      "isTest": false,
-      "isEphemeral": false
-    },
-    {
-      "nameWithOwner": "muratmaga/Big_Brown_Bat",
-      "pushedAt": "2026-07-01T18:41:54Z",
-      "journalUpdatedAt": "2026-07-01T19:15:28Z",
-      "openIssues": 1,
-      "openPRs": 0,
-      "screenshotCount": 0,
-      "screenshotCaptions": {
-        "screenshot-1.png": "Specimen in side oblique view.",
-        "screenshot-2.png": ""
-      },
-      "accession": {
-        "otherSubjectDescription": [
-          "Please describe the subject of the data.",
-          ""
-        ],
-        "subjectType": [
-          "What is the subject type?",
-          "Biological specimen"
-        ],
-        "specimenSource": [
-          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-          "Accessioned specimen"
-        ],
-        "iDigBioAccessioned": [
-          "Is your specimen's species in the iDigBio database?",
-          "Yes"
-        ],
-        "iDigBioURL": [
-          "Enter URL from iDigBio:",
-          "https://portal.idigbio.org/portal/records/72735a6d-793e-4e58-939d-da4aca62c96b"
-        ],
-        "species": [
-          "What is your specimen's species?",
-          "Eptesicus fuscus"
-        ],
-        "biologicalSex": [
-          "What is your specimen's sex?",
-          "Female"
-        ],
-        "developmentalStage": [
-          "What is your specimen's developmental stage?",
-          "Adult"
-        ],
-        "modality": [
-          "What is the modality of the acquisition?",
-          "Micro CT (or synchrotron)"
-        ],
-        "contrastEnhancement": [
-          "Is there contrast enhancement treatment applied to the specimen?",
-          "No"
-        ],
-        "imageContents": [
-          "What is in the image?",
-          "Partial specimen"
-        ],
-        "anatomicalAreas": [
-          "What anatomical area(s) is/are present in the scan?",
-          [
-            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
-          ]
-        ],
-        "redistributionAcknowledgement": [
-          "Acknowledgement:",
-          [
-            "I have the right to allow redistribution of this data."
-          ]
-        ],
-        "license": [
-          "Choose a license:",
-          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
-        ],
-        "githubRepoName": [
-          "What should the repository in your github account called? This needs to be unique value for your account.",
-          "Big_Brown_Bat"
-        ],
-        "repoType": [
-          "What is the intended lifespan of this repository?",
-          "Archival (intended for long-term maintenance)"
-        ],
-        "scanDimensions": "(800, 1181, 583)",
-        "scanSpacing": "(0.02, 0.02, 0.02)",
-        "fileFormatVersion": 2
-      },
-      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },
@@ -3329,9 +3689,9 @@
     {
       "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
       "pushedAt": "2026-01-03T22:48:52Z",
-      "journalUpdatedAt": "2026-06-15T20:51:03Z",
+      "journalUpdatedAt": "2026-07-07T11:41:16Z",
       "openIssues": 1,
-      "openPRs": 0,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": ""
@@ -5789,6 +6149,20 @@
       "members": [
         "MorphoDepot/mus-musculus-E15",
         "MorphoDepot/mus-musculus-skull"
+      ],
+      "warnings": []
+    },
+    {
+      "slug": "collection-a52d5a9a",
+      "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
+      "title": "Skulls of PNW Mammals",
+      "description": "MicroCT scans of iconic Pacific Northwest mammals",
+      "curator": "muratmaga",
+      "members": [
+        "MorphoDepot/eptesicus-fuscus-skull",
+        "MorphoDepot/neotoma-cinerea-skull",
+        "MorphoDepot/scapanus-townsendii-head",
+        "MorphoDepot/glaucomys-sabrinus-skull"
       ],
       "warnings": []
     }

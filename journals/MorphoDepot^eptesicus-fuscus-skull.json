@@ -1,19 +1,9 @@
 {
   "schemaVersion": 3,
-  "nameWithOwner": "muratmaga/Big_Brown_Bat",
-  "journalUpdatedAt": "2026-07-01T19:15:28Z",
-  "pushedAt": "2026-07-01T18:41:54Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "test adding landmarks",
-      "url": "https://github.com/muratmaga/Big_Brown_Bat/issues/1",
-      "author": "amm554",
-      "assignees": [
-        "amm554"
-      ]
-    }
-  ],
+  "nameWithOwner": "MorphoDepot/eptesicus-fuscus-skull",
+  "journalUpdatedAt": "2026-07-16T22:08:50Z",
+  "pushedAt": "2026-07-16T22:08:33Z",
+  "openIssues": [],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
@@ -29,12 +19,12 @@
       "Accessioned specimen"
     ],
     "iDigBioAccessioned": [
-      "Is your specimen's species in the iDigBio database?",
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
       "Yes"
     ],
     "iDigBioURL": [
-      "Enter URL from iDigBio:",
-      "https://portal.idigbio.org/portal/records/72735a6d-793e-4e58-939d-da4aca62c96b"
+      "Paste the record URL:",
+      "https://www.gbif.org/occurrence/1702720653"
     ],
     "species": [
       "What is your specimen's species?",
@@ -78,22 +68,24 @@
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "Big_Brown_Bat"
+      "eptesicus-fuscus-skull"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
       "Archival (intended for long-term maintenance)"
     ],
-    "scanDimensions": "(800, 1181, 583)",
-    "scanSpacing": "(0.02, 0.02, 0.02)",
+    "scanDimensions": "(724, 1076, 452)",
+    "scanSpacing": "(0.0199999, 0.0199999, 0.0199999)",
+    "specimenIdentifier": "UWBM:Mamm:82522",
+    "accessionSource": "GBIF",
+    "accessionResolved": true,
     "fileFormatVersion": 2
   },
   "screenshotCount": 0,
   "screenshotCaptions": {
-    "screenshot-1.png": "Specimen in side oblique view.",
-    "screenshot-2.png": ""
+    "screenshot-1.png": "Big brown bat skull"
   },
-  "volumeSize": 148596272,
-  "sourceVolumeChecksum": "9d7a583d50fc07d696905818b93a5cdaea6d2ed9042a7d155e6b2b2660b50f4d",
+  "volumeSize": 57584218,
+  "sourceVolumeChecksum": "ab20ec294b2c09a7bcf7297e234f61c56bae989fc27a56745caa6a5a92687fba",
   "curator": "muratmaga"
 }

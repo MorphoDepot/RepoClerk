@@ -1,33 +1,18 @@
 {
   "schemaVersion": 3,
-  "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
-  "journalUpdatedAt": "2026-07-07T11:41:16Z",
-  "pushedAt": "2026-01-03T22:48:52Z",
+  "nameWithOwner": "dinonoto/Juvenile_Anolis",
+  "journalUpdatedAt": "2026-07-15T17:42:21Z",
+  "pushedAt": "2026-07-15T16:07:35Z",
   "openIssues": [
     {
       "number": 1,
-      "title": "Wanna segment the brain",
-      "url": "https://github.com/kforsgren-1112013/KLF_SICB_2026/issues/1",
-      "author": "muratmaga",
-      "assignees": [
-        "muratmaga"
-      ]
+      "title": "cranium full",
+      "url": "https://github.com/dinonoto/Juvenile_Anolis/issues/1",
+      "author": "alorenz-raptor",
+      "assignees": []
     }
   ],
-  "openPRs": [
-    {
-      "number": 3,
-      "title": "issue-1",
-      "isDraft": false,
-      "url": "https://github.com/kforsgren-1112013/KLF_SICB_2026/pull/3",
-      "author": "muratmaga",
-      "closingIssue": {
-        "number": 1,
-        "title": "Wanna segment the brain",
-        "repoOwner": "kforsgren-1112013"
-      }
-    }
-  ],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -51,7 +36,7 @@
     ],
     "species": [
       "What is your specimen's species?",
-      "Homo sapiens"
+      "Anolis carolinensis"
     ],
     "biologicalSex": [
       "What is your specimen's sex?",
@@ -59,11 +44,11 @@
     ],
     "developmentalStage": [
       "What is your specimen's developmental stage?",
-      "Adult"
+      "Juvenile (neonatal to subadult)"
     ],
     "modality": [
       "What is the modality of the acquisition?",
-      "MRI"
+      "Micro CT (or synchrotron)"
     ],
     "contrastEnhancement": [
       "Is there contrast enhancement treatment applied to the specimen?",
@@ -76,7 +61,8 @@
     "anatomicalAreas": [
       "What anatomical area(s) is/are present in the scan?",
       [
-        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
+        "Pectoral girdle"
       ]
     ],
     "redistributionAcknowledgement": [
@@ -87,25 +73,25 @@
     ],
     "license": [
       "Choose a license:",
-      "CC BY 4.0 (requires attribution, allows commercial usage)"
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "KLF_SICB_2026"
+      "Juvenile_Anolis"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
-      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+      "Archival (intended for long-term maintenance)"
     ],
-    "scanDimensions": "(256, 256, 130)",
-    "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+    "scanDimensions": "(416, 546, 356)",
+    "scanSpacing": "(0.01799999925, 0.01799999925, 0.01799999925)",
     "fileFormatVersion": 2
   },
   "screenshotCount": 0,
   "screenshotCaptions": {
-    "screenshot-1.png": ""
+    "screenshot-1.png": "Screenshot of specimen scan"
   },
-  "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+  "volumeSize": 122708965,
+  "sourceVolumeChecksum": "f6a26edb95e08e04785528893e711e29f3b48ef6fbab68a35765f1d1b6de29db",
   "curator": null
 }
