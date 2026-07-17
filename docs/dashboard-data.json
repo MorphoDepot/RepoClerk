@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:43:03Z",
+  "generatedAt": "2026-07-17T04:02:03Z",
   "totalRepos": 67,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
@@ -542,7 +542,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -2034,7 +2034,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3064,7 +3064,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3151,7 +3151,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3236,7 +3236,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3410,7 +3410,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3497,7 +3497,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3667,7 +3667,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3752,7 +3752,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3839,7 +3839,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -5621,14 +5621,14 @@
           "nameWithOwner": "Jwyneken/SICB_sample",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
           "nameWithOwner": "MichaelBennington/Bennington_SICB2026_MRIHead",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
@@ -5642,7 +5642,7 @@
           "nameWithOwner": "annikadawley/SICB_Practice_Repository",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
@@ -5656,14 +5656,14 @@
           "nameWithOwner": "cgmena/Cesar_SICB_2026",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
           "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
@@ -5677,21 +5677,21 @@
           "nameWithOwner": "nahrweiler/natasha_sicb_2026",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
           "nameWithOwner": "ramenegaz/MRhead_sample",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
           "nameWithOwner": "sunnyjsh/Sunny_sicb2",
           "isOrg": false,
           "species": "Pteronitella humanensis",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         }
       ]

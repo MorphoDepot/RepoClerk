@@ -15,8 +15,13 @@ TAXONOMY_LEVELS = ["kingdom", "phylum", "class", "order", "family", "genus"]
 ORG_LOGIN = "MorphoDepot"
 
 # Orgs that exist purely for the module's self-test / Reload-and-Test runs — everything under
-# them is a test artifact (the self-test publishes to MorphoDepotTesting).
+# them is a test artifact (the self-test publishes to MorphoDepotTesting; MorphoDepotTest holds
+# hand-run tests).  Anything owned by one of these is auto-excluded, name notwithstanding.
 TEST_ORGS = frozenset({"MorphoDepotTesting", "MorphoDepotTest"})
+
+# Specific repos to exclude that carry no give-away word in the name (e.g. the SlicerMorph test
+# account's scratch repo).  Matched case-insensitively on the full owner/name.
+EXCLUDED_REPOS = frozenset({"amm554/non-member"})
 
 # Duplicate-group categories, ordered by curation priority (lower = more urgent).
 DUP_CATEGORY_PRIORITY = {"org-org": 0, "promotion": 1, "cross-owner": 2, "same-owner": 3}
@@ -41,19 +46,27 @@ def _name_tokens(name):
     return [t.lower() for t in tokens]
 
 
-# Whole-name-token words that mark a repo as a throwaway: never showcase it, and don't count it
-# as a dataset repo.  Matched as a WORD (via _name_tokens), so 'Testudo'/'Demospongiae' are safe.
-_EXCLUDED_NAME_WORDS = frozenset({"test", "demo"})
+# Whole-name-token words that mark a repo as a throwaway (test / demo / teaching / conference
+# artifact): never showcase it, and don't count it as a dataset repo.  Matched as a WORD (via
+# _name_tokens), so real taxa/collections are safe: 'Testudo' (tortoise), 'Demospongiae' (sponge),
+# and the plural 'Museum_samples' all keep their real status while 'MRhead_sample' does not.  Note
+# 'sicb' targets the SICB-conference workshop repos ("Society for Integrative & Comparative Biology").
+_EXCLUDED_NAME_WORDS = frozenset({"test", "demo", "sample", "sicb", "workshop", "practice"})
 
 
 def is_test_repo(name_with_owner):
-    """True for throwaway repos that should never showcase: anything under a known testing org
-    (MorphoDepotTesting / MorphoDepotTest), or whose name contains the whole word 'test' or 'demo'
-    (case-insensitive).  Catches the module's self-test names (`test-repo-<n>`,
-    `test-<genus>-<species>-<n>`, published to MorphoDepotTesting) as well as user-named try-outs
-    (`MRI_test_head`, `CDHumanTest`, `Demo_HumanHead`, `MRI_demo_for_workshop`)."""
+    """True for throwaway repos that should never showcase and don't count as dataset repos:
+      * anything under a known testing org (MorphoDepotTesting / MorphoDepotTest),
+      * an explicitly listed one-off (EXCLUDED_REPOS), or
+      * a name containing the whole word 'test', 'demo', 'sample', 'sicb', 'workshop', or
+        'practice' (case-insensitive, word-boundary aware).
+    Catches the module's self-test names (`test-repo-<n>`, `test-<genus>-<species>-<n>`) plus
+    user-named try-outs / teaching / conference repos (`MRI_test_head`, `CDHumanTest`,
+    `Demo_HumanHead`, `SICB_sample`, `KLF_SICB_2026`, `Dasyuridae_Workshop`, `MRhead_sample`)."""
     owner, _, name = name_with_owner.partition("/")
     if owner in TEST_ORGS:
+        return True
+    if name_with_owner.lower() in EXCLUDED_REPOS:
         return True
     return not _EXCLUDED_NAME_WORDS.isdisjoint(_name_tokens(name))
 

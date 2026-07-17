@@ -101,11 +101,23 @@ def test_flags():
           gd.is_test_repo("otocolobusmanul3816/Copperhead_test_respository"))
     check("leading Demo is a test repo", gd.is_test_repo("brendanlatham/Demo_HumanHead"))
     check("mid-name demo word is a test repo", gd.is_test_repo("khurds137-beep/MRI_demo_for_workshop"))
+    # sample / sicb / workshop / practice words (teaching + conference artifacts).
+    check("singular 'sample' is a test repo", gd.is_test_repo("ramenegaz/MRhead_sample"))
+    check("SICB conference repo is a test repo", gd.is_test_repo("kforsgren-1112013/KLF_SICB_2026"))
+    check("lowercase 'sicb2' token is a test repo", gd.is_test_repo("sunnyjsh/Sunny_sicb2"))
+    check("'workshop' is a test repo", gd.is_test_repo("kumimatsui/Dasyuridae_Workshop"))
+    check("'practice' is a test repo", gd.is_test_repo("annikadawley/SICB_Practice_Repository"))
+    # explicit one-off blocklist (no give-away word), case-insensitive on owner/name.
+    check("explicit EXCLUDED_REPOS entry is a test repo", gd.is_test_repo("amm554/non-member"))
+    check("EXCLUDED_REPOS match is case-insensitive", gd.is_test_repo("AMM554/Non-Member"))
     check("real species repo is not", not gd.is_test_repo("muratmaga/Gorilla_skull"))
     check("'Testudo' (no hyphen) is not a test repo", not gd.is_test_repo("x/Testudo_graveyard"))
     check("'Testudo_graeca' tortoise is not a test repo", not gd.is_test_repo("x/Testudo_graeca"))
-    check("'Demospongiae' sponge is not a test repo", not gd.is_test_repo("x/Demospongiae_sample"))
+    check("'Demospongiae' sponge is not a test repo", not gd.is_test_repo("x/Demospongiae_specimen"))
     check("'Demodex' mite is not a test repo", not gd.is_test_repo("x/Demodex_folliculorum"))
+    # plural 'samples' (a real museum-samples repo) must survive — only singular 'sample' is blocked.
+    check("plural 'Museum_samples' is NOT a test repo",
+          not gd.is_test_repo("skrobanm/Canis_lupus_Europe_Museum_samples"))
     check("MorphoDepot/member (org, real) is not a test repo",
           not gd.is_test_repo("MorphoDepot/member"))
     check("ephemeral from Short-term repoType",
