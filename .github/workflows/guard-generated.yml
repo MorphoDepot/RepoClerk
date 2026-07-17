@@ -35,7 +35,7 @@ jobs:
             docs/dashboard-data.json docs/volume-checksums.json)"
           if [ -n "$changed" ]; then
             echo "::error::These files are generated on main by the Sync workflow and must not be committed in a PR:"
-            printf '  %s\n' $changed
+            printf '%s\n' "$changed" | sed 's/^/  /'
             echo "Fix: git checkout origin/main -- docs/dashboard-data.json docs/volume-checksums.json"
             echo "then commit and push. The Sync workflow regenerates them on main after your PR merges."
             exit 1
