@@ -15,8 +15,9 @@
   document.getElementById('generated-at').textContent =
     new Date(data.generatedAt).toLocaleString();
 
-  // --- Carousel (all repos; screenshot-bearing only) ---
-  buildCarousel(data.repos);
+  // --- Carousel (screenshot-bearing repos only; test/demo throwaways never showcase) ---
+  // Personal repos ARE shown here (unlike the default table view) — only isTest repos are dropped.
+  buildCarousel(data.repos.filter(r => !r.isTest));
 
   // --- Collections (curated "repo of repos"; rendered once, independent of the repo filters) ---
   let cmSlides = [];

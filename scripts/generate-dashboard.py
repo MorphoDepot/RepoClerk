@@ -4,6 +4,7 @@ Generate docs/dashboard-data.json from all journal files.
 The static docs/index.html loads this file via fetch().
 """
 import json
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -29,13 +30,32 @@ def accession_answer(accession, key):
     return v
 
 
+def _name_tokens(name):
+    """Split a repo name into lowercase word tokens, breaking on separators (``_ - .`` etc.),
+    digit boundaries, AND camelCase humps — so ``CDHumanTest`` -> ['cd', 'human', 'test'] and
+    ``MRI_test_head`` -> ['mri', 'test', 'head'].  This lets us match a whole word 'test'/'demo'
+    without also flagging species like 'Testudo' (a tortoise) or 'Demospongiae' (a sponge)."""
+    tokens = []
+    for part in re.split(r"[^A-Za-z0-9]+", name):
+        tokens += re.findall(r"[A-Z]+(?![a-z])|[A-Z][a-z]*|[a-z]+|[0-9]+", part)
+    return [t.lower() for t in tokens]
+
+
+# Whole-name-token words that mark a repo as a throwaway: never showcase it, and don't count it
+# as a dataset repo.  Matched as a WORD (via _name_tokens), so 'Testudo'/'Demospongiae' are safe.
+_EXCLUDED_NAME_WORDS = frozenset({"test", "demo"})
+
+
 def is_test_repo(name_with_owner):
-    """True for repos produced by the module's self-test / Reload-and-Test runs: anything under
-    a known testing org (MorphoDepotTesting / MorphoDepotTest), or whose name starts with
-    'test-'.  The self-test names repos two ways — `test-repo-<n>` and `test-<genus>-<species>-<n>`
-    — and publishes them to MorphoDepotTesting (see MorphoDepot.py)."""
+    """True for throwaway repos that should never showcase: anything under a known testing org
+    (MorphoDepotTesting / MorphoDepotTest), or whose name contains the whole word 'test' or 'demo'
+    (case-insensitive).  Catches the module's self-test names (`test-repo-<n>`,
+    `test-<genus>-<species>-<n>`, published to MorphoDepotTesting) as well as user-named try-outs
+    (`MRI_test_head`, `CDHumanTest`, `Demo_HumanHead`, `MRI_demo_for_workshop`)."""
     owner, _, name = name_with_owner.partition("/")
-    return owner in TEST_ORGS or name.startswith("test-")
+    if owner in TEST_ORGS:
+        return True
+    return not _EXCLUDED_NAME_WORDS.isdisjoint(_name_tokens(name))
 
 
 def is_ephemeral_repo(accession):

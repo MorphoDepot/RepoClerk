@@ -92,8 +92,20 @@ def test_flags():
           gd.is_test_repo("MorphoDepotTesting/delete-22"))
     check("MorphoDepotTest/MRHead is a test repo", gd.is_test_repo("MorphoDepotTest/MRHead"))
     check("test- prefix anywhere is a test repo", gd.is_test_repo("someuser/test-foo-bar-5"))
+    # 'test'/'demo' as a whole word anywhere in the name (separator- or camelCase-delimited).
+    check("bare 'test' name is a test repo", gd.is_test_repo("leighamarielynch/test"))
+    check("underscore-delimited test is a test repo", gd.is_test_repo("Peter-T-Ruehr/MRI_test_head"))
+    check("trailing camelCase Test is a test repo", gd.is_test_repo("jknaub/Mako_Vert_MD_Test"))
+    check("glued camelCase Test is a test repo", gd.is_test_repo("CDonatelli/CDHumanTest"))
+    check("mid-name test word is a test repo",
+          gd.is_test_repo("otocolobusmanul3816/Copperhead_test_respository"))
+    check("leading Demo is a test repo", gd.is_test_repo("brendanlatham/Demo_HumanHead"))
+    check("mid-name demo word is a test repo", gd.is_test_repo("khurds137-beep/MRI_demo_for_workshop"))
     check("real species repo is not", not gd.is_test_repo("muratmaga/Gorilla_skull"))
     check("'Testudo' (no hyphen) is not a test repo", not gd.is_test_repo("x/Testudo_graveyard"))
+    check("'Testudo_graeca' tortoise is not a test repo", not gd.is_test_repo("x/Testudo_graeca"))
+    check("'Demospongiae' sponge is not a test repo", not gd.is_test_repo("x/Demospongiae_sample"))
+    check("'Demodex' mite is not a test repo", not gd.is_test_repo("x/Demodex_folliculorum"))
     check("MorphoDepot/member (org, real) is not a test repo",
           not gd.is_test_repo("MorphoDepot/member"))
     check("ephemeral from Short-term repoType",

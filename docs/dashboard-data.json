@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T16:31:00Z",
+  "generatedAt": "2026-07-17T03:43:03Z",
   "totalRepos": 67,
   "totalOpenIssues": 119,
   "totalOpenPRs": 65,
@@ -25,8 +25,8 @@
   },
   "activity": {
     "last_day": 0,
-    "last_week": 3,
-    "last_month": 10,
+    "last_week": 0,
+    "last_month": 6,
     "last_year": 64
   },
   "repos": [
@@ -1949,7 +1949,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -2890,7 +2890,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -2977,7 +2977,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -3323,7 +3323,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -4607,7 +4607,7 @@
         "fileFormatVersion": 2
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": true
     },
     {
@@ -5482,7 +5482,7 @@
       "screenshotCaptions": [],
       "accession": {},
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": false
     },
     {
@@ -5554,7 +5554,7 @@
         "scanSpacing": "(0.07303892000000001, 0.07303892000000001, 0.07303892000000001)"
       },
       "isArchival": false,
-      "isTest": false,
+      "isTest": true,
       "isEphemeral": false
     }
   ],
@@ -5567,7 +5567,7 @@
           "nameWithOwner": "leighamarielynch-hash/test",
           "isOrg": false,
           "species": "Alligator darwini",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
@@ -5635,7 +5635,7 @@
           "nameWithOwner": "Peter-T-Ruehr/MRI_test_head",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
@@ -5649,7 +5649,7 @@
           "nameWithOwner": "brendanlatham/Demo_HumanHead",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
@@ -5670,7 +5670,7 @@
           "nameWithOwner": "khurds137-beep/MRI_demo_for_workshop",
           "isOrg": false,
           "species": "Homo sapiens",
-          "isTest": false,
+          "isTest": true,
           "isEphemeral": true
         },
         {
