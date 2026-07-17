@@ -23,6 +23,13 @@ TEST_ORGS = frozenset({"MorphoDepotTesting", "MorphoDepotTest"})
 # account's scratch repo).  Matched case-insensitively on the full owner/name.
 EXCLUDED_REPOS = frozenset({"amm554/non-member"})
 
+# Whole-name-token words that mark a repo as a throwaway (test / demo / teaching / conference
+# artifact): never showcase it, and don't count it as a dataset repo.  Matched as a WORD (via
+# _name_tokens), so real taxa/collections are safe: 'Testudo' (tortoise), 'Demospongiae' (sponge),
+# and the plural 'Museum_samples' all keep their real status while 'MRhead_sample' does not.  Note
+# 'sicb' targets the SICB-conference workshop repos ("Society for Integrative & Comparative Biology").
+_EXCLUDED_NAME_WORDS = frozenset({"test", "demo", "sample", "sicb", "workshop", "practice"})
+
 # Duplicate-group categories, ordered by curation priority (lower = more urgent).
 DUP_CATEGORY_PRIORITY = {"org-org": 0, "promotion": 1, "cross-owner": 2, "same-owner": 3}
 
@@ -46,14 +53,6 @@ def _name_tokens(name):
     return [t.lower() for t in tokens]
 
 
-# Whole-name-token words that mark a repo as a throwaway (test / demo / teaching / conference
-# artifact): never showcase it, and don't count it as a dataset repo.  Matched as a WORD (via
-# _name_tokens), so real taxa/collections are safe: 'Testudo' (tortoise), 'Demospongiae' (sponge),
-# and the plural 'Museum_samples' all keep their real status while 'MRhead_sample' does not.  Note
-# 'sicb' targets the SICB-conference workshop repos ("Society for Integrative & Comparative Biology").
-_EXCLUDED_NAME_WORDS = frozenset({"test", "demo", "sample", "sicb", "workshop", "practice"})
-
-
 def is_test_repo(name_with_owner):
     """True for throwaway repos that should never showcase and don't count as dataset repos:
       * anything under a known testing org (MorphoDepotTesting / MorphoDepotTest),
@@ -68,6 +67,8 @@ def is_test_repo(name_with_owner):
         return True
     if name_with_owner.lower() in EXCLUDED_REPOS:
         return True
+    # Word-match the name only; owner-based exclusions are handled by TEST_ORGS above (so a user
+    # whose login contains "test" doesn't get all their real repos hidden).
     return not _EXCLUDED_NAME_WORDS.isdisjoint(_name_tokens(name))
 
 
