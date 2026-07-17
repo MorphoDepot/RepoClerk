@@ -1,19 +1,10 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-17T21:20:58Z",
-  "pushedAt": "2026-07-17T03:24:16Z",
+  "journalUpdatedAt": "2026-07-17T21:21:40Z",
+  "pushedAt": "2026-07-17T21:21:20Z",
   "openIssues": [],
-  "openPRs": [
-    {
-      "number": 1,
-      "title": "Add brachylagus-idahoensis-skull repository link",
-      "isDraft": false,
-      "url": "https://github.com/MorphoDepot/collection-a52d5a9a/pull/1",
-      "author": "amm554",
-      "closingIssue": null
-    }
-  ],
+  "openPRs": [],
   "accession": {},
   "screenshotCount": 0,
   "screenshotCaptions": [],
@@ -27,7 +18,8 @@
       "MorphoDepot/eptesicus-fuscus-skull",
       "MorphoDepot/neotoma-cinerea-skull",
       "MorphoDepot/scapanus-townsendii-head",
-      "MorphoDepot/glaucomys-sabrinus-skull"
+      "MorphoDepot/glaucomys-sabrinus-skull",
+      "MorphoDepot/brachylagus-idahoensis-skull"
     ]
   }
 }
