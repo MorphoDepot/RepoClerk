@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-17T02:31:22Z",
-  "pushedAt": "2026-07-17T02:31:03Z",
+  "journalUpdatedAt": "2026-07-17T03:24:32Z",
+  "pushedAt": "2026-07-17T03:24:16Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {},
@@ -17,7 +17,8 @@
     "memberRefs": [
       "MorphoDepot/eptesicus-fuscus-skull",
       "MorphoDepot/neotoma-cinerea-skull",
-      "MorphoDepot/scapanus-townsendii-head"
+      "MorphoDepot/scapanus-townsendii-head",
+      "MorphoDepot/glaucomys-sabrinus-skull"
     ]
   }
 }
