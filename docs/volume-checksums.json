@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T02:31:36Z",
+  "generatedAt": "2026-07-17T03:23:43Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -52,6 +52,9 @@
     ],
     "ab20ec294b2c09a7bcf7297e234f61c56bae989fc27a56745caa6a5a92687fba": [
       "MorphoDepot/eptesicus-fuscus-skull"
+    ],
+    "8fdeb1b7bfeb13961f2aba00c393795b187d67e4abd714f9bcf6cd0c5738e005": [
+      "MorphoDepot/glaucomys-sabrinus-skull"
     ],
     "38203879ac277085ae3cec9c5fb7c005e76d7352fdf224218eacedb55bfc701a": [
       "MorphoDepot/mus-musculus-E15"
