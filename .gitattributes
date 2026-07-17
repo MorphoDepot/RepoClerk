@@ -1,0 +1,5 @@
+# Generated dashboard artifacts — written only by the Sync workflow on main (see README
+# "Development"). Marked generated so GitHub collapses their diffs and excludes them from language
+# stats; do not hand-edit or commit them in a PR.
+docs/dashboard-data.json linguist-generated=true
+docs/volume-checksums.json linguist-generated=true
