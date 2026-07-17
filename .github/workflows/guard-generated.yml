@@ -1,0 +1,43 @@
+name: Guard generated files
+
+# The dashboard artifacts docs/dashboard-data.json and docs/volume-checksums.json are written ONLY
+# by the Sync/ingestion workflows (sync-all.yml, update-repo.yml) running generate-dashboard.py on
+# main. They must stay committed on main because GitHub Pages serves docs/ straight from main, but a
+# feature branch must never commit them: they change on essentially every journal update, so a PR
+# that also edits them merge-conflicts with the Sync bot. A conflicting PR cannot build its
+# refs/pull/<n>/merge ref, which silently stops GitHub from running Claude Code Review (or any other
+# pull_request workflow) on it. This guard fails fast so the mistake is caught while the PR is still
+# mergeable, instead of the review just never appearing. See README "Development".
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reject changes to generated dashboard files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          # Compare from the divergence point (merge-base), so a base branch that has simply moved
+          # ahead does not look like a change made by this PR.
+          base="$(git merge-base "$BASE_SHA" "$HEAD_SHA")"
+          changed="$(git diff --name-only "$base" "$HEAD_SHA" -- \
+            docs/dashboard-data.json docs/volume-checksums.json)"
+          if [ -n "$changed" ]; then
+            echo "::error::These files are generated on main by the Sync workflow and must not be committed in a PR:"
+            printf '%s\n' "$changed" | sed 's/^/  /'
+            echo "Fix: git checkout origin/main -- docs/dashboard-data.json docs/volume-checksums.json"
+            echo "then commit and push. The Sync workflow regenerates them on main after your PR merges."
+            exit 1
+          fi
+          echo "OK — no generated dashboard files modified by this PR."

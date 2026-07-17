@@ -205,3 +205,28 @@ accepts `repository_dispatch` (it does). To (re)provision the webhook:
 - **`pushedAt` preserved** from GitHub so the cron job can detect staleness without fetching full issue/PR data for every repo on every run
 - **Webhook-driven, cron as safety net** — the primary update path is the org webhook → on-demand `repository_dispatch` (push, not poll; ~20 s to a fresh journal); the hourly cron catches any missed delivery and handles initial population. See [`design/near-realtime-ingestion.md`](design/near-realtime-ingestion.md) and *How Journals Get Updated* above
 - **`viewerPermission` is NOT in the journal** — this is viewer-specific and cannot be pre-computed; `administratedRepoList()` in MorphoDepot still needs a direct `gh` API call
+
+## Development
+
+`docs/dashboard-data.json` and `docs/volume-checksums.json` are **generated artifacts**. They are
+written only by the Sync/ingestion workflows (`sync-all.yml`, `update-repo.yml`) running
+`scripts/generate-dashboard.py` on `main`, and they stay committed there because GitHub Pages serves
+`docs/` straight from `main`.
+
+**Do not commit changes to these two files in a pull request.** They are rewritten on `main` on
+essentially every journal update, so any PR that also edits them merge-conflicts with the Sync bot. A
+conflicting PR cannot build its `refs/pull/<n>/merge` ref, which silently stops GitHub from running
+the Claude Code Review (and every other `pull_request` workflow) on it — the review simply never
+appears. The `Guard generated files` workflow enforces this by failing any PR that touches them.
+
+When you change dashboard logic (`generate-dashboard.py`, `dashboard.js`, `index.html`), run
+`python3 scripts/generate-dashboard.py` locally only to preview, then drop the generated files before
+pushing:
+
+```sh
+git checkout origin/main -- docs/dashboard-data.json docs/volume-checksums.json
+```
+
+After the PR merges, the next Sync run (hourly cron, or ~20 s via the webhook) regenerates them on
+`main` with your new logic. Run the unit tests with `python3 scripts/test_duplicates.py` (no deps, no
+network).
