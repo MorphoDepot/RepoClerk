@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T02:29:46Z",
+  "generatedAt": "2026-07-17T02:31:36Z",
   "totalRepos": 71,
   "totalOpenIssues": 120,
   "totalOpenPRs": 66,
@@ -6158,7 +6158,8 @@
       "curator": "muratmaga",
       "members": [
         "MorphoDepot/eptesicus-fuscus-skull",
-        "MorphoDepot/neotoma-cinerea-skull"
+        "MorphoDepot/neotoma-cinerea-skull",
+        "MorphoDepot/scapanus-townsendii-head"
       ],
       "warnings": []
     }
