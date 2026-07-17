@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-16T22:29:19Z",
-  "pushedAt": "2026-07-16T22:28:58Z",
+  "journalUpdatedAt": "2026-07-17T02:31:22Z",
+  "pushedAt": "2026-07-17T02:31:03Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {},
@@ -16,7 +16,8 @@
     "description": "MicroCT scans of iconic Pacific Northwest mammals",
     "memberRefs": [
       "MorphoDepot/eptesicus-fuscus-skull",
-      "MorphoDepot/neotoma-cinerea-skull"
+      "MorphoDepot/neotoma-cinerea-skull",
+      "MorphoDepot/scapanus-townsendii-head"
     ]
   }
 }
