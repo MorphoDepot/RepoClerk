@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T18:19:22Z",
+  "generatedAt": "2026-07-18T18:21:09Z",
   "totalRepos": 73,
   "totalOpenIssues": 119,
   "totalOpenPRs": 66,
@@ -6343,7 +6343,8 @@
         "MorphoDepot/neotoma-cinerea-skull",
         "MorphoDepot/scapanus-townsendii-head",
         "MorphoDepot/glaucomys-sabrinus-skull",
-        "MorphoDepot/brachylagus-idahoensis-skull"
+        "MorphoDepot/brachylagus-idahoensis-skull",
+        "MorphoDepot/mustela-vison-skull"
       ],
       "warnings": []
     }
