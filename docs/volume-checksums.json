@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T18:21:09Z",
+  "generatedAt": "2026-07-18T18:57:43Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -73,6 +73,9 @@
     ],
     "8ee82c39036871134a2c60102c518eecc1ab44aa4d54ca5cda933944c558d105": [
       "MorphoDepot/scapanus-townsendii-head"
+    ],
+    "df8cf84949337c0116ee43a85b9186820a72a4e8bc9aa87cafb000747c7f1459": [
+      "MorphoDepot/sciurus-griseus-skull"
     ],
     "43f8af637b5135c5c162605b29ea9c254bf39b1f718a66b55b6f825d9875d3c6": [
       "PaulGignac/GignacLab_DiceCT_CowEye_2025"
