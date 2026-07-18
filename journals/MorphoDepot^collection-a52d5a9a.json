@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-18T18:58:20Z",
-  "pushedAt": "2026-07-18T18:57:50Z",
+  "journalUpdatedAt": "2026-07-18T20:12:22Z",
+  "pushedAt": "2026-07-18T20:12:03Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {},
@@ -21,7 +21,8 @@
       "MorphoDepot/glaucomys-sabrinus-skull",
       "MorphoDepot/brachylagus-idahoensis-skull",
       "MorphoDepot/mustela-vison-skull",
-      "MorphoDepot/sciurus-griseus-skull"
+      "MorphoDepot/sciurus-griseus-skull",
+      "MorphoDepot/neurotrichus-gibbsii-skull"
     ]
   }
 }
