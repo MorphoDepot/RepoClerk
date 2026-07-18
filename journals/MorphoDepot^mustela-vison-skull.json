@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "MorphoDepot/mustela-vison-skull",
+  "journalUpdatedAt": "2026-07-18T18:19:06Z",
+  "pushedAt": "2026-07-18T18:18:50Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      "Yes"
+    ],
+    "iDigBioURL": [
+      "Paste the record URL:",
+      "https://gbif.org/occurrence/1702679803"
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Mustela vison"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Male"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "mustela-vison-skull"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(893, 1463, 734)",
+    "scanSpacing": "(0.05093485999999999, 0.05093486, 0.050934859999999985)",
+    "specimenIdentifier": "UWBM:Mamm:41819",
+    "accessionSource": "GBIF",
+    "accessionResolved": true,
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": "Mink"
+  },
+  "volumeSize": 246637935,
+  "sourceVolumeChecksum": "46056cd027c2bb22245284949f7f0f01a668784be9c8b9d3371162a86239c806",
+  "curator": "muratmaga"
+}
