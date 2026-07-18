@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T20:11:35Z",
+  "generatedAt": "2026-07-18T20:12:36Z",
   "totalRepos": 75,
   "totalOpenIssues": 119,
   "totalOpenPRs": 66,
@@ -6526,7 +6526,8 @@
         "MorphoDepot/glaucomys-sabrinus-skull",
         "MorphoDepot/brachylagus-idahoensis-skull",
         "MorphoDepot/mustela-vison-skull",
-        "MorphoDepot/sciurus-griseus-skull"
+        "MorphoDepot/sciurus-griseus-skull",
+        "MorphoDepot/neurotrichus-gibbsii-skull"
       ],
       "warnings": []
     }
