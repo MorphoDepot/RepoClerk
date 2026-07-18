@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-17T21:21:40Z",
-  "pushedAt": "2026-07-17T21:21:20Z",
+  "journalUpdatedAt": "2026-07-18T18:20:57Z",
+  "pushedAt": "2026-07-18T18:20:41Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {},
@@ -19,7 +19,8 @@
       "MorphoDepot/neotoma-cinerea-skull",
       "MorphoDepot/scapanus-townsendii-head",
       "MorphoDepot/glaucomys-sabrinus-skull",
-      "MorphoDepot/brachylagus-idahoensis-skull"
+      "MorphoDepot/brachylagus-idahoensis-skull",
+      "MorphoDepot/mustela-vison-skull"
     ]
   }
 }
