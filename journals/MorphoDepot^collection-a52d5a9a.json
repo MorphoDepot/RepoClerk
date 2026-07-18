@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-18T18:20:57Z",
-  "pushedAt": "2026-07-18T18:20:41Z",
+  "journalUpdatedAt": "2026-07-18T18:58:20Z",
+  "pushedAt": "2026-07-18T18:57:50Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {},
@@ -20,7 +20,8 @@
       "MorphoDepot/scapanus-townsendii-head",
       "MorphoDepot/glaucomys-sabrinus-skull",
       "MorphoDepot/brachylagus-idahoensis-skull",
-      "MorphoDepot/mustela-vison-skull"
+      "MorphoDepot/mustela-vison-skull",
+      "MorphoDepot/sciurus-griseus-skull"
     ]
   }
 }
