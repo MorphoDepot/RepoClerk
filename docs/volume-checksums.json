@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T17:26:34Z",
+  "generatedAt": "2026-07-18T18:19:22Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -64,6 +64,9 @@
     ],
     "438e6be89b99981ee91df81a92bdaf9c0fcc6ec63433da03548b157dc3be274b": [
       "MorphoDepot/mus-musculus-skull"
+    ],
+    "46056cd027c2bb22245284949f7f0f01a668784be9c8b9d3371162a86239c806": [
+      "MorphoDepot/mustela-vison-skull"
     ],
     "b355d5f636bd1faa01e342a86894e1952412d32996008bd66abc6bd2cec008e5": [
       "MorphoDepot/neotoma-cinerea-skull"
