@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T19:36:45Z",
+  "generatedAt": "2026-07-18T20:11:35Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -70,6 +70,9 @@
     ],
     "b355d5f636bd1faa01e342a86894e1952412d32996008bd66abc6bd2cec008e5": [
       "MorphoDepot/neotoma-cinerea-skull"
+    ],
+    "0abb8348668d78b4109656300e9c7d73a74b25ef93fc7f088edd76e60ff8f198": [
+      "MorphoDepot/neurotrichus-gibbsii-skull"
     ],
     "8ee82c39036871134a2c60102c518eecc1ab44aa4d54ca5cda933944c558d105": [
       "MorphoDepot/scapanus-townsendii-head"
