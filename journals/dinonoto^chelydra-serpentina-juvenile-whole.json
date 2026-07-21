@@ -1,40 +1,10 @@
 {
   "schemaVersion": 3,
-  "nameWithOwner": "dinonoto/Juvenile_Anolis",
-  "journalUpdatedAt": "2026-07-21T22:15:50Z",
-  "pushedAt": "2026-07-21T20:40:22Z",
-  "openIssues": [
-    {
-      "number": 1,
-      "title": "cranium full",
-      "url": "https://github.com/dinonoto/Juvenile_Anolis/issues/1",
-      "author": "alorenz-raptor",
-      "assignees": [
-        "alorenz-raptor"
-      ]
-    },
-    {
-      "number": 3,
-      "title": "Axial Skeleton Excluding the Cranium",
-      "url": "https://github.com/dinonoto/Juvenile_Anolis/issues/3",
-      "author": "Jonathan-Jung-sys",
-      "assignees": []
-    }
-  ],
-  "openPRs": [
-    {
-      "number": 2,
-      "title": "issue-1",
-      "isDraft": true,
-      "url": "https://github.com/dinonoto/Juvenile_Anolis/pull/2",
-      "author": "alorenz-raptor",
-      "closingIssue": {
-        "number": 1,
-        "title": "cranium full",
-        "repoOwner": "dinonoto"
-      }
-    }
-  ],
+  "nameWithOwner": "dinonoto/chelydra-serpentina-juvenile-whole",
+  "journalUpdatedAt": "2026-07-21T22:15:53Z",
+  "pushedAt": "2026-07-21T18:44:13Z",
+  "openIssues": [],
+  "openPRs": [],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -49,16 +19,16 @@
       "Non-accessioned"
     ],
     "iDigBioAccessioned": [
-      "Is your specimen's species in the iDigBio database?",
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
       ""
     ],
     "iDigBioURL": [
-      "Enter URL from iDigBio:",
+      "Paste the record URL:",
       ""
     ],
     "species": [
       "What is your specimen's species?",
-      "Anolis carolinensis"
+      "Chelydra serpentina"
     ],
     "biologicalSex": [
       "What is your specimen's sex?",
@@ -78,20 +48,15 @@
     ],
     "imageContents": [
       "What is in the image?",
-      "Partial specimen"
+      "Whole specimen"
     ],
     "anatomicalAreas": [
       "What anatomical area(s) is/are present in the scan?",
-      [
-        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
-        "Pectoral girdle"
-      ]
+      []
     ],
     "redistributionAcknowledgement": [
       "Acknowledgement:",
-      [
-        "I have the right to allow redistribution of this data."
-      ]
+      []
     ],
     "license": [
       "Choose a license:",
@@ -99,21 +64,24 @@
     ],
     "githubRepoName": [
       "What should the repository in your github account called? This needs to be unique value for your account.",
-      "Juvenile_Anolis"
+      "chelydra-serpentina-juvenile-whole"
     ],
     "repoType": [
       "What is the intended lifespan of this repository?",
-      "Archival (intended for long-term maintenance)"
+      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
     ],
-    "scanDimensions": "(416, 546, 356)",
-    "scanSpacing": "(0.01799999925, 0.01799999925, 0.01799999925)",
+    "scanDimensions": "(1040, 1496, 498)",
+    "scanSpacing": "(0.0359999984499999, 0.0359999981060606, 0.03599999844999981)",
+    "specimenIdentifier": null,
+    "accessionSource": "Unknown",
+    "accessionResolved": false,
     "fileFormatVersion": 2
   },
   "screenshotCount": 0,
   "screenshotCaptions": {
-    "screenshot-1.png": "Screenshot of specimen scan"
+    "screenshot-1.png": "Common snapping turtle (oblique anterior)"
   },
-  "volumeSize": 122708965,
-  "sourceVolumeChecksum": "f6a26edb95e08e04785528893e711e29f3b48ef6fbab68a35765f1d1b6de29db",
+  "volumeSize": 1130347453,
+  "sourceVolumeChecksum": "cd370c5bbe70edd0e104f99d8fad3abd7331c91d506a76bb34268792412bea1e",
   "curator": "dinonoto"
 }
