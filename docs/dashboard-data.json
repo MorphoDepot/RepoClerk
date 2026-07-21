@@ -1,35 +1,208 @@
 {
-  "generatedAt": "2026-07-21T20:38:53Z",
-  "totalRepos": 76,
-  "totalOpenIssues": 119,
-  "totalOpenPRs": 66,
+  "generatedAt": "2026-07-21T22:16:24Z",
+  "totalRepos": 77,
+  "totalOpenIssues": 123,
+  "totalOpenPRs": 70,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 76
+      "Unknown": 77
     },
     "phylum": {
-      "Unknown": 76
+      "Unknown": 77
     },
     "class": {
-      "Unknown": 76
+      "Unknown": 77
     },
     "order": {
-      "Unknown": 76
+      "Unknown": 77
     },
     "family": {
-      "Unknown": 76
+      "Unknown": 77
     },
     "genus": {
-      "Unknown": 76
+      "Unknown": 77
     }
   },
   "activity": {
-    "last_day": 1,
-    "last_week": 10,
-    "last_month": 13,
-    "last_year": 73
+    "last_day": 4,
+    "last_week": 12,
+    "last_month": 14,
+    "last_year": 74
   },
   "repos": [
+    {
+      "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
+      "pushedAt": "2026-07-21T20:45:07Z",
+      "journalUpdatedAt": "2026-07-21T22:15:45Z",
+      "openIssues": 3,
+      "openPRs": 3,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Screenshot"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Agalychnis callidryas"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Adult"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "Red-Eyed_Tree_Frog"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(165, 379, 85)",
+        "scanSpacing": "(0.1439999938, 0.143999992409867, 0.1439999938)",
+        "fileFormatVersion": 2
+      },
+      "isArchival": false,
+      "isTest": false,
+      "isEphemeral": false
+    },
+    {
+      "nameWithOwner": "dinonoto/Juvenile_Anolis",
+      "pushedAt": "2026-07-21T20:40:22Z",
+      "journalUpdatedAt": "2026-07-21T22:15:50Z",
+      "openIssues": 2,
+      "openPRs": 1,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Screenshot of specimen scan"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Anolis carolinensis"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Juvenile (neonatal to subadult)"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Partial specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          [
+            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
+            "Pectoral girdle"
+          ]
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "Juvenile_Anolis"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(416, 546, 356)",
+        "scanSpacing": "(0.01799999925, 0.01799999925, 0.01799999925)",
+        "fileFormatVersion": 2
+      },
+      "isArchival": false,
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "dinonoto/lampropeltis-californiae-juvenile-whole",
       "pushedAt": "2026-07-21T18:50:23Z",
@@ -107,6 +280,92 @@
         ],
         "scanDimensions": "(438, 1552, 424)",
         "scanSpacing": "(0.03599999845, 0.03599999845, 0.03599999845)",
+        "specimenIdentifier": null,
+        "accessionSource": "Unknown",
+        "accessionResolved": false,
+        "fileFormatVersion": 2
+      },
+      "isArchival": false,
+      "isTest": false,
+      "isEphemeral": true
+    },
+    {
+      "nameWithOwner": "dinonoto/chelydra-serpentina-juvenile-whole",
+      "pushedAt": "2026-07-21T18:44:13Z",
+      "journalUpdatedAt": "2026-07-21T22:16:11Z",
+      "openIssues": 0,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": "Common snapping turtle (oblique anterior)"
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Paste the record URL:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Chelydra serpentina"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Juvenile (neonatal to subadult)"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "No"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          []
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "chelydra-serpentina-juvenile-whole"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+        ],
+        "scanDimensions": "(1040, 1496, 498)",
+        "scanSpacing": "(0.0359999984499999, 0.0359999981060606, 0.03599999844999981)",
         "specimenIdentifier": null,
         "accessionSource": "Unknown",
         "accessionResolved": false,
@@ -838,94 +1097,6 @@
       "isEphemeral": false
     },
     {
-      "nameWithOwner": "dinonoto/Juvenile_Anolis",
-      "pushedAt": "2026-07-15T16:07:35Z",
-      "journalUpdatedAt": "2026-07-15T17:42:21Z",
-      "openIssues": 1,
-      "openPRs": 0,
-      "screenshotCount": 0,
-      "screenshotCaptions": {
-        "screenshot-1.png": "Screenshot of specimen scan"
-      },
-      "accession": {
-        "otherSubjectDescription": [
-          "Please describe the subject of the data.",
-          ""
-        ],
-        "subjectType": [
-          "What is the subject type?",
-          "Biological specimen"
-        ],
-        "specimenSource": [
-          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-          "Non-accessioned"
-        ],
-        "iDigBioAccessioned": [
-          "Is your specimen's species in the iDigBio database?",
-          ""
-        ],
-        "iDigBioURL": [
-          "Enter URL from iDigBio:",
-          ""
-        ],
-        "species": [
-          "What is your specimen's species?",
-          "Anolis carolinensis"
-        ],
-        "biologicalSex": [
-          "What is your specimen's sex?",
-          "Unknown"
-        ],
-        "developmentalStage": [
-          "What is your specimen's developmental stage?",
-          "Juvenile (neonatal to subadult)"
-        ],
-        "modality": [
-          "What is the modality of the acquisition?",
-          "Micro CT (or synchrotron)"
-        ],
-        "contrastEnhancement": [
-          "Is there contrast enhancement treatment applied to the specimen?",
-          "No"
-        ],
-        "imageContents": [
-          "What is in the image?",
-          "Partial specimen"
-        ],
-        "anatomicalAreas": [
-          "What anatomical area(s) is/are present in the scan?",
-          [
-            "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
-            "Pectoral girdle"
-          ]
-        ],
-        "redistributionAcknowledgement": [
-          "Acknowledgement:",
-          [
-            "I have the right to allow redistribution of this data."
-          ]
-        ],
-        "license": [
-          "Choose a license:",
-          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
-        ],
-        "githubRepoName": [
-          "What should the repository in your github account called? This needs to be unique value for your account.",
-          "Juvenile_Anolis"
-        ],
-        "repoType": [
-          "What is the intended lifespan of this repository?",
-          "Archival (intended for long-term maintenance)"
-        ],
-        "scanDimensions": "(416, 546, 356)",
-        "scanSpacing": "(0.01799999925, 0.01799999925, 0.01799999925)",
-        "fileFormatVersion": 2
-      },
-      "isArchival": false,
-      "isTest": false,
-      "isEphemeral": false
-    },
-    {
       "nameWithOwner": "MorphoDepot/mus-musculus-skull",
       "pushedAt": "2026-07-02T18:35:39Z",
       "journalUpdatedAt": "2026-07-02T18:35:59Z",
@@ -1094,91 +1265,6 @@
         "fileFormatVersion": 2
       },
       "isArchival": true,
-      "isTest": false,
-      "isEphemeral": false
-    },
-    {
-      "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
-      "pushedAt": "2026-06-22T20:25:30Z",
-      "journalUpdatedAt": "2026-06-22T21:37:07Z",
-      "openIssues": 0,
-      "openPRs": 0,
-      "screenshotCount": 0,
-      "screenshotCaptions": {
-        "screenshot-1.png": "Screenshot"
-      },
-      "accession": {
-        "otherSubjectDescription": [
-          "Please describe the subject of the data.",
-          ""
-        ],
-        "subjectType": [
-          "What is the subject type?",
-          "Biological specimen"
-        ],
-        "specimenSource": [
-          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-          "Non-accessioned"
-        ],
-        "iDigBioAccessioned": [
-          "Is your specimen's species in the iDigBio database?",
-          ""
-        ],
-        "iDigBioURL": [
-          "Enter URL from iDigBio:",
-          ""
-        ],
-        "species": [
-          "What is your specimen's species?",
-          "Agalychnis callidryas"
-        ],
-        "biologicalSex": [
-          "What is your specimen's sex?",
-          "Unknown"
-        ],
-        "developmentalStage": [
-          "What is your specimen's developmental stage?",
-          "Adult"
-        ],
-        "modality": [
-          "What is the modality of the acquisition?",
-          "Micro CT (or synchrotron)"
-        ],
-        "contrastEnhancement": [
-          "Is there contrast enhancement treatment applied to the specimen?",
-          "No"
-        ],
-        "imageContents": [
-          "What is in the image?",
-          "Whole specimen"
-        ],
-        "anatomicalAreas": [
-          "What anatomical area(s) is/are present in the scan?",
-          []
-        ],
-        "redistributionAcknowledgement": [
-          "Acknowledgement:",
-          [
-            "I have the right to allow redistribution of this data."
-          ]
-        ],
-        "license": [
-          "Choose a license:",
-          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
-        ],
-        "githubRepoName": [
-          "What should the repository in your github account called? This needs to be unique value for your account.",
-          "Red-Eyed_Tree_Frog"
-        ],
-        "repoType": [
-          "What is the intended lifespan of this repository?",
-          "Archival (intended for long-term maintenance)"
-        ],
-        "scanDimensions": "(165, 379, 85)",
-        "scanSpacing": "(0.1439999938, 0.143999992409867, 0.1439999938)",
-        "fileFormatVersion": 2
-      },
-      "isArchival": false,
       "isTest": false,
       "isEphemeral": false
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T20:38:53Z",
+  "generatedAt": "2026-07-21T22:16:24Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -118,6 +118,9 @@
     ],
     "ee7248864e201093a1a311f913d029c446d66cbebeccc4894c2ac70a77b31719": [
       "dinonoto/Xenopus-diceCT"
+    ],
+    "cd370c5bbe70edd0e104f99d8fad3abd7331c91d506a76bb34268792412bea1e": [
+      "dinonoto/chelydra-serpentina-juvenile-whole"
     ],
     "086a4149b596f3f8a01c4bac96751f28deebe2cd03f2f31edc64fa431339d413": [
       "dinonoto/lampropeltis-californiae-juvenile-whole"
