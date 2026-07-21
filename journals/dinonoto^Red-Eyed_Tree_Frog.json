@@ -1,10 +1,75 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
-  "journalUpdatedAt": "2026-06-22T21:37:07Z",
-  "pushedAt": "2026-06-22T20:25:30Z",
-  "openIssues": [],
-  "openPRs": [],
+  "journalUpdatedAt": "2026-07-21T22:15:45Z",
+  "pushedAt": "2026-07-21T20:45:07Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Axial Head and Vertebrae Tree Frog",
+      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/issues/1",
+      "author": "JDynamiteX",
+      "assignees": [
+        "JDynamiteX"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Pelvic Girdle and Legs",
+      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/issues/3",
+      "author": "Jonathan-Jung-sys",
+      "assignees": [
+        "Jonathan-Jung-sys"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "cranium",
+      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/issues/5",
+      "author": "alorenz-raptor",
+      "assignees": [
+        "alorenz-raptor"
+      ]
+    }
+  ],
+  "openPRs": [
+    {
+      "number": 2,
+      "title": "issue-1",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/pull/2",
+      "author": "JDynamiteX",
+      "closingIssue": {
+        "number": 1,
+        "title": "Axial Head and Vertebrae Tree Frog",
+        "repoOwner": "dinonoto"
+      }
+    },
+    {
+      "number": 4,
+      "title": "issue-3",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/pull/4",
+      "author": "Jonathan-Jung-sys",
+      "closingIssue": {
+        "number": 3,
+        "title": "Pelvic Girdle and Legs",
+        "repoOwner": "dinonoto"
+      }
+    },
+    {
+      "number": 6,
+      "title": "issue-5",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/pull/6",
+      "author": "alorenz-raptor",
+      "closingIssue": {
+        "number": 5,
+        "title": "cranium",
+        "repoOwner": "dinonoto"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
@@ -82,5 +147,5 @@
   },
   "volumeSize": 7933753,
   "sourceVolumeChecksum": "15a02224a99fb06ce7656a5a59f4b973b8306d317ec47a5e924a0fc00942e58d",
-  "curator": null
+  "curator": "dinonoto"
 }
