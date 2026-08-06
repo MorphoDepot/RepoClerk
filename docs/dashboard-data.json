@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T00:14:10Z",
+  "generatedAt": "2026-08-06T01:05:19Z",
   "totalRepos": 77,
   "totalOpenIssues": 123,
   "totalOpenPRs": 70,
@@ -24,12 +24,97 @@
     }
   },
   "activity": {
-    "last_day": 0,
-    "last_week": 0,
-    "last_month": 12,
+    "last_day": 1,
+    "last_week": 1,
+    "last_month": 13,
     "last_year": 74
   },
   "repos": [
+    {
+      "nameWithOwner": "MorphoDepot/mus-musculus-E15",
+      "pushedAt": "2026-08-06T01:04:40Z",
+      "journalUpdatedAt": "2026-08-06T01:05:06Z",
+      "openIssues": 2,
+      "openPRs": 0,
+      "screenshotCount": 0,
+      "screenshotCaptions": {
+        "screenshot-1.png": ""
+      },
+      "accession": {
+        "otherSubjectDescription": [
+          "Please describe the subject of the data.",
+          ""
+        ],
+        "subjectType": [
+          "What is the subject type?",
+          "Biological specimen"
+        ],
+        "specimenSource": [
+          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+          "Non-accessioned"
+        ],
+        "iDigBioAccessioned": [
+          "Is your specimen's species in the iDigBio database?",
+          ""
+        ],
+        "iDigBioURL": [
+          "Enter URL from iDigBio:",
+          ""
+        ],
+        "species": [
+          "What is your specimen's species?",
+          "Mus musculus"
+        ],
+        "biologicalSex": [
+          "What is your specimen's sex?",
+          "Unknown"
+        ],
+        "developmentalStage": [
+          "What is your specimen's developmental stage?",
+          "Prenatal (fetus, embryo)"
+        ],
+        "modality": [
+          "What is the modality of the acquisition?",
+          "Micro CT (or synchrotron)"
+        ],
+        "contrastEnhancement": [
+          "Is there contrast enhancement treatment applied to the specimen?",
+          "Yes"
+        ],
+        "imageContents": [
+          "What is in the image?",
+          "Whole specimen"
+        ],
+        "anatomicalAreas": [
+          "What anatomical area(s) is/are present in the scan?",
+          []
+        ],
+        "redistributionAcknowledgement": [
+          "Acknowledgement:",
+          [
+            "I have the right to allow redistribution of this data."
+          ]
+        ],
+        "license": [
+          "Choose a license:",
+          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+        ],
+        "githubRepoName": [
+          "What should the repository in your github account called? This needs to be unique value for your account.",
+          "mus-musculus-E15"
+        ],
+        "repoType": [
+          "What is the intended lifespan of this repository?",
+          "Archival (intended for long-term maintenance)"
+        ],
+        "scanDimensions": "(594, 1046, 738)",
+        "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
+        "fileFormatVersion": 2
+      },
+      "isArchival": true,
+      "isTest": false,
+      "isEphemeral": false
+    },
     {
       "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
       "pushedAt": "2026-07-21T20:45:07Z",
@@ -1177,91 +1262,6 @@
         ],
         "scanDimensions": "(520, 824, 456)",
         "scanSpacing": "(0.03527835011482239, 0.03527835011482239, 0.03527835011482239)",
-        "fileFormatVersion": 2
-      },
-      "isArchival": true,
-      "isTest": false,
-      "isEphemeral": false
-    },
-    {
-      "nameWithOwner": "MorphoDepot/mus-musculus-E15",
-      "pushedAt": "2026-07-02T15:06:05Z",
-      "journalUpdatedAt": "2026-07-02T15:06:31Z",
-      "openIssues": 2,
-      "openPRs": 0,
-      "screenshotCount": 0,
-      "screenshotCaptions": {
-        "screenshot-1.png": ""
-      },
-      "accession": {
-        "otherSubjectDescription": [
-          "Please describe the subject of the data.",
-          ""
-        ],
-        "subjectType": [
-          "What is the subject type?",
-          "Biological specimen"
-        ],
-        "specimenSource": [
-          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-          "Non-accessioned"
-        ],
-        "iDigBioAccessioned": [
-          "Is your specimen's species in the iDigBio database?",
-          ""
-        ],
-        "iDigBioURL": [
-          "Enter URL from iDigBio:",
-          ""
-        ],
-        "species": [
-          "What is your specimen's species?",
-          "Mus musculus"
-        ],
-        "biologicalSex": [
-          "What is your specimen's sex?",
-          "Unknown"
-        ],
-        "developmentalStage": [
-          "What is your specimen's developmental stage?",
-          "Prenatal (fetus, embryo)"
-        ],
-        "modality": [
-          "What is the modality of the acquisition?",
-          "Micro CT (or synchrotron)"
-        ],
-        "contrastEnhancement": [
-          "Is there contrast enhancement treatment applied to the specimen?",
-          "Yes"
-        ],
-        "imageContents": [
-          "What is in the image?",
-          "Whole specimen"
-        ],
-        "anatomicalAreas": [
-          "What anatomical area(s) is/are present in the scan?",
-          []
-        ],
-        "redistributionAcknowledgement": [
-          "Acknowledgement:",
-          [
-            "I have the right to allow redistribution of this data."
-          ]
-        ],
-        "license": [
-          "Choose a license:",
-          "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
-        ],
-        "githubRepoName": [
-          "What should the repository in your github account called? This needs to be unique value for your account.",
-          "mus-musculus-E15"
-        ],
-        "repoType": [
-          "What is the intended lifespan of this repository?",
-          "Archival (intended for long-term maintenance)"
-        ],
-        "scanDimensions": "(594, 1046, 738)",
-        "scanSpacing": "(0.017999999225139618, 0.017999999225139618, 0.017999999225139618)",
         "fileFormatVersion": 2
       },
       "isArchival": true,
