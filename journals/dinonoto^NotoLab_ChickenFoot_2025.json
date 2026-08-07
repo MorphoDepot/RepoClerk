@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "nameWithOwner": "dinonoto/NotoLab_ChickenFoot_2025",
-  "journalUpdatedAt": "2026-06-15T20:52:49Z",
+  "journalUpdatedAt": "2026-08-07T18:39:10Z",
   "pushedAt": "2025-12-21T19:44:19Z",
   "openIssues": [
     {
@@ -12,6 +12,13 @@
       "assignees": [
         "JDynamiteX"
       ]
+    },
+    {
+      "number": 3,
+      "title": "Chicken Foot for Biomechanics",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenFoot_2025/issues/3",
+      "author": "Natalia-Taft",
+      "assignees": []
     }
   ],
   "openPRs": [
@@ -106,5 +113,6 @@
     "screenshot-1.png": "Chicken foot specimen scan with segmentation of skeletal system."
   },
   "volumeSize": 104233459,
-  "sourceVolumeChecksum": "e1252b330313dce933a9b01b63ec989633a0718ff4afe0d9e7176a9b2d1ce4db"
+  "sourceVolumeChecksum": "e1252b330313dce933a9b01b63ec989633a0718ff4afe0d9e7176a9b2d1ce4db",
+  "curator": null
 }

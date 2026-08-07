@@ -1,9 +1,55 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "muratmaga/rana-clamitans-full-body",
-  "journalUpdatedAt": "2026-08-07T18:28:30Z",
+  "journalUpdatedAt": "2026-08-07T18:39:13Z",
   "pushedAt": "2026-08-07T18:22:43Z",
-  "openIssues": [],
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "request to segment left femur",
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/issues/1",
+      "author": "cyclobatis",
+      "assignees": [
+        "cyclobatis"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Segment the premaxilla",
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/issues/2",
+      "author": "muratmaga",
+      "assignees": [
+        "muratmaga"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Segment limbs",
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/issues/3",
+      "author": "clara1379",
+      "assignees": [
+        "clara1379"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "segmenting",
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/issues/4",
+      "author": "rchooverresearch",
+      "assignees": [
+        "rchooverresearch"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Segment test",
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/issues/5",
+      "author": "gagost",
+      "assignees": [
+        "gagost"
+      ]
+    }
+  ],
   "openPRs": [],
   "accession": {
     "otherSubjectDescription": [

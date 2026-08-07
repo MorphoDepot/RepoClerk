@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "nameWithOwner": "jaimigray/snakeseg",
-  "journalUpdatedAt": "2026-06-15T20:52:54Z",
+  "journalUpdatedAt": "2026-08-07T18:38:57Z",
   "pushedAt": "2025-10-07T16:46:14Z",
   "openIssues": [
     {
@@ -15,6 +15,13 @@
       "number": 3,
       "title": "MorphoDepot repo issues",
       "url": "https://github.com/jaimigray/snakeseg/issues/3",
+      "author": "muratmaga",
+      "assignees": []
+    },
+    {
+      "number": 4,
+      "title": "Demo for Christy",
+      "url": "https://github.com/jaimigray/snakeseg/issues/4",
       "author": "muratmaga",
       "assignees": []
     }
@@ -84,5 +91,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 268376149,
-  "sourceVolumeChecksum": "3051172c2dcd1507d69d8f1ae044e107506858f71fdb3ec2cada1bba41153476"
+  "sourceVolumeChecksum": "3051172c2dcd1507d69d8f1ae044e107506858f71fdb3ec2cada1bba41153476",
+  "curator": null
 }
