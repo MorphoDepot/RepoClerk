@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
-  "journalUpdatedAt": "2026-07-07T11:41:16Z",
+  "journalUpdatedAt": "2026-08-07T21:48:27Z",
   "pushedAt": "2026-01-03T22:48:52Z",
+  "updatedAt": "2026-01-03T22:48:56Z",
+  "activityAt": "2026-07-07T11:41:02Z",
   "openIssues": [
     {
       "number": 1,

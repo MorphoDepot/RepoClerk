@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "kumimatsui/Dasyuridae_Workshop",
-  "journalUpdatedAt": "2026-06-15T20:51:17Z",
+  "journalUpdatedAt": "2026-08-07T21:48:01Z",
   "pushedAt": "2026-03-05T17:29:19Z",
+  "updatedAt": "2026-03-04T23:30:35Z",
+  "activityAt": "2026-03-05T17:29:20Z",
   "openIssues": [
     {
       "number": 1,
@@ -113,5 +115,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 32419406,
-  "sourceVolumeChecksum": "4381f0a9d6fd16e886b80c3e7419e149db6e8fe2ac54500623578d1cb6f4d830"
+  "sourceVolumeChecksum": "4381f0a9d6fd16e886b80c3e7419e149db6e8fe2ac54500623578d1cb6f4d830",
+  "curator": null
 }

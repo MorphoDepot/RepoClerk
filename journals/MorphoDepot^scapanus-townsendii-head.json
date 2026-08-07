@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/scapanus-townsendii-head",
-  "journalUpdatedAt": "2026-07-17T02:29:32Z",
+  "journalUpdatedAt": "2026-08-07T21:48:19Z",
   "pushedAt": "2026-07-17T02:29:14Z",
+  "updatedAt": "2026-07-17T02:29:17Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {

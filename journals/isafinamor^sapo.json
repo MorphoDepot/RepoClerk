@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "isafinamor/sapo",
-  "journalUpdatedAt": "2026-06-15T20:51:07Z",
+  "journalUpdatedAt": "2026-08-07T21:48:38Z",
   "pushedAt": "2025-11-06T19:14:25Z",
+  "updatedAt": "2025-11-06T19:14:29Z",
+  "activityAt": "2025-12-31T02:47:00Z",
   "openIssues": [
     {
       "number": 1,
@@ -87,5 +89,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 410240276,
-  "sourceVolumeChecksum": "599322f532ad6c98cd314e47e08144a9a5e976267c422357f5ba9975025313cb"
+  "sourceVolumeChecksum": "599322f532ad6c98cd314e47e08144a9a5e976267c422357f5ba9975025313cb",
+  "curator": null
 }

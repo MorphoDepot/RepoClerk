@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
-  "journalUpdatedAt": "2026-06-15T20:51:49Z",
+  "journalUpdatedAt": "2026-08-07T21:48:59Z",
   "pushedAt": "2026-06-15T17:54:42Z",
+  "updatedAt": "2026-06-15T17:55:45Z",
+  "activityAt": "2026-06-15T17:54:46Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+  "curator": "muratmaga"
 }

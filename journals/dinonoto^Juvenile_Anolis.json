@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "dinonoto/Juvenile_Anolis",
-  "journalUpdatedAt": "2026-07-21T22:15:50Z",
+  "journalUpdatedAt": "2026-08-07T21:48:04Z",
   "pushedAt": "2026-07-21T20:40:22Z",
+  "updatedAt": "2026-07-21T20:40:48Z",
+  "activityAt": "2026-08-06T17:26:38Z",
   "openIssues": [
     {
       "number": 1,

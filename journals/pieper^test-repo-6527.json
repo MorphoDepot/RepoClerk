@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "pieper/test-repo-6527",
-  "journalUpdatedAt": "2026-06-15T20:50:50Z",
+  "journalUpdatedAt": "2026-08-07T21:49:14Z",
   "pushedAt": "2026-04-29T21:07:39Z",
+  "updatedAt": "2025-12-08T20:35:01Z",
+  "activityAt": "2026-04-29T21:07:51Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 705958814,
-  "sourceVolumeChecksum": "ab23be4d69fa61a8c3ebec15145fe97ea8ddd98b3166cfbd65a9dcaef4cfe6df"
+  "sourceVolumeChecksum": "ab23be4d69fa61a8c3ebec15145fe97ea8ddd98b3166cfbd65a9dcaef4cfe6df",
+  "curator": null
 }

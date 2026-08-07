@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "jaimigray/rattlesnake",
-  "journalUpdatedAt": "2026-06-15T20:51:05Z",
+  "journalUpdatedAt": "2026-08-07T21:48:24Z",
   "pushedAt": "2026-03-10T20:21:40Z",
+  "updatedAt": "2026-03-10T20:00:25Z",
+  "activityAt": "2026-03-10T20:21:42Z",
   "openIssues": [
     {
       "number": 1,
@@ -104,5 +106,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 256705954,
-  "sourceVolumeChecksum": "4452ed6aa134f2ef38c357ff8ae9191bafea2227b41162572e28b0c87a336027"
+  "sourceVolumeChecksum": "4452ed6aa134f2ef38c357ff8ae9191bafea2227b41162572e28b0c87a336027",
+  "curator": null
 }

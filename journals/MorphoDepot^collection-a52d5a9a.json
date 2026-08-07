@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/collection-a52d5a9a",
-  "journalUpdatedAt": "2026-07-18T20:12:22Z",
+  "journalUpdatedAt": "2026-08-07T21:48:30Z",
   "pushedAt": "2026-07-18T20:12:03Z",
+  "updatedAt": "2026-07-18T20:12:07Z",
+  "activityAt": "2026-07-17T21:21:23Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {},

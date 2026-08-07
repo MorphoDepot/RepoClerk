@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/sciurus-griseus-skull",
-  "journalUpdatedAt": "2026-07-18T18:57:30Z",
+  "journalUpdatedAt": "2026-08-07T21:48:56Z",
   "pushedAt": "2026-07-18T18:57:14Z",
+  "updatedAt": "2026-07-18T18:57:17Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {

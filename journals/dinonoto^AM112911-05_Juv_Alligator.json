@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
-  "journalUpdatedAt": "2026-06-16T20:43:51Z",
+  "journalUpdatedAt": "2026-08-07T21:49:19Z",
   "pushedAt": "2026-06-16T17:38:51Z",
+  "updatedAt": "2026-06-16T17:39:46Z",
+  "activityAt": "2026-08-03T18:20:36Z",
   "openIssues": [
     {
       "number": 3,
@@ -131,5 +133,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 1613908154,
-  "sourceVolumeChecksum": "2c29a9db8891c119eddc5d1b82d5cc2b4f66677c21c555c931b8334613a554c9"
+  "sourceVolumeChecksum": "2c29a9db8891c119eddc5d1b82d5cc2b4f66677c21c555c931b8334613a554c9",
+  "curator": null
 }

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/mustela-vison-skull",
-  "journalUpdatedAt": "2026-07-18T18:19:09Z",
+  "journalUpdatedAt": "2026-08-07T21:48:33Z",
   "pushedAt": "2026-07-18T18:18:50Z",
+  "updatedAt": "2026-07-18T18:18:52Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {

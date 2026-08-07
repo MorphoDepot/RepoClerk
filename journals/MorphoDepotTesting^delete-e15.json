@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/delete-e15",
-  "journalUpdatedAt": "2026-06-15T20:51:09Z",
+  "journalUpdatedAt": "2026-08-07T21:48:36Z",
   "pushedAt": "2026-05-07T19:21:49Z",
+  "updatedAt": "2026-05-07T19:21:52Z",
+  "activityAt": "2026-05-07T19:22:36Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 50621209,
-  "sourceVolumeChecksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7"
+  "sourceVolumeChecksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7",
+  "curator": null
 }

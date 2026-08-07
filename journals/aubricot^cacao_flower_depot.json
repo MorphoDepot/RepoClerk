@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "aubricot/cacao_flower_depot",
-  "journalUpdatedAt": "2026-06-15T20:51:25Z",
+  "journalUpdatedAt": "2026-08-07T21:48:14Z",
   "pushedAt": "2026-03-05T23:50:02Z",
+  "updatedAt": "2026-03-05T23:47:03Z",
+  "activityAt": "2026-03-05T23:50:28Z",
   "openIssues": [
     {
       "number": 7,
@@ -101,5 +103,6 @@
     "screenshot-2.png": "flower volume masked with whole flower segmentation; view from apex"
   },
   "volumeSize": 576783869,
-  "sourceVolumeChecksum": "0713be5cf0f54cdd5c650e790f839b1fd407e085592156e9f543e4af4c2aaa5d"
+  "sourceVolumeChecksum": "0713be5cf0f54cdd5c650e790f839b1fd407e085592156e9f543e4af4c2aaa5d",
+  "curator": null
 }

@@ -1,13 +1,16 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "CDonatelli/CDHumanTest",
-  "journalUpdatedAt": "2026-06-15T20:51:55Z",
+  "journalUpdatedAt": "2026-08-07T21:49:10Z",
   "pushedAt": "2025-05-19T21:14:51Z",
+  "updatedAt": "2025-05-19T21:14:53Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {},
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": null,
-  "sourceVolumeChecksum": null
+  "sourceVolumeChecksum": null,
+  "curator": null
 }

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "PaulGignac/Pigeon-4_Head_DiceCT",
-  "journalUpdatedAt": "2026-06-15T20:51:57Z",
+  "journalUpdatedAt": "2026-08-07T21:49:08Z",
   "pushedAt": "2025-10-21T21:33:35Z",
+  "updatedAt": "2025-10-21T21:33:38Z",
+  "activityAt": "2025-10-20T19:13:43Z",
   "openIssues": [
     {
       "number": 1,
@@ -91,5 +93,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 1565945297,
-  "sourceVolumeChecksum": "86070a5edd0a165a703acb8daa74ec8a105f6b426ec1ee06e67cfc41f395dfc5"
+  "sourceVolumeChecksum": "86070a5edd0a165a703acb8daa74ec8a105f6b426ec1ee06e67cfc41f395dfc5",
+  "curator": null
 }

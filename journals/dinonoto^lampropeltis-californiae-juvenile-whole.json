@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "dinonoto/lampropeltis-californiae-juvenile-whole",
-  "journalUpdatedAt": "2026-08-07T18:39:00Z",
+  "journalUpdatedAt": "2026-08-07T21:48:41Z",
   "pushedAt": "2026-07-21T18:50:23Z",
+  "updatedAt": "2026-07-21T19:48:39Z",
+  "activityAt": "2026-08-04T07:13:27Z",
   "openIssues": [
     {
       "number": 1,

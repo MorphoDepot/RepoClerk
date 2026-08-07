@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "muratmaga/Herpetotherium_fugax",
-  "journalUpdatedAt": "2026-06-15T20:51:54Z",
+  "journalUpdatedAt": "2026-08-07T21:49:05Z",
   "pushedAt": "2026-02-02T18:00:12Z",
+  "updatedAt": "2026-02-07T04:33:08Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -85,5 +87,6 @@
     "screenshot-3.png": "Without matrix"
   },
   "volumeSize": 1713949073,
-  "sourceVolumeChecksum": "8ddf5f9734347591449a04fcec370319c465d60531b3381269cf08ead62fb49c"
+  "sourceVolumeChecksum": "8ddf5f9734347591449a04fcec370319c465d60531b3381269cf08ead62fb49c",
+  "curator": null
 }

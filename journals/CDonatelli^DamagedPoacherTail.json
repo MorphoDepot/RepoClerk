@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "CDonatelli/DamagedPoacherTail",
-  "journalUpdatedAt": "2026-06-15T20:50:55Z",
+  "journalUpdatedAt": "2026-08-07T21:49:22Z",
   "pushedAt": "2025-05-20T23:35:12Z",
+  "updatedAt": "2025-05-20T23:35:16Z",
+  "activityAt": "2025-05-20T22:46:03Z",
   "openIssues": [
     {
       "number": 1,
@@ -78,5 +80,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 425869150,
-  "sourceVolumeChecksum": null
+  "sourceVolumeChecksum": null,
+  "curator": null
 }

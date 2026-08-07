@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
-  "journalUpdatedAt": "2026-06-15T20:51:51Z",
+  "journalUpdatedAt": "2026-08-07T21:49:02Z",
   "pushedAt": "2026-04-26T18:40:11Z",
+  "updatedAt": "2026-04-26T18:40:15Z",
+  "activityAt": "2026-04-26T18:40:58Z",
   "openIssues": [
     {
       "number": 1,
@@ -130,5 +132,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+  "curator": null
 }
