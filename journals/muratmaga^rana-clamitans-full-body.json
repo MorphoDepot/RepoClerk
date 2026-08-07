@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "muratmaga/rana-clamitans-full-body",
-  "journalUpdatedAt": "2026-08-07T18:58:54Z",
-  "pushedAt": "2026-08-07T18:22:43Z",
+  "journalUpdatedAt": "2026-08-07T20:40:17Z",
+  "pushedAt": "2026-08-07T20:39:50Z",
   "openIssues": [
     {
       "number": 1,
@@ -72,6 +72,18 @@
       "closingIssue": {
         "number": 3,
         "title": "Segment limbs",
+        "repoOwner": "muratmaga"
+      }
+    },
+    {
+      "number": 8,
+      "title": "issue-2",
+      "isDraft": true,
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/pull/8",
+      "author": "muratmaga",
+      "closingIssue": {
+        "number": 2,
+        "title": "Segment the premaxilla",
         "repoOwner": "muratmaga"
       }
     }
