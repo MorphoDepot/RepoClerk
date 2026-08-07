@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 3,
+  "nameWithOwner": "muratmaga/rana-clamitans-full-body",
+  "journalUpdatedAt": "2026-08-07T18:28:24Z",
+  "pushedAt": "2026-08-07T18:22:43Z",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Non-accessioned"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      "Yes"
+    ],
+    "iDigBioURL": [
+      "Paste the record URL:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Rana clamitans"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Whole specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
+        "Pectoral girdle",
+        "Forelimb"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      []
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "rana-clamitans-full-body"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+    ],
+    "scanDimensions": "(481, 686, 967)",
+    "scanSpacing": "(0.040887999999999994, 0.040887999999999994, 0.0408888200620476)",
+    "specimenIdentifier": null,
+    "accessionSource": "Unknown",
+    "accessionResolved": false,
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": "Some frog"
+  },
+  "volumeSize": 104470447,
+  "sourceVolumeChecksum": "80405b9e2d0318e7cf9827089603b811e540ba5ee35c19bf6b44e6ffa596d851",
+  "curator": "muratmaga"
+}
