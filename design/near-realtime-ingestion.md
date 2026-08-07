@@ -148,20 +148,55 @@ Four layers, ordered so that each is useful alone and none depends on the next.
 
 ### Layer 1 — Make the pull path authoritative (the correctness floor)
 
-Fix [#470](https://github.com/MorphoDepot/RepoClerk/issues/470): compare repo `updatedAt` alongside
-`pushedAt`. `updatedAt` moves on issue create, assignment, retitle, close, and PR events; an
-open-issue `totalCount` would miss "one closed, one opened in the same window".
+Fix [#470](https://github.com/MorphoDepot/RepoClerk/issues/470): give the sweep a change token that
+actually moves when issues and pull requests move.
 
-This is **6 edits across 2 files plus a shared constant**, not the one-liner it looks like:
+**Not `Repository.updatedAt`.** An earlier draft of this section proposed exactly that, and it is
+wrong — `updatedAt` tracks the repository *record* (description, topics, visibility), not its issues.
+Measured against live repos on 2026-08-07, before writing any code:
+
+| repo | `updatedAt` | newest issue |
+|---|---|---|
+| `jaimigray/snakeseg` | 2025-10-07T16:46:18Z | 2026-07-07T11:39:01Z |
+| `dinonoto/Juvenile_Bearded_Dragon` | 2026-06-09T19:01:40Z | 2026-06-11T12:55:30Z |
+| `muratmaga/rana-clamitans-full-body` | 2026-08-07T18:28:07Z | 2026-08-07T18:30:05Z |
+
+`snakeseg` had nine months of issue activity that never touched `updatedAt`. Comparing it would have
+shipped a fix that changed nothing, and the tests would have passed, because the assumption was in
+the fixture as much as the code.
+
+The token that does work is an **activity watermark**: the newest issue-or-PR update time, from
+`issues(first: 1, orderBy: {field: UPDATED_AT, direction: DESC})` and the same for
+`pullRequests`. Deliberately unfiltered by state — closing an issue must move the watermark forward,
+whereas a `states: OPEN` filter would make it jump *backwards* to the next-newest open item. It is
+strictly better than an open-issue `totalCount`, which cannot see a reassignment or a
+close-one-open-one within the same window.
+
+Cost, measured on the whole 80-repo fleet: **2 GraphQL points** against a 5,000/hour budget, in the
+discovery search that already runs. The `first: 1` is what keeps it that cheap — the same search
+pulling 100 issues and 100 PRs per repo costs 202.
+
+Three tokens are journaled, none redundant:
+
+| token | moves on |
+|---|---|
+| `pushedAt` | git pushes — gates the expensive artifact re-fetch (accession, captions, volume HEAD) |
+| `updatedAt` | the repository record — a collection's title is its description, so this still matters |
+| `activityAt` | newest issue or PR update — the one that fixes the reported bug |
 
 | file | change |
 |---|---|
-| `sync-all.py` | GraphQL fragment; JQ filter (the return shape changes from `{nwo: pushedAt}` to `{nwo: {pushedAt, updatedAt}}`); the journal read; the staleness comparison |
-| `drain.py` | `GRAPHQL_QUERY` gains `updatedAt`; `process_repo()` writes it |
-| `constants.py` *(new)* | `SCHEMA_VERSION`, imported by both — `sync-all.py:21` is `2` while `drain.py:29` is `3`, so the schema-upgrade backfill is currently dead. Do **not** import it from `drain`: `drain.py` ends in a bare `main()` with no `__main__` guard, so importing it would run the drain loop as a side effect. |
+| `sync-all.py` | search query and JQ filter gain the three tokens; `staleness_reason()` extracted as a pure function and extended; the journal read |
+| `drain.py` | `GRAPHQL_QUERY` gains `updatedAt` and the two aliased `first: 1` connections; new `activity_watermark()`; `process_repo()` writes both fields |
+| `constants.py` *(new)* | `SCHEMA_VERSION`, imported by both — it was `2` in `sync-all.py` and `3` in `drain.py`, which silently disabled the schema-upgrade backfill entirely |
+| `test_staleness.py` *(new)* | covers each token, the pre-upgrade path, and a regression test that fails if anyone swaps the watermark back for `updatedAt` |
 
-Adding a journal field is a schema change, so `SCHEMA_VERSION` goes to 4 and every journal is
-re-queued once. That is desirable — it clears the accumulated staleness in the same pass.
+Both scripts also gained `if __name__ == "__main__"` guards, without which the logic cannot be
+imported by a test at all.
+
+Adding journal fields is a schema change, so `SCHEMA_VERSION` goes to 4 and every journal is
+re-queued once. That is desirable — it clears the accumulated staleness in the same pass, and it is
+what stops a journal with no `activityAt` from being reported stale on every sweep forever.
 
 **Why this first:** it is the only layer that makes correctness independent of who the actor is, what
 permissions they hold, and which tier the repo lives in. It also happens to be the only fix for the
@@ -216,7 +251,7 @@ passed.
 - An open, unlabeled `update ...` issue older than a few minutes is a known-bad state and should
   alarm.
 - Dispatch and drain *failures* should alarm. Ten silent failures in 31 runs is the current baseline.
-- **Publish a freshness metric**: max and median `now - journalUpdatedAt` against repo `updatedAt`,
+- **Publish a freshness metric**: max and median `now - journalUpdatedAt` against `activityAt`,
   on the dashboard. One number that would have made all of this obvious on day one.
 
 ### Layer 4 — Make it affordable at 5–10× the current size
@@ -236,7 +271,7 @@ size.
 HEAD against the volume URL — an S3 redirect chain on a multi-GB object — and runs all of them on
 every refresh, including one triggered by a single issue comment. Split the two signals by cost:
 **`pushedAt` gates the expensive artifact fetches** (accession, captions, `CURATOR`, checksum, volume
-HEAD — none of which can change without a push), **`updatedAt` gates a cheap issues/PRs-only
+HEAD — none of which can change without a push), **`activityAt` gates a cheap issues/PRs-only
 refresh**. Then batch that cheap refresh with GraphQL aliases (`r0: repository(...) r1: ...`), so 500
 repos cost ~10 requests rather than 500. Verify node-count and complexity limits before fixing a
 batch size.
