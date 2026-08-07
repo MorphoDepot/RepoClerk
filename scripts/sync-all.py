@@ -14,11 +14,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
+# Running as `python3 scripts/sync-all.py` already puts scripts/ on sys.path, but loading
+# this file by path (as test_staleness.py does) does not. Make the import work either way.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from constants import SCHEMA_VERSION
 
-# Keep in sync with drain.SCHEMA_VERSION. A journal whose schemaVersion is below this
-# is treated as stale, so a schema bump backfills every journal on the next sync.
-SCHEMA_VERSION = 2
+GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
 
 
 def run(cmd, check=True):
@@ -26,11 +27,25 @@ def run(cmd, check=True):
 
 
 def search_topic(topic):
-    """Return {nameWithOwner: pushedAt} for live repos carrying `topic` (forks included)."""
+    """Return {nameWithOwner: {pushedAt, updatedAt, activityAt}} for repos carrying `topic`.
+
+    All three change tokens come back in the one discovery search that was happening
+    anyway.  Measured cost for the whole 80-repo fleet: 2 GraphQL points, against a
+    5,000/hour budget -- the two `first: 1` connections are what keep it that cheap.
+
+    They cover different things and none is redundant:
+      pushedAt   git pushes
+      updatedAt  the repository record -- description (a collection's title comes from
+                 it), topics, visibility
+      activityAt newest issue-or-PR update, the only cheap signal that tracks issue and
+                 pull-request activity, which updatedAt does not (see drain.activity_watermark)
+    """
     result = run([
         "gh", "api", "graphql",
         "--paginate",
-        "--jq", ".data.search.nodes[] | {nameWithOwner, pushedAt}",
+        "--jq", ".data.search.nodes[] | {nameWithOwner, pushedAt, updatedAt, "
+                "latestIssue: (.latestIssue.nodes[0].updatedAt // \"\"), "
+                "latestPR: (.latestPR.nodes[0].updatedAt // \"\")}",
         "-f", f"""query=
           query($cursor: String) {{
             search(
@@ -41,7 +56,15 @@ def search_topic(topic):
             ) {{
               pageInfo {{ hasNextPage endCursor }}
               nodes {{
-                ... on Repository {{ nameWithOwner pushedAt }}
+                ... on Repository {{
+                  nameWithOwner pushedAt updatedAt
+                  latestIssue: issues(first: 1, orderBy: {{field: UPDATED_AT, direction: DESC}}) {{
+                    nodes {{ updatedAt }}
+                  }}
+                  latestPR: pullRequests(first: 1, orderBy: {{field: UPDATED_AT, direction: DESC}}) {{
+                    nodes {{ updatedAt }}
+                  }}
+                }}
               }}
             }}
           }}
@@ -52,8 +75,48 @@ def search_topic(topic):
         line = line.strip()
         if line:
             entry = json.loads(line)
-            repos[entry["nameWithOwner"]] = entry.get("pushedAt", "")
+            repos[entry["nameWithOwner"]] = {
+                "pushedAt": entry.get("pushedAt", ""),
+                "updatedAt": entry.get("updatedAt", ""),
+                # Same max() as drain.activity_watermark, so the two are comparable.
+                "activityAt": max(entry.get("latestIssue") or "",
+                                  entry.get("latestPR") or ""),
+            }
     return repos
+
+
+def staleness_reason(journal, remote):
+    """Why `remote` needs re-draining, or None if the journal is current.
+
+    `journal` is the local record (or None if there is no journal file); `remote` is
+    {pushedAt, updatedAt} from the topic search.  Pure and side-effect free so it can
+    be tested without network -- see test_staleness.py.
+
+    Order matters only for the label the digest prints; any of these firing re-drains.
+    pushedAt is checked first because it is the strongest signal -- new content means the
+    expensive artifacts genuinely changed.
+
+    activityAt is the one that fixes #470.  It is the newest issue-or-PR update time,
+    because *neither* pushedAt nor updatedAt moves on issue and pull-request activity:
+    pushedAt tracks git pushes, updatedAt tracks the repository record.  That was verified
+    the hard way -- an earlier version of this fix compared updatedAt and would have
+    changed nothing at all.
+
+    A journal written before this field existed has no activityAt.  Comparing "" against a
+    real timestamp would report every repo stale on every sweep forever, so those fall
+    through to the schemaVersion check, which re-drains each exactly once and writes it.
+    """
+    if journal is None:
+        return "missing"
+    if journal.get("pushedAt", "") != remote["pushedAt"]:
+        return "stale"
+    if journal.get("updatedAt") and journal["updatedAt"] != remote["updatedAt"]:
+        return "metadata"
+    if journal.get("activityAt") and journal["activityAt"] != remote["activityAt"]:
+        return "activity"
+    if journal.get("schemaVersion", 1) < SCHEMA_VERSION:
+        return "schema-upgrade"
+    return None
 
 
 def main():
@@ -79,24 +142,19 @@ def main():
             with open(path) as f:
                 data = json.load(f)
             journaled_repos[nwo] = {"path": path, "pushedAt": data.get("pushedAt", ""),
+                                    "updatedAt": data.get("updatedAt", ""),
+                                    "activityAt": data.get("activityAt", ""),
                                     "schemaVersion": data.get("schemaVersion", 1)}
         except Exception:
-            journaled_repos[nwo] = {"path": path, "pushedAt": "", "schemaVersion": 0}
+            journaled_repos[nwo] = {"path": path, "pushedAt": "", "updatedAt": "",
+                                    "activityAt": "", "schemaVersion": 0}
 
     print(f"Found {len(journaled_repos)} existing journal file(s)")
 
     # 3. Create update-request issues for missing or stale repos
     issues_created = 0
-    for nwo, remote_pushed_at in live_repos.items():
-        journal = journaled_repos.get(nwo)
-        if journal is None:
-            reason = "missing"
-        elif journal["pushedAt"] != remote_pushed_at:
-            reason = "stale"
-        elif journal.get("schemaVersion", 1) < SCHEMA_VERSION:
-            reason = "schema-upgrade"
-        else:
-            reason = None
+    for nwo, remote in live_repos.items():
+        reason = staleness_reason(journaled_repos.get(nwo), remote)
 
         if reason:
             r = run([
@@ -147,4 +205,5 @@ def main():
         print(f"Deleted {len(deleted)} stale journal(s)")
 
 
-main()
+if __name__ == "__main__":
+    main()

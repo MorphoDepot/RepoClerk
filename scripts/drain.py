@@ -20,18 +20,37 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Running as `python3 scripts/drain.py` already puts scripts/ on sys.path, but loading
+# this file by path (as the test_*.py helpers do) does not. Make the import work either way.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from constants import SCHEMA_VERSION
+
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
 MAX_IDLE_CYCLES = 3
 POLL_INTERVAL = 5  # seconds
 
-# Journal schema version. Bump when the journal shape changes so sync-all re-queues
-# existing journals for a one-time backfill. v2 added sourceVolumeChecksum.
-SCHEMA_VERSION = 3
+# Three change tokens, because no single GitHub field covers everything sync-all must notice:
+#   pushedAt   -- git pushes only
+#   updatedAt  -- the repository *record* (description, topics, visibility). Notably this does
+#                 NOT move on issue or pull-request activity; see ACTIVITY_FIELDS below.
+#   latestIssue / latestPR -- the newest issue and PR by update time, which is the only cheap
+#                 signal that does track issue and PR activity. Aliased because the same fields
+#                 are queried again below with different arguments.
+ACTIVITY_FIELDS = """
+    latestIssue: issues(first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
+      nodes { updatedAt }
+    }
+    latestPR: pullRequests(first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
+      nodes { updatedAt }
+    }
+"""
 
 GRAPHQL_QUERY = """
 query($owner: String!, $repo: String!) {
   repository(owner: $owner, name: $repo) {
     pushedAt
+    updatedAt
+""" + ACTIVITY_FIELDS + """
     description
     repositoryTopics(first: 30) { nodes { topic { name } } }
     issues(states: OPEN, first: 100) {
@@ -129,6 +148,25 @@ def parse_collection_readme(text, self_nwo):
         description += (" " if description else "") + s
 
     return {"title": title, "description": description, "memberRefs": refs}
+
+
+def activity_watermark(repo_data):
+    """Newest issue-or-PR update time for a repo, as an ISO-8601 string ("" if it has none).
+
+    This is the change token for issue and pull-request activity.  It exists because
+    Repository.updatedAt does *not* move on that activity -- it tracks the repository
+    record.  Measured on live repos 2026-08-07: jaimigray/snakeseg had issue activity on
+    2026-07-07 and an updatedAt of 2025-10-07, nine months behind.
+
+    No state filter, deliberately: closing an issue must move the watermark forward, and
+    filtering to OPEN would instead make it jump *backwards* to the next-newest open item.
+
+    ISO-8601 UTC strings sort correctly as plain strings, so max() is the whole comparison.
+    """
+    def newest(key):
+        nodes = ((repo_data.get(key) or {}).get("nodes") or [])
+        return nodes[0]["updatedAt"] if nodes else ""
+    return max(newest("latestIssue"), newest("latestPR"))
 
 
 def resolve_volume_url(volume_ref, name_with_owner):
@@ -251,6 +289,8 @@ def process_repo(owner, repo):
         "nameWithOwner": f"{owner}/{repo}",
         "journalUpdatedAt": now,
         "pushedAt": data["pushedAt"],
+        "updatedAt": data["updatedAt"],
+        "activityAt": activity_watermark(data),
         "openIssues": open_issues,
         "openPRs": open_prs,
         "accession": accession,
@@ -373,4 +413,5 @@ def main():
         sys.exit(1)
 
 
-main()
+if __name__ == "__main__":
+    main()

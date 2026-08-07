@@ -5,21 +5,24 @@ generate-dashboard.build_collections.
 Run: python3 scripts/test_collections.py   (no deps, no network)
 """
 import importlib.util
-import re
 from pathlib import Path
 
-# generate-dashboard.py has a __main__ guard, so importlib-load it directly.
-_spec = importlib.util.spec_from_file_location(
-    "gen_dashboard", Path(__file__).with_name("generate-dashboard.py"))
-gd = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(gd)
 
-# drain.py ends with a bare main() call, so load it with that call stripped (no network run).
-_drain_src = Path(__file__).with_name("drain.py").read_text()
-_drain_src = re.sub(r'^main\(\)\s*$', '', _drain_src, flags=re.M)
-_drain_ns = {}
-exec(compile(_drain_src, "drain.py", "exec"), _drain_ns)
-parse_collection_readme = _drain_ns["parse_collection_readme"]
+def _load(filename, name):
+    spec = importlib.util.spec_from_file_location(name, Path(__file__).with_name(filename))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+gd = _load("generate-dashboard.py", "gen_dashboard")
+
+# drain.py used to end in a bare main() call, so this loaded it by regex-stripping that
+# line before exec()ing the source. It now has a __main__ guard and can be imported like
+# any other module -- which also gives it a real __file__, without which its own imports
+# cannot resolve.
+drain = _load("drain.py", "drain")
+parse_collection_readme = drain.parse_collection_readme
 
 
 def check(name, cond):
