@@ -285,16 +285,41 @@ passed.
 - **Publish a freshness metric**: max and median `now - journalUpdatedAt` against `activityAt`,
   on the dashboard. One number that would have made all of this obvious on day one.
 
-### Layer 4 — Make it affordable at 5–10× the current size
+### Layer 4 — Make it affordable at the target scale
 
-Today's fleet is 80 repos. The design should hold at 500.
+**The design target is thousands of personal repos and hundreds of org repos.** Today's fleet is 80,
+which is one to two orders of magnitude below that, so the measurements below establish how each cost
+*scales* rather than whether it is currently acceptable. An earlier draft of this section reasoned
+against 500 repos; that was too small a target and the numbers have been restated.
+
+The finding that matters most at that size, measured on the schema-v4 backfill of 2026-08-07:
+
+| phase of a full-fleet pass | 80 repos | per repo | at 1,000 | at 5,000 |
+|---|---|---|---|---|
+| discover + queue | 81 s | 1.01 s | 17 min | 84 min |
+| drain | 259 s | 3.24 s | 54 min | 4.5 h |
+| **total** | **5 m 53 s** | | **~1.2 h** | **~6 h** |
+
+Against `timeout-minutes: 30`, a single writer, and a concurrency group that discards overlapping
+runs. **A whole-fleet operation — a schema migration, a recovery, a backfill — does not survive one
+order of magnitude.** The queue phase alone exceeds the timeout, and since the queue is built from
+GitHub issues at one `gh issue create` per repo, it also runs into `GITHUB_TOKEN`'s documented limit
+in the low thousands of REST requests per hour. (Rate limits are scoped per token;
+verify the current figure before relying on it — the order of magnitude is the point.)
+
+So the architectural rule is: **minimize how often anything must touch the whole fleet.** Batching,
+resumability, and a work queue that is not GitHub issues are all implied, and
+[`index-vs-work-state.md`](index-vs-work-state.md) argues that removing work state from the journal
+is the change that most reduces full-fleet pressure, since index drains are push-gated while
+work-state drains follow fleet-wide issue activity.
 
 Measured on 2026-08-07: a steady-state `sync-all` run is 25–28 s, almost entirely checkout and setup
 — the discovery search is a single page. `journals/` is 352 KB across 80 files (~4.4 KB each),
 `docs/` is 264 KB, `.git` is 3.9 MB.
 
-**Discovery scales fine.** 500 repos is 5 search pages. This is not the constraint at any plausible
-size.
+**Discovery scales fine.** The topic search pages at 100 repos per request, so it grows linearly in
+requests — 50 at 5,000 repos — while staying far inside the 30-per-minute search limit at any sane
+cadence. This is not the constraint at target scale.
 
 **The drain does not, for two reasons.**
 
@@ -303,9 +328,13 @@ HEAD against the volume URL — an S3 redirect chain on a multi-GB object — an
 every refresh, including one triggered by a single issue comment. Split the two signals by cost:
 **`pushedAt` gates the expensive artifact fetches** (accession, captions, `CURATOR`, checksum, volume
 HEAD — none of which can change without a push), **`activityAt` gates a cheap issues/PRs-only
-refresh**. Then batch that cheap refresh with GraphQL aliases (`r0: repository(...) r1: ...`), so 500
-repos cost ~10 requests rather than 500. Verify node-count and complexity limits before fixing a
-batch size.
+refresh**. Then batch that cheap refresh with GraphQL aliases (`r0: repository(...) r1: ...`), so a
+fleet of any size costs one request per batch of ~50 rather than one per repo. Verify node-count and
+complexity limits before fixing a batch size.
+
+That split is what turns the 3.24 s/repo drain measured above into something proportional to what
+actually changed. It matters more the larger the fleet gets, and it is moot for work state entirely
+if [`index-vs-work-state.md`](index-vs-work-state.md) is adopted.
 
 *There is one writer and it already collides.* The `repoclerk-writer` concurrency group keeps one
 run in flight and one pending and cancels the rest; two long runs were cancelled outright on
@@ -313,17 +342,23 @@ run in flight and one pending and cancels the rest; two long runs were cancelled
 properly — a queue rather than a lock that drops work — matters more as the fleet grows.
 
 **Git churn is the wall, and it is client-visible.** Every drain regenerates `docs/` and commits it.
-At 500 repos with a tightened sweep interval that is hundreds of commits a day, each rewriting a
-growing generated tree, on a repository **every extension user clones**. `refreshRepoClerk()` does a
+Commit volume follows whatever is journaled: an index-only journal changes on push, while a journal
+carrying work state changes on fleet-wide issue and pull-request activity — the second term grows with
+fleet size *multiplied by* per-repo activity, so it is the one that gets away from you. Either way
+each commit rewrites a generated tree that is itself O(fleet), on a repository **every extension user
+clones**. `refreshRepoClerk()` does a
 `--depth 1` clone then pulls forever after, and there is already a `REPOCLERK_SIZE_LIMIT_MB = 100`
 guard that deletes and re-clones when the working copy crosses 100 MB — a guard whose existence says
 someone already anticipated this. Two changes, in order of effort:
 
 1. **Get `docs/` off the branch clients clone** (`gh-pages` or an orphan branch). Small change, large
    effect: presentation churn stops landing in every user's working copy.
-2. **Reconsider git as the client transport.** At 500 repos the whole journal set is ~2.2 MB. One
-   aggregated JSON fetched with an `ETag` is a single conditional GET — no history, no size guard, no
-   periodic re-clone. Git is supplying history that nothing reads, for data that is a cache.
+2. **Reconsider git as the client transport.** Journals average ~4.4 KB, so the set is tens of
+   megabytes at target scale — cloned, then pulled forever, with history accumulating on top, by every
+   extension user. Git is supplying history that nothing reads, for data that is a cache. A
+   conditional GET against a single artifact has no history and no size guard; if even that is too
+   large, a compact index carrying only the fields Search filters on (a few hundred bytes per repo)
+   with detail fetched lazily keeps the client payload flat as the fleet grows.
 
 ---
 
@@ -400,8 +435,11 @@ test against.
    structural, not a misconfiguration — see *Evidence*.
 2. Layer 2: App-installation events (a permission increase on an App deliberately narrowed to
    Contents-only), per-repo webhooks, or neither?
-3. Layer 4: is 500 repos the number to design for? The answer differs sharply between 500 dormant
-   archival repos and 500 with several classes live at once.
+3. ~~Layer 4: is 500 repos the number to design for?~~ **Answered 2026-08-07: the target is thousands
+   of personal repos and hundreds of org repos.** Today's 80 is one to two orders of magnitude below
+   that, so measurements taken now establish scaling exponents, not acceptability. What remains open
+   is the mix — how much of that fleet is dormant archival material versus classes live at once —
+   since that sets the activity term rather than the fleet term.
 4. ~~The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
    as it is?~~ **Superseded 2026-08-07** by [`index-vs-work-state.md`](index-vs-work-state.md), which
    turns it into a concrete proposal with measurements. Still undecided, but the question now has a
