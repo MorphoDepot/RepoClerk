@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "muratmaga/rana-clamitans-full-body",
-  "journalUpdatedAt": "2026-08-07T18:54:12Z",
+  "journalUpdatedAt": "2026-08-07T18:58:49Z",
   "pushedAt": "2026-08-07T18:22:43Z",
   "openIssues": [
     {
@@ -66,7 +66,7 @@
     {
       "number": 7,
       "title": "issue-3",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/muratmaga/rana-clamitans-full-body/pull/7",
       "author": "clara1379",
       "closingIssue": {
