@@ -2,7 +2,22 @@ name: Sync All MorphoDepot Journals
 
 on:
   schedule:
-    - cron: '23 * * * *'    # hourly (offset off the congested top-of-hour; backstop to notifyRepoClerk)
+    # Every 15 minutes, phased off the original :23 so that none of the four runs lands on
+    # the congested top of the hour (which a plain */15 would do every fourth run).
+    # This is the backstop that makes freshness independent of notifyRepoClerk, which
+    # is a silent no-op for non-collaborators (#469) -- so the interval is the real ceiling
+    # on staleness for anyone outside the org.
+    #
+    # A sweep that finds nothing costs 4 GraphQL points and commits nothing (the dashboard
+    # push short-circuits on an empty diff), so idle runs are close to free on a public repo.
+    #
+    # 15 and not 5: the 80-repo backfill drain took 5m53s, so a 5-minute period is shorter
+    # than a worst-case run. Since this shares `concurrency: repoclerk-writer` with
+    # update-repo and does not cancel in progress, overlapping sweeps would be silently
+    # dropped, and sync-all does not yet dedup against already-open update-requests -- a
+    # stuck drain would collect a duplicate issue per repo per period. Both are prerequisites
+    # for going faster; see design/near-realtime-ingestion.md.
+    - cron: '8,23,38,53 * * * *'
   workflow_dispatch:
 
 concurrency:
