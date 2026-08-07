@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/neurotrichus-gibbsii-skull",
-  "journalUpdatedAt": "2026-08-07T17:40:45Z",
+  "journalUpdatedAt": "2026-08-07T17:56:08Z",
   "pushedAt": "2026-07-18T20:11:07Z",
   "openIssues": [
     {
       "number": 1,
       "title": "testing morphodepot access",
       "url": "https://github.com/MorphoDepot/neurotrichus-gibbsii-skull/issues/1",
-      "author": "rchooverresearch",
-      "assignees": []
-    },
-    {
-      "number": 2,
-      "title": "test",
-      "url": "https://github.com/MorphoDepot/neurotrichus-gibbsii-skull/issues/2",
       "author": "rchooverresearch",
       "assignees": []
     }
