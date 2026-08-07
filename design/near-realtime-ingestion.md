@@ -63,7 +63,7 @@ Five issues were created 18:28:48–18:30:05 and five annotators saw an empty An
 opened at 18:43 and 18:50 never reached the curator's Review tab. Every journal in that window was
 corrected by hand.
 
-> **Confirm before acting on this.** The tier gap is inferred from delivery behaviour, not read from
+> **Confirm before acting on this.** The tier gap is inferred from delivery behavior, not read from
 > configuration — listing org hooks needs the `admin:org_hook` scope, which the investigating account
 > did not have. An owner should run `gh api orgs/MorphoDepot/hooks` and check the hook's recent
 > deliveries. If personal repos turn out to be covered by some other path, the diagnosis below
@@ -80,7 +80,7 @@ why the gap produced a total outage on the uncovered tier rather than a delay.
 
 The extension enqueues by opening an issue here with `--label update-request`. **GitHub silently
 drops the `labels` field when the author lacks triage permission on the target repo.** Issue created,
-HTTP 201, `gh` exits 0, no label. Both consumers gate on that label (`update-repo.yml:19-22`,
+HTTP 201, `gh` exits 0, no label. Both consumers gate on that label (`update-repo.yml:19-23`,
 `drain.py:317-321`), so the request is created, never processed, never closed.
 
 Every annotator is a non-collaborator. This path has only ever worked for org members — precisely the
@@ -94,7 +94,7 @@ stale data. The detector is blind in exactly the case it exists to detect.
 
 ### 2. The `sync-all` cron keys staleness on the wrong field — [#470](https://github.com/MorphoDepot/RepoClerk/issues/470)
 
-`sync-all.py:92` compares `journal["pushedAt"] != remote_pushed_at`. `pushedAt` is the last **git
+`sync-all.py:94` compares `journal["pushedAt"] != remote_pushed_at`. `pushedAt` is the last **git
 push** time. Issue events do not move it, and a fork's PR does not move the upstream repo's. So the
 hourly backstop cannot catch either class of change.
 
@@ -195,11 +195,24 @@ Non-negotiable regardless of which of the above lands, because the absence of th
 passed.
 
 - `notifyRepoClerk()` re-reads the issue it created and warns when the label did not stick.
-- `hasRepoClerkUpdatePending()` stops filtering on the label — it counts open issues titled
-  `update <owner>/<repo>` — so the extension's wait-and-retry works for non-members. Note this must
-  ship **together with** any change that makes Refresh trigger a drain: shipping that alone is worse
-  than shipping neither, because the drain runs, the extension cannot tell, and the user still sees
-  stale data.
+- `hasRepoClerkUpdatePending()` stops filtering on the label, so the extension can **see** its own
+  dropped request and say so. Scope this to *warning the user*, not to making wait-and-retry succeed:
+  the drain at `drain.py:317-321` is still label-gated, so an unlabeled request will never be
+  processed no matter what the client believes. Detecting a request the drain will never honor and
+  then waiting on it is strictly worse than today's "nothing pending" — it replaces a wrong answer
+  with a hang.
+
+  Wait-and-retry only becomes honest once the drain itself matches on title
+  ([#469](https://github.com/MorphoDepot/RepoClerk/issues/469)), and that change carries its own
+  blocker: dropping the label from the drain's query returns every open issue in this repo, including
+  ordinary discussion, which the title check skips *without closing*. `pending` is then never empty,
+  `idle_cycles` never increments, and since `time.sleep()` is only reached in the `not pending`
+  branch it becomes a tight API loop until the 30-minute timeout. The fix must compute `pending` from
+  the title-matched set before the emptiness test.
+
+  Note also that if Refresh is ever made to trigger a drain, that change must ship together with a
+  working detection path — a drain that runs while the client cannot tell is worse than no drain at
+  all.
 - An open, unlabeled `update ...` issue older than a few minutes is a known-bad state and should
   alarm.
 - Dispatch and drain *failures* should alarm. Ten silent failures in 31 runs is the current baseline.
