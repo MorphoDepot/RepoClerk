@@ -1,8 +1,10 @@
 # RepoClerk journal freshness
 
-**Status: partially implemented. The push path works and covers roughly half the fleet.**
-Personal-account repos — the tier used for classrooms — are not covered by it, and every fallback
-path beneath it was found broken on 2026-08-07. Open for review; see *Decisions needed* at the end.
+**Status: partially implemented. The push path works, is correctly configured, and structurally
+covers only the org tier.** Personal-account repos — the tier used for classrooms — have no push
+path at all, confirmed rather than inferred. Every fallback beneath it was found broken on
+2026-08-07; the sweep (Layer 1) is now fixed and runs every 15 minutes, so staleness is bounded for
+the first time. Open for review; see *Decisions needed* at the end.
 
 **Latency target:** ≤ 2–3 minutes end-to-end (an instructor's action → visible in attendees'
 extension). Sub-second is *not* required.
@@ -63,11 +65,26 @@ Five issues were created 18:28:48–18:30:05 and five annotators saw an empty An
 opened at 18:43 and 18:50 never reached the curator's Review tab. Every journal in that window was
 corrected by hand.
 
-> **Confirm before acting on this.** The tier gap is inferred from delivery behavior, not read from
-> configuration — listing org hooks needs the `admin:org_hook` scope, which the investigating account
-> did not have. An owner should run `gh api orgs/MorphoDepot/hooks` and check the hook's recent
-> deliveries. If personal repos turn out to be covered by some other path, the diagnosis below
-> changes and this section should be rewritten, not patched.
+> **Confirmed 2026-08-07, not inferred.** This started as a deduction from delivery timing; both
+> halves have since been checked directly.
+>
+> An org owner confirmed the org hook is correctly configured and subscribes to all five events
+> (`repository`, `issues`, `pull_request`, `release`, `push`). Nothing is misconfigured — the hook
+> does exactly what it was built to do, for the repositories an org hook can see.
+>
+> And there is no second path. The `morphodepot-intake` GitHub App (`app_id 3948287`), which is the
+> other mechanism that could deliver events for a personal repo, **subscribes to no webhook events
+> at all**:
+>
+> ```
+> slug=morphodepot-intake  events=  perms=contents:write,issues:write,members:write,metadata:read
+> ```
+>
+> An empty `events` list means it delivers nothing, ever. So the org hook is the only push path into
+> RepoClerk, and an org hook fires only for that org's repositories.
+>
+> The gap is therefore structural rather than a defect: nothing is broken, the mechanism simply does
+> not span the tier where classrooms happen.
 
 ---
 
@@ -209,13 +226,24 @@ Once this holds, everything else is latency, and a latency mechanism is allowed 
 
 An org webhook cannot cover personal repos. Options, best first:
 
-1. **GitHub App installation events.** The App is already installed on curators' personal accounts.
-   If it subscribes to `issues` / `pull_request` / `push` / `repository`, GitHub delivers events for
-   every repo it can see, personal and org alike, to the same receiver — one uniform path, no
-   per-repo setup, nothing for the curator to do. **This needs confirming**: the App was deliberately
-   reduced to Contents-only when org-administration permission was removed, so this is a permission
-   *increase* (Issues: Read, Pull requests: Read) and should be argued on its merits rather than
-   slipped in.
+1. **GitHub App installation events.** The App is already installed on curators' personal accounts,
+   so if it subscribed to `issues` / `pull_request` / `push` / `repository`, GitHub would deliver
+   events for every repo it can see — personal and org alike, to the same receiver. One uniform
+   path, no per-repo setup, nothing for a curator to do.
+
+   Its current state is known exactly (`gh api orgs/MorphoDepot/installations`):
+
+   ```
+   app_id=3948287  slug=morphodepot-intake
+   events=
+   perms=contents:write,issues:write,members:write,metadata:read
+   ```
+
+   So the work is: subscribe to the four events (there are none today), and add
+   `pull_requests: read` (absent entirely — `issues: write` is already held, so issues need no
+   permission change). That is a real permission *increase* on an App that was deliberately narrowed
+   when org-administration was removed, and it should be argued on its merits rather than slipped in
+   — but it is a smaller increase than it first appeared.
 2. **Per-repo webhook created at publish time** by the extension using the curator's own token, which
    already has admin on their own repo. No App permission change, but it is per-repo setup that can
    fail silently on exactly the repos that need it, and it leaves nothing covering repos created
@@ -358,8 +386,9 @@ test against.
 
 ## Decisions needed
 
-1. Confirm the tier gap against the actual org-hook configuration and its delivery log (needs
-   `admin:org_hook`). Everything in *Evidence* is inferred from timing.
+1. ~~Confirm the tier gap against the actual org-hook configuration.~~ **Done 2026-08-07.** The hook
+   subscribes to all five events and is correctly configured; the App subscribes to none. The gap is
+   structural, not a misconfiguration — see *Evidence*.
 2. Layer 2: App-installation events (a permission increase on an App deliberately narrowed to
    Contents-only), per-repo webhooks, or neither?
 3. Layer 4: is 500 repos the number to design for? The answer differs sharply between 500 dormant
