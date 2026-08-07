@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "zhong-jessica/mouse",
-  "journalUpdatedAt": "2026-06-15T20:51:42Z",
+  "journalUpdatedAt": "2026-08-07T21:49:48Z",
   "pushedAt": "2025-11-06T18:58:25Z",
+  "updatedAt": "2025-11-06T18:58:29Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 50621209,
-  "sourceVolumeChecksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7"
+  "sourceVolumeChecksum": "f831a32c35b0394a418e38c926949e79f96181404c03a0f26594df74f51dd8a7",
+  "curator": null
 }

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/eptesicus-fuscus-skull",
-  "journalUpdatedAt": "2026-07-16T22:08:50Z",
+  "journalUpdatedAt": "2026-08-07T21:50:18Z",
   "pushedAt": "2026-07-16T22:08:33Z",
+  "updatedAt": "2026-07-16T22:08:40Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
-  "journalUpdatedAt": "2026-07-21T22:15:45Z",
+  "journalUpdatedAt": "2026-08-07T21:49:42Z",
   "pushedAt": "2026-07-21T20:45:07Z",
+  "updatedAt": "2026-07-21T20:45:24Z",
+  "activityAt": "2026-07-26T04:04:59Z",
   "openIssues": [
     {
       "number": 1,
@@ -36,7 +38,7 @@
     {
       "number": 2,
       "title": "issue-1",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/pull/2",
       "author": "JDynamiteX",
       "closingIssue": {
@@ -48,7 +50,7 @@
     {
       "number": 4,
       "title": "issue-3",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/pull/4",
       "author": "Jonathan-Jung-sys",
       "closingIssue": {

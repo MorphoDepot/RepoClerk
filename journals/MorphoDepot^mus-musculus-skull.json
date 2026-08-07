@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/mus-musculus-skull",
-  "journalUpdatedAt": "2026-07-02T18:35:59Z",
+  "journalUpdatedAt": "2026-08-07T21:50:21Z",
   "pushedAt": "2026-07-02T18:35:39Z",
+  "updatedAt": "2026-07-02T18:35:44Z",
+  "activityAt": "2026-07-02T18:28:41Z",
   "openIssues": [
     {
       "number": 1,

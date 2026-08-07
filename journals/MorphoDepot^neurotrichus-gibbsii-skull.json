@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/neurotrichus-gibbsii-skull",
-  "journalUpdatedAt": "2026-08-07T17:56:08Z",
+  "journalUpdatedAt": "2026-08-07T21:49:27Z",
   "pushedAt": "2026-07-18T20:11:07Z",
+  "updatedAt": "2026-07-18T20:11:10Z",
+  "activityAt": "2026-08-07T17:55:46Z",
   "openIssues": [
     {
       "number": 1,

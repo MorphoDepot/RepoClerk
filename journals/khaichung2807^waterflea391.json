@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "khaichung2807/waterflea391",
-  "journalUpdatedAt": "2026-06-15T20:51:39Z",
+  "journalUpdatedAt": "2026-08-07T21:50:36Z",
   "pushedAt": "2026-03-04T22:11:38Z",
+  "updatedAt": "2026-03-04T22:11:42Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -82,5 +84,6 @@
     "screenshot-2.png": "Daphnia surface rendering"
   },
   "volumeSize": 15830429,
-  "sourceVolumeChecksum": "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285"
+  "sourceVolumeChecksum": "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285",
+  "curator": null
 }

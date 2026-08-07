@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "cgmena/Cesar_SICB_2026",
-  "journalUpdatedAt": "2026-06-15T20:51:44Z",
+  "journalUpdatedAt": "2026-08-07T21:49:45Z",
   "pushedAt": "2026-01-03T23:15:00Z",
+  "updatedAt": "2026-01-03T23:15:04Z",
+  "activityAt": "2026-01-03T23:15:01Z",
   "openIssues": [
     {
       "number": 3,
@@ -91,5 +93,6 @@
     "screenshot-1.png": ""
   },
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+  "curator": null
 }

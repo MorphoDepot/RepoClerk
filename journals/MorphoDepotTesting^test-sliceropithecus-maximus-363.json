@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
-  "journalUpdatedAt": "2026-06-15T20:51:35Z",
+  "journalUpdatedAt": "2026-08-07T21:50:42Z",
   "pushedAt": "2026-04-26T19:20:34Z",
+  "updatedAt": "2026-04-26T19:20:29Z",
+  "activityAt": "2026-04-26T19:20:38Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+  "curator": null
 }

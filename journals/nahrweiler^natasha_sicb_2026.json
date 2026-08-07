@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "nahrweiler/natasha_sicb_2026",
-  "journalUpdatedAt": "2026-06-15T20:51:31Z",
+  "journalUpdatedAt": "2026-08-07T21:49:57Z",
   "pushedAt": "2026-01-03T22:55:24Z",
+  "updatedAt": "2026-01-03T22:55:28Z",
+  "activityAt": "2026-01-03T22:55:25Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -81,5 +83,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+  "curator": null
 }

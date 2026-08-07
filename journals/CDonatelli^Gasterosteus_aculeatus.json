@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "CDonatelli/Gasterosteus_aculeatus",
-  "journalUpdatedAt": "2026-06-15T20:51:33Z",
+  "journalUpdatedAt": "2026-08-07T21:50:00Z",
   "pushedAt": "2025-10-09T18:56:13Z",
+  "updatedAt": "2025-10-09T18:56:17Z",
+  "activityAt": "2025-10-09T18:56:14Z",
   "openIssues": [
     {
       "number": 7,
@@ -90,5 +92,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 705958814,
-  "sourceVolumeChecksum": "2e0f0c30af36957bc5a1672d02ca18e3cfc86da7f82d611740723fe3bdfc38ef"
+  "sourceVolumeChecksum": "2e0f0c30af36957bc5a1672d02ca18e3cfc86da7f82d611740723fe3bdfc38ef",
+  "curator": null
 }

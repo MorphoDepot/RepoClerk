@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
-  "journalUpdatedAt": "2026-06-15T20:52:23Z",
+  "journalUpdatedAt": "2026-08-07T21:50:48Z",
   "pushedAt": "2026-04-26T18:58:41Z",
+  "updatedAt": "2026-04-26T18:57:42Z",
+  "activityAt": "2026-04-26T18:58:54Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+  "curator": null
 }

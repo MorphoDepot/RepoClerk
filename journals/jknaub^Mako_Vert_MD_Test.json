@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "jknaub/Mako_Vert_MD_Test",
-  "journalUpdatedAt": "2026-06-15T20:51:15Z",
+  "journalUpdatedAt": "2026-08-07T21:49:30Z",
   "pushedAt": "2025-05-06T16:33:38Z",
+  "updatedAt": "2025-05-06T16:33:42Z",
+  "activityAt": "2025-12-31T02:47:06Z",
   "openIssues": [
     {
       "number": 1,
@@ -92,5 +94,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 14151895,
-  "sourceVolumeChecksum": null
+  "sourceVolumeChecksum": null,
+  "curator": null
 }

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "elisechmitchell/Para_dog-face_bat",
-  "journalUpdatedAt": "2026-06-15T20:50:59Z",
+  "journalUpdatedAt": "2026-08-07T21:49:35Z",
   "pushedAt": "2026-03-04T21:53:22Z",
+  "updatedAt": "2026-03-04T21:53:27Z",
+  "activityAt": "2026-03-04T22:43:42Z",
   "openIssues": [
     {
       "number": 2,
@@ -94,5 +96,6 @@
     "screenshot-2.png": "Buccal view of left side of mandible"
   },
   "volumeSize": 436398513,
-  "sourceVolumeChecksum": "19a1a9eb8afe96911fd86b7e8a6b11525d8a135c801ce2e0c7e316fc2ca8811a"
+  "sourceVolumeChecksum": "19a1a9eb8afe96911fd86b7e8a6b11525d8a135c801ce2e0c7e316fc2ca8811a",
+  "curator": null
 }

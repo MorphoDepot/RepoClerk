@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "dinonoto/NotoLab_ChickenWing_2025",
-  "journalUpdatedAt": "2026-08-07T18:39:07Z",
+  "journalUpdatedAt": "2026-08-07T21:50:33Z",
   "pushedAt": "2025-12-21T19:45:13Z",
+  "updatedAt": "2025-12-21T19:45:16Z",
+  "activityAt": "2026-08-05T19:32:12Z",
   "openIssues": [
     {
       "number": 1,
