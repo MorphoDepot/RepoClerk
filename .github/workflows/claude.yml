@@ -58,7 +58,9 @@ jobs:
         uses: anthropics/claude-code-action@11ba60486e4aec9ddfeafcf4bb3f00b028ac2c16 # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # Not in the extension's copy, but matches claude-code-review.yml in this repo:
-          # posts a live-updating comment instead of going quiet until the run finishes.
-          # Worth more here than there, since issue replies are the interactive path.
-          track_progress: true
+          # Do NOT set track_progress here. It works in claude-code-review.yml because a PR
+          # has a branch to diff, but on an issue there is nothing to compare: the action's
+          # post-step calls the compare-two-commits API, 404s, and never writes the final
+          # body — leaving the progress checklist with every box unticked and the analysis
+          # discarded. Observed on run 31213175637 (#469): the run itself succeeded, 9 turns,
+          # is_error false, and the output was lost anyway. The extension's copy omits it too.
