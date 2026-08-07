@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-07T18:28:43Z",
+  "generatedAt": "2026-08-07T18:39:27Z",
   "totalRepos": 78,
-  "totalOpenIssues": 125,
-  "totalOpenPRs": 71,
+  "totalOpenIssues": 135,
+  "totalOpenPRs": 73,
   "taxonomy": {
     "kingdom": {
       "Unknown": 78
@@ -33,8 +33,8 @@
     {
       "nameWithOwner": "muratmaga/rana-clamitans-full-body",
       "pushedAt": "2026-08-07T18:22:43Z",
-      "journalUpdatedAt": "2026-08-07T18:28:30Z",
-      "openIssues": 0,
+      "journalUpdatedAt": "2026-08-07T18:39:13Z",
+      "openIssues": 5,
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": {
@@ -381,9 +381,9 @@
     {
       "nameWithOwner": "dinonoto/lampropeltis-californiae-juvenile-whole",
       "pushedAt": "2026-07-21T18:50:23Z",
-      "journalUpdatedAt": "2026-07-21T20:38:40Z",
-      "openIssues": 0,
-      "openPRs": 0,
+      "journalUpdatedAt": "2026-08-07T18:39:00Z",
+      "openIssues": 1,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "California kingsnake"
@@ -467,9 +467,9 @@
     {
       "nameWithOwner": "dinonoto/chelydra-serpentina-juvenile-whole",
       "pushedAt": "2026-07-21T18:44:13Z",
-      "journalUpdatedAt": "2026-07-21T22:16:11Z",
-      "openIssues": 0,
-      "openPRs": 0,
+      "journalUpdatedAt": "2026-08-07T18:39:04Z",
+      "openIssues": 1,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "Common snapping turtle (oblique anterior)"
@@ -4828,8 +4828,8 @@
     {
       "nameWithOwner": "dinonoto/NotoLab_ChickenWing_2025",
       "pushedAt": "2025-12-21T19:45:13Z",
-      "journalUpdatedAt": "2026-06-15T20:52:09Z",
-      "openIssues": 2,
+      "journalUpdatedAt": "2026-08-07T18:39:07Z",
+      "openIssues": 3,
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
@@ -4915,8 +4915,8 @@
     {
       "nameWithOwner": "dinonoto/NotoLab_ChickenFoot_2025",
       "pushedAt": "2025-12-21T19:44:19Z",
-      "journalUpdatedAt": "2026-06-15T20:52:49Z",
-      "openIssues": 1,
+      "journalUpdatedAt": "2026-08-07T18:39:10Z",
+      "openIssues": 2,
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
@@ -6313,8 +6313,8 @@
     {
       "nameWithOwner": "jaimigray/snakeseg",
       "pushedAt": "2025-10-07T16:46:14Z",
-      "journalUpdatedAt": "2026-06-15T20:52:54Z",
-      "openIssues": 2,
+      "journalUpdatedAt": "2026-08-07T18:38:57Z",
+      "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
