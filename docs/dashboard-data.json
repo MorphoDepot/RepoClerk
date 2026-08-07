@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-07T17:12:39Z",
+  "generatedAt": "2026-08-07T17:30:13Z",
   "totalRepos": 77,
-  "totalOpenIssues": 123,
+  "totalOpenIssues": 124,
   "totalOpenPRs": 70,
   "taxonomy": {
     "kingdom": {
@@ -33,8 +33,8 @@
     {
       "nameWithOwner": "MorphoDepot/mus-musculus-E15",
       "pushedAt": "2026-08-06T03:41:49Z",
-      "journalUpdatedAt": "2026-08-06T03:42:10Z",
-      "openIssues": 2,
+      "journalUpdatedAt": "2026-08-07T17:29:59Z",
+      "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": {
