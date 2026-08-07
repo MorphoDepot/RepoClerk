@@ -156,7 +156,7 @@ This is **6 edits across 2 files plus a shared constant**, not the one-liner it 
 
 | file | change |
 |---|---|
-| `sync-all.py` | GraphQL fragment; JQ filter; the return shape changes from `{nwo: pushedAt}` to `{nwo: {pushedAt, updatedAt}}`; the journal read; the staleness comparison |
+| `sync-all.py` | GraphQL fragment; JQ filter (the return shape changes from `{nwo: pushedAt}` to `{nwo: {pushedAt, updatedAt}}`); the journal read; the staleness comparison |
 | `drain.py` | `GRAPHQL_QUERY` gains `updatedAt`; `process_repo()` writes it |
 | `constants.py` *(new)* | `SCHEMA_VERSION`, imported by both — `sync-all.py:21` is `2` while `drain.py:29` is `3`, so the schema-upgrade backfill is currently dead. Do **not** import it from `drain`: `drain.py` ends in a bare `main()` with no `__main__` guard, so importing it would run the drain loop as a side effect. |
 
