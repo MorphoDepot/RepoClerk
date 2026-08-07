@@ -137,6 +137,11 @@ def test_absent_and_empty_are_not_the_same():
     check("same treatment for updatedAt",
           sync_all.staleness_reason(journal(updated=None, schema=CURRENT - 1),
                                     remote(updated=LATER)) == "schema-upgrade")
+    # The GitHub API always returns a real updatedAt, so "" should not occur here in
+    # practice -- but the guard must behave the same way for both fields regardless.
+    check("empty updatedAt is compared too, not skipped",
+          sync_all.staleness_reason(journal(updated=""),
+                                    remote(updated=LATER)) == "metadata")
 
 
 def test_pre_upgrade_journal_upgrades_once_not_forever():
@@ -163,10 +168,11 @@ def test_pushed_at_takes_precedence():
 
 
 def test_unreadable_journal_is_re_queued():
-    # main() represents an unparseable journal file as empty strings + schemaVersion 0.
+    # main() represents an unparseable journal file as pushedAt="" (which always mismatches
+    # a real timestamp, so this fires first), updatedAt=None, activityAt=None, schemaVersion=0.
     check("corrupt journal record -> re-queued rather than skipped",
           sync_all.staleness_reason(
-              {"pushedAt": "", "updatedAt": "", "activityAt": "", "schemaVersion": 0},
+              {"pushedAt": "", "updatedAt": None, "activityAt": None, "schemaVersion": 0},
               remote()) == "stale")
 
 
