@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "muratmaga/rana-clamitans-full-body",
-  "journalUpdatedAt": "2026-08-07T18:39:13Z",
+  "journalUpdatedAt": "2026-08-07T18:51:54Z",
   "pushedAt": "2026-08-07T18:22:43Z",
   "openIssues": [
     {
@@ -50,7 +50,32 @@
       ]
     }
   ],
-  "openPRs": [],
+  "openPRs": [
+    {
+      "number": 6,
+      "title": "issue-4",
+      "isDraft": false,
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/pull/6",
+      "author": "rchooverresearch",
+      "closingIssue": {
+        "number": 4,
+        "title": "segmenting",
+        "repoOwner": "muratmaga"
+      }
+    },
+    {
+      "number": 7,
+      "title": "issue-3",
+      "isDraft": true,
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/pull/7",
+      "author": "clara1379",
+      "closingIssue": {
+        "number": 3,
+        "title": "Segment limbs",
+        "repoOwner": "muratmaga"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
