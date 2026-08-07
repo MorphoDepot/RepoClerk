@@ -220,9 +220,9 @@ An org webhook cannot cover personal repos. Options, best first:
    already has admin on their own repo. No App permission change, but it is per-repo setup that can
    fail silently on exactly the repos that need it, and it leaves nothing covering repos created
    before the change.
-3. **Do nothing here and rely on Layer 1**, accepting hourly (or whatever the sweep interval becomes)
-   freshness for the personal tier. Defensible only if the sweep interval drops enough to meet the
-   2–3 minute target, which Layer 4 makes affordable.
+3. **Do nothing here and rely on Layer 1**, accepting sweep-interval freshness for the personal tier.
+   The interval is now 15 minutes (see *Sweep interval* below), which is well short of the 2–3 minute
+   target but a long way from the unbounded staleness this started as.
 
 ### Layer 3 — Make failure loud
 
@@ -296,6 +296,36 @@ someone already anticipated this. Two changes, in order of effort:
 
 ---
 
+### Sweep interval
+
+**Now 15 minutes** (`8,23,38,53 * * * *` — keeping the original off-peak offset rather than `*/15`,
+which would land every fourth run on the congested top of the hour). Previously hourly.
+
+Because Layer 1 made the sweep authoritative, this interval *is* the staleness ceiling for anything
+the push path does not cover — which today means every personal-tier repo, and every web-UI action
+on any repo. Measured costs per sweep:
+
+| | |
+|---|---|
+| API | 4 GraphQL points (two topic searches at 2 each) against 5,000/hour — about 1% at 15-minute cadence |
+| Runner time | 25–28 s for a quiet sweep; free, this is a public repo |
+| Commits | **none** when nothing changed — the dashboard push short-circuits on an empty diff, so idle sweeps do not grow the repository every client clones |
+
+**Why not 5 minutes**, which is GitHub's floor and was the original ambition:
+
+1. **A busy sweep outlasts a 5-minute period.** The 80-repo v4 backfill took 5m53s. Since `sync-all`
+   and `update-repo` share `concurrency: repoclerk-writer` with `cancel-in-progress: false`, GitHub
+   keeps one running plus one pending and *discards* the rest — so the schedule would silently
+   degrade precisely under the load that motivated tightening it.
+2. **`sync-all` does not dedup against open requests.** It creates an `update-request` for every
+   stale repo on every run, with no check for one already open. At hourly the drain always clears
+   them in between; at 5 minutes a single stuck drain collects a duplicate issue per repo per period.
+
+Both are prerequisites for going faster, and both are Layer 4 work (writer contention, and a dedup
+check in `sync-all.main()`). Worth noting that GitHub treats scheduled runs on public repos as
+best-effort and drops them under load — the hourly schedule was already firing 16 times in 24 hours,
+not 24 — so any interval here is a target rather than a guarantee.
+
 ## Open question: what belongs in the journal at all
 
 Stated as an open decision rather than a recommendation, because it cuts against something this
@@ -336,8 +366,8 @@ test against.
    archival repos and 500 with several classes live at once.
 4. The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
    as it is?
-5. Sweep interval once Layer 1 lands. Cheap discovery makes minutes plausible; writer contention and
-   git churn are what actually bound it.
+5. ~~Sweep interval once Layer 1 lands.~~ **Decided: 15 minutes** — see *Sweep interval* below.
+   Going below that needs two prerequisites, both listed there.
 
 ## Related
 
