@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-07T17:30:13Z",
+  "generatedAt": "2026-08-07T17:39:09Z",
   "totalRepos": 77,
-  "totalOpenIssues": 124,
-  "totalOpenPRs": 70,
+  "totalOpenIssues": 125,
+  "totalOpenPRs": 71,
   "taxonomy": {
     "kingdom": {
       "Unknown": 77
@@ -33,9 +33,9 @@
     {
       "nameWithOwner": "MorphoDepot/mus-musculus-E15",
       "pushedAt": "2026-08-06T03:41:49Z",
-      "journalUpdatedAt": "2026-08-07T17:29:59Z",
+      "journalUpdatedAt": "2026-08-07T17:38:55Z",
       "openIssues": 3,
-      "openPRs": 0,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": ""
@@ -463,8 +463,8 @@
     {
       "nameWithOwner": "MorphoDepot/neurotrichus-gibbsii-skull",
       "pushedAt": "2026-07-18T20:11:07Z",
-      "journalUpdatedAt": "2026-07-18T20:11:23Z",
-      "openIssues": 0,
+      "journalUpdatedAt": "2026-08-07T17:38:50Z",
+      "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": {
