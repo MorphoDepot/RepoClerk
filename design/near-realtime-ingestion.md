@@ -239,6 +239,9 @@ An org webhook cannot cover personal repos. Options, best first:
    perms=contents:write,issues:write,members:write,metadata:read
    ```
 
+   (`members: write` in that list is the onboarding team-grant, not a leftover from the
+   org-administration removal — worth confirming before anyone prunes it on sight.)
+
    So the work is: subscribe to the four events (there are none today), and add
    `pull_requests: read` (absent entirely — `issues: write` is already held, so issues need no
    permission change). That is a real permission *increase* on an App that was deliberately narrowed
