@@ -2,8 +2,9 @@ name: Sync All MorphoDepot Journals
 
 on:
   schedule:
-    # Every 15 minutes, keeping the :23 offset so no run lands on the congested top of the
-    # hour. This is the backstop that makes freshness independent of notifyRepoClerk, which
+    # Every 15 minutes, phased off the original :23 so that none of the four runs lands on
+    # the congested top of the hour (which a plain */15 would do every fourth run).
+    # This is the backstop that makes freshness independent of notifyRepoClerk, which
     # is a silent no-op for non-collaborators (#469) -- so the interval is the real ceiling
     # on staleness for anyone outside the org.
     #
