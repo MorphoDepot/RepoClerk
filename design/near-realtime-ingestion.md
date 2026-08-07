@@ -359,6 +359,12 @@ not 24 — so any interval here is a target rather than a guarantee.
 
 ## Open question: what belongs in the journal at all
 
+> **Taken up as a concrete proposal in [`index-vs-work-state.md`](index-vs-work-state.md)**
+> (2026-08-07), with the measurements this section lacked: the fleet split, how rarely the indexable
+> data actually changes, and the live per-user query costs. That document also settles the shape of
+> the split — by data category, not by repo or by tier, so no source-switching lands in the client.
+> The framing below is kept because it is where the question was first raised.
+
 Stated as an open decision rather than a recommendation, because it cuts against something this
 document already rejected.
 
