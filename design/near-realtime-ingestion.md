@@ -359,6 +359,12 @@ not 24 — so any interval here is a target rather than a guarantee.
 
 ## Open question: what belongs in the journal at all
 
+> **Taken up as a concrete proposal in [`index-vs-work-state.md`](index-vs-work-state.md)**
+> (2026-08-07), with the measurements this section lacked: the fleet split, how rarely the indexable
+> data actually changes, and the live per-user query costs. That document also settles the shape of
+> the split — by data category, not by repo or by tier, so no source-switching lands in the client.
+> The framing below is kept because it is where the question was first raised.
+
 Stated as an open decision rather than a recommendation, because it cuts against something this
 document already rejected.
 
@@ -396,8 +402,11 @@ test against.
    Contents-only), per-repo webhooks, or neither?
 3. Layer 4: is 500 repos the number to design for? The answer differs sharply between 500 dormant
    archival repos and 500 with several classes live at once.
-4. The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
-   as it is?
+4. ~~The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
+   as it is?~~ **Superseded 2026-08-07** by [`index-vs-work-state.md`](index-vs-work-state.md), which
+   turns it into a concrete proposal with measurements. Still undecided, but the question now has a
+   document of its own; decide it there. Note that Layer 3 (make failure loud) is required either
+   way — a stale discovery index fails just as silently.
 5. ~~Sweep interval once Layer 1 lands.~~ **Decided: 15 minutes** — see *Sweep interval* below.
    Going below that needs two prerequisites, both listed there.
 
