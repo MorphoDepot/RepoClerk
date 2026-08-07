@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-07T18:54:26Z",
+  "generatedAt": "2026-08-07T18:55:01Z",
   "totalRepos": 78,
   "totalOpenIssues": 135,
-  "totalOpenPRs": 75,
+  "totalOpenPRs": 76,
   "taxonomy": {
     "kingdom": {
       "Unknown": 78
@@ -1767,9 +1767,9 @@
     {
       "nameWithOwner": "dinonoto/Juvenile_Bearded_Dragon",
       "pushedAt": "2026-06-09T18:59:41Z",
-      "journalUpdatedAt": "2026-06-15T20:52:40Z",
+      "journalUpdatedAt": "2026-08-07T18:54:47Z",
       "openIssues": 2,
-      "openPRs": 1,
+      "openPRs": 2,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "Screenshot of specimen scan"
