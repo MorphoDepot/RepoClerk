@@ -102,17 +102,22 @@ def staleness_reason(journal, remote):
     the hard way -- an earlier version of this fix compared updatedAt and would have
     changed nothing at all.
 
-    A journal written before this field existed has no activityAt.  Comparing "" against a
-    real timestamp would report every repo stale on every sweep forever, so those fall
-    through to the schemaVersion check, which re-drains each exactly once and writes it.
+    Absent (None) and empty ("") are deliberately different, and conflating them is a bug
+    with teeth.  None means the journal predates the field, so there is nothing to compare
+    and it falls through to the schemaVersion check, which re-drains it once and writes it.
+    "" means the repo genuinely has no issues or pull requests yet -- which is exactly the
+    state a freshly published repo is in, so the *first* issue ever opened on it must be
+    detected here.  Nothing else would catch it: creating an issue moves neither pushedAt
+    nor updatedAt.  A truthiness test would skip that comparison and the repo would never
+    be re-drained.
     """
     if journal is None:
         return "missing"
     if journal.get("pushedAt", "") != remote["pushedAt"]:
         return "stale"
-    if journal.get("updatedAt") and journal["updatedAt"] != remote["updatedAt"]:
+    if journal.get("updatedAt") is not None and journal["updatedAt"] != remote["updatedAt"]:
         return "metadata"
-    if journal.get("activityAt") and journal["activityAt"] != remote["activityAt"]:
+    if journal.get("activityAt") is not None and journal["activityAt"] != remote["activityAt"]:
         return "activity"
     if journal.get("schemaVersion", 1) < SCHEMA_VERSION:
         return "schema-upgrade"
@@ -141,13 +146,17 @@ def main():
         try:
             with open(path) as f:
                 data = json.load(f)
+            # None, not "", when a field is absent: a journal written before the field
+            # existed must be distinguishable from one where the field is legitimately
+            # empty (a repo that has never had an issue or PR). Collapsing the two makes
+            # the first issue on a new repo undetectable -- see staleness_reason.
             journaled_repos[nwo] = {"path": path, "pushedAt": data.get("pushedAt", ""),
-                                    "updatedAt": data.get("updatedAt", ""),
-                                    "activityAt": data.get("activityAt", ""),
+                                    "updatedAt": data.get("updatedAt"),
+                                    "activityAt": data.get("activityAt"),
                                     "schemaVersion": data.get("schemaVersion", 1)}
         except Exception:
-            journaled_repos[nwo] = {"path": path, "pushedAt": "", "updatedAt": "",
-                                    "activityAt": "", "schemaVersion": 0}
+            journaled_repos[nwo] = {"path": path, "pushedAt": "", "updatedAt": None,
+                                    "activityAt": None, "schemaVersion": 0}
 
     print(f"Found {len(journaled_repos)} existing journal file(s)")
 

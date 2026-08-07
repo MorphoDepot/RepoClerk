@@ -108,14 +108,46 @@ def test_repo_metadata_change():
           sync_all.staleness_reason(journal(), remote(updated=LATER)) == "metadata")
 
 
-def test_pre_upgrade_journal_upgrades_once_not_forever():
-    """A journal written before activityAt existed must not be reported stale forever.
+def test_first_issue_on_a_freshly_published_repo():
+    """The classroom flow, and the case an earlier version of this fix silently missed.
 
-    Comparing "" against a live timestamp would match on every sweep, re-queueing the
-    whole fleet hourly for good.  Empty values fall through to the schema check, which
-    re-drains each repo exactly once and writes the field.
+    A repo published with no issues yet is journaled with activityAt == "".  When the
+    instructor then creates and assigns issues, nothing else can detect it: creating an
+    issue moves neither pushedAt nor updatedAt.  If the activityAt comparison is guarded on
+    truthiness rather than on presence, "" is falsy, the comparison is skipped, and the repo
+    is never re-drained -- indefinitely, which is the original #470 bug wearing a new hat.
+
+    21 of 80 live journals had activityAt == "" when this was found.
     """
-    old = journal(updated="", activity="", schema=CURRENT - 1)
+    fresh = journal(activity="")          # published, no issues yet
+    after = remote(activity=LATER)        # instructor creates the first issue
+    check("first issue ever on a freshly published repo -> activity",
+          sync_all.staleness_reason(fresh, after) == "activity")
+
+
+def test_absent_and_empty_are_not_the_same():
+    # None: the journal predates the field, so there is nothing to compare -- fall through
+    # to the schema check. "": the repo really has no issues -- compare it.
+    check("absent activityAt (pre-upgrade journal) -> schema-upgrade",
+          sync_all.staleness_reason(journal(activity=None, schema=CURRENT - 1),
+                                    remote(activity=LATER)) == "schema-upgrade")
+    check("empty activityAt (no issues yet) -> compared, not skipped",
+          sync_all.staleness_reason(journal(activity=""),
+                                    remote(activity=LATER)) == "activity")
+    check("same treatment for updatedAt",
+          sync_all.staleness_reason(journal(updated=None, schema=CURRENT - 1),
+                                    remote(updated=LATER)) == "schema-upgrade")
+
+
+def test_pre_upgrade_journal_upgrades_once_not_forever():
+    """A journal written before these fields existed must not be reported stale forever.
+
+    main() reads a missing field as None, so there is nothing to compare and it falls
+    through to the schema check, which re-drains the repo exactly once and writes it.
+    Represented as None here rather than "" because that distinction is load-bearing --
+    see test_absent_and_empty_are_not_the_same.
+    """
+    old = journal(updated=None, activity=None, schema=CURRENT - 1)
     check("pre-upgrade journal -> schema-upgrade, not activity",
           sync_all.staleness_reason(old, remote(activity=LATER)) == "schema-upgrade")
     check("after the upgrade drain it is quiet again",
