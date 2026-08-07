@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/mus-musculus-E15",
-  "journalUpdatedAt": "2026-08-07T17:29:59Z",
+  "journalUpdatedAt": "2026-08-07T17:38:55Z",
   "pushedAt": "2026-08-06T03:41:49Z",
   "openIssues": [
     {
@@ -32,7 +32,20 @@
       ]
     }
   ],
-  "openPRs": [],
+  "openPRs": [
+    {
+      "number": 4,
+      "title": "issue-3",
+      "isDraft": true,
+      "url": "https://github.com/MorphoDepot/mus-musculus-E15/pull/4",
+      "author": "muratmaga",
+      "closingIssue": {
+        "number": 3,
+        "title": "I would like to work on the tongue segmentation",
+        "repoOwner": "MorphoDepot"
+      }
+    }
+  ],
   "accession": {
     "otherSubjectDescription": [
       "Please describe the subject of the data.",
