@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-07T17:42:24Z",
+  "generatedAt": "2026-08-07T17:56:23Z",
   "totalRepos": 77,
-  "totalOpenIssues": 126,
+  "totalOpenIssues": 125,
   "totalOpenPRs": 71,
   "taxonomy": {
     "kingdom": {
@@ -463,8 +463,8 @@
     {
       "nameWithOwner": "MorphoDepot/neurotrichus-gibbsii-skull",
       "pushedAt": "2026-07-18T20:11:07Z",
-      "journalUpdatedAt": "2026-08-07T17:40:45Z",
-      "openIssues": 2,
+      "journalUpdatedAt": "2026-08-07T17:56:08Z",
+      "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": {
