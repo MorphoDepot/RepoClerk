@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "nameWithOwner": "MorphoDepot/mus-musculus-E15",
-  "journalUpdatedAt": "2026-08-06T03:42:10Z",
+  "journalUpdatedAt": "2026-08-07T17:29:59Z",
   "pushedAt": "2026-08-06T03:41:49Z",
   "openIssues": [
     {
@@ -18,6 +18,15 @@
       "title": "Automated checks failed before publishing",
       "url": "https://github.com/MorphoDepot/mus-musculus-E15/issues/2",
       "author": "morphodepot-intake",
+      "assignees": [
+        "muratmaga"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "I would like to work on the tongue segmentation",
+      "url": "https://github.com/MorphoDepot/mus-musculus-E15/issues/3",
+      "author": "muratmaga",
       "assignees": [
         "muratmaga"
       ]
