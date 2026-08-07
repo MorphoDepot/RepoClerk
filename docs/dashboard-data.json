@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T21:04:30Z",
+  "generatedAt": "2026-08-07T21:52:15Z",
   "totalRepos": 78,
   "totalOpenIssues": 135,
   "totalOpenPRs": 77,
@@ -32,8 +32,8 @@
   "repos": [
     {
       "nameWithOwner": "muratmaga/rana-clamitans-full-body",
-      "pushedAt": "2026-08-07T20:39:50Z",
-      "journalUpdatedAt": "2026-08-07T20:40:21Z",
+      "pushedAt": "2026-08-07T21:43:51Z",
+      "journalUpdatedAt": "2026-08-07T21:51:24Z",
       "openIssues": 5,
       "openPRs": 3,
       "screenshotCount": 0,
@@ -123,7 +123,7 @@
     {
       "nameWithOwner": "MorphoDepot/mus-musculus-E15",
       "pushedAt": "2026-08-06T03:41:49Z",
-      "journalUpdatedAt": "2026-08-07T17:42:10Z",
+      "journalUpdatedAt": "2026-08-07T21:48:16Z",
       "openIssues": 3,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -208,7 +208,7 @@
     {
       "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
       "pushedAt": "2026-07-21T20:45:07Z",
-      "journalUpdatedAt": "2026-07-21T22:15:45Z",
+      "journalUpdatedAt": "2026-08-07T21:49:42Z",
       "openIssues": 3,
       "openPRs": 3,
       "screenshotCount": 0,
@@ -293,7 +293,7 @@
     {
       "nameWithOwner": "dinonoto/Juvenile_Anolis",
       "pushedAt": "2026-07-21T20:40:22Z",
-      "journalUpdatedAt": "2026-07-21T22:15:50Z",
+      "journalUpdatedAt": "2026-08-07T21:48:04Z",
       "openIssues": 2,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -381,7 +381,7 @@
     {
       "nameWithOwner": "dinonoto/lampropeltis-californiae-juvenile-whole",
       "pushedAt": "2026-07-21T18:50:23Z",
-      "journalUpdatedAt": "2026-08-07T18:39:00Z",
+      "journalUpdatedAt": "2026-08-07T21:48:41Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -467,7 +467,7 @@
     {
       "nameWithOwner": "dinonoto/chelydra-serpentina-juvenile-whole",
       "pushedAt": "2026-07-21T18:44:13Z",
-      "journalUpdatedAt": "2026-08-07T18:39:04Z",
+      "journalUpdatedAt": "2026-08-07T21:48:44Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -553,7 +553,7 @@
     {
       "nameWithOwner": "MorphoDepot/neurotrichus-gibbsii-skull",
       "pushedAt": "2026-07-18T20:11:07Z",
-      "journalUpdatedAt": "2026-08-07T17:56:08Z",
+      "journalUpdatedAt": "2026-08-07T21:49:27Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -644,7 +644,7 @@
     {
       "nameWithOwner": "MorphoDepot/sciurus-griseus-skull",
       "pushedAt": "2026-07-18T18:57:14Z",
-      "journalUpdatedAt": "2026-07-18T18:57:30Z",
+      "journalUpdatedAt": "2026-08-07T21:48:56Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -734,7 +734,7 @@
     {
       "nameWithOwner": "MorphoDepot/mustela-vison-skull",
       "pushedAt": "2026-07-18T18:18:50Z",
-      "journalUpdatedAt": "2026-07-18T18:19:09Z",
+      "journalUpdatedAt": "2026-08-07T21:48:33Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -824,7 +824,7 @@
     {
       "nameWithOwner": "MorphoDepot/brachylagus-idahoensis-skull",
       "pushedAt": "2026-07-17T21:19:22Z",
-      "journalUpdatedAt": "2026-07-17T21:19:39Z",
+      "journalUpdatedAt": "2026-08-07T21:51:35Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -914,7 +914,7 @@
     {
       "nameWithOwner": "MorphoDepot/glaucomys-sabrinus-skull",
       "pushedAt": "2026-07-17T03:23:14Z",
-      "journalUpdatedAt": "2026-07-17T03:23:30Z",
+      "journalUpdatedAt": "2026-08-07T21:50:13Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1004,7 +1004,7 @@
     {
       "nameWithOwner": "MorphoDepot/scapanus-townsendii-head",
       "pushedAt": "2026-07-17T02:29:14Z",
-      "journalUpdatedAt": "2026-07-17T02:29:32Z",
+      "journalUpdatedAt": "2026-08-07T21:48:19Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1094,7 +1094,7 @@
     {
       "nameWithOwner": "MorphoDepot/neotoma-cinerea-skull",
       "pushedAt": "2026-07-16T22:16:39Z",
-      "journalUpdatedAt": "2026-07-16T22:16:59Z",
+      "journalUpdatedAt": "2026-08-07T21:50:16Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1184,7 +1184,7 @@
     {
       "nameWithOwner": "MorphoDepot/eptesicus-fuscus-skull",
       "pushedAt": "2026-07-16T22:08:33Z",
-      "journalUpdatedAt": "2026-07-16T22:08:50Z",
+      "journalUpdatedAt": "2026-08-07T21:50:18Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1274,7 +1274,7 @@
     {
       "nameWithOwner": "MorphoDepot/mus-musculus-skull",
       "pushedAt": "2026-07-02T18:35:39Z",
-      "journalUpdatedAt": "2026-07-02T18:35:59Z",
+      "journalUpdatedAt": "2026-08-07T21:50:21Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1361,7 +1361,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-170",
       "pushedAt": "2026-06-19T23:07:42Z",
-      "journalUpdatedAt": "2026-06-19T23:32:48Z",
+      "journalUpdatedAt": "2026-08-07T21:51:06Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1444,7 +1444,7 @@
     {
       "nameWithOwner": "amm554/non-member",
       "pushedAt": "2026-06-17T06:04:55Z",
-      "journalUpdatedAt": "2026-06-17T10:45:44Z",
+      "journalUpdatedAt": "2026-08-07T21:51:03Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1531,7 +1531,7 @@
     {
       "nameWithOwner": "dinonoto/AM112911-05_Juv_Alligator",
       "pushedAt": "2026-06-16T17:38:51Z",
-      "journalUpdatedAt": "2026-06-16T20:43:51Z",
+      "journalUpdatedAt": "2026-08-07T21:49:19Z",
       "openIssues": 3,
       "openPRs": 3,
       "screenshotCount": 0,
@@ -1601,7 +1601,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
       "pushedAt": "2026-06-15T17:54:42Z",
-      "journalUpdatedAt": "2026-06-15T20:51:49Z",
+      "journalUpdatedAt": "2026-08-07T21:48:59Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1684,7 +1684,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
       "pushedAt": "2026-06-15T17:46:48Z",
-      "journalUpdatedAt": "2026-06-15T20:52:36Z",
+      "journalUpdatedAt": "2026-08-07T21:51:18Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1767,7 +1767,7 @@
     {
       "nameWithOwner": "dinonoto/Juvenile_Bearded_Dragon",
       "pushedAt": "2026-06-09T18:59:41Z",
-      "journalUpdatedAt": "2026-08-07T18:54:47Z",
+      "journalUpdatedAt": "2026-08-07T21:50:57Z",
       "openIssues": 2,
       "openPRs": 2,
       "screenshotCount": 0,
@@ -1852,7 +1852,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/delete-e15",
       "pushedAt": "2026-05-07T19:21:49Z",
-      "journalUpdatedAt": "2026-06-15T20:51:09Z",
+      "journalUpdatedAt": "2026-08-07T21:48:36Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -1935,7 +1935,7 @@
     {
       "nameWithOwner": "MorphoDepotTest/MRHead",
       "pushedAt": "2026-05-07T17:37:39Z",
-      "journalUpdatedAt": "2026-06-15T20:52:03Z",
+      "journalUpdatedAt": "2026-08-07T21:49:54Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2010,7 +2010,7 @@
     {
       "nameWithOwner": "pieper/test-repo-6527",
       "pushedAt": "2026-04-29T21:07:39Z",
-      "journalUpdatedAt": "2026-06-15T20:50:50Z",
+      "journalUpdatedAt": "2026-08-07T21:49:14Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2093,7 +2093,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
       "pushedAt": "2026-04-26T19:20:34Z",
-      "journalUpdatedAt": "2026-06-15T20:51:35Z",
+      "journalUpdatedAt": "2026-08-07T21:50:42Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2176,7 +2176,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
       "pushedAt": "2026-04-26T18:58:41Z",
-      "journalUpdatedAt": "2026-06-15T20:52:23Z",
+      "journalUpdatedAt": "2026-08-07T21:50:48Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2259,7 +2259,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
       "pushedAt": "2026-04-26T18:40:11Z",
-      "journalUpdatedAt": "2026-06-15T20:51:51Z",
+      "journalUpdatedAt": "2026-08-07T21:49:02Z",
       "openIssues": 3,
       "openPRs": 2,
       "screenshotCount": 0,
@@ -2342,7 +2342,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
       "pushedAt": "2026-04-26T18:35:35Z",
-      "journalUpdatedAt": "2026-06-15T20:52:19Z",
+      "journalUpdatedAt": "2026-08-07T21:51:12Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2425,7 +2425,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
       "pushedAt": "2026-04-26T18:27:21Z",
-      "journalUpdatedAt": "2026-06-15T20:52:33Z",
+      "journalUpdatedAt": "2026-08-07T21:50:24Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2508,7 +2508,7 @@
     {
       "nameWithOwner": "otocolobusmanul3816/Nerodia_Segmentation_Laboratory",
       "pushedAt": "2026-04-16T15:46:39Z",
-      "journalUpdatedAt": "2026-06-15T20:51:27Z",
+      "journalUpdatedAt": "2026-08-07T21:50:04Z",
       "openIssues": 15,
       "openPRs": 11,
       "screenshotCount": 0,
@@ -2596,7 +2596,7 @@
     {
       "nameWithOwner": "MorphoDepotTesting/delete-22",
       "pushedAt": "2026-03-10T21:47:50Z",
-      "journalUpdatedAt": "2026-06-15T20:52:42Z",
+      "journalUpdatedAt": "2026-08-07T21:51:00Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2679,7 +2679,7 @@
     {
       "nameWithOwner": "jaimigray/rattlesnake",
       "pushedAt": "2026-03-10T20:21:40Z",
-      "journalUpdatedAt": "2026-06-15T20:51:05Z",
+      "journalUpdatedAt": "2026-08-07T21:48:24Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -2764,7 +2764,7 @@
     {
       "nameWithOwner": "aubricot/cacao_flower_depot",
       "pushedAt": "2026-03-05T23:50:02Z",
-      "journalUpdatedAt": "2026-06-15T20:51:25Z",
+      "journalUpdatedAt": "2026-08-07T21:48:14Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -2850,7 +2850,7 @@
     {
       "nameWithOwner": "otocolobusmanul3816/Copperhead_test_respository",
       "pushedAt": "2026-03-05T23:34:58Z",
-      "journalUpdatedAt": "2026-06-15T20:51:01Z",
+      "journalUpdatedAt": "2026-08-07T21:49:38Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -2938,7 +2938,7 @@
     {
       "nameWithOwner": "kumimatsui/Dasyuridae_Workshop",
       "pushedAt": "2026-03-05T17:29:19Z",
-      "journalUpdatedAt": "2026-06-15T20:51:17Z",
+      "journalUpdatedAt": "2026-08-07T21:48:01Z",
       "openIssues": 2,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -3023,7 +3023,7 @@
     {
       "nameWithOwner": "Pfu7978/Knight_Anole_Skull",
       "pushedAt": "2026-03-04T22:59:07Z",
-      "journalUpdatedAt": "2026-06-15T20:52:39Z",
+      "journalUpdatedAt": "2026-08-07T21:51:15Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3110,7 +3110,7 @@
     {
       "nameWithOwner": "SkyeB-1927/Daphnia_AAA391",
       "pushedAt": "2026-03-04T22:46:22Z",
-      "journalUpdatedAt": "2026-06-15T20:52:13Z",
+      "journalUpdatedAt": "2026-08-07T21:48:47Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3195,7 +3195,7 @@
     {
       "nameWithOwner": "oatake-ux/SwissWebster_Incisor",
       "pushedAt": "2026-03-04T22:19:00Z",
-      "journalUpdatedAt": "2026-06-15T20:53:03Z",
+      "journalUpdatedAt": "2026-08-07T21:51:52Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3283,7 +3283,7 @@
     {
       "nameWithOwner": "JeanCopper/Daphnia_magna",
       "pushedAt": "2026-03-04T22:18:35Z",
-      "journalUpdatedAt": "2026-06-15T20:53:10Z",
+      "journalUpdatedAt": "2026-08-07T21:52:01Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3370,7 +3370,7 @@
     {
       "nameWithOwner": "khaichung2807/waterflea391",
       "pushedAt": "2026-03-04T22:11:38Z",
-      "journalUpdatedAt": "2026-06-15T20:51:39Z",
+      "journalUpdatedAt": "2026-08-07T21:50:36Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3456,7 +3456,7 @@
     {
       "nameWithOwner": "elisechmitchell/Para_dog-face_bat",
       "pushedAt": "2026-03-04T21:53:22Z",
-      "journalUpdatedAt": "2026-06-15T20:50:59Z",
+      "journalUpdatedAt": "2026-08-07T21:49:35Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3544,7 +3544,7 @@
     {
       "nameWithOwner": "dinonoto/Plethodon_Hindlimb2",
       "pushedAt": "2026-02-21T03:40:42Z",
-      "journalUpdatedAt": "2026-06-15T20:52:05Z",
+      "journalUpdatedAt": "2026-08-07T21:50:27Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3618,7 +3618,7 @@
     {
       "nameWithOwner": "muratmaga/Herpetotherium_fugax",
       "pushedAt": "2026-02-02T18:00:12Z",
-      "journalUpdatedAt": "2026-06-15T20:51:54Z",
+      "journalUpdatedAt": "2026-08-07T21:49:05Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3707,7 +3707,7 @@
     {
       "nameWithOwner": "muratmaga/Bumblebee_Stained",
       "pushedAt": "2026-01-12T05:56:53Z",
-      "journalUpdatedAt": "2026-06-15T20:52:01Z",
+      "journalUpdatedAt": "2026-08-07T21:49:51Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3792,7 +3792,7 @@
     {
       "nameWithOwner": "brendanlatham/Demo_HumanHead",
       "pushedAt": "2026-01-03T23:16:47Z",
-      "journalUpdatedAt": "2026-06-15T20:51:13Z",
+      "journalUpdatedAt": "2026-08-07T21:47:58Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3879,7 +3879,7 @@
     {
       "nameWithOwner": "khurds137-beep/MRI_demo_for_workshop",
       "pushedAt": "2026-01-03T23:16:39Z",
-      "journalUpdatedAt": "2026-06-15T20:51:21Z",
+      "journalUpdatedAt": "2026-08-07T21:48:08Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -3966,7 +3966,7 @@
     {
       "nameWithOwner": "cgmena/Cesar_SICB_2026",
       "pushedAt": "2026-01-03T23:15:00Z",
-      "journalUpdatedAt": "2026-06-15T20:51:44Z",
+      "journalUpdatedAt": "2026-08-07T21:49:45Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4053,7 +4053,7 @@
     {
       "nameWithOwner": "sunnyjsh/Sunny_sicb2",
       "pushedAt": "2026-01-03T22:58:28Z",
-      "journalUpdatedAt": "2026-06-15T20:51:23Z",
+      "journalUpdatedAt": "2026-08-07T21:48:10Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4140,7 +4140,7 @@
     {
       "nameWithOwner": "nahrweiler/natasha_sicb_2026",
       "pushedAt": "2026-01-03T22:55:24Z",
-      "journalUpdatedAt": "2026-06-15T20:51:31Z",
+      "journalUpdatedAt": "2026-08-07T21:49:57Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4225,7 +4225,7 @@
     {
       "nameWithOwner": "Peter-T-Ruehr/MRI_test_head",
       "pushedAt": "2026-01-03T22:51:10Z",
-      "journalUpdatedAt": "2026-06-15T20:52:59Z",
+      "journalUpdatedAt": "2026-08-07T21:51:46Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4312,7 +4312,7 @@
     {
       "nameWithOwner": "kforsgren-1112013/KLF_SICB_2026",
       "pushedAt": "2026-01-03T22:48:52Z",
-      "journalUpdatedAt": "2026-07-07T11:41:16Z",
+      "journalUpdatedAt": "2026-08-07T21:48:27Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -4399,7 +4399,7 @@
     {
       "nameWithOwner": "Jwyneken/SICB_sample",
       "pushedAt": "2026-01-03T22:30:01Z",
-      "journalUpdatedAt": "2026-06-15T20:52:49Z",
+      "journalUpdatedAt": "2026-08-07T21:50:09Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4486,7 +4486,7 @@
     {
       "nameWithOwner": "Amith-104/Human_Brain_CT",
       "pushedAt": "2026-01-03T22:28:46Z",
-      "journalUpdatedAt": "2026-06-15T20:52:35Z",
+      "journalUpdatedAt": "2026-08-07T21:51:43Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4571,7 +4571,7 @@
     {
       "nameWithOwner": "annikadawley/SICB_Practice_Repository",
       "pushedAt": "2026-01-03T22:24:26Z",
-      "journalUpdatedAt": "2026-06-15T20:52:52Z",
+      "journalUpdatedAt": "2026-08-07T21:51:27Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4656,7 +4656,7 @@
     {
       "nameWithOwner": "MichaelBennington/Bennington_SICB2026_MRIHead",
       "pushedAt": "2026-01-03T22:22:26Z",
-      "journalUpdatedAt": "2026-06-15T20:52:21Z",
+      "journalUpdatedAt": "2026-08-07T21:51:09Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -4741,7 +4741,7 @@
     {
       "nameWithOwner": "ramenegaz/MRhead_sample",
       "pushedAt": "2026-01-03T22:22:16Z",
-      "journalUpdatedAt": "2026-06-15T20:52:25Z",
+      "journalUpdatedAt": "2026-08-07T21:50:45Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -4828,7 +4828,7 @@
     {
       "nameWithOwner": "dinonoto/NotoLab_ChickenWing_2025",
       "pushedAt": "2025-12-21T19:45:13Z",
-      "journalUpdatedAt": "2026-08-07T18:39:07Z",
+      "journalUpdatedAt": "2026-08-07T21:50:33Z",
       "openIssues": 3,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -4915,7 +4915,7 @@
     {
       "nameWithOwner": "dinonoto/NotoLab_ChickenFoot_2025",
       "pushedAt": "2025-12-21T19:44:19Z",
-      "journalUpdatedAt": "2026-08-07T18:39:10Z",
+      "journalUpdatedAt": "2026-08-07T21:50:06Z",
       "openIssues": 2,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -5002,7 +5002,7 @@
     {
       "nameWithOwner": "PaulGignac/GignacLab_DiceCT_CowEye_2025",
       "pushedAt": "2025-12-17T22:09:01Z",
-      "journalUpdatedAt": "2026-06-15T20:50:48Z",
+      "journalUpdatedAt": "2026-08-07T21:49:16Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5089,7 +5089,7 @@
     {
       "nameWithOwner": "M33NFishesLab/Betta_pugnax_UMMZ-209908_head",
       "pushedAt": "2025-12-15T19:13:07Z",
-      "journalUpdatedAt": "2026-06-15T20:51:11Z",
+      "journalUpdatedAt": "2026-08-07T21:49:32Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5177,7 +5177,7 @@
     {
       "nameWithOwner": "kurker/Geostiba",
       "pushedAt": "2025-11-06T19:38:41Z",
-      "journalUpdatedAt": "2026-06-15T20:52:31Z",
+      "journalUpdatedAt": "2026-08-07T21:51:41Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5262,7 +5262,7 @@
     {
       "nameWithOwner": "palaeophidia/tortuga",
       "pushedAt": "2025-11-06T19:38:30Z",
-      "journalUpdatedAt": "2026-06-15T20:52:07Z",
+      "journalUpdatedAt": "2026-08-07T21:50:30Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5347,7 +5347,7 @@
     {
       "nameWithOwner": "raranda22/Juvenile_Alligator_Volume",
       "pushedAt": "2025-11-06T19:18:34Z",
-      "journalUpdatedAt": "2026-06-15T20:53:01Z",
+      "journalUpdatedAt": "2026-08-07T21:51:21Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5430,7 +5430,7 @@
     {
       "nameWithOwner": "isafinamor/sapo",
       "pushedAt": "2025-11-06T19:14:25Z",
-      "journalUpdatedAt": "2026-06-15T20:51:07Z",
+      "journalUpdatedAt": "2026-08-07T21:48:38Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5513,7 +5513,7 @@
     {
       "nameWithOwner": "leighamarielynch-hash/test",
       "pushedAt": "2025-11-06T19:12:45Z",
-      "journalUpdatedAt": "2026-06-15T20:52:27Z",
+      "journalUpdatedAt": "2026-08-07T21:51:38Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5596,7 +5596,7 @@
     {
       "nameWithOwner": "skrobanm/Canis_lupus_Europe_Museum_samples",
       "pushedAt": "2025-11-06T19:06:23Z",
-      "journalUpdatedAt": "2026-06-15T20:51:41Z",
+      "journalUpdatedAt": "2026-08-07T21:50:39Z",
       "openIssues": 2,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5681,7 +5681,7 @@
     {
       "nameWithOwner": "jonasand-santos/tooth_rat",
       "pushedAt": "2025-11-06T19:01:35Z",
-      "journalUpdatedAt": "2026-06-15T20:52:58Z",
+      "journalUpdatedAt": "2026-08-07T21:51:33Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5767,7 +5767,7 @@
     {
       "nameWithOwner": "zhong-jessica/mouse",
       "pushedAt": "2025-11-06T18:58:25Z",
-      "journalUpdatedAt": "2026-06-15T20:51:42Z",
+      "journalUpdatedAt": "2026-08-07T21:49:48Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -5850,7 +5850,7 @@
     {
       "nameWithOwner": "dinonoto/Xenopus-diceCT",
       "pushedAt": "2025-10-31T19:53:11Z",
-      "journalUpdatedAt": "2026-06-15T20:52:15Z",
+      "journalUpdatedAt": "2026-08-07T21:48:54Z",
       "openIssues": 3,
       "openPRs": 3,
       "screenshotCount": 0,
@@ -5933,7 +5933,7 @@
     {
       "nameWithOwner": "PaulGignac/Pigeon-4_Head_DiceCT",
       "pushedAt": "2025-10-21T21:33:35Z",
-      "journalUpdatedAt": "2026-06-15T20:51:57Z",
+      "journalUpdatedAt": "2026-08-07T21:49:08Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -6018,7 +6018,7 @@
     {
       "nameWithOwner": "CDonatelli/Gasterosteus_aculeatus_16um",
       "pushedAt": "2025-10-18T22:00:34Z",
-      "journalUpdatedAt": "2026-06-15T20:52:56Z",
+      "journalUpdatedAt": "2026-08-07T21:51:49Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -6101,7 +6101,7 @@
     {
       "nameWithOwner": "CDonatelli/Lepomis_macrochirus_28um",
       "pushedAt": "2025-10-09T22:37:22Z",
-      "journalUpdatedAt": "2026-06-15T20:52:11Z",
+      "journalUpdatedAt": "2026-08-07T21:48:50Z",
       "openIssues": 42,
       "openPRs": 37,
       "screenshotCount": 0,
@@ -6171,7 +6171,7 @@
     {
       "nameWithOwner": "CDonatelli/Gasterosteus_aculeatus",
       "pushedAt": "2025-10-09T18:56:13Z",
-      "journalUpdatedAt": "2026-06-15T20:51:33Z",
+      "journalUpdatedAt": "2026-08-07T21:50:00Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -6242,7 +6242,7 @@
     {
       "nameWithOwner": "FishguyFHL/Agonopsis_vulsa_no_data",
       "pushedAt": "2025-10-07T16:48:11Z",
-      "journalUpdatedAt": "2026-06-15T20:52:29Z",
+      "journalUpdatedAt": "2026-08-07T21:50:51Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -6313,7 +6313,7 @@
     {
       "nameWithOwner": "jaimigray/snakeseg",
       "pushedAt": "2025-10-07T16:46:14Z",
-      "journalUpdatedAt": "2026-08-07T18:38:57Z",
+      "journalUpdatedAt": "2026-08-07T21:51:30Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -6386,7 +6386,7 @@
     {
       "nameWithOwner": "CDonatelli/DamagedPoacherTail",
       "pushedAt": "2025-05-20T23:35:12Z",
-      "journalUpdatedAt": "2026-06-15T20:50:55Z",
+      "journalUpdatedAt": "2026-08-07T21:49:22Z",
       "openIssues": 1,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -6458,7 +6458,7 @@
     {
       "nameWithOwner": "CDonatelli/CDHumanTest",
       "pushedAt": "2025-05-19T21:14:51Z",
-      "journalUpdatedAt": "2026-06-15T20:51:55Z",
+      "journalUpdatedAt": "2026-08-07T21:49:10Z",
       "openIssues": 0,
       "openPRs": 0,
       "screenshotCount": 0,
@@ -6471,7 +6471,7 @@
     {
       "nameWithOwner": "jknaub/Mako_Vert_MD_Test",
       "pushedAt": "2025-05-06T16:33:38Z",
-      "journalUpdatedAt": "2026-06-15T20:51:15Z",
+      "journalUpdatedAt": "2026-08-07T21:49:30Z",
       "openIssues": 3,
       "openPRs": 0,
       "screenshotCount": 0,
