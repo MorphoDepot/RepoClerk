@@ -402,8 +402,11 @@ test against.
    Contents-only), per-repo webhooks, or neither?
 3. Layer 4: is 500 repos the number to design for? The answer differs sharply between 500 dormant
    archival repos and 500 with several classes live at once.
-4. The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
-   as it is?
+4. ~~The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
+   as it is?~~ **Superseded 2026-08-07** by [`index-vs-work-state.md`](index-vs-work-state.md), which
+   turns it into a concrete proposal with measurements. Still undecided, but the question now has a
+   document of its own; decide it there. Note that Layer 3 (make failure loud) is required either
+   way — a stale discovery index fails just as silently.
 5. ~~Sweep interval once Layer 1 lands.~~ **Decided: 15 minutes** — see *Sweep interval* below.
    Going below that needs two prerequisites, both listed there.
 

@@ -72,7 +72,7 @@ both, and the slower update frequency set the refresh policy for the faster one.
 | query | requests | GraphQL points |
 |---|---|---|
 | Legacy topic-wide crawl, 80 repos × 100 issues + 100 PRs | 1/page, **search API (30/min)** | **202** |
-| Discovery search + activity watermarks, all 80 repos | 1 | 2 |
+| Discovery search + activity watermarks, all 80 repos | 1 (paginated — 5 at 500 repos) | 2 |
 | `viewer.repositories` + topics + issue/PR counts (a curator's own repos) | 1 | **3** |
 | Batched issues + PRs for the heaviest real user's 26 repos | 1 | **14** |
 | Single repo | 1 | 1 |
@@ -135,12 +135,33 @@ Per tab, after the split:
   still supplies "repos I curate", since the org owns them rather than the member.
 - **Release / Collections** — unchanged, org-only already.
 
-Note there is no source-switching in the client. Each *view* has exactly one source, and every repo
-behaves identically. `near-realtime-ingestion.md` records a rejected alternative — special-casing an
-"active repo" in the client — and the objection to it was that it scatters source selection through
-the client and teaches it to distrust the cache. Splitting by data category rather than by repo does
-not have that shape. An earlier draft of this proposal split by *tier* (org cached, personal live),
-which did have that shape, and was dropped for that reason.
+### One place where a tier distinction survives, stated plainly
+
+**Work state has exactly one source everywhere: live.** No view reads issues or PRs from two places,
+and no repo's issues behave differently from another's. That is the property worth having, and it is
+what makes this different from the earlier draft of this proposal, which split by *tier* — org
+cached, personal live — and was dropped precisely because it made two repos behave differently.
+
+But *which repos concern me* is not uniform in the Review tab, and pretending otherwise would be
+overclaiming. A curator's list is the union of two things:
+
+| | source | why |
+|---|---|---|
+| my own repos carrying the topic | live `viewer.repositories(ownerAffiliations: OWNER)` | I own them, so GitHub can enumerate them for me directly |
+| org repos where `CURATOR` names me | the index | the org owns them, not me, so an owner-keyed query cannot find them — and `CURATOR` is a committed file, hence index data |
+
+That is a genuine asymmetry. Two defenses, and readers should judge whether they hold:
+
+1. It is a *union*, not a *branch*. There is no "if org then A else B" — both queries run and the
+   results merge. Nothing has to classify a repo before deciding how to treat it.
+2. The org half is index data by nature. `CURATOR` lives in a file in the repo, so it is push-gated
+   and belongs in the index on the same grounds as species and modality. Reading it from there is not
+   a concession; it is the rule being applied consistently.
+
+Annotate has no such asymmetry — `GET /issues?filter=assigned` spans org and personal repos in one
+call. Search has none either. The Review repo-list is the only place a tier distinction remains, and
+it exists because GitHub's ownership model, not our design, makes "repos I curate but do not own"
+unanswerable without stored state.
 
 ## What this removes
 
@@ -206,14 +227,24 @@ repo directly.
    repos holding six issues.
 3. **How does a repo move between tiers?** A personal repo later published into the org needs its
    index entry and dashboard presence to follow it.
-4. **What happens to the extension's offline behaviour** — is the one-line clone-path fallback part of
+4. **What happens to the extension's offline behavior** — is the one-line clone-path fallback part of
    this work or separate?
-5. **Sequencing.** #469 and the Layer 2 App-permission decision both become moot if this lands. Doing
+5. **Which of `near-realtime-ingestion.md`'s four layers survive?** Not all of them lapse, and the
+   distinction matters:
+
+   | layer | under this proposal |
+   |---|---|
+   | 1 — authoritative sweep (`activityAt`) | **lapses** — no consumer once issues leave the journal |
+   | 2 — close the tier gap (App events) | **lapses** for work state; the index still wants a push signal, but the publish-time App dispatch covers it |
+   | 3 — make failure loud | **still required, unchanged.** A failed index drain is exactly as invisible as a failed work-state drain was. Drain alarms and a freshness metric apply to the index verbatim — a stale index means a repo silently missing from Search, which is the same class of bug that went unnoticed for seven weeks |
+   | 4 — scale to 500 repos | **mostly lapses** — churn collapses and contention stops binding, but the batched-query and pagination work moves to the client |
+
+6. **Sequencing.** #469 and the Layer 2 App-permission decision both become moot if this lands. Doing
    either first is wasted effort; doing neither leaves known bugs open while this is discussed.
 
 ## Interim guidance for instructors
 
-Until something here changes, the current behaviour is worth stating plainly, because it affects how
+Until something here changes, the current behavior is worth stating plainly, because it affects how
 a class should be run:
 
 - Creating and assigning issues triggers **no** notification path at all, for anyone. It always waits
