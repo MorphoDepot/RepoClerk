@@ -20,5 +20,7 @@ puts `scripts/` on sys.path[0], so a plain `import constants` resolves.
 # every existing journal for a one-time backfill.
 #   v2 added sourceVolumeChecksum
 #   v3 added curator / collection
-#   v4 added updatedAt (repo-level change token; see design/near-realtime-ingestion.md)
+#   v4 added updatedAt (repository-record change token) and activityAt (newest issue-or-PR
+#      update time -- the signal Repository.updatedAt looks like it provides and does not;
+#      see design/near-realtime-ingestion.md and #470)
 SCHEMA_VERSION = 4

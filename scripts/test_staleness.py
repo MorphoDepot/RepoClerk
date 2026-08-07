@@ -155,6 +155,12 @@ def test_watermark_matches_between_the_two_scripts():
     check("missing keys entirely -> empty",
           drain.activity_watermark({}) == "")
 
+    # updatedAt is DateTime! so a null cannot arrive from the API, but the function must
+    # still return a string rather than raising inside max().
+    check("a null timestamp degrades to empty instead of raising",
+          drain.activity_watermark({"latestIssue": {"nodes": [{"updatedAt": None}]},
+                                    "latestPR": {"nodes": [{"updatedAt": SEEN}]}}) == SEEN)
+
     # sync-all builds the same value from its own query shape; a divergence here would
     # make every repo look permanently stale.
     check("a fresh repo with neither is quiet, not permanently stale",

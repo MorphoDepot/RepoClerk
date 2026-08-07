@@ -165,7 +165,9 @@ def activity_watermark(repo_data):
     """
     def newest(key):
         nodes = ((repo_data.get(key) or {}).get("nodes") or [])
-        return nodes[0]["updatedAt"] if nodes else ""
+        # updatedAt is DateTime! in GitHub's schema so it cannot be null, but keep the
+        # "always returns a string" contract self-enforcing: max(None, str) raises.
+        return (nodes[0].get("updatedAt") or "") if nodes else ""
     return max(newest("latestIssue"), newest("latestPR"))
 
 
