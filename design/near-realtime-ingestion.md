@@ -1,106 +1,313 @@
-# Near-real-time RepoClerk ingestion (for live workshops)
+# RepoClerk journal freshness
 
-**Status:** **implemented, deployed, and verified end-to-end** (`morphodepot-intake#18`). The org webhook is live; an issue created on a data repo appeared in its RepoClerk journal in **~20 s**. Open for @pieper's review; see *Implementation status* below.
-**Latency target:** ≤ 2–3 minutes end-to-end (an instructor's action → visible in attendees' extension). Sub-second is *not* required.
+**Status: partially implemented. The push path works and covers roughly half the fleet.**
+Personal-account repos — the tier used for classrooms — are not covered by it, and every fallback
+path beneath it was found broken on 2026-08-07. Open for review; see *Decisions needed* at the end.
+
+**Latency target:** ≤ 2–3 minutes end-to-end (an instructor's action → visible in attendees'
+extension). Sub-second is *not* required.
+
+> **History.** This file previously described the webhook design as *"implemented, deployed, and
+> verified end-to-end"* full stop. That was true of what it was tested against — an org repo — and
+> the verification was real. It was not true of the fleet. Rewritten 2026-08-07 after a live class
+> failed in a way the document said was solved.
+
+---
 
 ## The concern: live workshops are the one real-time case
 
 MorphoDepot usage is overwhelmingly **asynchronous** — a PI publishes a repo, segmentors work over
-days or weeks. There, RepoClerk's eventual consistency (cache refreshed within ~30 s on a clean
-notify, ≤ 1 h via the cron backstop) is invisible and completely fine.
+days or weeks. There, eventual consistency is invisible and completely fine.
 
 The one scenario where freshness matters is a **live workshop / classroom**: an instructor creates a
 repository on the spot and asks attendees to create issues and start segmenting *immediately*. In
-that burst, attendees need the new repo (Search/discovery), their new issues (Annotate tab), and
-their PRs (Review tab) to appear within a couple of minutes — otherwise people sit staring at empty
-lists during the session. This is the case worth engineering for, and ≤ 2–3 minutes is plenty.
+that burst, attendees need the new repo (Search), their new issues (Annotate), and their PRs
+(Review) to appear within a couple of minutes — otherwise people sit staring at empty lists during
+the session.
 
-## Why it lags today (the real cause: pull-shaped ingestion)
+The extension's list views read pre-computed journals **by design**, to avoid hammering GitHub with
+topic-wide searches as the repo count grows — the whole reason RepoClerk exists. So freshness is
+entirely a property of how fast a change reaches the journal, and every failure below is a failure
+of a *trigger*, never of the read path.
 
-The extension's list views read RepoClerk's pre-computed journals **by design** — to avoid
-hammering GitHub with topic-wide searches as the repo count grows (the whole reason RepoClerk
-exists). Those journals are only as fresh as the last crawl, and crawling is triggered by a
-**pull/poll** mechanism:
+---
 
-- `notifyRepoClerk` opens an `update-request` **issue** (GitHub issues used as a message queue),
-  which `update-repo.yml` consumes;
-- a `sync-all` cron sweep (now hourly) as a backstop;
-- and the `repoclerk-writer` concurrency lock can **drop** a triggered run instead of queuing it
-  (observed in testing: an `update-request` issue was *skipped*, so that refresh waited for the
-  cron).
+## What was built, and what it actually covers
 
-So the latency and the unreliability live entirely in the **trigger** mechanism — not in the read
-path, which is fine and should stay the single, uniform source.
+An **org webhook** on `MorphoDepot` for `repository`, `issues`, `pull_request`, `release`, `push`
+delivers to `POST /github/webhook` on the intake app (`morphodepot-intake#18`), which verifies the
+HMAC, filters to the `morphodepot` topic, coalesces per-repo over ~8 s, and fires a
+`repository_dispatch` at `MorphoDepot/RepoClerk`, where `update-repo.yml` already accepts it.
 
-## Rejected alternative: client-side source switching
+**This works.** Verified 2026-06-19 at ~20 s from issue to fresh journal, and still live: 31 of the
+last 60 drain runs were dispatch-driven. No extension change was needed and none is proposed here.
 
-A tempting quick fix is to special-case the active/workshop repo in the **extension** — roughly
-`if active_repo: query GitHub live; else: read RepoClerk`. We reject this: it's a band-aid that
-scatters source-selection logic through the client, teaches the client to distrust the cache, needs
-a per-repo "active repo" field, and only helps the one hand-entered repo. The right fix makes the
-cache *correct/fresh*, so the read path stays uniform and untouched.
+**It covers repos in the `MorphoDepot` org, and nothing else.** An org webhook fires for that org's
+repositories. MorphoDepot's two-tier model puts *archival* repos in the org and *short-term* repos in
+the curator's personal account — and short-term is the classroom tier. The document's motivating
+scenario is therefore the scenario the implementation does not reach.
 
-## Proposed design: push-shaped ingestion via GitHub webhooks
+### Evidence
 
-Replace the poll/issue-queue trigger with a GitHub **org webhook**, so every change is pushed to
-RepoClerk within seconds, reliably, for **all** repos and event types — with **no extension change**.
+`muratmaga/rana-clamitans-full-body` — a personal repo whose own journal records
+`repoType: "Short-term (e.g. repositories for classroom exercises...)"` — ran a class on 2026-08-07
+from 18:22 to 19:00 UTC. In that window:
 
-1. **Org webhook** on `MorphoDepot` for `repository`, `issues`, `pull_request`, `release`, `push`.
-   GitHub delivers each event to an HTTPS endpoint within ~1 s, with automatic delivery retries.
-2. **Receiver = the intake app** (`morphodepot-intake`, already an always-on FastAPI service on JS2
-   that holds the GitHub App credentials). Add one endpoint, `POST /github/webhook`, that:
-   - verifies the `X-Hub-Signature-256` HMAC against a shared secret;
-   - extracts the affected repo's `nameWithOwner`;
-   - triggers a journal refresh for that repo via **`repository_dispatch`** (`event_type:
-     update-repo`) to `MorphoDepot/RepoClerk` — which `update-repo.yml` already accepts.
-3. **Coalesce** events per-repo over a short window (≈ 5–10 s) so a burst (30 attendees acting at
-   once) collapses into one drain instead of 30.
-
-**End-to-end latency:** webhook delivery (~1 s) + dispatch + the existing drain Action (~25–30 s) ≈
-**well under a minute** — comfortably inside the 2–3 min target.
-
-## What this buys
-
-- **No extension change.** `issueList` / `prList` / Search keep reading RepoClerk uniformly — no
-  active-repo field, no `if/then` source switch.
-- **Uniform freshness (~seconds) for every repo and every event**, not just a workshop repo.
-- **Eliminates two kludges at once:** the issue-as-message-queue *and* the concurrency-skip
-  fragility — push + coalesce + GitHub's delivery retries replace poll + drop + cron-catch-up.
-- **Cron stays as the safety net** (hourly) for any missed delivery.
-
-## Components / work
-
-| Where | Change |
+| | |
 |---|---|
-| **intake app** | new `POST /github/webhook` (HMAC verify + per-repo coalesce + `repository_dispatch`); a `GITHUB_WEBHOOK_SECRET` in the env |
-| **RepoClerk** | none required — `update-repo.yml` already accepts `repository_dispatch`. Optionally retire the `notifyRepoClerk` issue-queue once webhooks are proven (keep the cron backstop) |
-| **org (one-time, owner)** | add the org webhook: URL = the intake app, the shared secret, the 5 event types |
-| **extension** | **none** |
+| Dispatch-driven drain runs | **0** |
+| Most recent dispatch before it | 17:55:59Z |
+| Org repos that refreshed unaided the same afternoon | `mus-musculus-E15` 17:42, `neurotrichus-gibbsii-skull` 17:56 — both matching dispatch timestamps |
 
-## Implementation status
+Five issues were created 18:28:48–18:30:05 and five annotators saw an empty Annotate tab. Two PRs
+opened at 18:43 and 18:50 never reached the curator's Review tab. Every journal in that window was
+corrected by hand.
 
-Built per this spec in **`morphodepot-intake#18`** (`POST /github/webhook`):
+> **Confirm before acting on this.** The tier gap is inferred from delivery behavior, not read from
+> configuration — listing org hooks needs the `admin:org_hook` scope, which the investigating account
+> did not have. An owner should run `gh api orgs/MorphoDepot/hooks` and check the hook's recent
+> deliveries. If personal repos turn out to be covered by some other path, the diagnosis below
+> changes and this section should be rewritten, not patched.
 
-- **Done & deployed** to `join.morphodepot.org`: HMAC verification (`X-Hub-Signature-256`); the
-  `morphodepot`-topic filter (infra repos like RepoClerk / onboarding-records are never journaled,
-  which also prevents a dashboard-push → webhook → dispatch loop); `ping` → pong; skip on
-  `repository` deleted/archived/privatized; per-repo asyncio debounce (`webhook_coalesce_seconds`,
-  default 8 s); App-token `repository_dispatch` to RepoClerk. `GITHUB_WEBHOOK_SECRET` is provisioned
-  in the service env; the endpoint is live (returns 401 to unsigned posts, 503 if unconfigured).
-  11 unit tests (`tests/test_github_webhook.py`) cover HMAC, filtering, coalescing, and the dispatch
-  path.
-- **Org webhook: live** (created via the org UI). Verified end-to-end 2026-06-19 (UTC): `gh issue create`
-  on `MorphoDepot/multipart` → a dispatch-driven `update-repo` run → journal commit with the new issue,
-  **~20 s** from issue to fresh journal. Real GitHub payloads carry `repository.topics`, so the topic
-  filter works on live deliveries. (Worth confirming the hook subscribes to all five events / "send me
-  everything" — the `issues` path is proven; the receiver treats all five identically.)
-- **No RepoClerk code change** was needed — `update-repo.yml` already accepts the dispatch.
+---
 
-## Tradeoffs
+## Every fallback beneath the webhook is also broken
 
-- Adds a webhook secret + signature verification, and a one-time org-admin step (org owner).
-- The intake server becomes load-bearing for freshness — but it already owns upload, the control
-  plane, and the GC, so this is consistent with its role, not new attack surface.
-- Near-real-time, not instant: the drain still runs as an Action (~30 s). If sub-second were ever
-  needed, the receiver could write the journal *directly* (it has the App token + boto3), at the
-  cost of a second journaling code path — unnecessary for the ≤ 3 min target.
+The webhook was designed with two backstops. Both were found non-functional on 2026-08-07, which is
+why the gap produced a total outage on the uncovered tier rather than a delay.
+
+### 1. `notifyRepoClerk()` is a silent no-op for non-org users — [#469](https://github.com/MorphoDepot/RepoClerk/issues/469)
+
+The extension enqueues by opening an issue here with `--label update-request`. **GitHub silently
+drops the `labels` field when the author lacks triage permission on the target repo.** Issue created,
+HTTP 201, `gh` exits 0, no label. Both consumers gate on that label (`update-repo.yml:19-23`,
+`drain.py:317-321`), so the request is created, never processed, never closed.
+
+Every annotator is a non-collaborator. This path has only ever worked for org members — precisely the
+population that tested it. Unlabeled orphans are still open going back to 2026-06-20, so it has been
+broken for roughly seven weeks. Requests from the project's own testing accounts (`amm554`,
+`SlicerMorph`) are among them: the bug was reproducing *during testing* and emitted no signal.
+
+The extension cannot detect this either. `hasRepoClerkUpdatePending()` filters on the same label, so
+it reports "nothing pending", `_waitForRepoClerkUpdate()` short-circuits, and Refresh silently shows
+stale data. The detector is blind in exactly the case it exists to detect.
+
+### 2. The `sync-all` cron keys staleness on the wrong field — [#470](https://github.com/MorphoDepot/RepoClerk/issues/470)
+
+`sync-all.py:94` compares `journal["pushedAt"] != remote_pushed_at`. `pushedAt` is the last **git
+push** time. Issue events do not move it, and a fork's PR does not move the upstream repo's. So the
+hourly backstop cannot catch either class of change.
+
+An audit of all 80 journals that afternoon found 10 assigned issues across 6 repos unreachable from
+the extension. Of the 43 journals carrying any open issues, nearly all were stamped 2026-06-15 — the
+schema-v3 backfill day. Issue data had been frozen since then except where an unrelated push
+happened to shake a repo loose.
+
+### 3. The writer collides with itself — about a third of dispatches fail
+
+Of the last 31 dispatch-driven runs, **10 failed**, all identically:
+
+```
+ERROR processing MorphoDepot/mus-musculus-E15:
+  Command '['git', 'pull', '--rebase']' returned non-zero exit status 1
+Push failed (attempt 1), rebasing...
+Drain loop complete. Updated 0 journal(s), 1 error(s).
+```
+
+Concurrent writers racing on the journals branch. This document previously claimed push + coalesce
+"eliminates the concurrency-skip fragility"; it changed its shape rather than removing it. A failed
+dispatch is indistinguishable from no event at all, so the repo stays stale until the cron — which,
+per (2), cannot see the change either.
+
+### The compound result
+
+For a repo in the personal tier there is **no path at all** by which a new issue or a fork PR reaches
+the journal: no webhook, a notify that silently no-ops, and a cron that keys on a field the event
+does not move. It is not a delay. It never arrives.
+
+---
+
+## Why none of this was visible
+
+Worth stating separately, because it is the property most likely to recur.
+
+Every failure mode here **succeeds loudly and fails silently**. `gh issue create` returns 201 with a
+URL whether or not the label stuck. A cancelled or failed Action leaves no user-facing trace. A stale
+journal renders as an empty list, which is indistinguishable from "no work assigned to you". There is
+no freshness metric anywhere, so nothing could have been noticed short of someone comparing a journal
+against GitHub by hand — which is how it was eventually found.
+
+Compounding it: the affected population (non-members, personal-tier repos) is disjoint from the
+testing population (org owners, org repos). The system was correct on everything anyone looked at.
+
+---
+
+## Proposal
+
+Four layers, ordered so that each is useful alone and none depends on the next.
+
+### Layer 1 — Make the pull path authoritative (the correctness floor)
+
+Fix [#470](https://github.com/MorphoDepot/RepoClerk/issues/470): compare repo `updatedAt` alongside
+`pushedAt`. `updatedAt` moves on issue create, assignment, retitle, close, and PR events; an
+open-issue `totalCount` would miss "one closed, one opened in the same window".
+
+This is **6 edits across 2 files plus a shared constant**, not the one-liner it looks like:
+
+| file | change |
+|---|---|
+| `sync-all.py` | GraphQL fragment; JQ filter (the return shape changes from `{nwo: pushedAt}` to `{nwo: {pushedAt, updatedAt}}`); the journal read; the staleness comparison |
+| `drain.py` | `GRAPHQL_QUERY` gains `updatedAt`; `process_repo()` writes it |
+| `constants.py` *(new)* | `SCHEMA_VERSION`, imported by both — `sync-all.py:21` is `2` while `drain.py:29` is `3`, so the schema-upgrade backfill is currently dead. Do **not** import it from `drain`: `drain.py` ends in a bare `main()` with no `__main__` guard, so importing it would run the drain loop as a side effect. |
+
+Adding a journal field is a schema change, so `SCHEMA_VERSION` goes to 4 and every journal is
+re-queued once. That is desirable — it clears the accumulated staleness in the same pass.
+
+**Why this first:** it is the only layer that makes correctness independent of who the actor is, what
+permissions they hold, and which tier the repo lives in. It also happens to be the only fix for the
+original classroom failure, where an instructor assigned issues in the web UI — an event the
+extension never sees and no notify path can ever cover.
+
+Once this holds, everything else is latency, and a latency mechanism is allowed to fail.
+
+### Layer 2 — Close the tier gap
+
+An org webhook cannot cover personal repos. Options, best first:
+
+1. **GitHub App installation events.** The App is already installed on curators' personal accounts.
+   If it subscribes to `issues` / `pull_request` / `push` / `repository`, GitHub delivers events for
+   every repo it can see, personal and org alike, to the same receiver — one uniform path, no
+   per-repo setup, nothing for the curator to do. **This needs confirming**: the App was deliberately
+   reduced to Contents-only when org-administration permission was removed, so this is a permission
+   *increase* (Issues: Read, Pull requests: Read) and should be argued on its merits rather than
+   slipped in.
+2. **Per-repo webhook created at publish time** by the extension using the curator's own token, which
+   already has admin on their own repo. No App permission change, but it is per-repo setup that can
+   fail silently on exactly the repos that need it, and it leaves nothing covering repos created
+   before the change.
+3. **Do nothing here and rely on Layer 1**, accepting hourly (or whatever the sweep interval becomes)
+   freshness for the personal tier. Defensible only if the sweep interval drops enough to meet the
+   2–3 minute target, which Layer 4 makes affordable.
+
+### Layer 3 — Make failure loud
+
+Non-negotiable regardless of which of the above lands, because the absence of this is why seven weeks
+passed.
+
+- `notifyRepoClerk()` re-reads the issue it created and warns when the label did not stick.
+- `hasRepoClerkUpdatePending()` stops filtering on the label, so the extension can **see** its own
+  dropped request and say so. Scope this to *warning the user*, not to making wait-and-retry succeed:
+  the drain at `drain.py:317-321` is still label-gated, so an unlabeled request will never be
+  processed no matter what the client believes. Detecting a request the drain will never honor and
+  then waiting on it is strictly worse than today's "nothing pending" — it replaces a wrong answer
+  with a hang.
+
+  Wait-and-retry only becomes honest once the drain itself matches on title
+  ([#469](https://github.com/MorphoDepot/RepoClerk/issues/469)), and that change carries its own
+  blocker: dropping the label from the drain's query returns every open issue in this repo, including
+  ordinary discussion, which the title check skips *without closing*. `pending` is then never empty,
+  `idle_cycles` never increments, and since `time.sleep()` is only reached in the `not pending`
+  branch it becomes a tight API loop until the 30-minute timeout. The fix must compute `pending` from
+  the title-matched set before the emptiness test.
+
+  Note also that if Refresh is ever made to trigger a drain, that change must ship together with a
+  working detection path — a drain that runs while the client cannot tell is worse than no drain at
+  all.
+- An open, unlabeled `update ...` issue older than a few minutes is a known-bad state and should
+  alarm.
+- Dispatch and drain *failures* should alarm. Ten silent failures in 31 runs is the current baseline.
+- **Publish a freshness metric**: max and median `now - journalUpdatedAt` against repo `updatedAt`,
+  on the dashboard. One number that would have made all of this obvious on day one.
+
+### Layer 4 — Make it affordable at 5–10× the current size
+
+Today's fleet is 80 repos. The design should hold at 500.
+
+Measured on 2026-08-07: a steady-state `sync-all` run is 25–28 s, almost entirely checkout and setup
+— the discovery search is a single page. `journals/` is 352 KB across 80 files (~4.4 KB each),
+`docs/` is 264 KB, `.git` is 3.9 MB.
+
+**Discovery scales fine.** 500 repos is 5 search pages. This is not the constraint at any plausible
+size.
+
+**The drain does not, for two reasons.**
+
+*Per-repo cost is indiscriminate.* `process_repo()` makes ~7 round-trips including a `curl -sI -L`
+HEAD against the volume URL — an S3 redirect chain on a multi-GB object — and runs all of them on
+every refresh, including one triggered by a single issue comment. Split the two signals by cost:
+**`pushedAt` gates the expensive artifact fetches** (accession, captions, `CURATOR`, checksum, volume
+HEAD — none of which can change without a push), **`updatedAt` gates a cheap issues/PRs-only
+refresh**. Then batch that cheap refresh with GraphQL aliases (`r0: repository(...) r1: ...`), so 500
+repos cost ~10 requests rather than 500. Verify node-count and complexity limits before fixing a
+batch size.
+
+*There is one writer and it already collides.* The `repoclerk-writer` concurrency group keeps one
+run in flight and one pending and cancels the rest; two long runs were cancelled outright on
+2026-08-06. Combined with the rebase failures above, the writer is the first hard ceiling. Serializing
+properly — a queue rather than a lock that drops work — matters more as the fleet grows.
+
+**Git churn is the wall, and it is client-visible.** Every drain regenerates `docs/` and commits it.
+At 500 repos with a tightened sweep interval that is hundreds of commits a day, each rewriting a
+growing generated tree, on a repository **every extension user clones**. `refreshRepoClerk()` does a
+`--depth 1` clone then pulls forever after, and there is already a `REPOCLERK_SIZE_LIMIT_MB = 100`
+guard that deletes and re-clones when the working copy crosses 100 MB — a guard whose existence says
+someone already anticipated this. Two changes, in order of effort:
+
+1. **Get `docs/` off the branch clients clone** (`gh-pages` or an orphan branch). Small change, large
+   effect: presentation churn stops landing in every user's working copy.
+2. **Reconsider git as the client transport.** At 500 repos the whole journal set is ~2.2 MB. One
+   aggregated JSON fetched with an `ETag` is a single conditional GET — no history, no size guard, no
+   periodic re-clone. Git is supplying history that nothing reads, for data that is a cache.
+
+---
+
+## Open question: what belongs in the journal at all
+
+Stated as an open decision rather than a recommendation, because it cuts against something this
+document already rejected.
+
+The journal currently caches two very different things. **Slow-moving facts** — which repos exist,
+accession metadata, screenshots, volume size — are an excellent fit: expensive to compute, rarely
+changing, genuinely worth precomputing. **Fast-moving state** — open issues, open PRs, draft status,
+assignees — is a poor fit: it changes constantly, is cheap to fetch for a handful of repos, and is
+the *only* part that has ever been observed stale. Every bug in this document is a bug about the
+second category.
+
+Splitting them would mean: journal for discovery, live REST for the issues and PRs of the specific
+repos a given user cares about. That eliminates the entire failure class rather than instrumenting
+it, and it collapses the churn and scaling problems in Layer 4 at the same time, since a journal that
+only changes on push barely changes at all.
+
+**The counter-argument is recorded in this file's own history**, under *Rejected alternative:
+client-side source switching*: it scatters source-selection logic through the client, teaches the
+client to distrust the cache, and needs a per-repo "active repo" notion. That objection was aimed at
+`if active_repo: query live; else: read cache` — per-repo special-casing — and a uniform split by
+data category is not the same shape. But it is close enough that the decision should be made
+deliberately, in the open, by people who did not write either proposal.
+
+Note also that the test harness already reaches this conclusion in one place: it declines to use
+`logic.issueList()` and queries GitHub directly, because the cached path was not reliable enough to
+test against.
+
+---
+
+## Decisions needed
+
+1. Confirm the tier gap against the actual org-hook configuration and its delivery log (needs
+   `admin:org_hook`). Everything in *Evidence* is inferred from timing.
+2. Layer 2: App-installation events (a permission increase on an App deliberately narrowed to
+   Contents-only), per-repo webhooks, or neither?
+3. Layer 4: is 500 repos the number to design for? The answer differs sharply between 500 dormant
+   archival repos and 500 with several classes live at once.
+4. The open question above — is the cache boundary redrawn, or is the journal instrumented and kept
+   as it is?
+5. Sweep interval once Layer 1 lands. Cheap discovery makes minutes plausible; writer contention and
+   git churn are what actually bound it.
+
+## Related
+
+- [#469](https://github.com/MorphoDepot/RepoClerk/issues/469) — label gate / silent notify failure
+- [#470](https://github.com/MorphoDepot/RepoClerk/issues/470) — `pushedAt` staleness, `SCHEMA_VERSION` drift
+- [SlicerMorph/SlicerMorphoDepot#211](https://github.com/SlicerMorph/SlicerMorphoDepot/issues/211) — investigation hub, extension-side work
+- [SlicerMorph/SlicerMorphoDepot#212](https://github.com/SlicerMorph/SlicerMorphoDepot/issues/212) — Review tab hides drafts silently; not a freshness bug, but it made this one much harder to diagnose
+- `morphodepot-intake#18` — the webhook receiver
