@@ -304,7 +304,8 @@ Against `timeout-minutes: 30`, a single writer, and a concurrency group that dis
 runs. **A whole-fleet operation — a schema migration, a recovery, a backfill — does not survive one
 order of magnitude.** The queue phase alone exceeds the timeout, and since the queue is built from
 GitHub issues at one `gh issue create` per repo, it also runs into `GITHUB_TOKEN`'s documented limit
-of roughly 1,000 REST requests per hour per repository.
+in the low thousands of REST requests per hour. (Rate limits are scoped per token;
+verify the current figure before relying on it — the order of magnitude is the point.)
 
 So the architectural rule is: **minimize how often anything must touch the whole fleet.** Batching,
 resumability, and a work queue that is not GitHub issues are all implied, and

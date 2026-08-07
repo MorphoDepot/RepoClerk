@@ -84,11 +84,11 @@ runs. At target scale a full-fleet pass is not one job; it is a dozen sequential
 phase alone exceeds the timeout.
 
 Worse, the queue is built from GitHub issues — one `gh issue create` per repo. A full-fleet operation
-would open thousands of issues, against a `GITHUB_TOKEN` limit documented at roughly 1,000 REST
-requests per hour per repository. **The issue-as-queue mechanism has a ceiling near a thousand items
-an hour**, which today's fleet never approaches and the target fleet exceeds on a single migration.
-(Worth verifying against current GitHub documentation before relying on the exact figure; the order
-of magnitude is the point.)
+would open thousands of issues, against a `GITHUB_TOKEN` limit documented in the low thousands of
+REST requests per hour. **The issue-as-queue mechanism has a ceiling around a thousand items an
+hour**, which today's fleet never approaches and the target fleet exceeds on a single migration.
+(Verify the exact figure and how it is scoped against current GitHub documentation before relying on
+it — rate limits are per token, and the numbers move. The order of magnitude is the point.)
 
 The design consequence is general: **the fewer full-fleet operations the architecture requires, the
 better it scales.** Journaling work state guarantees frequent per-repo drains driven by fleet-wide
@@ -100,7 +100,7 @@ Every drain commits, regenerates the dashboard, and pushes — to a repository *
 and pulls**.
 
 - **Index-only churn** is bounded by the push rate. Content changes require a git push; measured at 80
-  repos, 57 had not been pushed in over 90 days, and everything Search reads (`widget_search.py:72-135`
+  repos, 57 had not been pushed in over 90 days, and everything Search reads (`widget_search.updateSearchResults`
   — species, modality, spacing, dimensions, size, captions) comes from files committed inside the
   repo and cannot change without one. Publishing is a once-per-repo event, so this scales with *new
   repos*, not with the fleet.
