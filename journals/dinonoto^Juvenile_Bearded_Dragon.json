@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "nameWithOwner": "dinonoto/Juvenile_Bearded_Dragon",
-  "journalUpdatedAt": "2026-06-15T20:52:40Z",
+  "journalUpdatedAt": "2026-08-07T18:54:47Z",
   "pushedAt": "2026-06-09T18:59:41Z",
   "openIssues": [
     {
@@ -33,6 +33,18 @@
       "closingIssue": {
         "number": 2,
         "title": "Axial Skeleton - Bearded Dragon",
+        "repoOwner": "dinonoto"
+      }
+    },
+    {
+      "number": 4,
+      "title": "issue-1",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/Juvenile_Bearded_Dragon/pull/4",
+      "author": "JDynamiteX",
+      "closingIssue": {
+        "number": 1,
+        "title": "hindlimb and pelvic girdle",
         "repoOwner": "dinonoto"
       }
     }
@@ -113,5 +125,6 @@
     "screenshot-1.png": "Screenshot of specimen scan"
   },
   "volumeSize": 51725703,
-  "sourceVolumeChecksum": "ee307046d4dbaf049c15a839c71228a17bf264f65e68776247ef58fc96c3efcf"
+  "sourceVolumeChecksum": "ee307046d4dbaf049c15a839c71228a17bf264f65e68776247ef58fc96c3efcf",
+  "curator": null
 }
