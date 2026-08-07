@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "amm554/non-member",
-  "journalUpdatedAt": "2026-06-17T10:45:44Z",
+  "journalUpdatedAt": "2026-08-07T21:51:03Z",
   "pushedAt": "2026-06-17T06:04:55Z",
+  "updatedAt": "2026-06-17T06:04:59Z",
+  "activityAt": "2026-06-17T06:05:56Z",
   "openIssues": [
     {
       "number": 1,
@@ -93,5 +95,6 @@
     "screenshot-1.png": ""
   },
   "volumeSize": 351643698,
-  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758"
+  "sourceVolumeChecksum": "8192458d754f5df04762cce60409e0712b60dfc2a6dd63af0824ae576373c758",
+  "curator": "amm554"
 }

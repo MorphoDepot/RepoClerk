@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/delete-22",
-  "journalUpdatedAt": "2026-06-15T20:52:42Z",
+  "journalUpdatedAt": "2026-08-07T21:51:00Z",
   "pushedAt": "2026-03-10T21:47:50Z",
+  "updatedAt": "2026-03-10T21:47:54Z",
+  "activityAt": "2026-03-10T21:10:36Z",
   "openIssues": [
     {
       "number": 1,
@@ -89,5 +91,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 56167463,
-  "sourceVolumeChecksum": "d5bfa63ae82df8ec49bbba626fb796df9313f92d48710fd25a656f9f34505ede"
+  "sourceVolumeChecksum": "d5bfa63ae82df8ec49bbba626fb796df9313f92d48710fd25a656f9f34505ede",
+  "curator": null
 }

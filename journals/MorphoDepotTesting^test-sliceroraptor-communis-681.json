@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
-  "journalUpdatedAt": "2026-06-15T20:52:36Z",
+  "journalUpdatedAt": "2026-08-07T21:51:18Z",
   "pushedAt": "2026-06-15T17:46:48Z",
+  "updatedAt": "2026-06-15T17:46:56Z",
+  "activityAt": "2026-06-15T17:46:56Z",
   "openIssues": [
     {
       "number": 1,
@@ -94,5 +96,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514"
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+  "curator": "muratmaga"
 }

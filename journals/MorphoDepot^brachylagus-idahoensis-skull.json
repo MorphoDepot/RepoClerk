@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/brachylagus-idahoensis-skull",
-  "journalUpdatedAt": "2026-07-17T21:19:39Z",
+  "journalUpdatedAt": "2026-08-07T21:51:35Z",
   "pushedAt": "2026-07-17T21:19:22Z",
+  "updatedAt": "2026-07-17T21:19:25Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {

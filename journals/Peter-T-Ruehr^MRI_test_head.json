@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "Peter-T-Ruehr/MRI_test_head",
-  "journalUpdatedAt": "2026-06-15T20:52:59Z",
+  "journalUpdatedAt": "2026-08-07T21:51:46Z",
   "pushedAt": "2026-01-03T22:51:10Z",
+  "updatedAt": "2026-01-03T22:51:14Z",
+  "activityAt": "2026-01-03T22:51:11Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -83,5 +85,6 @@
     "screenshot-1.png": ""
   },
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+  "curator": null
 }

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "annikadawley/SICB_Practice_Repository",
-  "journalUpdatedAt": "2026-06-15T20:52:52Z",
+  "journalUpdatedAt": "2026-08-07T21:51:27Z",
   "pushedAt": "2026-01-03T22:24:26Z",
+  "updatedAt": "2026-01-03T22:24:30Z",
+  "activityAt": "2026-01-03T23:12:01Z",
   "openIssues": [
     {
       "number": 1,
@@ -96,5 +98,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+  "curator": null
 }

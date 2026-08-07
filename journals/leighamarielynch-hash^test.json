@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "leighamarielynch-hash/test",
-  "journalUpdatedAt": "2026-06-15T20:52:27Z",
+  "journalUpdatedAt": "2026-08-07T21:51:38Z",
   "pushedAt": "2025-11-06T19:12:45Z",
+  "updatedAt": "2025-11-06T19:12:49Z",
+  "activityAt": "",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -79,5 +81,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 1613908154,
-  "sourceVolumeChecksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719"
+  "sourceVolumeChecksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719",
+  "curator": null
 }

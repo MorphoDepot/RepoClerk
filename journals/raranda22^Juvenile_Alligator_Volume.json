@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "raranda22/Juvenile_Alligator_Volume",
-  "journalUpdatedAt": "2026-06-15T20:53:01Z",
+  "journalUpdatedAt": "2026-08-07T21:51:21Z",
   "pushedAt": "2025-11-06T19:18:34Z",
+  "updatedAt": "2025-11-06T19:18:37Z",
+  "activityAt": "2025-12-31T02:47:21Z",
   "openIssues": [
     {
       "number": 1,
@@ -87,5 +89,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 1613908154,
-  "sourceVolumeChecksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719"
+  "sourceVolumeChecksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719",
+  "curator": null
 }

@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "Amith-104/Human_Brain_CT",
-  "journalUpdatedAt": "2026-06-15T20:52:35Z",
+  "journalUpdatedAt": "2026-08-07T21:51:43Z",
   "pushedAt": "2026-01-03T22:28:46Z",
+  "updatedAt": "2026-01-03T22:28:50Z",
+  "activityAt": "2026-01-03T22:48:24Z",
   "openIssues": [
     {
       "number": 1,
@@ -91,5 +93,6 @@
   "screenshotCount": 0,
   "screenshotCaptions": [],
   "volumeSize": 6945984,
-  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf"
+  "sourceVolumeChecksum": "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf",
+  "curator": null
 }

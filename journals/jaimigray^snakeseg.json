@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "nameWithOwner": "jaimigray/snakeseg",
-  "journalUpdatedAt": "2026-08-07T18:38:57Z",
+  "journalUpdatedAt": "2026-08-07T21:51:30Z",
   "pushedAt": "2025-10-07T16:46:14Z",
+  "updatedAt": "2025-10-07T16:46:18Z",
+  "activityAt": "2026-07-07T11:39:01Z",
   "openIssues": [
     {
       "number": 1,

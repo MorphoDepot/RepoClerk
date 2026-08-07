@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "Pfu7978/Knight_Anole_Skull",
-  "journalUpdatedAt": "2026-06-15T20:52:39Z",
+  "journalUpdatedAt": "2026-08-07T21:51:15Z",
   "pushedAt": "2026-03-04T22:59:07Z",
+  "updatedAt": "2026-03-04T22:52:14Z",
+  "activityAt": "2026-03-04T22:59:32Z",
   "openIssues": [],
   "openPRs": [],
   "accession": {
@@ -83,5 +85,6 @@
     "screenshot-1.png": ""
   },
   "volumeSize": 8849980,
-  "sourceVolumeChecksum": "977ca4c34207fc13394419dfaa74dca01562ddcf617ec2089fe66a405bf7c410"
+  "sourceVolumeChecksum": "977ca4c34207fc13394419dfaa74dca01562ddcf617ec2089fe66a405bf7c410",
+  "curator": null
 }

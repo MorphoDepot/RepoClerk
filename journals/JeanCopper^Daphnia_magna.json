@@ -1,8 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
   "nameWithOwner": "JeanCopper/Daphnia_magna",
-  "journalUpdatedAt": "2026-06-15T20:53:10Z",
+  "journalUpdatedAt": "2026-08-07T21:51:55Z",
   "pushedAt": "2026-03-04T22:18:35Z",
+  "updatedAt": "2026-03-04T22:18:38Z",
+  "activityAt": "2026-03-05T17:37:45Z",
   "openIssues": [
     {
       "number": 1,
@@ -91,5 +93,6 @@
     "screenshot-3.png": ""
   },
   "volumeSize": 15830429,
-  "sourceVolumeChecksum": "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285"
+  "sourceVolumeChecksum": "296341d33b5232a9b8b8e7fd8c09670d3676cb9c9a6d2ff9c6cbeaec45a5c285",
+  "curator": null
 }
