@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "muratmaga/rana-clamitans-full-body",
-  "journalUpdatedAt": "2026-08-07T21:51:24Z",
+  "journalUpdatedAt": "2026-08-10T14:03:52Z",
   "pushedAt": "2026-08-07T21:43:51Z",
   "updatedAt": "2026-08-07T18:28:07Z",
-  "activityAt": "2026-08-07T21:43:52Z",
+  "activityAt": "2026-08-10T13:19:53Z",
   "openIssues": [
     {
       "number": 1,
@@ -86,6 +86,18 @@
       "closingIssue": {
         "number": 2,
         "title": "Segment the premaxilla",
+        "repoOwner": "muratmaga"
+      }
+    },
+    {
+      "number": 9,
+      "title": "issue-1",
+      "isDraft": false,
+      "url": "https://github.com/muratmaga/rana-clamitans-full-body/pull/9",
+      "author": "cyclobatis",
+      "closingIssue": {
+        "number": 1,
+        "title": "request to segment left femur",
         "repoOwner": "muratmaga"
       }
     }
