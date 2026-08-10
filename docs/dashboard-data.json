@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-10T12:35:36Z",
+  "generatedAt": "2026-08-10T14:04:06Z",
   "totalRepos": 78,
   "totalOpenIssues": 135,
-  "totalOpenPRs": 77,
+  "totalOpenPRs": 78,
   "taxonomy": {
     "kingdom": {
       "Unknown": 78
@@ -33,9 +33,9 @@
     {
       "nameWithOwner": "muratmaga/rana-clamitans-full-body",
       "pushedAt": "2026-08-07T21:43:51Z",
-      "journalUpdatedAt": "2026-08-07T21:51:24Z",
+      "journalUpdatedAt": "2026-08-10T14:03:52Z",
       "openIssues": 5,
-      "openPRs": 3,
+      "openPRs": 4,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": "Some frog"
