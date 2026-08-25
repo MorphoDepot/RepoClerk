@@ -1,131 +1,35 @@
 {
-  "generatedAt": "2026-08-25T02:40:15Z",
-  "totalRepos": 79,
+  "generatedAt": "2026-08-25T03:11:02Z",
+  "totalRepos": 78,
   "totalOpenIssues": 135,
   "totalOpenPRs": 78,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "phylum": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "class": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "order": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "family": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "genus": {
-      "Unknown": 79
+      "Unknown": 78
     }
   },
   "activity": {
-    "last_day": 1,
-    "last_week": 1,
-    "last_month": 3,
-    "last_year": 76
+    "last_day": 0,
+    "last_week": 0,
+    "last_month": 2,
+    "last_year": 75
   },
   "repos": [
-    {
-      "nameWithOwner": "MorphoDepot/some-scan-mri2",
-      "pushedAt": "2026-08-25T02:34:34Z",
-      "journalUpdatedAt": "2026-08-25T02:40:00Z",
-      "openIssues": 0,
-      "openPRs": 0,
-      "screenshotCount": 0,
-      "screenshotCaptions": {
-        "screenshot-1.png": ""
-      },
-      "accession": {
-        "otherSubjectDescription": [
-          "Please describe the subject of the data.",
-          "some scan"
-        ],
-        "subjectType": [
-          "What is the subject type?",
-          "Other"
-        ],
-        "specimenSource": [
-          "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
-          ""
-        ],
-        "iDigBioAccessioned": [
-          "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
-          ""
-        ],
-        "institutionalAccession": [
-          "What is the institutional specimen identifier?",
-          ""
-        ],
-        "iDigBioURL": [
-          "Paste the record URL:",
-          ""
-        ],
-        "species": [
-          "What is your specimen's species?",
-          ""
-        ],
-        "biologicalSex": [
-          "What is your specimen's sex?",
-          ""
-        ],
-        "developmentalStage": [
-          "What is your specimen's developmental stage?",
-          ""
-        ],
-        "modality": [
-          "What is the modality of the acquisition?",
-          "MRI"
-        ],
-        "contrastEnhancement": [
-          "Is there contrast enhancement treatment applied to the specimen?",
-          ""
-        ],
-        "imageContents": [
-          "What is in the image?",
-          ""
-        ],
-        "anatomicalAreas": [
-          "What anatomical area(s) is/are present in the scan?",
-          []
-        ],
-        "anatomicalAreasOther": [
-          "Please describe the other anatomical area(s).",
-          ""
-        ],
-        "redistributionAcknowledgement": [
-          "Acknowledgement:",
-          [
-            "I have the right to allow redistribution of this data."
-          ]
-        ],
-        "license": [
-          "Choose a license:",
-          "CC BY 4.0 (requires attribution, allows commercial usage)"
-        ],
-        "githubRepoName": [
-          "What should the repository in your github account called? This needs to be unique value for your account.",
-          "some-scan-mri2"
-        ],
-        "repoType": [
-          "What is the intended lifespan of this repository?",
-          "Archival (intended for long-term maintenance)"
-        ],
-        "scanDimensions": "(256, 256, 130)",
-        "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
-        "specimenIdentifier": null,
-        "accessionSource": "Unknown",
-        "accessionResolved": false,
-        "fileFormatVersion": 2
-      },
-      "isArchival": true,
-      "isTest": false,
-      "isEphemeral": false
-    },
     {
       "nameWithOwner": "muratmaga/rana-clamitans-full-body",
       "pushedAt": "2026-08-07T21:43:51Z",
@@ -6639,75 +6543,6 @@
   ],
   "duplicateVolumes": [
     {
-      "checksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
-      "category": "promotion",
-      "repos": [
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
-          "isOrg": false,
-          "species": "Picodon testus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-170",
-          "isOrg": false,
-          "species": "Picosaurus testus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
-          "isOrg": false,
-          "species": "Picosaurus testus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
-          "isOrg": false,
-          "species": "Pseudosaurus communis",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
-          "isOrg": false,
-          "species": "Pseudosaurus exempli",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
-          "isOrg": false,
-          "species": "Sliceropithecus maximus",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
-          "isOrg": false,
-          "species": "Sliceroraptor communis",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
-          "isOrg": false,
-          "species": "Slicerotherium exempli",
-          "isTest": true,
-          "isEphemeral": false
-        },
-        {
-          "nameWithOwner": "MorphoDepot/some-scan-mri2",
-          "isOrg": true,
-          "species": "Unknown",
-          "isTest": false,
-          "isEphemeral": false
-        }
-      ]
-    },
-    {
       "checksum": "245a57aa2cd0d6b79efe7ac0041376428180fbd2d650a6d7ff8197b8cc587719",
       "category": "cross-owner",
       "repos": [
@@ -6861,6 +6696,68 @@
           "species": "Mus cervicolor",
           "isTest": false,
           "isEphemeral": true
+        }
+      ]
+    },
+    {
+      "checksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+      "category": "same-owner",
+      "repos": [
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picodon-testus-361",
+          "isOrg": false,
+          "species": "Picodon testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-170",
+          "isOrg": false,
+          "species": "Picosaurus testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-picosaurus-testus-693",
+          "isOrg": false,
+          "species": "Picosaurus testus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-communis-611",
+          "isOrg": false,
+          "species": "Pseudosaurus communis",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-pseudosaurus-exempli-720",
+          "isOrg": false,
+          "species": "Pseudosaurus exempli",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-sliceropithecus-maximus-363",
+          "isOrg": false,
+          "species": "Sliceropithecus maximus",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-sliceroraptor-communis-681",
+          "isOrg": false,
+          "species": "Sliceroraptor communis",
+          "isTest": true,
+          "isEphemeral": false
+        },
+        {
+          "nameWithOwner": "MorphoDepotTesting/test-slicerotherium-exempli-42",
+          "isOrg": false,
+          "species": "Slicerotherium exempli",
+          "isTest": true,
+          "isEphemeral": false
         }
       ]
     }
