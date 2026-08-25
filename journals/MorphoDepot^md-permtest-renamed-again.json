@@ -1,21 +1,12 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/md-permtest-renamed-again",
-  "journalUpdatedAt": "2026-08-25T01:47:58Z",
-  "pushedAt": "2026-08-25T00:55:21Z",
-  "updatedAt": "2026-08-25T01:47:38Z",
-  "activityAt": "2026-08-25T00:59:26Z",
+  "journalUpdatedAt": "2026-08-25T01:48:22Z",
+  "pushedAt": "2026-08-25T01:48:01Z",
+  "updatedAt": "2026-08-25T01:48:13Z",
+  "activityAt": "2026-08-25T01:48:00Z",
   "openIssues": [],
-  "openPRs": [
-    {
-      "number": 5,
-      "title": "routing check",
-      "isDraft": true,
-      "url": "https://github.com/MorphoDepot/md-permtest-renamed-again/pull/5",
-      "author": "muratmaga",
-      "closingIssue": null
-    }
-  ],
+  "openPRs": [],
   "accession": {},
   "screenshotCount": 0,
   "screenshotCaptions": [],
