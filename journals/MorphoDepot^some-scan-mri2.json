@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "MorphoDepot/some-scan-mri2",
+  "journalUpdatedAt": "2026-08-25T02:40:00Z",
+  "pushedAt": "2026-08-25T02:34:34Z",
+  "updatedAt": "2026-08-25T02:39:40Z",
+  "activityAt": "",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      "some scan"
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Other"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      ""
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      ""
+    ],
+    "institutionalAccession": [
+      "What is the institutional specimen identifier?",
+      ""
+    ],
+    "iDigBioURL": [
+      "Paste the record URL:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      ""
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      ""
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      ""
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "MRI"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      ""
+    ],
+    "imageContents": [
+      "What is in the image?",
+      ""
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      []
+    ],
+    "anatomicalAreasOther": [
+      "Please describe the other anatomical area(s).",
+      ""
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY 4.0 (requires attribution, allows commercial usage)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "some-scan-mri2"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(256, 256, 130)",
+    "scanSpacing": "(1.0, 1.0, 1.2999954223632812)",
+    "specimenIdentifier": null,
+    "accessionSource": "Unknown",
+    "accessionResolved": false,
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": ""
+  },
+  "volumeSize": 6945984,
+  "sourceVolumeChecksum": "6521434068657b386680b32244f7ef183bfdf2feda8fcaaf92b9f2ea20600514",
+  "curator": "amm554"
+}
