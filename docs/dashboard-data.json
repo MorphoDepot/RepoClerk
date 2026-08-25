@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-25T01:48:11Z",
+  "generatedAt": "2026-08-25T01:48:38Z",
   "totalRepos": 79,
   "totalOpenIssues": 135,
-  "totalOpenPRs": 79,
+  "totalOpenPRs": 78,
   "taxonomy": {
     "kingdom": {
       "Unknown": 79
@@ -32,10 +32,10 @@
   "repos": [
     {
       "nameWithOwner": "MorphoDepot/md-permtest-renamed-again",
-      "pushedAt": "2026-08-25T00:55:21Z",
-      "journalUpdatedAt": "2026-08-25T01:47:58Z",
+      "pushedAt": "2026-08-25T01:48:01Z",
+      "journalUpdatedAt": "2026-08-25T01:48:22Z",
       "openIssues": 0,
-      "openPRs": 1,
+      "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
       "accession": {},
