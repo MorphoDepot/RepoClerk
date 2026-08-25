@@ -1,48 +1,35 @@
 {
-  "generatedAt": "2026-08-25T01:48:38Z",
-  "totalRepos": 79,
+  "generatedAt": "2026-08-25T02:06:27Z",
+  "totalRepos": 78,
   "totalOpenIssues": 135,
   "totalOpenPRs": 78,
   "taxonomy": {
     "kingdom": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "phylum": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "class": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "order": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "family": {
-      "Unknown": 79
+      "Unknown": 78
     },
     "genus": {
-      "Unknown": 79
+      "Unknown": 78
     }
   },
   "activity": {
-    "last_day": 1,
-    "last_week": 1,
-    "last_month": 3,
-    "last_year": 76
+    "last_day": 0,
+    "last_week": 0,
+    "last_month": 2,
+    "last_year": 75
   },
   "repos": [
-    {
-      "nameWithOwner": "MorphoDepot/md-permtest-renamed-again",
-      "pushedAt": "2026-08-25T01:48:01Z",
-      "journalUpdatedAt": "2026-08-25T01:48:22Z",
-      "openIssues": 0,
-      "openPRs": 0,
-      "screenshotCount": 0,
-      "screenshotCaptions": [],
-      "accession": {},
-      "isArchival": true,
-      "isTest": false,
-      "isEphemeral": false
-    },
     {
       "nameWithOwner": "muratmaga/rana-clamitans-full-body",
       "pushedAt": "2026-08-07T21:43:51Z",
