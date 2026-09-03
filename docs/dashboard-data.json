@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T11:07:23Z",
+  "generatedAt": "2026-09-03T14:58:34Z",
   "totalRepos": 79,
   "totalOpenIssues": 135,
   "totalOpenPRs": 78,
@@ -25,7 +25,7 @@
   },
   "activity": {
     "last_day": 0,
-    "last_week": 1,
+    "last_week": 0,
     "last_month": 3,
     "last_year": 76
   },
