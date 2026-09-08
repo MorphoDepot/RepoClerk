@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T21:05:16Z",
+  "generatedAt": "2026-09-08T22:08:29Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -49,6 +49,9 @@
       "MorphoDepotTesting/test-sliceropithecus-maximus-363",
       "MorphoDepotTesting/test-sliceroraptor-communis-681",
       "MorphoDepotTesting/test-slicerotherium-exempli-42"
+    ],
+    "e6c9139b568adc69cfce99cc5011f4718d747e603f3a429b8a7d62effb5ad899": [
+      "MorphoDepot/bos-taurus-diceCT-eyeball-2026"
     ],
     "88ac187de8b84e26bd96fefe70a5ff3418cdb09427e24c8f1f6fa15ce4c3a5b4": [
       "MorphoDepot/brachylagus-idahoensis-skull"
