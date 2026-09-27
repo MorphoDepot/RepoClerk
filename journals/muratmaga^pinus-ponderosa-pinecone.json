@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "muratmaga/pinus-ponderosa-pinecone",
+  "journalUpdatedAt": "2026-09-27T19:10:24Z",
+  "pushedAt": "2026-09-27T19:06:35Z",
+  "updatedAt": "2026-09-27T19:10:10Z",
+  "activityAt": "",
+  "openIssues": [],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Non-accessioned"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      ""
+    ],
+    "institutionalAccession": [
+      "What is the institutional specimen identifier?",
+      ""
+    ],
+    "iDigBioURL": [
+      "Paste the record URL:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Pinus ponderosa"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "Yes"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Whole specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      []
+    ],
+    "anatomicalAreasOther": [
+      "Please describe the other anatomical area(s).",
+      ""
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY 4.0 (requires attribution, allows commercial usage)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "pinus-ponderosa-pinecone"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+    ],
+    "scanDimensions": "(1300, 1300, 1290)",
+    "scanSpacing": "(0.04000584, 0.04000584, 0.04000584)",
+    "specimenIdentifier": null,
+    "accessionSource": "Unknown",
+    "accessionResolved": false,
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": ""
+  },
+  "volumeSize": 1592084310,
+  "sourceVolumeChecksum": "a501fc015d17ca7f92e56bb02eaf6eef0dce8878af654dfd27ef95791032e26a",
+  "curator": "muratmaga"
+}
