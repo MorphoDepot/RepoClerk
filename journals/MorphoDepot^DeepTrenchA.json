@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "MorphoDepot/DeepTrenchA",
+  "journalUpdatedAt": "2026-10-14T16:21:19Z",
+  "pushedAt": "2026-10-14T14:53:43Z",
+  "updatedAt": "2026-10-14T16:20:58Z",
+  "activityAt": "2026-09-21T23:49:12Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Changes requested before publishing",
+      "url": "https://github.com/MorphoDepot/DeepTrenchA/issues/1",
+      "author": "morphodepot-intake",
+      "assignees": [
+        "cyclobatis"
+      ]
+    }
+  ],
+  "openPRs": [],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      "Pecotral Fin, distal. \u2020Oncorhynchus rastrosus, UO F-92501, Jefferson Co. Oregon"
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen accessioned in a public database or repository (e.g. GBIF, iDigBio, Arctos)?",
+      "No"
+    ],
+    "institutionalAccession": [
+      "What is the institutional specimen identifier?",
+      "UO F-92501"
+    ],
+    "iDigBioURL": [
+      "Paste the record URL:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Oncorhynchus rastrosus"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "Yes"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Forelimb"
+      ]
+    ],
+    "anatomicalAreasOther": [
+      "Please describe the other anatomical area(s).",
+      ""
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "DeepTrenchA"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(1702, 1500, 550)",
+    "scanSpacing": "(0.0390762, 0.0390762, 0.0781524)",
+    "specimenIdentifier": "UO F-92501",
+    "accessionSource": "Unknown",
+    "accessionResolved": false,
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": ""
+  },
+  "volumeSize": 2184279986,
+  "sourceVolumeChecksum": "b0d3976d6e117bab8ac04fc174c484aaebd8605f0a5e41f13ac33b4b146f6c99",
+  "curator": "cyclobatis"
+}
