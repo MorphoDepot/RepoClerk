@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T14:01:18Z",
+  "generatedAt": "2026-10-14T16:21:33Z",
   "schemaVersion": 2,
   "checksums": {
     "dee3e37c7faa4930b4b31c5bce7b3859eedb6b61061be9b8dd798340cf3a50cf": [
@@ -49,6 +49,9 @@
       "MorphoDepotTesting/test-sliceropithecus-maximus-363",
       "MorphoDepotTesting/test-sliceroraptor-communis-681",
       "MorphoDepotTesting/test-slicerotherium-exempli-42"
+    ],
+    "b0d3976d6e117bab8ac04fc174c484aaebd8605f0a5e41f13ac33b4b146f6c99": [
+      "MorphoDepot/DeepTrenchA"
     ],
     "e6c9139b568adc69cfce99cc5011f4718d747e603f3a429b8a7d62effb5ad899": [
       "MorphoDepot/bos-taurus-diceCT-eyeball-2026"
