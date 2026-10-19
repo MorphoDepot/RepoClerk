@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
-  "journalUpdatedAt": "2026-09-11T21:14:55Z",
+  "journalUpdatedAt": "2026-10-19T04:55:16Z",
   "pushedAt": "2026-07-21T20:45:07Z",
   "updatedAt": "2026-07-21T20:45:24Z",
-  "activityAt": "2026-09-11T18:58:54Z",
+  "activityAt": "2026-10-19T03:34:35Z",
   "openIssues": [
     {
       "number": 1,
@@ -31,15 +31,6 @@
       "author": "alorenz-raptor",
       "assignees": [
         "alorenz-raptor"
-      ]
-    },
-    {
-      "number": 7,
-      "title": "Something",
-      "url": "https://github.com/dinonoto/Red-Eyed_Tree_Frog/issues/7",
-      "author": "garsi002",
-      "assignees": [
-        "garsi002"
       ]
     }
   ],
