@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T00:10:39Z",
+  "generatedAt": "2026-10-19T04:55:32Z",
   "totalRepos": 82,
-  "totalOpenIssues": 137,
+  "totalOpenIssues": 136,
   "totalOpenPRs": 78,
   "taxonomy": {
     "kingdom": {
@@ -585,8 +585,8 @@
     {
       "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
       "pushedAt": "2026-07-21T20:45:07Z",
-      "journalUpdatedAt": "2026-09-11T21:14:55Z",
-      "openIssues": 4,
+      "journalUpdatedAt": "2026-10-19T04:55:19Z",
+      "openIssues": 3,
       "openPRs": 3,
       "screenshotCount": 0,
       "screenshotCaptions": {
