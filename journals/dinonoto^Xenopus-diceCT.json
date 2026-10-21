@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "dinonoto/Xenopus-diceCT",
-  "journalUpdatedAt": "2026-08-07T21:48:54Z",
+  "journalUpdatedAt": "2026-10-21T20:14:46Z",
   "pushedAt": "2025-10-31T19:53:11Z",
   "updatedAt": "2025-10-31T19:53:15Z",
-  "activityAt": "2025-11-20T21:00:58Z",
+  "activityAt": "2026-10-21T17:39:28Z",
   "openIssues": [
     {
       "number": 1,
@@ -31,6 +31,15 @@
       "author": "alorenz-raptor",
       "assignees": [
         "alorenz-raptor"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Heart",
+      "url": "https://github.com/dinonoto/Xenopus-diceCT/issues/7",
+      "author": "garsi002",
+      "assignees": [
+        "garsi002"
       ]
     }
   ],
