@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T16:08:48Z",
+  "generatedAt": "2026-10-21T20:15:06Z",
   "totalRepos": 82,
-  "totalOpenIssues": 136,
+  "totalOpenIssues": 137,
   "totalOpenPRs": 78,
   "taxonomy": {
     "kingdom": {
@@ -585,7 +585,7 @@
     {
       "nameWithOwner": "dinonoto/Red-Eyed_Tree_Frog",
       "pushedAt": "2026-07-21T20:45:07Z",
-      "journalUpdatedAt": "2026-10-19T04:55:19Z",
+      "journalUpdatedAt": "2026-10-21T20:14:53Z",
       "openIssues": 3,
       "openPRs": 3,
       "screenshotCount": 0,
@@ -758,7 +758,7 @@
     {
       "nameWithOwner": "dinonoto/lampropeltis-californiae-juvenile-whole",
       "pushedAt": "2026-07-21T18:50:23Z",
-      "journalUpdatedAt": "2026-10-21T16:08:34Z",
+      "journalUpdatedAt": "2026-10-21T20:14:43Z",
       "openIssues": 1,
       "openPRs": 1,
       "screenshotCount": 0,
@@ -6227,8 +6227,8 @@
     {
       "nameWithOwner": "dinonoto/Xenopus-diceCT",
       "pushedAt": "2025-10-31T19:53:11Z",
-      "journalUpdatedAt": "2026-08-07T21:48:54Z",
-      "openIssues": 3,
+      "journalUpdatedAt": "2026-10-21T20:14:46Z",
+      "openIssues": 4,
       "openPRs": 3,
       "screenshotCount": 0,
       "screenshotCaptions": [],
