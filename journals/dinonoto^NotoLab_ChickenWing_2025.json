@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "dinonoto/NotoLab_ChickenWing_2025",
+  "journalUpdatedAt": "2026-10-27T14:47:35Z",
+  "pushedAt": "2025-12-21T19:45:13Z",
+  "updatedAt": "2025-12-21T19:45:16Z",
+  "activityAt": "2026-08-05T19:32:12Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Skeleton",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/issues/1",
+      "author": "dinonoto",
+      "assignees": [
+        "dinonoto"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Bones",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/issues/2",
+      "author": "Jonathan-Jung-sys",
+      "assignees": [
+        "Jonathan-Jung-sys"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Biomechanics Activity",
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/issues/4",
+      "author": "Natalia-Taft",
+      "assignees": []
+    }
+  ],
+  "openPRs": [
+    {
+      "number": 3,
+      "title": "issue-2",
+      "isDraft": true,
+      "url": "https://github.com/dinonoto/NotoLab_ChickenWing_2025/pull/3",
+      "author": "Jonathan-Jung-sys",
+      "closingIssue": {
+        "number": 2,
+        "title": "Bones",
+        "repoOwner": "dinonoto"
+      }
+    }
+  ],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Non-accessioned"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      ""
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Gallus gallus"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Juvenile (neonatal to subadult)"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Forelimb"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "NotoLab_ChickenWing_2025"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Archival (intended for long-term maintenance)"
+    ],
+    "scanDimensions": "(556, 423, 416)",
+    "scanSpacing": "(0.1098, 0.1098, 0.2196)",
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": {
+    "screenshot-1.png": "Chicken forelimb specimen with included segmentation of skeletatal elements."
+  },
+  "volumeSize": 50991914,
+  "sourceVolumeChecksum": "24d7f2abbb284a2384c4a2bf7da0e394c5aa0616ae6d7524d02d1d72b0789ec7",
+  "curator": null
+}

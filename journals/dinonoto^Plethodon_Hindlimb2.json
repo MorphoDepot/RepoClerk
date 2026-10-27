@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "dinonoto/Plethodon_Hindlimb2",
+  "journalUpdatedAt": "2026-10-27T14:47:38Z",
+  "pushedAt": "2026-02-21T03:40:42Z",
+  "updatedAt": "2026-02-21T03:40:51Z",
+  "activityAt": "2026-02-21T03:40:43Z",
+  "openIssues": [
+    {
+      "number": 3,
+      "title": "MorphoDepot repo issues",
+      "url": "https://github.com/dinonoto/Plethodon_Hindlimb2/issues/3",
+      "author": "muratmaga",
+      "assignees": []
+    },
+    {
+      "number": 4,
+      "title": "test",
+      "url": "https://github.com/dinonoto/Plethodon_Hindlimb2/issues/4",
+      "author": "dinonoto",
+      "assignees": [
+        "dinonoto"
+      ]
+    }
+  ],
+  "openPRs": [],
+  "accession": {
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      "Yes"
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      "https://portal.idigbio.org/portal/records/55fac9dc-cbee-47c8-8883-c3f996232322"
+    ],
+    "species": [
+      "What is your specimen's species?",
+      ""
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      ""
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      ""
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen (iodine, phosphotungstenic acid, gadolinium, casting agents, etc)?",
+      "Yes"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Trunk (e.g. body cavity, torso, spine, ribs)",
+        "Pelvic girdle",
+        "Hind limg"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "Plethodon_Hindlimb2"
+    ],
+    "scanDimensions": "(988, 1660, 1721)",
+    "scanSpacing": "(0.007144, 0.007144, 0.007144)"
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": 1369692957,
+  "sourceVolumeChecksum": "e348daafc31323ce3d4b3eb1f9d670732fa271c1201fc833096a68d91ef1a260",
+  "curator": null
+}
