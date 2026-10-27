@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "kumimatsui/Dasyuridae_Workshop",
+  "journalUpdatedAt": "2026-10-27T14:45:46Z",
+  "pushedAt": "2026-03-05T17:29:19Z",
+  "updatedAt": "2026-03-04T23:30:35Z",
+  "activityAt": "2026-03-05T17:29:20Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "Kumiko Inner ear right",
+      "url": "https://github.com/kumimatsui/Dasyuridae_Workshop/issues/1",
+      "author": "kumimatsui",
+      "assignees": [
+        "kumimatsui"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "hoge_KM left ear",
+      "url": "https://github.com/kumimatsui/Dasyuridae_Workshop/issues/5",
+      "author": "hoge-Kumiko",
+      "assignees": [
+        "hoge-Kumiko"
+      ]
+    }
+  ],
+  "openPRs": [
+    {
+      "number": 4,
+      "title": "issue-1",
+      "isDraft": false,
+      "url": "https://github.com/kumimatsui/Dasyuridae_Workshop/pull/4",
+      "author": "kumimatsui",
+      "closingIssue": {
+        "number": 1,
+        "title": "Kumiko Inner ear right",
+        "repoOwner": "kumimatsui"
+      }
+    }
+  ],
+  "accession": {
+    "otherSubjectDescription": [
+      "Please describe the subject of the data.",
+      ""
+    ],
+    "subjectType": [
+      "What is the subject type?",
+      "Biological specimen"
+    ],
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      "No"
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Murexia longicaudata"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Male"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "Dasyuridae_Workshop"
+    ],
+    "repoType": [
+      "What is the intended lifespan of this repository?",
+      "Short-term (e.g. repositories for classroom exercises, that are not meant to be maintained for long-term)"
+    ],
+    "scanDimensions": "(389, 659, 310)",
+    "scanSpacing": "(0.07000000000000002, 0.07000000000000002, 0.07000000000000002)",
+    "fileFormatVersion": 2
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": 32419406,
+  "sourceVolumeChecksum": "4381f0a9d6fd16e886b80c3e7419e149db6e8fe2ac54500623578d1cb6f4d830",
+  "curator": null
+}

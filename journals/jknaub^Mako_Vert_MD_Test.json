@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "jknaub/Mako_Vert_MD_Test",
+  "journalUpdatedAt": "2026-10-27T14:45:52Z",
+  "pushedAt": "2025-05-06T16:33:38Z",
+  "updatedAt": "2025-05-06T16:33:42Z",
+  "activityAt": "2025-12-31T02:47:06Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "OI Lab - Test",
+      "url": "https://github.com/jknaub/Mako_Vert_MD_Test/issues/1",
+      "author": "owlsimaginglab",
+      "assignees": [
+        "owlsimaginglab"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "MorphoDepot",
+      "url": "https://github.com/jknaub/Mako_Vert_MD_Test/issues/2",
+      "author": "muratmaga",
+      "assignees": []
+    },
+    {
+      "number": 3,
+      "title": "MorphoDepot repo issues",
+      "url": "https://github.com/jknaub/Mako_Vert_MD_Test/issues/3",
+      "author": "muratmaga",
+      "assignees": []
+    }
+  ],
+  "openPRs": [],
+  "accession": {
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      "No"
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Isurus oxyrhincus"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen (iodine, phosphotungstenic acid, gadolinium, casting agents, etc)?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Partial specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      [
+        "Trunk (e.g. body cavity, torso, spine, ribs)"
+      ]
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "Mako_Vert_MD_Test"
+    ],
+    "scanDimensions": "(352, 341, 147)",
+    "scanSpacing": "(0.07303892000000001, 0.07303892000000001, 0.07303892000000001)"
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": 14151895,
+  "sourceVolumeChecksum": null,
+  "curator": null
+}

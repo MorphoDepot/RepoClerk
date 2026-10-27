@@ -1,0 +1,895 @@
+{
+  "schemaVersion": 4,
+  "nameWithOwner": "CDonatelli/Lepomis_macrochirus_28um",
+  "journalUpdatedAt": "2026-10-27T14:45:33Z",
+  "pushedAt": "2025-10-09T22:37:22Z",
+  "updatedAt": "2025-10-09T22:37:26Z",
+  "activityAt": "2025-10-09T22:44:49Z",
+  "openIssues": [
+    {
+      "number": 1,
+      "title": "HI",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/1",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Hello",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/2",
+      "author": "ikamal24",
+      "assignees": [
+        "ikamal24"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Ready",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/3",
+      "author": "13ryan174",
+      "assignees": [
+        "13ryan174"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Lacrymal",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/8",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Nasal",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/9",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 10,
+      "title": "parasphenoid",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/10",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 11,
+      "title": "keel",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/11",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "preopercle",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/12",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 13,
+      "title": "opercle",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/13",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 14,
+      "title": "angular bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/14",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 15,
+      "title": "retroarticular",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/15",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 16,
+      "title": "interopercle",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/16",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 17,
+      "title": "subopercle",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/17",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 18,
+      "title": "palatine bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/18",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 19,
+      "title": "ectopterygoid bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/19",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 20,
+      "title": "metapterygoid",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/20",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 21,
+      "title": "entopterygoid",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/21",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 22,
+      "title": "quadrate bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/22",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 23,
+      "title": "pterygoid bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/23",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 24,
+      "title": "urohyal",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/24",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 25,
+      "title": "basihyal bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/25",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 26,
+      "title": "ceratohyal bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/26",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 27,
+      "title": "lacrimal bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/27",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 28,
+      "title": "cleithrum",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/28",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 29,
+      "title": "rib",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/29",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 30,
+      "title": "dorsal fin pterygiophore",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/30",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 31,
+      "title": "anal fin pterygiophore",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/31",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 32,
+      "title": "hypural plate",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/32",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 33,
+      "title": "vertebral column",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/33",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 34,
+      "title": "pelvic girdle skeleton",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/34",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 35,
+      "title": "pectoral girdle skeleton",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/35",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 36,
+      "title": "anal fin ray",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/36",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 37,
+      "title": "dorsal fin ray",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/37",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 38,
+      "title": "pectoral fin ray",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/38",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 39,
+      "title": "pelvic fin ray",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/39",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 40,
+      "title": "otolith",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/40",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 41,
+      "title": "branchiostegal ray",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/41",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 42,
+      "title": "hyoid arch skeleton",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/42",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 43,
+      "title": "coracoid bone",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/43",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 44,
+      "title": "infraorbital",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/44",
+      "author": "OwenProulx",
+      "assignees": [
+        "OwenProulx"
+      ]
+    },
+    {
+      "number": 82,
+      "title": "Test - Segment a single Vertebra",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/82",
+      "author": "CDonatelli",
+      "assignees": [
+        "CDonatelli"
+      ]
+    },
+    {
+      "number": 83,
+      "title": "Test for Cassandra",
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/issues/83",
+      "author": "OwenProulx",
+      "assignees": []
+    }
+  ],
+  "openPRs": [
+    {
+      "number": 4,
+      "title": "issue-1",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/4",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 1,
+        "title": "HI",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 5,
+      "title": "issue-3",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/5",
+      "author": "13ryan174",
+      "closingIssue": {
+        "number": 3,
+        "title": "Ready",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 47,
+      "title": "issue-8",
+      "isDraft": true,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/47",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 8,
+        "title": "Lacrymal",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 48,
+      "title": "issue-9",
+      "isDraft": true,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/48",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 9,
+        "title": "Nasal",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 49,
+      "title": "issue-10",
+      "isDraft": true,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/49",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 10,
+        "title": "parasphenoid",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 50,
+      "title": "issue-12",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/50",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 12,
+        "title": "preopercle",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 51,
+      "title": "issue-13",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/51",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 13,
+        "title": "opercle",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 52,
+      "title": "issue-14",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/52",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 14,
+        "title": "angular bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 53,
+      "title": "issue-15",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/53",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 15,
+        "title": "retroarticular",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 54,
+      "title": "issue-16",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/54",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 16,
+        "title": "interopercle",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 55,
+      "title": "issue-17",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/55",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 17,
+        "title": "subopercle",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 56,
+      "title": "issue-18",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/56",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 18,
+        "title": "palatine bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 57,
+      "title": "issue-19",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/57",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 19,
+        "title": "ectopterygoid bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 58,
+      "title": "issue-20",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/58",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 20,
+        "title": "metapterygoid",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 59,
+      "title": "issue-21",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/59",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 21,
+        "title": "entopterygoid",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 60,
+      "title": "issue-23",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/60",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 23,
+        "title": "pterygoid bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 61,
+      "title": "issue-22",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/61",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 22,
+        "title": "quadrate bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 62,
+      "title": "issue-24",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/62",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 24,
+        "title": "urohyal",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 63,
+      "title": "issue-25",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/63",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 25,
+        "title": "basihyal bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 64,
+      "title": "issue-26",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/64",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 26,
+        "title": "ceratohyal bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 65,
+      "title": "issue-27",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/65",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 27,
+        "title": "lacrimal bone",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 66,
+      "title": "issue-28",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/66",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 28,
+        "title": "cleithrum",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 67,
+      "title": "issue-29",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/67",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 29,
+        "title": "rib",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 68,
+      "title": "issue-30",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/68",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 30,
+        "title": "dorsal fin pterygiophore",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 69,
+      "title": "issue-31",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/69",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 31,
+        "title": "anal fin pterygiophore",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 70,
+      "title": "issue-32",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/70",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 32,
+        "title": "hypural plate",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 71,
+      "title": "issue-33",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/71",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 33,
+        "title": "vertebral column",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 72,
+      "title": "issue-34",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/72",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 34,
+        "title": "pelvic girdle skeleton",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 73,
+      "title": "issue-35",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/73",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 35,
+        "title": "pectoral girdle skeleton",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 74,
+      "title": "issue-36",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/74",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 36,
+        "title": "anal fin ray",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 75,
+      "title": "issue-37",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/75",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 37,
+        "title": "dorsal fin ray",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 76,
+      "title": "issue-38",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/76",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 38,
+        "title": "pectoral fin ray",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 77,
+      "title": "issue-39",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/77",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 39,
+        "title": "pelvic fin ray",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 78,
+      "title": "issue-40",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/78",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 40,
+        "title": "otolith",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 79,
+      "title": "issue-41",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/79",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 41,
+        "title": "branchiostegal ray",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 80,
+      "title": "issue-42",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/80",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 42,
+        "title": "hyoid arch skeleton",
+        "repoOwner": "CDonatelli"
+      }
+    },
+    {
+      "number": 81,
+      "title": "issue-43",
+      "isDraft": false,
+      "url": "https://github.com/CDonatelli/Lepomis_macrochirus_28um/pull/81",
+      "author": "OwenProulx",
+      "closingIssue": {
+        "number": 43,
+        "title": "coracoid bone",
+        "repoOwner": "CDonatelli"
+      }
+    }
+  ],
+  "accession": {
+    "specimenSource": [
+      "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
+      "Accessioned specimen"
+    ],
+    "iDigBioAccessioned": [
+      "Is your specimen's species in the iDigBio database?",
+      "No"
+    ],
+    "iDigBioURL": [
+      "Enter URL from iDigBio:",
+      ""
+    ],
+    "species": [
+      "What is your specimen's species?",
+      "Lepomis macrochirus"
+    ],
+    "biologicalSex": [
+      "What is your specimen's sex?",
+      "Unknown"
+    ],
+    "developmentalStage": [
+      "What is your specimen's developmental stage?",
+      "Adult"
+    ],
+    "modality": [
+      "What is the modality of the acquisition?",
+      "Micro CT (or synchrotron)"
+    ],
+    "contrastEnhancement": [
+      "Is there contrast enhancement treatment applied to the specimen (iodine, phosphotungstenic acid, gadolinium, casting agents, etc)?",
+      "No"
+    ],
+    "imageContents": [
+      "What is in the image?",
+      "Whole specimen"
+    ],
+    "anatomicalAreas": [
+      "What anatomical area(s) is/are present in the scan?",
+      []
+    ],
+    "redistributionAcknowledgement": [
+      "Acknowledgement:",
+      [
+        "I have the right to allow redistribution of this data."
+      ]
+    ],
+    "license": [
+      "Choose a license:",
+      "CC BY-NC 4.0 (requires attribution, non-commercial usage only)"
+    ],
+    "githubRepoName": [
+      "What should the repository in your github account called? This needs to be unique value for your account.",
+      "Lepomis_macrochirus_28um"
+    ],
+    "scanDimensions": "(1425, 528, 3814)",
+    "scanSpacing": "(0.027999999999999997, 0.027999999999999987, 0.027999999999999987)"
+  },
+  "screenshotCount": 0,
+  "screenshotCaptions": [],
+  "volumeSize": 1068985775,
+  "sourceVolumeChecksum": null,
+  "curator": null
+}
