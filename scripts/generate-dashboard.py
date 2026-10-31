@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
 Generate docs/dashboard-data.json from all journal files.
-The static docs/index.html loads this file via fetch().
+The static docs/index.html and docs/search.html load this file via fetch().
 """
+import ast
 import json
 import re
+import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -32,6 +34,27 @@ _EXCLUDED_NAME_WORDS = frozenset({"test", "demo", "sample", "sicb", "workshop", 
 
 # Duplicate-group categories, ordered by curation priority (lower = more urgent).
 DUP_CATEGORY_PRIORITY = {"org-org": 0, "promotion": 1, "cross-owner": 2, "same-owner": 3}
+
+# The accession questionnaire is defined once, in the extension; the web search page builds its
+# filters from the same questions so the two searches offer the same choices.
+ACCESSION_SCHEMA_URL = ("https://raw.githubusercontent.com/SlicerMorph/SlicerMorphoDepot/main/"
+                        "MorphoDepot/MorphoDepotLib/accession_schema.py")
+
+# Mirrors MorphoDepotSearchForm in the extension (search_form.py): questions that have answer
+# options but are still not search filters, and the shorter labels used on the search form.
+SEARCH_IGNORED_QUESTIONS = frozenset({"redistributionAcknowledgement", "repoType"})
+SEARCH_SHORT_LABELS = {
+    "specimenSource": "Specimen source",
+    "iDigBioAccessioned": "In public database",
+    "modality": "Modality",
+    "contrastEnhancement": "Contrast enhanced",
+    "imageContents": "Image contents",
+    "subjectType": "Subject type",
+    "biologicalSex": "Sex",
+    "developmentalStage": "Stage",
+    "anatomicalAreas": "Anatomical areas",
+    "license": "License",
+}
 
 
 def accession_answer(accession, key):
@@ -181,6 +204,50 @@ def build_collections(collection_journals, known):
     return collections
 
 
+def parse_form_questions(source):
+    """Return the FORM_QUESTIONS dict from the text of the extension's accession_schema.py.
+
+    The module is pure data literals, so the assignment is read with ast.literal_eval rather than
+    executed: this runs in the Sync workflow on main, which must never run code fetched from
+    another repository."""
+    for node in ast.parse(source).body:
+        if isinstance(node, ast.Assign) and any(
+                isinstance(t, ast.Name) and t.id == "FORM_QUESTIONS" for t in node.targets):
+            return ast.literal_eval(node.value)
+    raise ValueError("FORM_QUESTIONS not found in accession schema")
+
+
+def build_search_filters(questions):
+    """One filter per question that has answer options, in questionnaire order.
+
+    Same rule as MorphoDepotSearchForm.isFilterable: a free-text question (empty options) is never
+    a filter, and neither is anything in SEARCH_IGNORED_QUESTIONS."""
+    filters = []
+    for key, question in questions.items():
+        options = question[1]
+        if not isinstance(options, list) or not options or key in SEARCH_IGNORED_QUESTIONS:
+            continue
+        filters.append({"key": key, "label": SEARCH_SHORT_LABELS.get(key, key),
+                        "options": list(options)})
+    return filters
+
+
+def load_search_filters(previous_data_path):
+    """Fetch the accession schema and build the search filters.  If the fetch fails, keep the
+    filters from the previous dashboard-data.json so a brief outage doesn't strip the search page
+    of its filters; None only if there were never any."""
+    try:
+        with urllib.request.urlopen(ACCESSION_SCHEMA_URL, timeout=20) as r:
+            return build_search_filters(parse_form_questions(r.read().decode("utf-8")))
+    except Exception as e:
+        print(f"  Could not refresh search filters ({e}); keeping the previous ones")
+    try:
+        with open(previous_data_path) as f:
+            return json.load(f).get("searchFilters")
+    except Exception:
+        return None
+
+
 def main():
     journals_dir = Path("journals")
     docs_dir = Path("docs")
@@ -257,6 +324,7 @@ def main():
             "openPRs": open_prs_count,
             "screenshotCount": j.get("screenshotCount", 0),
             "screenshotCaptions": j.get("screenshotCaptions", []),
+            "volumeSize": j.get("volumeSize"),
             "accession": accession,
             "isArchival": is_archival,
             "isTest": is_test,
@@ -282,6 +350,8 @@ def main():
     duplicate_groups, checksum_index = build_duplicate_report(checksum_to_repos)
     known_repos = {r["nameWithOwner"]: r for r in repos_list}
     collections = build_collections(collection_journals, known_repos)
+    out_path = docs_dir / "dashboard-data.json"
+    search_filters = load_search_filters(out_path)
     generated_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     data = {
@@ -294,9 +364,9 @@ def main():
         "repos": repos_list,
         "duplicateVolumes": duplicate_groups,
         "collections": collections,
+        "searchFilters": search_filters,
     }
 
-    out_path = docs_dir / "dashboard-data.json"
     with open(out_path, "w") as f:
         json.dump(data, f, indent=2)
         f.write("\n")

@@ -14,6 +14,12 @@ The [MorphoDepot Dashboard](https://MorphoDepot.github.io/RepoClerk/) is a stati
 
 The dashboard data is stored in `docs/dashboard-data.json` and loaded client-side, so the HTML shell is fully static. Charts are rendered using [Apache ECharts](https://echarts.apache.org/).
 
+## Search
+
+[`search.html`](https://repoclerk.morphodepot.org/search.html) is the extension's Search tab on the web, for people who want to find data without installing Slicer. It reads the same `docs/dashboard-data.json` and applies the extension's search rules (`SearchMixin.search` in `MorphoDepotLib/logic_search.py`): free text over repository name, owner and species with `*`/`?` wildcards, the owner-based Organizational/Personal filter, and one filter per multiple-choice accession question. The filters are built by `generate-dashboard.py` from the extension's `accession_schema.py` (read as data, never executed) and published as `searchFilters`, so both searches offer the same choices; if the schema cannot be fetched, the previous filters are kept. Test/demo repositories are hidden by default, as on the dashboard. The current search is kept in the page address, so a search can be bookmarked or shared.
+
+Two deliberate differences from the extension: a blank subject type counts as "Biological specimen", and answers saved under wording the questionnaire has since changed (`Commercially acquired`, `Hind limg`) are read as their current equivalents. The extension's search hides those repos from every search.
+
 ## What It Does
 
 MorphoDepot is a 3D Slicer extension for collaborative specimen segmentation. It coordinates work across many GitHub repositories (each tagged with the `morphodepot` topic and structured as forks). The extension has Search, Annotate, and Review tabs that previously queried the GitHub GraphQL API directly on every refresh — causing latency and rate-limit issues with multiple concurrent users.
@@ -32,6 +38,7 @@ RepoClerk/
   docs/
     index.html                # dashboard page (served via GitHub Pages)
     dashboard.js              # ECharts setup and repo table logic
+    search.html, search.js    # web version of the extension's Search tab
     dashboard-data.json       # aggregated data, regenerated on every journal update
   scripts/
     drain.py                  # drain-loop logic used by update-repo.yml
