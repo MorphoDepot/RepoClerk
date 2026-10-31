@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T00:46:08Z",
+  "generatedAt": "2026-10-31T04:01:46Z",
   "totalRepos": 82,
   "totalOpenIssues": 137,
   "totalOpenPRs": 78,
@@ -40,6 +40,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 2184279986,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -138,6 +139,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 1592084310,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -234,6 +236,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 1178069812,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -332,6 +335,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 19989858,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -417,6 +421,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Some frog"
       },
+      "volumeSize": 104470447,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -507,6 +512,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 50621209,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -592,6 +598,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Screenshot"
       },
+      "volumeSize": 7933753,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -677,6 +684,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Screenshot of specimen scan"
       },
+      "volumeSize": 122708965,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -765,6 +773,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "California kingsnake"
       },
+      "volumeSize": 407203924,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -851,6 +860,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Common snapping turtle (oblique anterior)"
       },
+      "volumeSize": 1130347453,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -938,6 +948,7 @@
         "screenshot-1.png": "",
         "screenshot-2.png": "American shrew mole"
       },
+      "volumeSize": 68924691,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1028,6 +1039,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Western gray squirrel"
       },
+      "volumeSize": 267597092,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1118,6 +1130,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Mink"
       },
+      "volumeSize": 246637935,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1208,6 +1221,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Pygmy rabbit"
       },
+      "volumeSize": 131764621,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1298,6 +1312,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Northern flying squirrel"
       },
+      "volumeSize": 100722776,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1388,6 +1403,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Townsend's mole"
       },
+      "volumeSize": 112076667,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1478,6 +1494,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Bushy-tailed Packrat"
       },
+      "volumeSize": 230495052,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1568,6 +1585,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Big brown bat skull"
       },
+      "volumeSize": 57584218,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1658,6 +1676,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 10465763,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1743,6 +1762,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1828,6 +1848,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 351643698,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -1913,6 +1934,7 @@
       "openPRs": 3,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 1613908154,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -1983,6 +2005,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2066,6 +2089,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2151,6 +2175,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Screenshot of specimen scan"
       },
+      "volumeSize": 51725703,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2234,6 +2259,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 50621209,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2320,6 +2346,7 @@
         "screenshot-1.png": "with head",
         "screenshot-2.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -2392,6 +2419,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 705958814,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2475,6 +2503,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2558,6 +2587,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2641,6 +2671,7 @@
       "openPRs": 2,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2724,6 +2755,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2807,6 +2839,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2893,6 +2926,7 @@
         "screenshot-1.png": "Dorsal view of N.rhombifer",
         "screenshot-2.png": "Lateral view of N.rhombifer\n"
       },
+      "volumeSize": 633671796,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -2978,6 +3012,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 56167463,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3061,6 +3096,7 @@
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 256705954,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3149,6 +3185,7 @@
         "screenshot-1.png": "flower volume masked with whole flower segmentation; view from side",
         "screenshot-2.png": "flower volume masked with whole flower segmentation; view from apex"
       },
+      "volumeSize": 576783869,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3235,6 +3272,7 @@
         "screenshot-1.png": "Slice example",
         "screenshot-2.png": "volume example"
       },
+      "volumeSize": 909511338,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3320,6 +3358,7 @@
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 32419406,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3407,6 +3446,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 8849980,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3494,6 +3534,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 15830429,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3580,6 +3621,7 @@
         "screenshot-1.png": "",
         "screenshot-2.png": "Mouse_P0_Incisor"
       },
+      "volumeSize": 730137,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3669,6 +3711,7 @@
         "screenshot-2.png": "Magna",
         "screenshot-3.png": ""
       },
+      "volumeSize": 15830429,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3755,6 +3798,7 @@
         "screenshot-1.png": "sagittal Daphnia",
         "screenshot-2.png": "Daphnia surface rendering"
       },
+      "volumeSize": 15830429,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3841,6 +3885,7 @@
         "screenshot-1.png": "Occlusal view of manidble",
         "screenshot-2.png": "Buccal view of left side of mandible"
       },
+      "volumeSize": 436398513,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -3926,6 +3971,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 1369692957,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -4004,6 +4050,7 @@
         "screenshot-2.png": "Oblique ventral",
         "screenshot-3.png": "Without matrix"
       },
+      "volumeSize": 1713949073,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4091,6 +4138,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 1862345206,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4176,6 +4224,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Repository - Human head"
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4263,6 +4312,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "screenshot"
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4350,6 +4400,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4437,6 +4488,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4522,6 +4574,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4609,6 +4662,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4696,6 +4750,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4783,6 +4838,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4868,6 +4924,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -4953,6 +5010,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5038,6 +5096,7 @@
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5125,6 +5184,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 6945984,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5212,6 +5272,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Chicken forelimb specimen with included segmentation of skeletatal elements."
       },
+      "volumeSize": 50991914,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5299,6 +5360,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Chicken foot specimen scan with segmentation of skeletal system."
       },
+      "volumeSize": 104233459,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5386,6 +5448,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": "Base Segmentation of lens and partial globe of the eye"
       },
+      "volumeSize": 1178069812,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5473,6 +5536,7 @@
       "screenshotCaptions": {
         "screenshot-1.png": ""
       },
+      "volumeSize": 928972077,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5559,6 +5623,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 49650073,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5644,6 +5709,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 107244739,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5729,6 +5795,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 1613908154,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5812,6 +5879,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 410240276,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5895,6 +5963,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 1613908154,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -5978,6 +6047,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": null,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -6063,6 +6133,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 882003,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -6149,6 +6220,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 50621209,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -6232,6 +6304,7 @@
       "openPRs": 3,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 410240276,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -6315,6 +6388,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 1565945297,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -6400,6 +6474,7 @@
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 705958812,
       "accession": {
         "otherSubjectDescription": [
           "Please describe the subject of the data.",
@@ -6483,6 +6558,7 @@
       "openPRs": 37,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 1068985775,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -6553,6 +6629,7 @@
       "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 705958814,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -6624,6 +6701,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 256611210,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -6695,6 +6773,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 268376149,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -6768,6 +6847,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 425869150,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -6840,6 +6920,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": null,
       "accession": {},
       "isArchival": false,
       "isTest": true,
@@ -6853,6 +6934,7 @@
       "openPRs": 0,
       "screenshotCount": 0,
       "screenshotCaptions": [],
+      "volumeSize": 14151895,
       "accession": {
         "specimenSource": [
           "Is your data from a commercially acquired organism or from an accessioned specimen (i.e., from a natural history collection)?",
@@ -7169,6 +7251,100 @@
         "MorphoDepot/neurotrichus-gibbsii-skull"
       ],
       "warnings": []
+    }
+  ],
+  "searchFilters": [
+    {
+      "key": "subjectType",
+      "label": "Subject type",
+      "options": [
+        "Biological specimen",
+        "Other"
+      ]
+    },
+    {
+      "key": "specimenSource",
+      "label": "Specimen source",
+      "options": [
+        "Non-accessioned",
+        "Accessioned specimen"
+      ]
+    },
+    {
+      "key": "iDigBioAccessioned",
+      "label": "In public database",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "key": "biologicalSex",
+      "label": "Sex",
+      "options": [
+        "Male",
+        "Female",
+        "Unknown"
+      ]
+    },
+    {
+      "key": "developmentalStage",
+      "label": "Stage",
+      "options": [
+        "Prenatal (fetus, embryo)",
+        "Juvenile (neonatal to subadult)",
+        "Adult"
+      ]
+    },
+    {
+      "key": "modality",
+      "label": "Modality",
+      "options": [
+        "Micro CT (or synchrotron)",
+        "Medical CT",
+        "MRI",
+        "Lightsheet microscopy",
+        "3D confocal microscopy"
+      ]
+    },
+    {
+      "key": "contrastEnhancement",
+      "label": "Contrast enhanced",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "key": "imageContents",
+      "label": "Image contents",
+      "options": [
+        "Whole specimen",
+        "Partial specimen"
+      ]
+    },
+    {
+      "key": "anatomicalAreas",
+      "label": "Anatomical areas",
+      "options": [
+        "Head and neck (e.g., cranium, mandible, proximal vertebral colum)",
+        "Pectoral girdle",
+        "Forelimb",
+        "Trunk (e.g. body cavity, torso, spine, ribs)",
+        "Pelvic girdle",
+        "Hind limb",
+        "Tail",
+        "Other"
+      ]
+    },
+    {
+      "key": "license",
+      "label": "License",
+      "options": [
+        "CC BY 4.0 (requires attribution, allows commercial usage)",
+        "CC BY-NC 4.0 (requires attribution, non-commercial usage only)",
+        "CC0 1.0 (public domain dedication, no restrictions on reuse)"
+      ]
     }
   ]
 }
