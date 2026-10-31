@@ -156,7 +156,10 @@
         const which = e.target.dataset.set;
         if (!which) return;
         selection[f.key] = new Set(which === 'all' ? f.options : []);
-        renderFilters();
+        // Update this group's checkboxes in place: re-rendering the panel would collapse every
+        // filter group the user had opened.
+        options.querySelectorAll('input[type=checkbox]').forEach(cb => { cb.checked = which === 'all'; });
+        updateGroupState(summary, f);
         update();
       });
       options.appendChild(allNone);

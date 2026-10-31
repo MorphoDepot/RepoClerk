@@ -224,7 +224,7 @@ def build_search_filters(questions):
     a filter, and neither is anything in SEARCH_IGNORED_QUESTIONS."""
     filters = []
     for key, question in questions.items():
-        options = question[1]
+        options = question[1] if len(question) > 1 else None
         if not isinstance(options, list) or not options or key in SEARCH_IGNORED_QUESTIONS:
             continue
         filters.append({"key": key, "label": SEARCH_SHORT_LABELS.get(key, key),
