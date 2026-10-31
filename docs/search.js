@@ -47,7 +47,6 @@
   ];
 
   const searchBox = document.getElementById('search-box');
-  const hideTestCb = document.getElementById('hide-test');
   const groupsEl = document.getElementById('filter-groups');
   let sort = { key: 'active', dir: -1 };
   let currentResults = [];
@@ -63,12 +62,11 @@
   const selection = {};
   for (const f of FILTERS) selection[f.key] = defaultSelection(f);
 
-  // Address-bar format: ?q=text&tests=show&modality=MRI&modality=Medical+CT.  Only filters that
-  // differ from their default appear; a filter present with an empty value means "none checked".
+  // Address-bar format: ?q=text&modality=MRI&modality=Medical+CT.  Only filters that differ from
+  // their default appear; a filter present with an empty value means "none checked".
   function readURL() {
     const params = new URLSearchParams(location.search);
     searchBox.value = params.get('q') || '';
-    hideTestCb.checked = params.get('tests') !== 'show';
     for (const f of FILTERS) {
       if (params.has(f.key)) {
         selection[f.key] = new Set(params.getAll(f.key).filter(v => f.options.includes(v)));
@@ -79,7 +77,6 @@
   function writeURL() {
     const params = new URLSearchParams();
     if (searchBox.value) params.set('q', searchBox.value);
-    if (!hideTestCb.checked) params.set('tests', 'show');
     for (const f of FILTERS) {
       const sel = selection[f.key];
       if (sameSet(sel, defaultSelection(f))) continue;
@@ -93,7 +90,8 @@
   // --- Search (port of SearchMixin.search) ---
 
   function matches(r) {
-    if (hideTestCb.checked && r.isTest) return false;
+    // Test/demo repositories (generate-dashboard.py's is_test_repo) are never search results.
+    if (r.isTest) return false;
     if (!selection.tier.has(isOrganizational(r) ? 'Organizational' : 'Personal')) return false;
 
     for (const f of FILTERS) {
@@ -431,11 +429,9 @@
   readURL();
   renderFilters();
   searchBox.addEventListener('input', update);
-  hideTestCb.addEventListener('change', update);
   document.getElementById('download').addEventListener('click', downloadCSV);
   document.getElementById('reset').addEventListener('click', () => {
     searchBox.value = '';
-    hideTestCb.checked = true;
     for (const f of FILTERS) selection[f.key] = defaultSelection(f);
     renderFilters();
     update();
