@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/DeepTrenchA",
-  "journalUpdatedAt": "2026-11-02T21:36:15Z",
+  "journalUpdatedAt": "2026-11-02T21:42:16Z",
   "pushedAt": "2026-10-14T14:53:43Z",
   "updatedAt": "2026-10-14T16:20:58Z",
-  "activityAt": "2026-11-02T21:35:56Z",
+  "activityAt": "2026-11-02T21:41:55Z",
   "openIssues": [
     {
       "number": 1,
@@ -29,7 +29,7 @@
     {
       "number": 3,
       "title": "issue-1",
-      "isDraft": true,
+      "isDraft": false,
       "url": "https://github.com/MorphoDepot/DeepTrenchA/pull/3",
       "author": "cyclobatis",
       "closingIssue": {
