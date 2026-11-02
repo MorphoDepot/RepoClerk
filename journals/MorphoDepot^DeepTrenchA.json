@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/DeepTrenchA",
-  "journalUpdatedAt": "2026-10-27T14:48:45Z",
+  "journalUpdatedAt": "2026-11-02T21:27:22Z",
   "pushedAt": "2026-10-14T14:53:43Z",
   "updatedAt": "2026-10-14T16:20:58Z",
-  "activityAt": "2026-09-21T23:49:12Z",
+  "activityAt": "2026-11-02T21:27:00Z",
   "openIssues": [
     {
       "number": 1,
@@ -13,6 +13,15 @@
       "author": "morphodepot-intake",
       "assignees": [
         "cyclobatis"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Deep Trench A Fin Rays",
+      "url": "https://github.com/MorphoDepot/DeepTrenchA/issues/2",
+      "author": "Natalia-Taft",
+      "assignees": [
+        "Natalia-Taft"
       ]
     }
   ],
