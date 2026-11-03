@@ -39,6 +39,7 @@
     { key: 'size',       label: 'Size (GB)',  text: sizeText,       sortValue: r => r.volumeSize ?? -1 },
     { key: 'repository', label: 'Repository', text: r => repoName(r) },
     { key: 'owner',      label: 'Owner',      text: r => owner(r) },
+    { key: 'curator',    label: 'Curator',    text: curatorText },
     { key: 'species',    label: 'Species',    text: r => answer(r, 'species') || 'N/A' },
     { key: 'modality',   label: 'Modality',   text: r => answer(r, 'modality') || 'N/A' },
     { key: 'active',     label: 'Active',     text: activeText,     sortValue: r => r.pushedAt || '' },
@@ -336,6 +337,13 @@
   }
 
   // --- Column text (same formats as the extension's results table) ---
+
+  // An Organizational repo is owned by the org, so its curator is the login in its CURATOR file
+  // (journaled as `curator`).  A Personal repo is curated by its owner.
+  function curatorText(r) {
+    if (r.curator) return r.curator;
+    return isOrganizational(r) ? 'N/A' : owner(r);
+  }
 
   function sizeText(r) {
     return typeof r.volumeSize === 'number' ? (r.volumeSize / 1024 ** 3).toFixed(2) : 'N/A';

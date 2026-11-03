@@ -325,6 +325,7 @@ def main():
             "screenshotCount": j.get("screenshotCount", 0),
             "screenshotCaptions": j.get("screenshotCaptions", []),
             "volumeSize": j.get("volumeSize"),
+            "curator": j.get("curator"),
             "accession": accession,
             "isArchival": is_archival,
             "isTest": is_test,
