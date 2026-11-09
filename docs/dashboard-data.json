@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-09T21:42:50Z",
+  "generatedAt": "2026-11-09T21:43:19Z",
   "totalRepos": 82,
-  "totalOpenIssues": 140,
-  "totalOpenPRs": 84,
+  "totalOpenIssues": 139,
+  "totalOpenPRs": 83,
   "taxonomy": {
     "kingdom": {
       "Unknown": 82
@@ -33,9 +33,9 @@
     {
       "nameWithOwner": "MorphoDepot/DeepTrenchA",
       "pushedAt": "2026-10-14T14:53:43Z",
-      "journalUpdatedAt": "2026-11-09T21:42:35Z",
-      "openIssues": 4,
-      "openPRs": 2,
+      "journalUpdatedAt": "2026-11-09T21:43:04Z",
+      "openIssues": 3,
+      "openPRs": 1,
       "screenshotCount": 0,
       "screenshotCaptions": {
         "screenshot-1.png": ""
