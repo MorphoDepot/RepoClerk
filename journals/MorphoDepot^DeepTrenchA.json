@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/DeepTrenchA",
-  "journalUpdatedAt": "2026-11-09T21:15:08Z",
+  "journalUpdatedAt": "2026-11-09T21:41:56Z",
   "pushedAt": "2026-10-14T14:53:43Z",
   "updatedAt": "2026-10-14T16:20:58Z",
-  "activityAt": "2026-11-09T21:14:54Z",
+  "activityAt": "2026-11-09T21:41:35Z",
   "openIssues": [
     {
       "number": 1,
@@ -53,6 +53,18 @@
       "closingIssue": {
         "number": 1,
         "title": "Changes requested before publishing",
+        "repoOwner": "MorphoDepot"
+      }
+    },
+    {
+      "number": 6,
+      "title": "issue-5",
+      "isDraft": true,
+      "url": "https://github.com/MorphoDepot/DeepTrenchA/pull/6",
+      "author": "amm554",
+      "closingIssue": {
+        "number": 5,
+        "title": "murat test",
         "repoOwner": "MorphoDepot"
       }
     }
