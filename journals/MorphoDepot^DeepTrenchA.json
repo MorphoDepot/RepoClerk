@@ -1,10 +1,10 @@
 {
   "schemaVersion": 4,
   "nameWithOwner": "MorphoDepot/DeepTrenchA",
-  "journalUpdatedAt": "2026-11-09T21:43:04Z",
+  "journalUpdatedAt": "2026-11-10T00:38:13Z",
   "pushedAt": "2026-10-14T14:53:43Z",
   "updatedAt": "2026-10-14T16:20:58Z",
-  "activityAt": "2026-11-09T21:42:49Z",
+  "activityAt": "2026-11-10T00:37:53Z",
   "openIssues": [
     {
       "number": 1,
@@ -31,6 +31,15 @@
       "author": "Natalia-Taft",
       "assignees": [
         "Natalia-Taft"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "murat test",
+      "url": "https://github.com/MorphoDepot/DeepTrenchA/issues/5",
+      "author": "amm554",
+      "assignees": [
+        "amm554"
       ]
     }
   ],
